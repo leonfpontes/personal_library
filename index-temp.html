@@ -92,7 +92,7 @@
 				background: linear-gradient(180deg, rgba(0,0,0,0.06), transparent), var(--card);
 				border-bottom: 1px solid var(--border);
 				backdrop-filter: saturate(120%) blur(6px);
-			} @media (max-width: 640px) { .topbar { padding: 0 8px !important; } }
+			}
 			.brand {
 				display: flex;
 				align-items: baseline;
@@ -132,12 +132,7 @@
 			@media (min-width: 1100px) {
 				.layout { grid-template-columns: var(--toc-w) minmax(0, 1fr); }
 			}
-		aside#toc {
-			display: none;
-		}
-		@media (min-width: 1100px) {
 			aside#toc {
-				display: block;
 				position: sticky;
 				top: calc(var(--header-h) + 12px);
 				align-self: start;
@@ -150,7 +145,6 @@
 				max-height: calc(100dvh - var(--header-h) - 36px);
 				overflow: auto;
 			}
-		}
 			#toc h2 { font: 700 14px var(--heading-font); margin: 8px 6px 12px; letter-spacing: .3px; }
 			#toc .toc-search { width: 100%; margin: 0 0 10px; }
 			#toc .toc-search input {
@@ -173,7 +167,11 @@
 			#toc .lvl-3 { padding-left: 20px; font-size: 0.92em; }
 			#toc .lvl-4 { padding-left: 30px; font-size: 0.9em; }
 
-			@media (max-width: 640px) { main { padding: 12px 8px !important; } } main { padding: 16px; display: flex; justify-content: center; width: 100%; max-width: 100%; box-sizing: border-box; }
+			main {
+				padding: 16px;
+				display: flex;
+				justify-content: center;
+			}
 			article#content {
 				background: var(--card);
 				border: 1px solid var(--border);
@@ -183,8 +181,8 @@
 				max-width: var(--maxw);
 				width: 100%;
 				text-align: justify;
-				hyphens: auto; box-sizing: border-box; overflow-wrap: break-word; word-wrap: break-word;
-			} @media (max-width: 640px) { article#content { padding: 24px 16px 48px !important; border-radius: 12px !important; } }
+				hyphens: auto;
+			}
 			/* Typography */
 			article#content h1, h2, h3, h4, h5 { font-family: var(--heading-font); line-height: 1.35; }
 			article#content h1 { font-size: 2rem; margin: 0 0 12px; letter-spacing: 0.2px; }
@@ -243,13 +241,13 @@
       }			/* Print */
 			@media print {
 				.topbar, aside#toc, .progress { display: none !important; }
-				article#content { border: none; box-shadow: none; } @media (max-width: 640px) { article#content { padding: 24px 16px 48px !important; border-radius: 12px !important; } }
+				article#content { border: none; box-shadow: none; }
 				body { background: #fff; color: #000; }
 			}
 		</style>
 	</head>
 	<body>
-		<div class="progress"><div class="bar" id="progressBar"></div></div>
+		<div class="progress"><div class="bar" id="progressBar"></div>`n`t`t<div id="tocOverlay"></div></div>
 		<header class="topbar">
 			<div class="brand">
 				<h1>Vivência Pombogira</h1>
@@ -259,6 +257,7 @@
 				<button class="btn" id="themeBtn" aria-label="Alternar tema">Tema</button>
 				<button class="btn" id="decFont" aria-label="Diminuir fonte">A−</button>
 				<button class="btn" id="incFont" aria-label="Aumentar fonte">A+</button>
+				<button class="btn" id="openFile" aria-label="Abrir arquivo Markdown">Abrir arquivo</button>
 			</div>
 		</header>
 
@@ -274,6 +273,7 @@
 				</article>
 			</main>
 		</div>
+		<input type="file" id="filePicker" accept=".md,text/markdown" style="display:none" />
 		<button id="backTop" title="Voltar ao topo">Topo</button>
 
 		<!-- Load Marked from CDN (no SRI to avoid mismatch issues); pinned path optional -->
@@ -461,6 +461,31 @@
 			document.getElementById('incFont').addEventListener('click', () => setFont(0.05));
 			document.getElementById('decFont').addEventListener('click', () => setFont(-0.05));
 
+			// File picker fallback
+			const fileInput = document.getElementById('filePicker');
+			const openBtn = document.getElementById('openFile');
+			openBtn.addEventListener('click', () => fileInput.click());
+			fileInput.addEventListener('change', (e) => {
+				const file = e.target.files?.[0];
+				if (!file) return;
+				const reader = new FileReader();
+				reader.onload = () => {
+					const md = String(reader.result || '');
+					const html = renderMarkdown(md);
+					contentEl.innerHTML = html;
+					postProcessHeadings();
+					document.querySelectorAll('#content h1, #content h2, #content h3, #content h4').forEach((h) => {
+						if (!h.id) h.id = slugify(h.textContent);
+					});
+					buildTOC();
+					updateProgress();
+					// Optionally reflect file name in brand subtitle
+					const brandSubtitle = document.querySelector('.brand span');
+					if (brandSubtitle) brandSubtitle.textContent = file.name;
+				};
+				reader.readAsText(file, 'utf-8');
+			});
+
 			// Add classes for special headings and anchor links
 			function postProcessHeadings() {
 				document.querySelectorAll('#content h2').forEach((h) => {
@@ -522,7 +547,4 @@
 		</script>
 	</body>
 	</html>
-
-
-
 
