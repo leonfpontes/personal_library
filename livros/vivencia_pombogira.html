@@ -101,7 +101,7 @@
       .brand nav a { color: var(--accent); text-decoration: none; }
       .brand nav .sep { margin: 0 6px; color: var(--muted); }
       .controls { display: flex; gap: 8px; }
-      .btn { border: 1px solid var(--border); background: var(--card); color: var(--fg); padding: 8px 10px; border-radius: 10px; cursor: pointer; font: 500 13px var(--content-font); }
+      .btn { border: 1px solid var(--border); background: var(--card); color: var(--fg); padding: 8px 10px; border-radius: 10px; cursor: pointer; font: 500 13px var(--content-font); text-decoration: none; display: inline-block; }
       .btn:hover { border-color: var(--accent-2); }
       .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
@@ -181,9 +181,10 @@
     <header class="topbar">
       <div class="brand">
         <h1>Vivência Pombogira</h1>
-        <nav aria-label="Breadcrumb"><a href="../index.html">Biblioteca</a> <span class="sep">›</span> <span>Livro</span></nav>
+        <nav aria-label="Breadcrumb"><a href="../index.html">← Biblioteca</a> <span class="sep">›</span> <span>Livro</span></nav>
       </div>
       <div class="controls">
+        <a href="../index.html" class="btn" aria-label="Voltar à biblioteca">← Voltar</a>
         <button class="btn" id="themeBtn" aria-label="Alternar tema">Tema</button>
         <button class="btn" id="decFont" aria-label="Diminuir fonte">A−</button>
         <button class="btn" id="incFont" aria-label="Aumentar fonte">A+</button>

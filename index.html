@@ -56,27 +56,28 @@
 			.stat { margin-left: auto; color: var(--muted); font-size: 12px; }
 
 			.catalog { padding: 6px 16px 40px; display:flex; justify-content:center; }
-			.grid { width: 100%; max-width: 1200px; padding: 0 8px; display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-			.card { position: relative; border:1px solid var(--border); background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: clip; display:flex; flex-direction: column; transition: transform .18s ease, box-shadow .18s ease; }
-			.card:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0,0,0,.10); }
-			.cover { height: 160px; display:grid; place-items:center; border-bottom:1px solid var(--border); background:
-				radial-gradient(120px 80px at 25% 30%, rgba(177,14,60,.18), transparent 60%),
-				radial-gradient(180px 120px at 75% 30%, rgba(217,96,143,.12), transparent 60%),
-				linear-gradient(0deg, rgba(0,0,0,.02), rgba(0,0,0,.02));
-				color: var(--accent); font: 700 18px var(--heading-font);
-			}
-			.body { padding: 14px 14px 16px; display:flex; flex-direction: column; gap: 8px; }
-			.title { margin: 0; font: 700 18px/1.35 var(--heading-font); letter-spacing:.2px; }
-			.meta { color: var(--muted); font-size: 12px; }
-			.desc { margin: 0; color: var(--fg); font-size: 14px; }
-			.actions { display:flex; gap: 8px; margin-top: 6px; }
-			.link { display:inline-block; padding:8px 10px; border:1px solid var(--border); background: var(--card); color: var(--accent); border-radius: 10px; text-decoration: none; font: 600 13px var(--content-font); }
-			.link:hover { border-color: var(--accent-2); }
+			.grid { width: 100%; max-width: 1200px; padding: 0 8px; display:grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
+			.card { position: relative; border:1px solid var(--border); background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display:flex; flex-direction: column; transition: transform .2s ease, box-shadow .2s ease; }
+			.card:hover { transform: translateY(-4px); box-shadow: 0 16px 42px rgba(0,0,0,.14); }
+			.cover { position: relative; height: 240px; overflow: hidden; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%); }
+			.cover img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+			.cover-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,.3) 0%, transparent 50%); opacity: 0; transition: opacity .2s ease; }
+			.card:hover .cover-overlay { opacity: 1; }
+			.body { padding: 18px 18px 20px; display:flex; flex-direction: column; gap: 10px; flex: 1; }
+			.tag-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+			.tag { display: inline-block; padding: 4px 10px; background: color-mix(in oklab, var(--card) 90%, var(--accent)); color: var(--accent); border: 1px solid color-mix(in oklab, var(--border) 80%, var(--accent)); border-radius: 6px; font: 600 11px var(--content-font); text-transform: uppercase; letter-spacing: .3px; }
+			.title { margin: 0; font: 700 20px/1.3 var(--heading-font); letter-spacing:.2px; color: var(--fg); }
+			.meta { color: var(--muted); font-size: 13px; font-weight: 500; }
+			.desc { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; flex: 1; }
+			.actions { display:flex; gap: 10px; margin-top: auto; padding-top: 12px; }
+			.link { display:inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border: 1px solid var(--accent); background: var(--accent); color: #fff; border-radius: 10px; text-decoration: none; font: 600 14px var(--content-font); transition: all .15s ease; }
+			.link:hover { background: var(--accent-2); border-color: var(--accent-2); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(177,14,60,.25); }
 			.empty { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 28px 12px; border:1px dashed var(--border); border-radius: var(--radius); background: color-mix(in oklab, var(--card) 90%, transparent); }
 
 			footer { padding: 12px 16px 24px; text-align:center; color: var(--muted); font-size: 12px; }
-			@media (max-width: 640px) { .hero .panel { padding: 18px 16px; } .hero h2 { font-size: 24px; } .stat { flex: 1 0 100%; order: 3; text-align: right; } }
-			@media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+			@media (max-width: 768px) { .grid { grid-template-columns: 1fr; gap: 20px; } .cover { height: 200px; } }
+			@media (max-width: 640px) { .hero .panel { padding: 18px 16px; } .hero h2 { font-size: 24px; } .stat { flex: 1 0 100%; order: 3; text-align: right; } .tag-row { gap: 4px; } .tag { font-size: 10px; padding: 3px 8px; } }
+			@media (prefers-reduced-motion: reduce) { .card, .link, .cover-overlay { transition: none; } }
 		</style>
 	</head>
 	<body>
@@ -85,9 +86,6 @@
 			<div class="brand">
 				<h1>Biblioteca</h1>
 				<small>Catálogo de obras</small>
-			</div>
-			<div class="controls">
-				<button class="btn" id="themeBtn" title="Alternar tema (t)">Tema</button>
 			</div>
 		</header>
 
@@ -117,24 +115,40 @@
 		<section id="catalogo" class="catalog" aria-label="Catálogo">
 			<div class="grid" id="grid">
 				<article class="card" data-title="vivência pombogira" data-type="apostila" data-tags="umbanda pombogira emocional interior verdade amor próprio">
-					<div class="cover">Vivência Pombogira</div>
+					<div class="cover">
+						<img src="Source/img/vivencia_pombogira.jpg" alt="Capa - Vivência Pombogira" loading="lazy" />
+						<div class="cover-overlay"></div>
+					</div>
 					<div class="body">
-						<h3 class="title">Vivência Pombogira — Livro Digital</h3>
-						<div class="meta">Tipo: Apostila · Idioma: pt‑BR</div>
-						<p class="desc">Os Mistérios de Pombogira: interior, emoção e evolução. Uma obra sobre verdade emocional, libertação interna e cura afetiva.</p>
+						<div class="tag-row">
+							<span class="tag">Umbanda</span>
+							<span class="tag">Pombogira</span>
+							<span class="tag">Emocional</span>
+						</div>
+						<h3 class="title">Os Mistérios de Pombogira</h3>
+						<div class="meta">Apostila completa · Interior, Emoção e Evolução</div>
+						<p class="desc">Uma obra profunda sobre verdade emocional, libertação interna e cura afetiva através do Mistério de Pombogira na Umbanda Sagrada.</p>
 						<div class="actions">
-							<a class="link" href="livros/vivencia_pombogira.html">Ler agora</a>
+							<a class="link" href="livros/vivencia_pombogira.html">Ler conteúdo →</a>
 						</div>
 					</div>
 				</article>
-				<article class="card" data-title="guia de ervas" data-type="apostila" data-tags="ervas umbanda guia limpeza harmonização">
-					<div class="cover">Guia de Ervas</div>
+				<article class="card" data-title="guia de ervas" data-type="apostila" data-tags="ervas umbanda guia limpeza harmonização natureza">
+					<div class="cover">
+						<img src="Source/img/guia_ervas.png" alt="Capa - Guia de Ervas" loading="lazy" />
+						<div class="cover-overlay"></div>
+					</div>
 					<div class="body">
-						<h3 class="title">Guia de Ervas — Apostila</h3>
-						<div class="meta">Tipo: Apostila · Idioma: pt‑BR</div>
-						<p class="desc">Usos, limpeza e correspondências vibracionais de ervas. Versão em Markdown com leitura confortável.</p>
+						<div class="tag-row">
+							<span class="tag">Umbanda</span>
+							<span class="tag">Ervas</span>
+							<span class="tag">Natureza</span>
+						</div>
+						<h3 class="title">Guia Completo de Ervas</h3>
+						<div class="meta">Apostila prática · Usos e Correspondências</div>
+						<p class="desc">Guia detalhado sobre usos, limpezas e correspondências vibracionais das ervas na prática da Umbanda, com informações precisas e aplicáveis.</p>
 						<div class="actions">
-							<a class="link" href="livros/guia_de_ervas.html">Ler agora</a>
+							<a class="link" href="livros/guia_de_ervas.html">Ler conteúdo →</a>
 						</div>
 					</div>
 				</article>
