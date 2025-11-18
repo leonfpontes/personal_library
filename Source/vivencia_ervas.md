@@ -4,337 +4,768 @@
 
 ### 1.1 – Água de Coco Verde
 
-É considerada uma das melhores para fortalecer o Ori. Também é muito boa para recomposição energética e para quando se está com fadiga.
+**Propriedades:**
+- Considerada uma das melhores para fortalecer o Ori
+- Excelente para recomposição energética
+- Indicada para casos de fadiga
 
 ### 1.2 – Peperômia Pellucida (Oriri ou Erva de Jabuti)
 
-É classificada como uma erva poderosíssima para o Ori. É comestível e saborosa. No entanto, não se dá bem com o sol e murcha rapidamente após ser colhida.
+**Classificação:** Erva poderosíssima para o Ori
+
+**Propriedades:**
+- Comestível e saborosa
+
+**Cuidados no cultivo:**
+- Não se dá bem com o sol
+- Murcha rapidamente após ser colhida
 
 ### 1.3 – Brilhantina (Pilea Microphylla)
 
-É descrita como poderosíssima para o Ori, além de ser associada à prosperidade, força, concentração e finanças, sendo também chamada de "dinheirinho". Gosta de umidade e não de sol. Pode ser usada macerada em banhos.
+**Outros nomes:** "Dinheirinho"
+
+**Propriedades:**
+- Poderosíssima para o Ori
+- Prosperidade e finanças
+- Força e concentração
+
+**Cultivo:**
+- Gosta de umidade
+- Não gosta de sol
+
+**Uso:** Pode ser usada macerada em banhos
 
 ### 1.4 – Calícia Rens (Dinheiro Penca)
 
-É uma erva poderosíssima para o Ori, fortalecimento, crescimento, expansão e finanças. É muito associada a Oxum, Exu e ciganos. É comum utilizá-la em patuás dentro de vasos.
+**Propriedades:**
+- Poderosíssima para o Ori
+- Fortalecimento e crescimento
+- Expansão e finanças
+
+**Orixás associados:** Oxum, Exu e ciganos
+
+**Uso comum:** Utilizada em patuás dentro de vasos
 
 ### 1.5 – Anis Estrelado (Fava de Cinco Estrelas)
 
-É um elemento tradicionalmente muito utilizado para desenvolvimento, sendo colocado em banhos para Ori.
+**Propriedades:**
+- Tradicionalmente muito utilizado para desenvolvimento
+- Colocado em banhos para fortalecer o Ori
 
 ### 1.6 – Folha da Goiabeira
 
-Embora não seja especificamente para o Ori, é mencionada como uma erva excelente para o desenvolvimento e faz parte da lista de ervas de fácil acesso para essa finalidade.
+**Propriedades:**
+- Excelente para o desenvolvimento espiritual
+- Faz parte da lista de ervas de fácil acesso
+
+**Observação:** Embora não seja especificamente para o Ori, é muito eficaz para desenvolvimento.
 
 ### 1.7 – Jasmim
 
-É uma erva muito boa para desenvolvimento e também é incluída na lista de fácil acesso.
+**Propriedades:**
+- Muito bom para desenvolvimento
+- Erva de fácil acesso
 
 ### 1.8 – Manjericão
 
-É bom para o Ori e para o foco.
+**Propriedades:**
+- Bom para o Ori
+- Auxilia no foco e concentração
 
-De forma geral, fortalecer o Ori com essas ervas contribui para a intuição, concentração, desenvolvimento espiritual e melhora todos os aspectos da vida.
+---
+
+**✨ Benefícios gerais do fortalecimento do Ori:**
+
+Fortalecer o Ori com essas ervas contribui para:
+- Intuição
+- Concentração
+- Desenvolvimento espiritual
+- Melhora de todos os aspectos da vida
 
 ## CAPÍTULO 2 – PRINCIPAIS ERVAS PARA ACALMAR
 
 ### 2.1 – Quebra-Pedra (Phyllanthus niruri)
 
-Possui função calmante.
+**Propriedade principal:** Função calmante
 
 ### 2.2 – Hortelã Pimenta / Hortelã Grosso / Malvarisco (Coleus amboinicus)
 
-Embora não seja uma erva quente, tem uma função de descarrego muito forte e é usada para equilíbrio de chakras. Também é utilizada para problemas respiratórios, asma, gripes, resfriados, redução de colesterol e triglicerídeos.
+**Classificação energética:** Não é uma erva quente
+
+**Propriedades espirituais:**
+- Função de descarrego muito forte
+- Usada para equilíbrio de chakras
+
+**Benefícios medicinais:**
+- Problemas respiratórios e asma
+- Gripes e resfriados
+- Redução de colesterol
+- Redução de triglicerídeos
 
 ### 2.3 – Losna / Artemísia (Artemisia absinthium, Artemisia vulgaris)
 
-Alguns a utilizam como erva fria, mas é considerada quente, tendo uma função calmante, principalmente em seu chá. É associada à elevação espiritual, destravamento transpiritual (para quem prende a incorporação) e tem um poder expansivo muito grande. Também combate cálculos renais, problemas na vesícula biliar, triglicerídeos, gripes, resfriados, problemas de fígado, esteatose (gordura no fígado), pressão arterial e insônia. Deve-se ter cuidado com o excesso, especialmente para quem tem epilepsia ou convulsões, e é abortiva para gestantes.
+**Classificação energética:** Considerada quente (alguns a utilizam como fria)
+
+**Propriedades espirituais:**
+- Função calmante (principalmente no chá)
+- Elevação espiritual
+- Destravamento transpiritual (para quem prende a incorporação)
+- Grande poder expansivo
+
+**Benefícios medicinais:**
+- Combate cálculos renais
+- Problemas na vesícula biliar
+- Redução de triglicerídeos
+- Gripes e resfriados
+- Problemas de fígado e esteatose
+- Pressão arterial
+- Insônia
+
+**⚠️ Precauções importantes:**
+- Cuidado com o excesso
+- Contraindicada para epilepsia ou convulsões
+- **Abortiva para gestantes**
 
 ### 2.4 – Capim Limão / Capim Cidreira / Capim Santo (Cymbopogon citratus)
 
-É uma erva fria calmante. É utilizada para apaziguar e acalmar, especialmente para quem está com excesso de vitalidade, energia ou estresse, e não consegue canalizar a energia. É muito bom para apaziguar e acalmar.
+**Classificação energética:** Erva fria calmante
+
+**Indicações:**
+- Apaziguar e acalmar
+- Excesso de vitalidade ou energia
+- Estresse
+- Dificuldade para canalizar energia
+
+**Função principal:** Muito bom para acalmar e trazer paz interior
 
 ### 2.5 – Camomila
 
-Classificada por alguns como morna e calmante. É recomendada para bebês e crianças, e pode ser tomada por gestantes, mas com a orientação de um médico.
+**Classificação energética:** Morna e calmante
+
+**Indicações:**
+- Recomendada para bebês e crianças
+- Pode ser tomada por gestantes **com orientação médica**
 
 ### 2.6 – Erva Doce
 
-É uma erva de Oxalá e Ibeji, ativada como erva fria calmante.
+**Orixás associados:** Oxalá e Ibeji
+
+**Classificação:** Erva fria calmante
 
 ### 2.7 – Alface (Lactuca sativa)
 
-Classificada como uma erva calmante. Quando consumida em excesso, pode causar sono. É utilizada para crianças ou para quem está com estresse e compulsividade. Algumas famílias do Ifá a utilizam para acalmar quem vai incorporar.
+**Classificação:** Erva calmante
+
+**Propriedades:**
+- Pode causar sono quando consumida em excesso
+- Utilizada para crianças
+- Indicada para estresse e compulsividade
+
+**Uso espiritual:** Algumas famílias do Ifá a utilizam para acalmar quem vai incorporar
 
 ### 2.8 – Lavanda (Lavandula dentata, Lavandula) / Alfazema
 
-É uma erva utilizada para acalmar, harmonizar, trazer alegria, felicidade, concentração e desenvolvimento. É considerada morna. Também é utilizada em óleo essencial para sinusite e rinite, e ajuda a dormir, podendo ser colocada em travesseiros.
+**Classificação energética:** Morna
+
+**Propriedades espirituais:**
+- Acalmar e harmonizar
+- Alegria e felicidade
+- Concentração
+- Desenvolvimento
+
+**Benefícios medicinais:**
+- Óleo essencial para sinusite e rinite
+- Auxilia no sono (pode ser colocada em travesseiros)
 
 ### 2.9 – Maracujá (Folha)
 
-É uma erva fria calmante.
+**Classificação:** Erva fria calmante
 
 ### 2.10 – Valeriana
 
-Alguns a classificam como fria calmante, embora outros a classifiquem como quente devido à ativação do capim ou do elemento ferro. É muito boa para dores de cabeça e enxaqueca, mas deve ser usada com cautela por quem tem pressão baixa.
+**Classificação energética:** Alguns a classificam como fria calmante, outros como quente
+
+**Benefícios:**
+- Muito boa para dores de cabeça
+- Eficaz contra enxaqueca
+
+**⚠️ Precaução:** Deve ser usada com cautela por quem tem pressão baixa
 
 ### 2.11 – Hortelã
 
-É uma erva muito boa para o Ori e para o foco, e também é incluída na lista de ervas de fácil acesso para desenvolvimento.
+**Propriedades:**
+- Muito boa para o Ori
+- Auxilia no foco
+- Erva de fácil acesso para desenvolvimento
 
 ### 2.12 – Pata de Vaca Branca
 
-Medicinalmente, é muito boa para dores de cabeça, trazendo tranquilidade.
+**Benefícios medicinais:**
+- Muito boa para dores de cabeça
+- Traz tranquilidade
 
-De modo geral, as ervas mornas tendem a ser mais tranquilas e têm uma função mais apaziguadora, trazendo equilíbrio e boas energias, além de uma função de descarrego mais suave. As ervas frias calmantes são específicas para amenizar a energia, sendo úteis para quem está com excesso de vitalidade, estresse ou dificuldade para canalizar energia.
+---
+
+**✨ Resumo geral das ervas calmantes:**
+
+**Ervas Mornas:**
+- Tendem a ser mais tranquilas
+- Função apaziguadora
+- Trazem equilíbrio e boas energias
+- Função de descarrego mais suave
+
+**Ervas Frias Calmantes:**
+- Específicas para amenizar energia
+- Úteis para excesso de vitalidade
+- Indicadas para estresse
+- Auxiliam na canalização de energia
 
 ## CAPÍTULO 3 – PRINCIPAIS ERVAS PARA ENCAMINHAMENTO
 
 ### 3.1 – Arruda (Ruta graveolens)
 
-Possui uma energia de encaminhar. É também descrita como tendo poder de fala, ativação, movimento, limpeza e eliminação de larvas astrais e miasmas.
+**Energia principal:** Encaminhamento
+
+**Propriedades:**
+- Poder de fala
+- Ativação e movimento
+- Limpeza profunda
+- Eliminação de larvas astrais e miasmas
 
 ### 3.2 – Guiné (Petiveria alliacea)
 
-É tradicionalmente associada a questões de encaminhamento, proteção, defesa, quebra de energia negativa e olho gordo, dissipação de negatividade. Seu pó, quando ativado com canela e cravo, é usado para trazer prosperidade, clientes e abertura de caminhos.
+**Propriedades espirituais:**
+- Encaminhamento
+- Proteção e defesa
+- Quebra de energia negativa e olho gordo
+- Dissipação de negatividade
+
+**Uso em pó:**
+Quando ativado com canela e cravo, traz:
+- Prosperidade
+- Atração de clientes
+- Abertura de caminhos
 
 ### 3.3 – Jamelão / Jambolão (Syzygium cumini)
 
-Embora não explicitamente "encaminhamento", é associado à abertura de caminhos, comunicação, expansão, prosperidade e financeiro. Também é utilizada para reativar a vitalidade em assentamentos.
+**Propriedades:**
+- Abertura de caminhos
+- Comunicação
+- Expansão
+- Prosperidade e finanças
+- Reativação da vitalidade em assentamentos
 
 ### 3.4 – Pimenta (Aroeira Pimenteira, Pimenta Dedo de Moça, Pimenta Comari)
 
-As pimentas em geral trazem um significado de fala ligado a Exu e comunicação, sendo importantes para ativação, proteção, defesa, quebra de energias negativas e demandas. A aroeira-pimenteira é boa para quebrar feitiços e lutar contra as demandas. A pimenta comari é mencionada por seu uso medicinal para um problema específico, sem ser ácida. A pimenta é um forte aliado em magias de corte e demanda, e em patuás e breves.
+**Orixá associado:** Exu
+
+**Propriedades espirituais:**
+- Significado de fala ligado a Exu
+- Comunicação
+- Ativação
+- Proteção e defesa
+- Quebra de energias negativas e demandas
+
+**Usos específicos:**
+- **Aroeira-pimenteira:** Quebra feitiços e luta contra demandas
+- **Pimenta comari:** Uso medicinal para problemas específicos, sem ser ácida
+- Forte aliado em magias de corte e demanda
+- Muito utilizada em patuás e breves
 
 ### 3.5 – Peregum (incluindo Peregum Roxo / Cordyline)
 
-É uma planta com função de descarrego poderosa e encaminhamento, quebra de energias negativas, proteção e defesa. É considerada a "folha do renascimento, do crescimento e da renovação", utilizada para quem busca mudança, crescimento, prosperidade, abertura de caminho e limpeza. Simboliza a faca, o corte e o movimento, sendo essencial para mudar e renascer. O peregum roxo é uma erva quente, altamente energética, boa para vitalidade.
+**Símbolo:** "Folha do renascimento, do crescimento e da renovação"
+
+**Representa:** A faca, o corte e o movimento
+
+**Propriedades:**
+- Descarrego poderoso
+- Encaminhamento
+- Quebra de energias negativas
+- Proteção e defesa
+- Mudança e crescimento
+- Prosperidade
+- Abertura de caminho
+- Limpeza profunda
+
+**Peregum Roxo:**
+- Erva quente
+- Altamente energética
+- Boa para vitalidade
+
+**Função espiritual:** Essencial para quem busca mudar e renascer
 
 ### 3.6 – Alibé / Aridã (Tetrapleura tetraptera)
 
-É uma das favas mais poderosas para quebrar feitiços e para proteção. É utilizada em assentamentos de Ogum, Omulu, Exu e Iansã, e muito em patuás e breves. Também está ligada à ativação da fala, vitalidade e comunicação.
+**Classificação:** Uma das favas mais poderosas
+
+**Propriedades:**
+- Quebra feitiços
+- Proteção
+- Ativação da fala
+- Vitalidade
+- Comunicação
+
+**Usos:**
+- Assentamentos de Ogum, Omulu, Exu e Iansã
+- Muito usada em patuás e breves
 
 ### 3.7 – Bambu (Dendrocalamus giganteus)
 
-Possui poder de encaminhamento, especialmente ligado a Obaluaê, geração e evolução. É considerado uma erva quente e pode ser utilizado para Orixás como Omulu e Iansã.
+**Classificação energética:** Erva quente
+
+**Orixás associados:** Obaluaê, Omulu e Iansã
+
+**Propriedades:**
+- Poder de encaminhamento
+- Geração e evolução
 
 ### 3.8 – Eucalipto (Eucalyptus globulus)
 
-Tem um poder de limpeza muito forte, associado a crescimento e movimento. É indicado para Iansã, Ogum e Exu.
+**Orixás associados:** Iansã, Ogum e Exu
+
+**Propriedades:**
+- Poder de limpeza muito forte
+- Crescimento
+- Movimento
 
 ### 3.9 – Dandá da Costa (Cyperus rotundus)
 
-É uma erva para limpeza, dissipação, proteção e defesa. É considerada uma das principais ervas para fazer pó, magia, proteção, abertura de caminho, ativar a fala, comunicação, cura e vitalidade. Muito associada a Exu e Omolu.
+**Orixás associados:** Exu e Omolu
+
+**Propriedades:**
+- Limpeza e dissipação
+- Proteção e defesa
+- Abertura de caminho
+- Ativação da fala
+- Comunicação
+- Cura e vitalidade
+
+**Usos:** Uma das principais ervas para fazer pó e magia
 
 ### 3.10 – Mamona (Ricinus communis)
 
-Menciona-se que é "outra que eu amo" para energias fortes, especialmente para defumação, e é listada no contexto de encaminhamento.
+**Propriedades:**
+- Energias fortes
+- Especialmente indicada para defumação
+- Encaminhamento
 
 ### 3.11 – Picão Preto / Branco / Roxo, Garra do Diabo
 
-São associados a fortes energias de descarrego, limpeza, proteção, e ao corte de demandas. O pinhão roxo é classificado como uma erva quente e é utilizado em assentamentos de Exu.
+**Classificação:** Pinhão roxo é erva quente
+
+**Propriedades:**
+- Fortes energias de descarrego
+- Limpeza profunda
+- Proteção
+- Corte de demandas
+
+**Uso:** Pinhão roxo utilizado em assentamentos de Exu
 
 ### 3.12 – Espinheira Santa (Maytenus ilicifolia)
 
-É uma planta fortíssima para encaminhamento, movimento, transformação e limpezas pesadas.
+**Propriedades:**
+- Fortíssima para encaminhamento
+- Movimento e transformação
+- Limpezas pesadas
 
-Essas ervas são utilizadas em banhos, defumações, patuás, breves e assentamentos, visando purificar, proteger, e promover o progresso e a dissolução de energias negativas no caminho do praticante.
+---
+
+**✨ Usos gerais das ervas de encaminhamento:**
+
+Essas ervas são utilizadas em:
+- Banhos
+- Defumações
+- Patuás
+- Breves
+- Assentamentos
+
+**Objetivos:**
+- Purificar
+- Proteger
+- Promover o progresso
+- Dissolver energias negativas no caminho do praticante
 
 ## CAPÍTULO 4 – FILOSOFIA E ABORDAGEM GERAL DAS ERVAS
 
 ### 4.1 – Experiência e Intuição
 
-O conhecimento é construído na vivência, na prática e na intuição, não apenas em teorias escritas. O palestrante enfatiza que o conhecimento das ervas é algo que se vivencia, se sente e se toca, indo além de PDFs ou materiais teóricos prontos.
+O conhecimento das ervas é construído através de:
+- **Vivência prática**
+- **Sentir e tocar**
+- **Intuição**
+
+💡 **Princípio fundamental:** O conhecimento verdadeiro das ervas vai além de teorias escritas ou PDFs. É algo que se vivencia, se sente e se experimenta na prática.
 
 ### 4.2 – Importância da Intenção e Ativação
 
-O poder das ervas não reside apenas em suas propriedades, mas na intenção e vibração de quem as utiliza. Ativar a energia de uma erva não requer necessariamente o conhecimento de ofós (palavras rituais) específicos, mas sim a fala, a vibração e o pedido positivo.
+**O poder real das ervas:**
+
+O poder não reside apenas nas propriedades físicas da planta, mas principalmente em:
+- **Intenção** de quem as utiliza
+- **Vibração** pessoal
+- **Pedido positivo** sincero
+
+**Ativação das ervas:**
+- Não requer necessariamente ofós (palavras rituais) específicos
+- A fala e a vibração são fundamentais
+- O pedido deve ser positivo e verdadeiro
+
+💫 **Lembre-se:** A energia que você coloca é tão importante quanto a erva em si.
 
 ### 4.3 – Respeito às Doutrinas
 
-É fundamental respeitar a doutrina e as regras da casa onde se frequenta, pois cada família e sacerdote tem seus próprios ensinamentos e formas de trabalho.
+**Princípio de respeito:**
+
+É fundamental respeitar:
+- A doutrina da casa que você frequenta
+- As regras específicas de cada terreiro
+- Os ensinamentos de cada sacerdote
+- As formas particulares de trabalho
+
+🙏 **Importante:** Cada família e sacerdote tem seus próprios ensinamentos e tradições que devem ser honrados.
 
 ## CAPÍTULO 5 – CLASSIFICAÇÃO DAS ERVAS POR TEMPERATURA E FUNÇÃO
-As ervas são frequentemente classificadas por sua "temperatura", o que indica seu tipo de energia e forma de atuação:
-Ervas Quentes:
-São mais agressivas e possuem alta energia vibratória.
-Utilizadas para quebrar larvas astrais e miasmas negativos, dissolvendo pensamentos ruins e ataques espirituais. Também atuam para destravar o desenvolvimento espiritual quando há estagnação.
+
+As ervas são frequentemente classificadas por sua "temperatura", o que indica seu tipo de energia e forma de atuação.
+
+### 5.1 – Ervas Quentes
+
+**Características energéticas:**
+- São mais agressivas e possuem alta energia vibratória
+- Utilizadas para quebrar larvas astrais e miasmas negativos
+- Dissolvem pensamentos ruins e ataques espirituais
+- Atuam para destravar o desenvolvimento espiritual quando há estagnação
+
+**Precauções:**
 O excesso pode causar irritabilidade, estresse e confusão.
-Exemplos frequentemente citados incluem Arruda, Guiné, Espada de Ogum/Iansã, Pimenta, Peregum, Bambu, Dandá da Costa, Mamona, Picão Roxo e Espinheira Santa.
-Ervas Mornas:
-Possuem uma função mais calma, apaziguadora e equilibradora.
-Têm uma função de descarga mais suave e podem ser usadas para harmonizar ervas quentes, "tirando um pouco do lado negativo" delas.
-Exemplos incluem Boldo, Hortelã Pimenta, Vence Demandas, Losna (embora alguns a considerem quente), Guaco, Jamelão, Babosa, Canela, Orégano, Alecrim, Tomilho, Algodão, Pinha, Graviola, Ora Pro Nóbis, Lavanda, Pata de Vaca Branca, Jabuticabeira, Manjericão.
-Ervas Frias:
-Calmantes: Usadas para amenizar excesso de vitalidade, energia ou estresse, ajudando a canalizar a energia. Exemplos: Capim Limão/Cidreira, Camomila, Erva Doce, Alface, Folha de Maracujá.
-Atratoras: Visam atrair prosperidade, amor, sexualidade, vitalidade, empoderamento. Exemplos: Cravo, Canela, Louro, Cúrcuma, Brilhantina, Rosa Amarela, Rosa Laranja, Ipê Amarelo, Romã, Rosa Vermelha.
-Energéticas: Visam trazer energia, purificação, crescimento. Exemplos: Rosa Branca, Jasmim do Caribe, Folha de Café.
-Usos e Combinações
-Preparo dos Banhos: Geralmente maceradas, mas algumas podem ser fervidas em infusão. A quantidade de erva deve ser generosa (ex: 5-7 folhas grandes, ou 30 pequenas para um banho de 3 litros), pois banhos muito diluídos podem não ter o efeito desejado.
-Mistura de Ervas: É recomendado combinar ervas de diferentes "temperaturas" para equilibrar o banho e potencializar os efeitos, como misturar uma erva quente para descarga com uma morna para equilíbrio.
-Uso em Conjunto com Outros Elementos:
-Elementos da Natureza: Fogo (para defumação e extração de axé), Ar (fumaça da defumação), Água (para banhos e absorção), Terra (para absorver energias negativas de ervas usadas).
-Minerais: Cristais e pedras podem ser usados para imantar banhos e consagrar ferramentas/imagens, potencializando a energia.
-Carvão: Usado para absorver e bloquear energias negativas, especialmente em limpezas pesadas ou para evitar que a energia ruim circule após um descarrego.
-Sal: Um poderoso elemento de limpeza, descarga e proteção, capaz de neutralizar energias (positivas e negativas). Deve ser usado com cautela, e idealmente seguido por um banho energético para reequilíbrio. Também pode ser usado para conservar o axé de ervas em preparações.
-Bebidas Alcoólicas: Como cachaça (marafo), gin, vinho, champanhe. Atuam como potencializadores de energia e "fogo líquido", ajudando a ativar e transportar energias, e para assepsia em cirurgias espirituais.
-Tabaco/Charuto: Elemento de ativação potente (fogo, ar, terra), usado para descarga pesada e ofertas.
-Avisos Importantes e Usos Medicinais (Gerais)
-Não Substitui o Médico: As ervas e práticas espirituais não substituem tratamentos médicos para problemas de saúde física ou mental. Elas atuam como um complemento.
-Cuidado com Toxicidade e Alergias: Muitas ervas possuem toxicidade ou podem causar reações alérgicas. Sempre teste em uma pequena área da pele antes de usar em banhos. Algumas, como o Figo, podem causar queimaduras graves. Losna e Romã são abortivas e contraindicadas para gestantes.
-Gestantes e Lactantes: Evitar o uso de chás e banhos de ervas sem orientação médica, pois muitas podem ser prejudiciais.
-Purity: Compre ervas e pós de locais de confiança, pois há muita adulteração no mercado (ex: canela misturada com amido, urucum com fubá).
-Indicações Específicas:
-Ora Pro Nóbis (Pereskia aculeata): Conhecida como "carne do pobre", rica em ferro e proteínas, usada para anemia, colesterol. É comestível.
-Louro (Laurus nobilis): Possui vastos benefícios medicinais, incluindo ação antimicrobiana, controle de diabetes e colesterol, alívio de problemas gastrointestinais e respiratórios, prevenção de tumores, relaxamento e fortalecimento imunológico.
-Jasmim (Plumeria Alba, Plumeria pudica): Suas flores são usadas para energização e oferendas, mas a folha e o talo podem liberar uma resina tóxica que queima a pele.
-Água de Coco Verde: Considerada uma das melhores para fortalecer o Ori, intuição, concentração e desenvolvimento. Ótima para recomposição energética em casos de fadiga.
-Conceitos Espirituais Amplos
-Abiku: Refere-se a um ser destinado a viver pouco tempo na Terra. A erva Caninha do Brejo (Cana do Brejo) é especificamente utilizada em magias para "quebrar" essa condição, buscando prolongar a vida e promover o progresso.
-Ori: O "Ori" é a cabeça, a intuição, a concentração e o desenvolvimento pessoal. Fortalecer o Ori é crucial para melhorar todos os aspectos da vida.
-Larvas Astrais e Miasmas: São energias negativas geradas por pensamentos ruins e ataques espirituais, que podem ser dissolvidas por ervas quentes.
-Prosperidade: Para a Umbanda, prosperidade vai além do dinheiro; inclui bem-estar, saúde, felicidade e bons relacionamentos.
-Ervas Quentes
+
+**Exemplos:**
+Arruda, Guiné, Espada de Ogum/Iansã, Pimenta, Peregum, Bambu, Dandá da Costa, Mamona, Picão Roxo e Espinheira Santa.
+
+### 5.2 – Ervas Mornas
+
+**Características energéticas:**
+- Possuem uma função mais calma, apaziguadora e equilibradora
+- Têm uma função de descarga mais suave
+- Podem ser usadas para harmonizar ervas quentes, "tirando um pouco do lado negativo" delas
+
+**Exemplos:**
+Boldo, Hortelã Pimenta, Vence Demandas, Losna (embora alguns a considerem quente), Guaco, Jamelão, Babosa, Canela, Orégano, Alecrim, Tomilho, Algodão, Pinha, Graviola, Ora Pro Nóbis, Lavanda, Pata de Vaca Branca, Jabuticabeira, Manjericão.
+
+### 5.3 – Ervas Frias
+
+**Calmantes:**
+- Usadas para amenizar excesso de vitalidade, energia ou estresse
+- Ajudam a canalizar a energia
+- Exemplos: Capim Limão/Cidreira, Camomila, Erva Doce, Alface, Folha de Maracujá
+
+**Atratoras:**
+- Visam atrair prosperidade, amor, sexualidade, vitalidade, empoderamento
+- Exemplos: Cravo, Canela, Louro, Cúrcuma, Brilhantina, Rosa Amarela, Rosa Laranja, Ipê Amarelo, Romã, Rosa Vermelha
+
+**Energéticas:**
+- Visam trazer energia, purificação, crescimento
+- Exemplos: Rosa Branca, Jasmim do Caribe, Folha de Café
+
+### 5.4 – Usos e Combinações
+
+**Preparo dos Banhos:**
+- Geralmente maceradas, mas algumas podem ser fervidas em infusão
+- A quantidade de erva deve ser generosa (ex: 5-7 folhas grandes, ou 30 pequenas para um banho de 3 litros)
+- Banhos muito diluídos podem não ter o efeito desejado
+
+**Mistura de Ervas:**
+É recomendado combinar ervas de diferentes "temperaturas" para equilibrar o banho e potencializar os efeitos, como misturar uma erva quente para descarga com uma morna para equilíbrio.
+
+**Uso em Conjunto com Outros Elementos:**
+
+- **Elementos da Natureza:**
+  - Fogo: para defumação e extração de axé
+  - Ar: fumaça da defumação
+  - Água: para banhos e absorção
+  - Terra: para absorver energias negativas de ervas usadas
+
+- **Minerais:**
+  - Cristais e pedras podem ser usados para imantar banhos e consagrar ferramentas/imagens, potencializando a energia
+
+- **Carvão:**
+  - Usado para absorver e bloquear energias negativas
+  - Especialmente útil em limpezas pesadas ou para evitar que a energia ruim circule após um descarrego
+
+- **Sal:**
+  - Poderoso elemento de limpeza, descarga e proteção
+  - Capaz de neutralizar energias (positivas e negativas)
+  - Deve ser usado com cautela, idealmente seguido por um banho energético para reequilíbrio
+  - Também pode ser usado para conservar o axé de ervas em preparações
+
+- **Bebidas Alcoólicas:**
+  - Cachaça (marafo), gin, vinho, champanhe
+  - Atuam como potencializadores de energia e "fogo líquido"
+  - Ajudam a ativar e transportar energias
+  - Usados para assepsia em cirurgias espirituais
+
+- **Tabaco/Charuto:**
+  - Elemento de ativação potente (fogo, ar, terra)
+  - Usado para descarga pesada e ofertas
+
+### 5.5 – Avisos Importantes e Usos Medicinais
+
+**Não Substitui o Médico:**
+As ervas e práticas espirituais não substituem tratamentos médicos para problemas de saúde física ou mental. Elas atuam como um complemento.
+
+**Cuidado com Toxicidade e Alergias:**
+- Muitas ervas possuem toxicidade ou podem causar reações alérgicas
+- Sempre teste em uma pequena área da pele antes de usar em banhos
+- Algumas, como o Figo, podem causar queimaduras graves
+- Losna e Romã são abortivas e contraindicadas para gestantes
+
+**Gestantes e Lactantes:**
+Evitar o uso de chás e banhos de ervas sem orientação médica, pois muitas podem ser prejudiciais.
+
+**Pureza:**
+Compre ervas e pós de locais de confiança, pois há muita adulteração no mercado (ex: canela misturada com amido, urucum com fubá).
+
+**Indicações Específicas:**
+
+- **Ora Pro Nóbis** (Pereskia aculeata): Conhecida como "carne do pobre", rica em ferro e proteínas, usada para anemia, colesterol. É comestível.
+
+- **Louro** (Laurus nobilis): Possui vastos benefícios medicinais, incluindo ação antimicrobiana, controle de diabetes e colesterol, alívio de problemas gastrointestinais e respiratórios, prevenção de tumores, relaxamento e fortalecimento imunológico.
+
+- **Jasmim** (Plumeria Alba, Plumeria pudica): Suas flores são usadas para energização e oferendas, mas a folha e o talo podem liberar uma resina tóxica que queima a pele.
+
+- **Água de Coco Verde**: Considerada uma das melhores para fortalecer o Ori, intuição, concentração e desenvolvimento. Ótima para recomposição energética em casos de fadiga.
+
+### 5.6 – Conceitos Espirituais Amplos
+
+**Abiku:**
+Refere-se a um ser destinado a viver pouco tempo na Terra. A erva Caninha do Brejo (Cana do Brejo) é especificamente utilizada em magias para "quebrar" essa condição, buscando prolongar a vida e promover o progresso.
+
+**Ori:**
+O "Ori" é a cabeça, a intuição, a concentração e o desenvolvimento pessoal. Fortalecer o Ori é crucial para melhorar todos os aspectos da vida.
+
+**Larvas Astrais e Miasmas:**
+São energias negativas geradas por pensamentos ruins e ataques espirituais, que podem ser dissolvidas por ervas quentes.
+
+**Prosperidade:**
+Para a Umbanda, prosperidade vai além do dinheiro; inclui bem-estar, saúde, felicidade e bons relacionamentos.
+
+## CAPÍTULO 6 – ERVAS QUENTES
 Abranda Fogo
 
 ### Abranda Fogo
 
-É uma erva de Exu.
-É utilizada em magias.
-É especificamente empregada em magias de breves e patuás.
-Possui a característica de queimar totalmente, o que indica uma forte energia ou poder.
-Não deve ser utilizada em banho, pois queima a pele.
+**Orixá associado:** Exu
+
+**Usos espirituais:**
+- Utilizada em magias
+- Especificamente empregada em magias de breves e patuás
+- Pode ser utilizada em defumações poderosas para limpeza
+- Possui a característica de queimar totalmente, indicando forte energia ou poder
+
+**Precauções importantes:**
+⚠️ **Não deve ser utilizada em banho, pois queima a pele**
+
+**Observação:**
 É mencionada junto com a "folha do fogo", que pode ser outro nome para a mesma erva ou uma similar.
-Pode ser utilizada em defumações poderosas para limpeza.
 
 ### Aroeira
 
 A Aroeira, especialmente a Aroeira Pimenteira, é uma planta com forte conotação energética e diversas aplicações, principalmente em práticas espirituais e medicinais.
-Nome Popular e Científico
-É conhecida como Aroeira Pimenteira.
-O nome científico mencionado é Schinus terebinthifolia.
-Popularmente, é associada à pimenta rosa na culinária.
-Classificação Energética
-É classificada como uma erva quente.
-Orixás e Entidades Associadas
-É amplamente ligada a Exu e Pombagira.
-Também é associada a Xangô e Omulu.
-Alguns a ativam para Iansã.
-A Aroeira Pimenteira em particular tem ligação com Xangô.
-Usos Espirituais e Mágicos
-Ativação de Fala e Comunicação: É uma das ervas essenciais para a ativação da fala (ofó) e comunicação. A pimenta em geral, incluindo a Aroeira Pimenteira, traz um significado de fala ligado a Exu.
-Proteção e Defesa: Possui forte função de proteção, defesa e quebra de energias negativas.
-Quebra de Demandas: É utilizada para quebrar demandas.
-Expansão e Crescimento: Contribui para a expansão e crescimento.
-Patuás e Breves: É muito utilizada em patuás e breves.
-Oferendas e Assentamentos: O fruto da pimenta (Aroeira Pimenteira) é usado em oferendas. A Aroeira Pimenteira é muito boa para ativação energética de assentamentos, lavagem de ferramentas e tronqueiras.
-Limpeza Pesada: Sendo uma erva quente, é eficaz em limpezas pesadas, ajudando a dissipar larvas astrais e miasmas negativas.
-Potencialização: O uso de pimenta pode potencializar a ativação de outros elementos e banhos.
-Defumação: Pode ser utilizada em defumação para afastar energias negativas, mas com cautela se for fresca devido ao ardor.
-Banhos: É mencionada para uso em banhos macerados, mas com a ressalva de que algumas pessoas podem ter alergia. Além disso, não é recomendado tomar banho com os frutos da pimenta pois pode "pegar fogo em tudo".
+
+**Nome Popular e Científico:**
+- Nome popular: Aroeira Pimenteira
+- Nome científico: *Schinus terebinthifolia*
+- Na culinária: popularmente associada à pimenta rosa
+
+**Classificação Energética:**
+Erva quente
+
+**Orixás e Entidades Associadas:**
+- Amplamente ligada a Exu e Pombagira
+- Também associada a Xangô e Omulu
+- Alguns a ativam para Iansã
+- A Aroeira Pimenteira em particular tem ligação com Xangô
+
+**Usos Espirituais e Mágicos:**
+
+- **Ativação de Fala e Comunicação:** É uma das ervas essenciais para a ativação da fala (ofó) e comunicação. A pimenta em geral, incluindo a Aroeira Pimenteira, traz um significado de fala ligado a Exu.
+
+- **Proteção e Defesa:** Possui forte função de proteção, defesa e quebra de energias negativas.
+
+- **Quebra de Demandas:** É utilizada para quebrar demandas.
+
+- **Expansão e Crescimento:** Contribui para a expansão e crescimento.
+
+- **Patuás e Breves:** É muito utilizada em patuás e breves.
+
+- **Oferendas e Assentamentos:** O fruto da pimenta (Aroeira Pimenteira) é usado em oferendas. A Aroeira Pimenteira é muito boa para ativação energética de assentamentos, lavagem de ferramentas e tronqueiras.
+
+- **Limpeza Pesada:** Sendo uma erva quente, é eficaz em limpezas pesadas, ajudando a dissipar larvas astrais e miasmas negativas.
+
+- **Potencialização:** O uso de pimenta pode potencializar a ativação de outros elementos e banhos.
+
+- **Defumação:** Pode ser utilizada em defumação para afastar energias negativas, mas com cautela se for fresca devido ao ardor.
+
+**Uso em Banhos:**
+- Pode ser usada em banhos macerados
+- ⚠️ **Atenção:** Algumas pessoas podem ter alergia
+- ⚠️ **Não é recomendado tomar banho com os frutos da pimenta**, pois pode "pegar fogo em tudo"
 
 ### Aroeira Pimenteira
 
-A Pimenta, especialmente a Aroeira Pimenteira, é uma planta de grande poder e diversas aplicações nas práticas espirituais e, em certos casos, medicinais, mas que requer cautela no uso.
-Nomes e Identificação
-A Aroeira Pimenteira é conhecida cientificamente como Schinus terebinthifolia.
-É popularmente associada à pimenta rosa na culinária.
-Outras variedades mencionadas incluem pimenta dedo de moça e pimenta comari.
-Pimenta Atarê ou Pimenta da Costa são citadas como exemplos de pimentas utilizadas para ativação da fala.
-A erva "Branda Fogo" ou "Folha do Fogo" é outra erva de Exu que queima totalmente se usada em banho, sendo empregada em magia.
-Classificação Energética
-A Pimenta é classificada como uma erva quente.
-Possui uma agressividade grande para lidar com energias densas e negativas.
-Orixás e Entidades Associadas:
-A Pimenta e ervas quentes em geral são fortemente ligadas a Exu e Xangô.
-Também é associada a Pombagira e entidades ciganas.
-Alguns ativam a Aroeira para Iansã.
-O fruto da Jabuticaba, que também tem ligação com Exu e Oxóssi, é utilizado em oferendas.
-Usos Espirituais e Mágicos
-Ativação da Fala (Ofó) e Comunicação: É uma das ervas essenciais para a ativação da fala (ofó), importante para quem trabalha com comércio e lida com pessoas, e para comunicação em geral. As pimentas trazem um significado de fala ligado a Exu.
-Proteção e Defesa: Possui forte função de proteção, defesa e quebra de energias negativas.
-Quebra de Demandas: É eficaz para quebrar demandas.
-Expansão e Crescimento: Contribui para a expansão e crescimento.
-Patuás e Breves: É muito utilizada em patuás e breves.
-Oferendas e Assentamentos: Os frutos (especialmente a pimenta vermelha e da Aroeira Pimenteira) são utilizados em oferendas para ativação, fertilidade, colheita e prosperidade. A Aroeira Pimenteira é boa para ativação energética de assentamentos, lavagem de ferramentas e tronqueiras.
-Limpeza Pesada: Sendo uma erva quente, é eficaz em limpezas pesadas, ajudando a dissipar larvas astrais e miasmas negativas. Pode ser usada em defumação, mas seca para evitar ardor.
-Potencialização: O uso de pimenta pode potencializar a ativação de outros elementos e banhos.
-Vaso das Sete Ervas: A pimenta é um componente comum do vaso das sete ervas, que visa proteção, defesa, quebra de olho gordo e prosperidade.
-Uso em Banhos:
-Cautela Extrema: O fruto da pimenta não deve ser utilizado em banhos, pois pode causar queimaduras e irritação severa, inclusive nos olhos.
-O uso em banhos deve ser feito com cuidado devido à sua agressividade e potencial de causar irritabilidade ou estresse compulsivo se usada em excesso ou sem combinação.
-Não é recomendado tomar banho com os frutos da pimenta. A folha pode ser usada macerada.
-Precauções e Benefícios Medicinais
-Problemas Estomacais: Pimentas, em geral, devem ser evitadas por pessoas com úlceras, gastrite ou problemas de esôfago, pois podem agravar essas condições.
-Alergias: Algumas pessoas podem ter alergia à Aroeira Pimenteira, então é recomendado fazer um teste antes do uso. A defumação com pimenta fresca pode causar ardor nos olhos e reações alérgicas.
-Pimenta Comari: Uma exceção notável é a pimenta comari, que, quando usada em óleo (não em forma ácida como limão ou vinagre), foi relatada como eficaz no tratamento de "carne crescida" (similar a hemorroidas), enquanto outras pimentas podem atacá-las.
-Aceleração do Metabolismo: A pimenta é mencionada como um aliado para acelerar o metabolismo e promover o despertar, assim como gengibre e guaraná.
-Benefícios Medicinais e Precauções
-Embora a Guiné seja mencionada como tendo benefício medicinal na parte química, mas não para uso oral, a aroeira em si não tem benefícios medicinais específicos comprovados para uso oral.
-Cuidado com problemas estomacais: A pimenta, em geral, deve ser utilizada com muito cuidado por quem tem problemas estomacais como úlceras, gastrite e esôfago, pois pode causar problemas.
-Pimenta Comari: É relatado um caso onde a pimenta Comari, utilizada em óleo (não em forma ácida como limão ou vinagre), curou problemas de carne crescida (similar a hemorroidas) em pessoas que não podiam comer outras pimentas.
-Toxicidade: Em geral, ervas quentes podem causar irritabilidade, estresse compulsivo e confusão se usadas em excesso em banhos.
-Outras Observações
-A Aroeira tem uma florzinha rosa meia rosadinha, rosa bebê.
-É comparada à pimenta Atarê ou pimenta da costa, usadas para ativar o ofó (fala).
-A pimenta pode ser encontrada em diversas espécies e tamanhos.
-Em resumo, a Aroeira, especialmente a Pimenteira, é uma erva quente, poderosa para ativação da fala, proteção, quebra de demandas e limpeza energética, com fortes associações a Exu, Pombagira, Xangô e Omulu. Seu uso, especialmente em banhos, requer cautela devido à sua intensidade e possível toxicidade/irritabilidade.
-Bambu
+A Aroeira Pimenteira é uma planta de grande poder e diversas aplicações nas práticas espirituais e medicinais, mas que requer cautela no uso.
 
-Nome Científico e Variedades
-Uma das espécies mencionadas é o dandrocalonos gigantes.
-Classificação Energética
-É considerado uma erva quente.
-Associações Espirituais e Orixás
-É muito utilizado na força de Iansã.
-Também é associado a Oxóssi e Exu.
-Possui um poder de encaminhamento que o liga principalmente a Obaluaê e Omolu, sendo associado à linha da geração e evolução.
-Usos e Propriedades Magísticas/Espirituais
-É uma das principais ervas para encaminhamento, seja para energia negativa ou para auxiliar no movimento e fluxo da vida.
-É empregado em limpezas pesadas, ajudando a limpar, dissipar, proteger e defender energias negativas.
-Pode ser utilizado em banhos.
-A folha fresca é preferível para banhos, pois a folha seca pode liberar algo que causa uma "pulseirinha nervosa" (irritação ou coceira).
-Macerar o bambu é difícil e pode causar cortes na mão; a infusão (ferver a planta) é uma forma mais segura de uso.
-Como erva quente, possui uma alta quantidade energética vibratória, sendo eficaz para quebrar larvas astrais e miasmas negativos, além de poder ajudar a destravar o desenvolvimento espiritual. No entanto, o excesso de ervas quentes pode causar irritabilidade, estresse e confusão.
+**Nomes e Identificação:**
+- Nome científico: *Schinus terebinthifolia*
+- Popularmente associada à pimenta rosa na culinária
+- Variedades relacionadas: pimenta dedo de moça, pimenta comari
+- Pimenta Atarê ou Pimenta da Costa: utilizadas para ativação da fala
+
+**Classificação Energética:** Erva quente
+
+**Características energéticas:**
+- Possui grande agressividade para lidar com energias densas e negativas
+
+**Orixás e Entidades Associadas:**
+- Fortemente ligada a Exu e Xangô
+- Associada a Pombagira e entidades ciganas
+- Alguns ativam para Iansã
+- Conexão com Oxóssi (fruto da Jabuticaba usado em oferendas)
+**Usos Espirituais e Mágicos:**
+
+- **Ativação da Fala (Ofó) e Comunicação:** Essencial para ativação da fala, importante para comércio e comunicação. As pimentas trazem significado de fala ligado a Exu.
+
+- **Proteção e Defesa:** Forte função de proteção, defesa e quebra de energias negativas.
+
+- **Quebra de Demandas:** Eficaz para quebrar demandas.
+
+- **Expansão e Crescimento:** Contribui para expansão e crescimento.
+
+- **Patuás e Breves:** Muito utilizada em patuás e breves.
+
+- **Oferendas e Assentamentos:** Frutos utilizados em oferendas para ativação, fertilidade, colheita e prosperidade. Boa para ativação energética de assentamentos, lavagem de ferramentas e tronqueiras.
+
+- **Limpeza Pesada:** Eficaz em limpezas pesadas, dissipa larvas astrais e miasmas. Pode ser usada em defumação (seca para evitar ardor).
+
+- **Potencialização:** Potencializa a ativação de outros elementos e banhos.
+
+- **Vaso das Sete Ervas:** Componente comum para proteção, defesa, quebra de olho gordo e prosperidade.
+**Uso em Banhos:**
+- ⚠️ **Cautela Extrema:** O fruto da pimenta NÃO deve ser utilizado em banhos (causa queimaduras e irritação severa)
+- A folha pode ser usada macerada com cuidado
+- Pode causar irritabilidade ou estresse compulsivo se usada em excesso
+
+**Precauções e Benefícios Medicinais:**
+
+⚠️ **Problemas Estomacais:** Evitar para pessoas com úlceras, gastrite ou problemas de esôfago
+
+⚠️ **Alergias:** Fazer teste antes do uso. Defumação com pimenta fresca pode causar ardor nos olhos
+
+**Pimenta Comari (exceção):**
+- Quando usada em óleo (não em forma ácida), pode ser eficaz para tratamento de "carne crescida" (hemorroidas)
+
+**Benefícios:**
+- Acelera o metabolismo
+- Promove o despertar (como gengibre e guaraná)
+
+**Outras Observações:**
+- A Aroeira tem florzinha rosa bebê
+- Comparada à pimenta Atarê ou pimenta da costa (ativação do ofó)
+- Encontrada em diversas espécies e tamanhos
+
+**Resumo:** Erva quente poderosa para ativação da fala, proteção, quebra de demandas e limpeza energética. Uso requer cautela devido à intensidade.
+### Bambu
+
+**Nome Científico:** *Dendrocalamus giganteus*
+
+**Classificação Energética:** Erva quente
+
+**Associações Espirituais e Orixás:**
+- Muito utilizado na força de Iansã
+- Associado a Oxóssi e Exu
+- Poder de encaminhamento ligado a Obaluaê e Omulu
+- Associado à linha da geração e evolução
+
+**Usos e Propriedades Espirituais:**
+- Uma das principais ervas para encaminhamento
+- Auxilia no movimento e fluxo da vida
+- Empregado em limpezas pesadas
+- Limpa, dissipa, protege e defende contra energias negativas
+- Como erva quente: quebra larvas astrais e miasmas negativos
+- Ajuda a destravar o desenvolvimento espiritual
+
+**Uso em Banhos:**
+- ✅ Folha fresca: preferível para banhos
+- ⚠️ Folha seca: pode causar "pulseirinha nervosa" (irritação ou coceira)
+- ⚠️ Macerar é difícil e pode causar cortes na mão
+- ✅ **Recomendado:** Infusão (ferver a planta) é forma mais segura
+
+**Precauções:**
+Excesso de ervas quentes pode causar irritabilidade, estresse e confusão.
 
 ### Canela
 
-A Canela, com o nome científico Cinnamomum verum, é uma erva amplamente utilizada e valorizada por suas propriedades energéticas e medicinais, especialmente na Umbanda e em outras práticas espirituais.
-Nomes Populares e Científicos
-Nome científico: Cinnamomum verum.
-As folhas têm o mesmo cheiro da canela em casca.
-Classificação Energética
-É considerada uma erva quente. Algumas pessoas podem classificá-la como fria atratora, mas é tratada como quente devido à sua capacidade de esquentar.
-Pode causar uma sensação de aquecimento no corpo ao ser utilizada em banhos, pois é termogênica.
-Orixás e Entidades Associadas
-É associada a Oxum e Ogum.
-Amplamente utilizada em magias de Exu, Pombagira e na linha cigana.
-Frequentemente associada ao sagrado feminino.
-Usos Espirituais e Mágicos
-Atração: É muito usada para atração, não apenas em sentido romântico, mas também para prosperidade financeira, dinheiro, crescimento, fala, expansão e movimento.
-Empoderamento: Traz amor, sexualidade, vitalidade e empoderamento.
-Magias: Utilizada em magias de Pombagira, especialmente com rosa vermelha e romã, para trabalhar o empoderamento feminino e o amor.
-Pó: O pó da canela é tradicionalmente conhecido e pode ser ativado com cravo para trazer prosperidade, clientes e abertura de caminhos, sendo soprado do lado de fora da porta de entrada do local.
-Patuás e Oferendas: Utilizada em patuás para prosperidade, combinada com folha de louro, moedas e búzios (que simbolizavam moeda de troca na colonização, representando movimento e negociação).
-Intuição e Oráculos: Possui poder intuitivo, sendo muito utilizada por quem trabalha com leitura de tarô, cartas e outros oráculos, bem como para questões ligadas à fala.
-Consagração e Limpeza: Usada na lavagem de assentamentos para Oxum, combinada com cúrcuma para ativar prosperidade e caminhos.
-Defumação: É uma das ervas essenciais para a defumação, trazendo harmonia, alegria, felicidade e prosperidade. Também pode ser combinada com louro e cúrcuma para potencializar a prosperidade.
-Fertilidade: Algumas famílias a utilizam na ativação de questões ligadas à fertilidade.
-Formas de Uso: As folhas podem ser maceradas. As cascas são uma alternativa, mas é importante comprar de um lugar de confiança para garantir a pureza do pó.
-Benefícios Medicinais
-Emagrecimento: É termogênica, sendo recomendada para acelerar o metabolismo e auxiliar no emagrecimento.
-Colesterol e Diabetes: Ajuda a combater o colesterol e a diabetes.
-Anti-inflamatório: Possui ação anti-inflamatória.
-Xaropes: Muito boa para ser utilizada em xaropes, em conjunto com guaco, gengibre, alecrim e mastruz.
-Sistema imunológico: Fortalece o sistema imunológico.
-Precauções e Efeitos Adversos
-Alergias: Pode causar alergias na pele, especialmente em peles mais claras. Recomenda-se fazer um pequeno teste macerando a folha na pele antes do banho.
-Gravidez: Não é recomendado o uso durante a gravidez, pois pode causar problemas.
-Pressão Arterial: Pessoas com pressão arterial alta devem ter cuidado, pois ela acelera o metabolismo e pode tender a subir a pressão.
-Enxaqueca: O excesso de canela pode causar cefaleia (dor de cabeça) em quem tem tendência a enxaqueca, devido à ativação do metabolismo.
-Dosagem: Para chá da folha seca, recomenda-se cerca de 3 a 5 gramas por xícara.
-Toxicidade: A canela, como outras ervas quentes, é mais agressiva devido à sua alta quantidade energética vibratória, não por ser tóxica.
-Em resumo, a Canela é uma erva poderosa para ativação de vitalidade, prosperidade, empoderamento e proteção, sendo amplamente utilizada em diversas práticas espirituais, mas exige cautela em seu uso devido à sua intensidade e potenciais efeitos em algumas pessoas.
+A Canela é uma erva amplamente utilizada e valorizada por suas propriedades energéticas e medicinais, especialmente na Umbanda e em outras práticas espirituais.
+
+**Nomes e Identificação:**
+- Nome científico: *Cinnamomum verum*
+- As folhas têm o mesmo cheiro da canela em casca
+
+**Classificação Energética:** Erva quente (termogênica)
+
+**Características:**
+- Pode causar sensação de aquecimento no corpo em banhos
+- Algumas pessoas classificam como fria atratora, mas é tratada como quente
+
+**Orixás e Entidades Associadas:**
+- Oxum e Ogum
+- Amplamente utilizada em magias de Exu, Pombagira e linha cigana
+- Associada ao sagrado feminino
+**Usos Espirituais e Mágicos:**
+
+- **Atração:** Não apenas romântica, mas também para prosperidade financeira, dinheiro, crescimento, fala, expansão e movimento
+
+- **Empoderamento:** Traz amor, sexualidade, vitalidade e empoderamento
+
+- **Magias:** Utilizada com rosa vermelha e romã em magias de Pombagira para empoderamento feminino e amor
+
+- **Pó:** Ativado com cravo para prosperidade, clientes e abertura de caminhos (soprado do lado de fora da porta de entrada)
+
+- **Patuás e Oferendas:** Combinada com louro, moedas e búzios para prosperidade (búzios simbolizam movimento e negociação)
+
+- **Intuição e Oráculos:** Muito utilizada por quem trabalha com tarô, cartas e outros oráculos
+
+- **Consagração e Limpeza:** Lavagem de assentamentos para Oxum, combinada com cúrcuma para ativar prosperidade
+
+- **Defumação:** Essencial para defumação, traz harmonia, alegria, felicidade e prosperidade. Combina com louro e cúrcuma
+
+- **Fertilidade:** Algumas famílias a utilizam para questões de fertilidade
+
+**Formas de Uso:**
+- Folhas podem ser maceradas
+- Cascas são alternativa (comprar de lugar de confiança)
+
+**Benefícios Medicinais:**
+- **Emagrecimento:** Termogênica, acelera metabolismo
+- **Colesterol e Diabetes:** Ajuda a combater
+- **Anti-inflamatório:** Possui ação anti-inflamatória
+- **Xaropes:** Ótima com guaco, gengibre, alecrim e mastruz
+- **Sistema imunológico:** Fortalece
+
+**⚠️ Precauções e Efeitos Adversos:**
+
+- **Alergias:** Pode causar alergias na pele (especialmente peles claras). Fazer teste antes do banho
+
+- **Gravidez:** Não recomendado, pode causar problemas
+
+- **Pressão Arterial:** Cuidado com pressão alta (acelera metabolismo)
+
+- **Enxaqueca:** Excesso pode causar cefaleia em quem tem tendência
+
+- **Dosagem:** Chá da folha seca: 3 a 5 gramas por xícara
+
+**Resumo:** Erva poderosa para ativação de vitalidade, prosperidade, empoderamento e proteção. Uso exige cautela devido à intensidade.
 
 ### Espada de Ogum (Espadas)
 
@@ -366,490 +797,1016 @@ Benefícios Medicinais e Outras Características
 Resistência e Oxigenação: É uma planta que se adapta bem para sobreviver por longos períodos sem água e, segundo a NASA, é indicada para ter dentro de casa para uma melhor oxigenação do ar.
 Toxicidade e Precauções: Embora seja uma erva quente, algumas espécies podem ter toxicidade. É importante ter cautela, especialmente com crianças e animais. O contato direto com a pele pode causar problemas para pessoas alérgicas. Recomenda-se testar um pequeno pedaço da folha macerada na pele antes de um banho completo.
 Bate-Folhas: A folha é mole, o que pode dificultar o uso em "bate-folhas" em alguns tipos de trabalho. No entanto, é uma das principais ervas para este fim.
-Crescimento: A diferença de tamanho das espadas (pequena, média, gigante) pode ser resultado de enxertos, que não alteram a energia da planta.
-A Espada de Ogum é, portanto, uma erva poderosa, tanto no campo espiritual para proteção e limpeza quanto por suas características de resistência e capacidade de purificação do ar.
+### Espada de Ogum (Espadas)
+
+A Espada de Ogum é uma das plantas mais reverenciadas e utilizadas na Umbanda e em outras tradições espirituais, conhecida por seu forte poder de proteção e limpeza.
+
+**Nomes Populares e Científicos:**
+- Nome popular: Espada de Ogum
+- Variações: Espada de Iansã, Lança de Ogum
+- Nomes científicos: *Sansevieria trifasciata*, *Dracaena fragrans*
+- Existem diferentes espécies e variedades da mesma família com pouca diferença energética
+
+**Classificação Energética:** Erva quente
+
+**Características:**
+- Alta quantidade energética vibratória
+- Poder agressivo elevado
+
+**Orixás:**
+- Fortemente atrelada a Ogum e Iansã
+- **Mito desmentido:** Não há restrição de uso apenas para filhos de Ogum
+- Classificada como "carta coringa" em outras doutrinas
+
+**Usos Espirituais e Mágicos:**
+
+- **Proteção e Defesa:** Grande amuleto, principal função é proteger e defender. Corta, quebra e dissipa energia negativa. Afasta demandas e "olho gordo".
+
+- **Limpeza e Descarrego:** Função de descarrego muito forte. Atua como "ácido" para quebrar larvas astrais e miasmas negativos, causando "furos" na "teia telúrica".
+
+- **Energização e Fortalecimento:** Traz equilíbrio e energização. Brilho energético mais alto. Essencial para destravar o desenvolvimento espiritual.
+
+- **Abertura de Caminhos e Prosperidade:** Contribui para abertura de caminhos, crescimento e prosperidade.
+
+**Rituais e Oferendas:**
+- Assentamentos, consagrações de ferramentas e imagens
+- Firmezas na frente de casas, comércios e terreiros
+- Essencial em "bate-folhas"
+- Pode ser usada em banhos (macerados ou fervidos)
+- Vaso das sete ervas: representa proteção, defesa e quebra de demandas
+- Descarregar e imantar guias
+- Pode ser combinada com carvão e sal grosso na entrada de casas
+
+⚠️ **Precauções:**
+- Cuidado em banhos devido ao poder e possível irritação na pele
+- Recomenda-se teste em peles mais claras
+- Vibrar e pedir positivamente ao manipular
+
+**Benefícios e Características:**
+- **Resistência:** Adapta-se bem, sobrevive longos períodos sem água
+- **Oxigenação:** Indicada pela NASA para melhor oxigenação do ar em casa
+
+**Toxicidade:**
+- Algumas espécies podem ter toxicidade
+- Cautela com crianças e animais
+- Contato direto pode causar problemas em alérgicos
 
 ### Espada de Iansã
 
-A "Espada de Iansã" é uma planta com forte conotação espiritual, frequentemente associada à proteção e poder.
-Nomes Populares e Científicos
-É conhecida popularmente como Espada de Iansã.
-Também é chamada de Espada de Ogum e Lança de Ogum.
-Seu nome científico é Sansevieria trifasciata (também mencionada como Saniviera assintoides, Saniviera trifata, Saniviera actoides) e Dracaena fragrans. É importante notar que existem diferentes espécies e variedades que são consideradas "Espada de Ogum" ou "Espada de Iansã", mas são da mesma família e com pouca diferença energética entre elas.
-Em algumas regiões, como na Bahia, é conhecida como espada de Oxóssi.
-Classificação Energética e Orixás
-É classificada como uma erva quente.
-Ervas quentes possuem uma alta quantidade energética vibratória e um poder agressivo mais elevado.
-Está fortemente atrelada à energia de Iansã e Ogum.
-Há um mito de que apenas filhos de Ogum (e Iansã, por associação) podem usá-la, mas, de forma geral, não há restrição. É uma "carta coringa", podendo ser utilizada em diversas energias.
-Sua energia é capaz de destravar o desenvolvimento espiritual.
-Usos Espirituais e Mágicos
-Proteção e Defesa: Sua principal função é proteger e defender, sendo um "grande amuleto". Ela é conhecida por "cortar, quebrar energia negativa, dissipar energia negativa", e é usada para afastar demandas e "olho gordo".
-Limpeza e Descarrego: Possui uma função de descarrego muito forte. Atua como um "ácido" para quebrar larvas astrais e miasmas negativos, podendo "causar furos" na "teia telúrica" (campo energético).
-Firmezas e Ambientes: É recomendada para "firmezas" na frente de casas, comércios e terreiros para proteção.
-Rituais
-Utilizada em assentamentos, consagrações de ferramentas e imagens.
-Essencial em "bate-folhas" (ritual de limpeza e energização).
-Pode ser usada em banhos macerados ou fervidos, mas com cuidado devido ao seu poder e possível irritação na pele, sendo recomendado um teste.
-Para ativar a erva, é fundamental vibrar e pedir positivamente enquanto a manipula.
-No "vaso das sete ervas", ela representa proteção, defesa e quebra de demandas.
-Pode ser usada para descarregar e imantar guias (colares de proteção).
-Pode ser utilizada em conjunto com carvão e sal grosso na entrada de casas como um bloqueador de energia negativa.
-Benefícios e Características Adicionais
-É uma planta resistente que se adapta bem, sobrevivendo por longos períodos sem água.
-Segundo a NASA, é indicada para ter dentro de casa para uma melhor oxigenação do ar, convertendo gases poluentes em oxigênio.
-Toxicidade e Precauções: Algumas espécies podem ter toxicidade. É importante ter cautela, especialmente com crianças e animais. O contato direto com a pele pode causar problemas para pessoas alérgicas, por isso, o teste na pele antes do banho é crucial.
-A diferença de tamanho das espadas (pequena, média, gigante) pode ser resultado de enxertos, que não alteram a energia da planta.
-A folha pode ser mole, o que pode dificultar o uso em "bate-folhas" em alguns tipos de trabalho.
-A energia da casca da planta é mais concentrada do que a da folha, pois a folha tem um ciclo mais curto. Para uma resistência e durabilidade mais prolongadas de energia, a casca ou a raiz são preferíveis, especialmente quando uma entidade as indica.
+Planta com forte conotação espiritual, associada à proteção e poder.
+
+**Nomes Populares e Científicos:**
+- Nome popular: Espada de Iansã
+- Também: Espada de Ogum, Lança de Ogum
+- Na Bahia: Espada de Oxóssi
+- Científico: *Sansevieria trifasciata*, *Dracaena fragrans*
+
+**Classificação:** Erva quente
+
+**Orixás:** Fortemente atrelada a Iansã e Ogum
+
+**Características:** Mesma família da Espada de Ogum com energia similar
+
+**Usos Espirituais:**
+- Proteção e Defesa (grande amuleto)
+- Limpeza e Descarrego (quebra larvas astrais)
+- Firmezas em ambientes
+- Assentamentos e consagrações
+- Bate-folhas
+- Vaso das sete ervas
+- Descarregar guias
+
+**Benefícios:**
+- Resistente, sobrevive sem água
+- Oxigenação do ar (NASA)
+
+⚠️ **Precauções:**
+- Teste na pele antes de banhos
+- Toxicidade em algumas espécies
+- Cautela com crianças e animais
+
+**Observações:**
+- Energia da casca é mais concentrada que da folha
+- Para resistência prolongada: preferir casca ou raiz
 
 ### Fava de Exu
 
-É um elemento muito utilizado em assentamentos de Exu.
-É empregada para descarrego, limpeza e proteção.
-É mencionada junto com outras favas utilizadas para Exu, como a Garra do Diabo e o Pinhão Roxo.
-A fava de Aridã (também conhecida como Alibé, conforme discutido em nossa conversa anterior) é citada como uma das duas favas principais usadas em assentamentos de Exu, além de ser poderosa para quebrar feitiços e oferecer proteção. Isso sugere que a fava de Aridã pode ser um exemplo ou uma das variedades da "fava de Exu" devido ao seu uso e poder semelhantes para o orixá.
+**Orixá:** Exu
+
+**Usos:**
+- Muito utilizada em assentamentos de Exu
+- Descarrego, limpeza e proteção
+
+**Variedades relacionadas:**
+- Garra do Diabo
+- Pinhão Roxo
+- Fava de Aridã (Alibé): uma das duas favas principais
+
+**Propriedades:**
+- Poderosa para quebrar feitiços
+- Oferece proteção
 
 ### Guiné
 
 A Guiné é uma planta de grande importância em diversas práticas espirituais, especialmente na Umbanda, conhecida por suas fortes propriedades de proteção e limpeza.
-Nomes Populares e Científicos
-É popularmente conhecida como Guiné.
-No Norte do Brasil, é também chamada de Tipi.
-É conhecida como Gambá ou Rabo de Gambá.
-Seu nome científico principal é Petiveria alliacea (também mencionada como Alliacea).
-Origem e História
-Apesar de ser comumente associada à Guiné na África, a Petiveria alliacea é uma planta americana (América Central, América do Sul, América do Norte).
+
+**Nomes Populares e Científicos:**
+- Nome popular: Guiné
+- Norte do Brasil: Tipi
+- Também: Gambá, Rabo de Gambá
+- Nome científico: *Petiveria alliacea*
+
+**Origem e História:**
+
+Apesar de ser comumente associada à Guiné na África, a *Petiveria alliacea* é uma planta **americana** (América Central, América do Sul, América do Norte).
+
+**História de resistência:**
 No período da colonização, os negros escravizados utilizavam a Guiné (pilada e seca no café) para deteriorar a saúde dos senhores aos poucos, causando problemas como infecção renal e falência múltipla de órgãos. Era um modo de proteção contra perseguições e castigos.
-Na região de São Simão, há histórias de que também era utilizada em patuás para proteção.
-Classificação Energética e Orixás Associados
-É classificada como uma erva quente.
-Ervas quentes possuem uma alta quantidade energética vibratória e um poder agressivo mais elevado.
-É tradicionalmente cultuada para Oxóssi, mas também é cultuada para Ogum e Nanã.
-Está ligada à energia de Exu e Xangô.
-É uma erva coringa, não havendo restrição de uso apenas para filhos de orixás específicos. Qualquer um pode usá-la, a menos que haja uma restrição específica em seu culto ou corpo.
-É ligada ao elemento fogo.
-Usos Espirituais e Mágicos
-Proteção e Defesa: É uma das principais ervas para proteger e defender, conhecida por "quebrar energia negativa, quebrar olho gordo, dissipar negatividade".
-Limpeza e Descarrego: Possui uma função de descarrego muito forte. Assim como outras ervas quentes, ela atua como um "ácido" para quebrar larvas astrais e miasmas negativos, podendo "causar furos" na "teia telúrica" (campo energético).
-Abertura de Caminhos e Movimento: Traz uma força de movimento muito grande e auxilia no encaminhamento.
-Desenvolvimento Espiritual: Ervas quentes, como a Guiné, são essenciais para destravar o desenvolvimento espiritual, trazendo um brilho energético mais alto. Pode ser utilizada para descarregar guias.
-Rituais
-Utilizada em banhos macerados. O pó da erva (pilado) é muito utilizado em magia, inclusive em patuás.
-O pó pode ser ativado com canela e cravo para trazer prosperidade, clientes e abertura de caminhos, sendo soprado na entrada dos locais.
-É excelente para descarregar guias de orixás.
-Pode ser combinada com Samambaia para descarrego e imantação energética legal.
-É uma das ervas principais para fazer pó e magia, proteção, abertura de caminho, ativar a fala e comunicação.
-No "vaso das sete ervas" (com espada, pimenta, alecrim, arruda, comigo-ninguém-pode, e/ou olho de cabra), ela contribui para a proteção e defesa.
-Precauções e Efeitos Adversos
-Deve-se ter cuidado ao utilizá-la em banhos, especialmente para pessoas alérgicas, pois pode causar problemas ou irritação na pele.
-O excesso de banhos com ervas quentes (como a Guiné) pode causar irritabilidade, estresse compulsivo e confusão no dia a dia.
-Algumas tradições alertam para não misturar ervas quentes com frias, mas o entende-se que a mistura deve ser feita de acordo com a necessidade e o equilíbrio, já que as ervas mornas podem amenizar o lado negativo das quentes.
-Partes da Planta Utilizadas
-As flores da Guiné podem ser utilizadas no pó.
-O tronco também pode ser utilizado no pó.
-No banho macerado, as flores podem ser usadas, mas o tronco é muito duro para macerar.
+
+**Classificação Energética:** Erva quente
+
+**Orixás Associados:**
+- Tradicionalmente cultuada para Oxóssi
+- Também para Ogum e Nanã
+- Ligada a Exu e Xangô
+- Erva coringa (sem restrição de uso)
+- Elemento: Fogo
+
+**Características e Propriedades:**
+- **Cheiro forte e característico:** Cheiro sulfuroso devido ao alil-trisulfeto
+- **Amassada na mão:** O cheiro se intensifica quando amassada
+- **Armazenamento:** Sempre guardar em pote de vidro hermético
+
+**Usos Espirituais e Mágicos:**
+
+**1. Proteção e Defesa:**
+- Quebra energia negativa, olho gordo
+- Dissipa negatividade
+- Amuleto poderoso
+
+**2. Limpeza e Descarrego:**
+- Função de descarrego muito forte
+- Atua como "ácido" para quebrar larvas astrais e miasmas
+- Causa "furos" na "teia telúrica" (campo energético)
+
+**3. Abertura de Caminhos:**
+- Traz força de movimento muito grande
+- Auxilia no encaminhamento
+- Destrava desenvolvimento espiritual
+- Traz brilho energético mais alto
+
+**Rituais e Aplicações:**
+
+- **Banhos:** Macerados para limpeza profunda
+- **Pó mágico:** Erva pilada muito utilizada em magia e patuás
+- **Prosperidade:** Pó ativado com canela e cravo, soprado na entrada dos locais
+- **Descarrego de guias:** Excelente para limpar guias de orixás
+- **Combinações:** Pode ser combinada com Samambaia para descarrego e imantação
+- **Vaso das sete ervas:** Com espada, pimenta, alecrim, arruda, comigo-ninguém-pode, olho de cabra
+- **Magia:** Principal erva para pó, proteção, abertura de caminho, ativar fala e comunicação
+
+⚠️ **Precauções:**
+
+- Teste em pele sensível antes de banhos (pode causar irritação)
+- Excesso de banhos pode causar: irritabilidade, estresse compulsivo, confusão
+- Cuidado para pessoas alérgicas
+- Mistura com ervas frias: fazer com cautela e equilíbrio (ervas mornas amenizam)
+
+**Partes Utilizadas:**
+- **Flores:** Podem ser utilizadas no pó
+- **Tronco:** Pode ser utilizado no pó
+- **Banho:** Flores podem ser usadas; tronco é muito duro para macerar
+
+**Resumo:**
 A Guiné é vista como uma erva que, quando utilizada com sabedoria, pode ser um poderoso aliado para a proteção e o desenvolvimento espiritual.
+
+---
 
 ### Losna
 
 A Losna é uma erva com grande poder energético e é amplamente utilizada em diversas práticas espirituais, especialmente na Umbanda, além de possuir importantes propriedades medicinais.
-Nomes Científicos e Populares
-Existem duas espécies principais de Artemísia no Brasil associadas à Losna: Artemisia absinthium, que é a mais conhecida como Losna, e Artemisia vulgaris, que é a Artemísia mais tradicionalmente comprada seca para banhos.
-A Artemisia absinthium recebeu esse nome científico por ser utilizada na fabricação da bebida absinto.
-Classificação Energética
-É classificada como uma erva quente.
-Ervas quentes possuem um alto brilho energético e um poder vibratório forte.
-Orixás e Energias Associadas
-É tradicionalmente ligada a Oxumarê, Iansã, Ogum, Oxum, Oxóssi e Ossaim.
-Também é associada a Oxum e Iemanjá em magias de fertilidade.
-Usos Espirituais e Mágicos
-Limpeza e Descarrego: Possui fortes funções de descarrego e limpeza.
-Quebra de Ciclos: Ajuda na quebra de ciclos negativos.
-Abertura de Caminhos e Movimento: Promove abertura de caminhos e movimento.
-Proteção e Defesa: Atua na proteção e defesa.
-Elevação Espiritual: É considerada uma das ervas que mais proporciona elevação espiritual e possui um grande poder expansivo para o desenvolvimento.
-Desenvolvimento Mediúnico: Ajuda a destravar o transe mediúnico e a incorporar.
-Sagrado Feminino: É uma planta associada ao sagrado feminino, trazendo força feminina e empoderamento.
-Autoconfiança e Amor Próprio: Contribui para a autoconfiança e o amor próprio.
-Intuição e Sonhos: É muito boa para quem tem dificuldade de sonhar e para o desenvolvimento da intuição.
-Banhos: É utilizada em banhos macerados e pode ser usada da cabeça para baixo, seguindo a doutrina da casa.
-Combinações: Pode ser combinada com Balainho de Velho (Centratherum punctatum) para potencializar o desenvolvimento.
-Benefícios Medicinais
-Possui função calmante (especialmente o chá).
-Combate cálculos renais e problemas na vesícula biliar.
-Ajuda a reduzir triglicerídeos.
-Combate gripes e resfriados.
-Utilizada para problemas de fígado, incluindo esteatose (gordura no fígado).
-Auxilia na redução da pressão arterial.
-Trata a insônia.
-Usada em tratamentos de síndrome do pânico.
-Possui função anti-inflamatória.
-É um vermífugo muito eficaz, com testes contra giardíase e outros vermes.
-Precauções
-É uma erva muito forte, e seu excesso pode causar vômitos e outros problemas.
-Não deve ser utilizada em chá por mais de 7 dias, com um máximo de 15 dias para ervas mais fortes.
-Requer uma quantidade maior de água para metabolização.
-Contraindicada para quem tem ataques epilépticos ou convulsões.
-Não deve ser utilizada por gestantes, pois é abortiva.
-Embora seja comprada livremente em lojas de produtos naturais, o excesso deve ser evitado.
-A Losna, portanto, é uma erva de múltiplos usos, que exige conhecimento e cautela na sua aplicação, especialmente devido à sua intensidade energética e medicinal.
+
+**Nomes Científicos e Populares:**
+- **Espécie principal:** *Artemisia absinthium* (Losna verdadeira)
+- **Espécie comum:** *Artemisia vulgaris* (tradicionalmente vendida seca para banhos)
+- **Curiosidade:** *Artemisia absinthium* deu nome à bebida absinto
+
+**Classificação Energética:** Erva quente
+- Alto brilho energético
+- Poder vibratório forte
+
+**Orixás e Energias Associadas:**
+- Tradicionalmente ligada a: Oxumarê, Iansã, Ogum, Oxum, Oxóssi e Ossaim
+- Magias de fertilidade: Oxum e Iemanjá
+
+**Usos Espirituais e Mágicos:**
+
+**1. Limpeza Energética:**
+- Descarrego forte
+- Quebra de ciclos negativos
+- Abertura de caminhos e movimento
+- Proteção e defesa
+
+**2. Desenvolvimento Espiritual:**
+- Uma das ervas que mais proporciona elevação espiritual
+- Grande poder expansivo para o desenvolvimento
+- Destrava o transe mediúnico e a incorporação
+
+**3. Sagrado Feminino:**
+- Força feminina e empoderamento
+- Autoconfiança e amor próprio
+- Intuição e sonhos (ótima para quem tem dificuldade de sonhar)
+
+**Rituais:**
+- **Banhos:** Macerados, da cabeça para baixo (seguir doutrina da casa)
+- **Combinações:** Com Balainho de Velho (*Centratherum punctatum*) para potencializar desenvolvimento
+
+**Benefícios Medicinais:**
+
+- ✅ Calmante (especialmente em chá)
+- ✅ Combate cálculos renais e problemas na vesícula biliar
+- ✅ Reduz triglicerídeos
+- ✅ Combate gripes e resfriados
+- ✅ Problemas de fígado (esteatose/gordura no fígado)
+- ✅ Reduz pressão arterial
+- ✅ Trata insônia
+- ✅ Síndrome do pânico
+- ✅ Anti-inflamatória
+- ✅ Vermífugo eficaz (giardíase e outros vermes)
+
+⚠️ **PRECAUÇÕES IMPORTANTES:**
+
+- ⚠️ Erva muito forte - excesso causa vômitos e problemas
+- ⚠️ Não usar em chá por mais de 7 dias (máximo 15 dias)
+- ⚠️ Requer muita água para metabolização
+- ⚠️ **CONTRAINDICADA:** Ataques epilépticos ou convulsões
+- ⚠️ **PROIBIDO para gestantes** - é abortiva
+- ⚠️ Vendida livremente, mas exige cautela no uso
+
+**Resumo:**
+A Losna é uma erva de múltiplos usos, que exige conhecimento e cautela na sua aplicação, especialmente devido à sua intensidade energética e medicinal.
+
+---
 
 ### Peregum
 
-O Peregum é uma planta de grande importância e simbolismo nas práticas espirituais, especialmente na Umbanda e no Candomblé, sendo associado a renascimento, crescimento, renovação, fortalecimento, prosperidade, abertura de caminhos, limpeza, proteção, corte de energias negativas, encaminhamento e movimento. É uma planta essencial em diversas tradições do Candomblé, como Jeje, Nagô, Keto e Angola.
-Peregum Verde e Amarelo (Ex: Sansevieria trifasciata, Dracaena fragrans)
-Nomes Científicos e Semelhança
-Incluem Sansevieria trifasciata (também referida como Sanivier Assintoides ou Dracayana trifata para a Espada de Iansã) e Sansevieria cylindrica (Lança de Ogum).
-O Peregum Amarelo-Verde é da espécie Dracaena fragrans.
-Existe uma semelhança energética entre eles, apesar das pequenas diferenças de espécie.
-Variações de tamanho (pequeno, médio, gigante) são geralmente atribuídas a enxertos, e o nome científico pode permanecer o mesmo.
-Orixás Associados
-Principalmente Ogum e Iansã.
-A Espada de Iansã (amarela) é dita como "mais ativadora" para encaminhamento.
-Também podem ter ligações com Oxóssi e Xangô.
-Usos e Propriedades
-São amplamente utilizados em assentamentos, consagrações de ferramentas, na frente de comércios e terreiros.
-Sua função principal é cortar, quebrar e dissipar energias negativas, além de proteger e defender.
-São considerados grandes amuletos.
-As folhas são muito utilizadas em bate-folhas.
-Banhos: Podem ser usados em banhos, mas com cuidado devido a possíveis alergias ou toxicidade. É um mito que apenas filhos de Ogum podem tomar banho com essa planta.
-Benefícios indicados pela NASA: Assim como a giboia, zamioculca, e lírio da paz, são plantas recomendadas pela NASA para ter em casa por promoverem melhor oxigenação do ar e converterem gases poluentes em oxigênio. São plantas que necessitam de pouca água e luz.
-Peregum Roxo (Cordyline terminalis / Cordyline fruticosa)
+O Peregum é uma planta de grande importância e simbolismo nas práticas espirituais, especialmente na Umbanda e no Candomblé.
 
-Este tipo de Peregum tem características distintas em relação aos verdes e amarelos.
-Nomes Científicos
-As espécies mencionadas são Cordyline terminalis (referida como Cordylineares) e Cordyline fruticosa.
-Classificação Energética
- É classificada como uma erva quente. É considerada altamente energética.
-Orixás Associados
-Exu, Nanã, Omulu, Iansã e Obaluaê.
-Usos e Propriedades
-Muito utilizada em oferendas para Exu e na lavagem de ferramentas.
-Possui um poderoso efeito de descarrego, encaminhamento, quebra de energias negativas, proteção e defesa.
-É empregada para ativação e para trazer vitalidade.
-É eficaz no desenvolvimento espiritual, pois ajuda a quebrar a estagnação.
-Toxicidade e Precauções
-Possui uma leve toxicidade.
-A espécie Cordyline terminalis é menos tóxica do que a Cordyline fruticosa.
-O Peregum Roxo menor, com coloração mais roxa, é considerado mais tóxico ainda e não é muito indicado para banhos em certas condições, embora possa ser bom para desenvolvimento.
-Ao utilizar em banhos, recomenda-se moderação, o uso de bastante água e a verificação de alergias.
+**Simbolismo:**
+- Renascimento e crescimento
+- Renovação e fortalecimento
+- Prosperidade e abertura de caminhos
+- Limpeza e proteção
+- Corte de energias negativas
+- Encaminhamento e movimento
+
+**Tradições:** Essencial no Candomblé Jeje, Nagô, Keto e Angola
+
+---
+
+#### **Peregum Verde e Amarelo**
+
+**Nomes Científicos:**
+- *Sansevieria trifasciata* (Espada de Iansã)
+- *Sansevieria cylindrica* (Lança de Ogum)
+- *Dracaena fragrans* (Peregum Amarelo-Verde)
+
+**Observação:** Semelhança energética entre espécies; tamanhos variam por enxertos
+
+**Orixás Associados:**
+- **Principais:** Ogum e Iansã
+- **Secundários:** Oxóssi e Xangô
+- **Nota:** Espada de Iansã (amarela) é "mais ativadora" para encaminhamento
+
+**Usos e Propriedades:**
+
+- **Rituais:** Assentamentos, consagrações de ferramentas, firmezas em comércios e terreiros
+- **Função principal:** Cortar, quebrar e dissipar energias negativas
+- **Proteção:** Grandes amuletos
+- **Bate-folhas:** Folhas muito utilizadas
+- **Banhos:** Possível, mas com cuidado (alergias/toxicidade)
+  - **Mito desmentido:** Não é exclusivo para filhos de Ogum
+
+**Benefícios da NASA:**
+- Recomendada para ter em casa (como giboia, zamioculca, lírio da paz)
+- Oxigenação do ar
+- Converte gases poluentes em oxigênio
+- Necessita de pouca água e luz
+
+---
+
+#### **Peregum Roxo** (*Cordyline terminalis* / *C. fruticosa*)
+
+**Características:** Distintas em relação aos verdes e amarelos
+
+**Classificação Energética:** Erva quente - altamente energética
+
+**Orixás Associados:**
+- Exu, Nanã, Omulu, Iansã e Obaluaê
+
+**Usos e Propriedades:**
+
+- **Oferendas:** Muito utilizada para Exu
+- **Lavagem:** Ferramentas espirituais
+- **Efeitos poderosos:**
+  - Descarrego
+  - Encaminhamento
+  - Quebra de energias negativas
+  - Proteção e defesa
+  - Ativação e vitalidade
+  - Desenvolvimento espiritual (quebra estagnação)
+
+⚠️ **Toxicidade e Precauções:**
+
+- Possui leve toxicidade
+- *Cordyline terminalis* é menos tóxica que *C. fruticosa*
+- Peregum Roxo menor (mais roxo) é ainda mais tóxico
+- ⚠️ Não muito indicado para banhos em certas condições
+- ✅ Bom para desenvolvimento espiritual
+- ✅ Em banhos: moderação, muita água, verificar alergias
+
+---
 
 ### Teteregun (Cana do Brejo)
 
-A Teteregun, também conhecida como Cana do Brejo, é uma erva de grande importância em diversas práticas espirituais, notadamente na Umbanda, e possui também reconhecidas propriedades medicinais, embora com ressalvas importantes sobre seu uso.
-Nomes e Classificação
-É popularmente conhecida como Teteregun.
-Outros nomes populares incluem Caninha do brejo, Caninha de macaco e Cana do brejo.
-O nome científico dela é Costus spicatus.
-É classificada como uma erva quente, indicando um alto poder energético.
-Orixás e Energias Associadas
-Está fortemente ligada a Exu, Nanã e Omolu.
-Também é associada a Oxumarê, Iansã e Obaluaiê.
-É particularmente conectada à linha de Caboclo e Boiadeiro, sendo considerada uma força energética muito alta para essas linhas.
-Sua ligação com Omulu e Obaluaiê é destacada pelo poder de encaminhamento, geração e evolução.
-Usos Espirituais e Mágicos
-Proteção contra "Abiku": É uma das ervas mais utilizadas para "quebrar" o destino de um Abiku (um ser destinado a viver pouco tempo na Terra), buscando evitar mortes precoces e remover obstáculos na vida onde "nada vai para frente".
-Proteção e Defesa: Concede proteção e defesa muito fortes, agindo como um amuleto contra demandas espirituais.
-Quebra de Energias Negativas: Ajuda a quebrar ciclos negativos, larvas astrais, miasmas, demandas e feitiçarias.
-Vitalidade e Força: Ativa a vitalidade e a força, sendo útil para quem se sente esgotado ou sem ânimo.
-Transformação e Movimento: É associada à transformação, mudança e movimento, ajudando na evolução e no rompimento de estagnações.
-Abertura de Caminhos: Tem um grande poder de encaminhamento e abertura de caminhos.
-Situações de Perigo: É extremamente utilizada para quem lida com perigos de morte, trabalhos de alta periculosidade (como altura, hospitais, trânsito) ou com pessoas traiçoeiras e difíceis.
-Banhos: Pode ser usada em banhos. Recomenda-se usá-la em infusão ou fervida para amolecer, pois suas folhas são duras e podem cortar as mãos ao serem maceradas.
-Patuás e Breves: É muito empregada na confecção de patuás e breves (amuletos de proteção e para fins específicos).
-Rituais e Oferendas: Utilizada em iniciações, sacralização, oferendas (principalmente para Exu), e na lavagem de ferramentas e assentamentos.
-Defumação: Boa para defumação.
-Apoio Psicológico: Em magias, é utilizada para quem sofre de depressão.
-Benefícios Medicinais
-Cálculos Renais: É uma das plantas mais utilizadas para combater cálculos renais.
-Gota: Ajuda a combater a gota.
-Diabetes: Combate a diabetes, sendo usada até para diabetes tipo 2 é conhecida como "cará de insulina" ou "insulina".
-Diurética: Possui uma forte função diurética, auxiliando na eliminação do excesso de água extracelular e ajudando a regular a pressão arterial.
-Colesterol e Pressão Alta: Ajuda a combater o colesterol alto e a pressão arterial alta.
-Dores de Cabeça: Contribui para a tranquilidade e alívio de dores de cabeça.
-Precauções e Manuseio
-Existem espécies com espinhos (Amarantos Berdinardes), que são tóxicas e não devem ser ingeridas. É desaconselhável o uso medicinal via ingestão sem recomendação médica, pois pode causar problemas estomacais, úlceras e gastrite.
-Apesar de ser uma erva quente, fica o alerta que o excesso de ervas quentes em banhos pode causar irritabilidade, estresse e confusão no dia a dia.
-Sempre é recomendado verificar se a pessoa tem alergia à planta antes do uso.
-Para banhos, devido à sua dureza, é preferível utilizar as folhas fervidas ou em infusão para evitar cortes nas mãos ao macerar.
-Outras Características
-A planta pode atingir grandes proporções.
-É sempre importante ativar a erva antes do uso, "acordando-a" com palavras e intenção.
-A flor dela pode ser rosa, e em algumas doutrinas, as flores são ativadas como pipoca, simbolizando transformação.
-Existe uma variedade sem espinhos, chamada "caruru bredo" ou "garu bredo", que é comestível e rica em cálcio, zinco, magnésio e potássio, sendo utilizada na culinária e para tratar osteoporose.
+A Teteregun, também conhecida como Cana do Brejo, é uma erva de grande importância em diversas práticas espirituais, notadamente na Umbanda, e possui também reconhecidas propriedades medicinais.
+
+**Nomes e Classificação:**
+- **Nome popular:** Teteregun
+- **Outros nomes:** Caninha do brejo, Caninha de macaco, Cana do brejo
+- **Nome científico:** *Costus spicatus*
+- **Classificação:** Erva quente (alto poder energético)
+
+**Orixás e Energias Associadas:**
+
+**Principais:**
+- Exu, Nanã e Omolu
+- Oxumarê, Iansã e Obaluaiê
+
+**Linhas Espirituais:**
+- **Caboclo e Boiadeiro:** Força energética muito alta
+- **Omulu/Obaluaiê:** Poder de encaminhamento, geração e evolução
+
+**Usos Espirituais e Mágicos:**
+
+**1. Proteção contra "Abiku":**
+- Uma das ervas mais usadas para "quebrar" destino de Abiku
+- Evita mortes precoces
+- Remove obstáculos onde "nada vai para frente"
+
+**2. Proteção e Defesa:**
+- Proteção muito forte
+- Amuleto contra demandas espirituais
+- Quebra ciclos negativos, larvas astrais, miasmas, feitiçarias
+
+**3. Vitalidade e Movimento:**
+- Ativa vitalidade e força
+- Útil para quem está esgotado ou sem ânimo
+- Transformação, mudança e movimento
+- Evolução e rompimento de estagnações
+- Grande poder de abertura de caminhos
+
+**4. Situações de Perigo:**
+- Extremamente utilizada para:
+  - Perigos de morte
+  - Trabalhos de alta periculosidade (altura, hospitais, trânsito)
+  - Proteção contra pessoas traiçoeiras e difíceis
+
+**Rituais e Aplicações:**
+
+- **Banhos:** Infusão ou fervida (folhas duras podem cortar mãos ao macerar)
+- **Patuás e Breves:** Amuletos de proteção
+- **Iniciações e Sacralização**
+- **Oferendas:** Principalmente para Exu
+- **Lavagem:** Ferramentas e assentamentos
+- **Defumação:** Boa para esse fim
+- **Apoio psicológico:** Magias para quem sofre de depressão
+
+**Benefícios Medicinais:**
+
+- ✅ **Cálculos Renais:** Uma das plantas mais utilizadas
+- ✅ **Gota:** Combate eficaz
+- ✅ **Diabetes:** Tipo 2 (conhecida como "cará de insulina" ou "insulina")
+- ✅ **Diurética:** Forte função, elimina excesso de água extracelular
+- ✅ **Pressão Arterial:** Ajuda a regular
+- ✅ **Colesterol Alto:** Combate
+- ✅ **Dores de Cabeça:** Tranquilidade e alívio
+
+⚠️ **PRECAUÇÕES E MANUSEIO:**
+
+- ⚠️ **Espécies com espinhos** (Amarantos Berdinardes): Tóxicas, não ingerir
+- ⚠️ **Uso medicinal interno:** Desaconselhável sem recomendação médica
+  - Pode causar: problemas estomacais, úlceras, gastrite
+- ⚠️ **Excesso de ervas quentes em banhos:**
+  - Irritabilidade
+  - Estresse
+  - Confusão no dia a dia
+
+**Resumo:**
+Teteregun é uma erva poderosa de proteção extrema, especialmente para situações de perigo e obstáculos persistentes. Uso medicinal requer orientação profissional.
+
+⚠️ **Observações Importantes:**
+- Sempre verificar alergia à planta antes do uso
+- Para banhos: preferir folhas fervidas ou em infusão (evita cortes nas mãos)
+- Planta pode atingir grandes proporções
+- **Ativação:** Sempre "acordar" a erva com palavras e intenção antes do uso
+- **Flor:** Pode ser rosa; em algumas doutrinas as flores são ativadas como pipoca (transformação)
+- **Variedade comestível:** "Caruru bredo" ou "garu bredo" (sem espinhos) - rico em cálcio, zinco, magnésio e potássio, usado na culinária e para tratar osteoporose
+
+---
 
 ### Urucum
 
-Nome e Composição
-O urucum é conhecido cientificamente como Bixa orellana.
-O termo "Uru" significa "vermelho" na língua tupi.
-Ao comprar urucum em pó no mercado, é comum que metade do produto seja amido, indicando que não é puro.
-Uso Culinário e Estético
-É amplamente conhecido e utilizado na culinária.
-As sementes, quando molhadas, podem ser usadas como batom natural pelos indígenas, pois dão brilho e não têm gosto forte.
-Pode ser usado como corante natural em alimentos sem alterar o sabor.
-Benefícios Medicinais
-Possui várias funcionalidades medicinais fantásticas.
-É objeto de muitos estudos, inclusive para questões mais graves.
-É utilizado no tratamento e, principalmente, na prevenção de cânceres, sendo às vezes indicado até por oncologistas, assim como a graviola.
-Uso Espiritual e Magístico
-É uma planta extremamente utilizada em magia.
-É muito atribuída a Exu.
-Em algumas doutrinas, também é atribuída a Xangô e Iansã.
-É classificada como uma erva quente.
-Possui um poder de limpeza muito grande.
-Está ligada ao movimento e ao encaminhamento.
-É empregada em magias para justiça, contra demandas e contra feitiçaria.
-As bolinhas (frutos) e as sementes do urucum podem ser usadas piladas em assentamentos.
-Está associado à vaidade, poder e força.
-É amplamente utilizada em magias para quem sofre de problemas ligados à depressão, com relato de uso por babalorixás para essa finalidade.
-É muito boa para consagração de imagens, lavagem de assentamentos e ferramentas.
-A mãe de um dos interlocutores misturava urucum macerado com óleo de amêndoas para bronzear a pele. A folha dela também pode causar problemas se exposta diretamente ao sol após o banho.
+Erva extremamente poderosa, amplamente utilizada tanto na culinária quanto na espiritualidade e medicina.
 
-## CAPÍTULO 6 – ERVAS MORNAS
+**Nome e Composição:**
+- **Nome científico:** *Bixa orellana*
+- **Etimologia:** "Uru" = "vermelho" em tupi
+- **Atenção ao comprar:** Urucum em pó no mercado geralmente contém 50% de amido (não é puro)
+
+**Classificação Energética:** Erva quente
+
+**Orixás Associados:**
+- **Principalmente:** Exu
+- **Também:** Xangô e Iansã (em algumas doutrinas)
+
+**Uso Culinário e Estético:**
+
+- ✅ Amplamente usado na culinária
+- ✅ Corante natural (não altera sabor)
+- ✅ **Batom natural:** Sementes molhadas usadas por indígenas (dão brilho, sem gosto forte)
+
+**Benefícios Medicinais:**
+
+- 💊 Várias funcionalidades medicinais fantásticas
+- 💊 Objeto de muitos estudos científicos
+- 💊 **Tratamento e prevenção de cânceres** (assim como graviola)
+- 💊 Às vezes indicado por oncologistas
+
+**Uso Espiritual e Mágico:**
+
+**Propriedades:**
+- Poder de limpeza muito grande
+- Movimento e encaminhamento
+- Vaidade, poder e força
+
+**Magias e Rituais:**
+- **Justiça:** Magias para questões jurídicas
+- **Contra demandas e feitiçaria**
+- **Depressão:** Amplamente utilizada (relato de uso por babalorixás)
+- **Consagração:** Imagens, assentamentos e ferramentas
+- **Assentamentos:** Bolinhas (frutos) e sementes piladas
+
+⚠️ **Precauções:**
+- ⚠️ Folha pode causar problemas se exposta diretamente ao sol após banho
+- 💡 **Uso cosmético:** Urucum macerado com óleo de amêndoas (bronzeador natural)
+
+**Resumo:**
+Urucum é uma erva versátil com usos culinários, medicinais e espirituais. Extremamente poderosa para limpeza, justiça e encaminhamento.
+
+---
+
+## CAPÍTULO 7 – ERVAS MORNAS
 
 ### Abre Caminhos
 
-A "Abre Caminhos" é uma planta com um nome popular que já indica sua principal função espiritual.
-Nomes Populares e Científicos
-É conhecida popularmente como Abre Caminhos.
-Outro nome pelo qual é conhecida é Vence Demandas.
-Seu nome científico é Justicia Agenda Russa.
-Existe uma confusão com outra planta rasteira, a Coleus forskohlii, que é o verdadeiro "tapete de Oxalá" e que forma um tapete no chão. A Justicia gendarussa é a "Vence Demandas", mas em algumas regiões, os nomes podem mudar e "Abre Caminhos" é associada a uma samambaia.
-Classificação Energética e Orixás
-É considerada uma erva morna. Há um mito de que seria uma erva quente, mas não é.
-Na Umbanda, ela entra na energia de Xangô e Oxóssi. No entanto, não há restrição para filhos de outros orixás a utilizarem em banhos para vencer demandas.
-Embora seja morna, ela possui um poder agressivo mais alto e é utilizada para proteção e defesa.
-Usos Espirituais e Mágicos
-Função Energizadora: Possui uma função energizadora muito forte.
-Abertura de Caminhos: Sua principal função é abrir caminhos.
-Afastamento de Demandas e Olho Gordo: É utilizada para afastar demanda e olho gordo.
-Proteção e Defesa: Possui uma função de defesa muito forte. Não se deve confundir demanda apenas com trabalho feito, pois muitas vezes as pessoas demandam contra si mesmas com pensamentos e falas negativas, e esta planta ajuda contra essa "demanda interna".
-Prosperidade: Está ligada à prosperidade, que é definida não apenas como riqueza material, mas como bem-estar geral, incluindo boa saúde e relacionamentos.
-Limpeza: Tem uma função de limpeza muito forte.
-Locais de Uso: É muito utilizada na frente de roças, terreiros e lojas.
-Bate-folhas: É uma das principais ervas utilizadas em "bate-folhas". Pode ser unificada com outras ervas como a espada de Ogum e em defumação.
-Pontos Riscados: É utilizada em imantação em pontos riscados para lidar com demandas, proteção e defesa.
-Benefícios Medicinais
-É muito utilizada medicinalmente.
-Compressas: É usada em compressas para artrite, artrose, dores musculares e dor ciática inflamatória.
-Enxaqueca: Também é utilizada em compressas para enxaqueca.
-Possui várias ações medicinais.
-Precaução: Embora o chá dela tenha sido utilizado por alguns, não é recomendado sem orientação médica, pois ainda não há uma indicação legal medicinal clara, embora não seja uma planta tóxica.
-Outras Características
-Sua flor é branca e levemente rosada (rosa bebê).
-A folha da Vence Demandas é mais lisa, diferente da Petúnia Mexicana (Ruellia Simplex), que muitas pessoas confundem com ela, mas que tem uma porosidade na folha e não tem um desenho liso.
-É utilizada na medicina chinesa e japonesa para várias funções, não apenas para abrir caminhos.
-Para ativá-la, assim como outras ervas, é necessário falar e vibrar positivamente.
-O tamanho da erva importa no "bate-folhas" e em pontos riscados, onde se trabalha com ela inteira.
+A "Abre Caminhos" é uma planta com nome popular que já indica sua principal função espiritual.
+
+**Nomes Populares e Científicos:**
+- **Nome popular:** Abre Caminhos
+- **Também:** Vence Demandas
+- **Nome científico:** *Justicia gendarussa*
+
+**Confusões comuns:**
+- *Coleus forskohlii*: Verdadeiro "tapete de Oxalá" (planta rasteira que forma tapete no chão)
+- Em algumas regiões: Nome "Abre Caminhos" associado a uma samambaia
+- Nomes regionais variam
+
+**Classificação Energética:** Erva morna
+- **Mito desmentido:** Não é erva quente
+- Possui poder agressivo mais alto (proteção e defesa)
+
+**Orixás Associados:**
+- **Umbanda:** Xangô e Oxóssi
+- **Sem restrições:** Filhos de outros orixás podem usar em banhos
+
+**Usos Espirituais e Mágicos:**
+
+**1. Abertura de Caminhos:**
+- Função principal: abrir caminhos
+- Energizadora muito forte
+- Prosperidade (bem-estar geral: saúde, relacionamentos, não apenas riqueza)
+
+**2. Proteção e Defesa:**
+- Função de defesa muito forte
+- Afasta demanda e olho gordo
+- **Importante:** Demanda não é apenas trabalho feito - inclui pensamentos/falas negativas contra si mesmo ("demanda interna")
+
+**3. Limpeza:**
+- Função de limpeza muito forte
+
+**Rituais e Aplicações:**
+
+- **Locais:** Frente de roças, terreiros e lojas
+- **Bate-folhas:** Uma das principais ervas (pode unificar com espada de Ogum)
+- **Defumação:** Muito eficaz
+- **Pontos Riscados:** Imantação para demandas, proteção e defesa
+- **Ativação:** Falar e vibrar positivamente
+- **Tamanho importa:** Em bate-folhas e pontos riscados (trabalha-se com ela inteira)
+
+**Benefícios Medicinais:**
+
+**Compressas (uso externo):**
+- ✅ Artrite e artrose
+- ✅ Dores musculares
+- ✅ Dor ciática inflamatória
+- ✅ Enxaqueca
+
+⚠️ **Precauções:**
+- ⚠️ Chá: Não recomendado sem orientação médica (sem indicação legal clara)
+- ✅ Não é planta tóxica
+
+**Outras Características:**
+- **Flor:** Branca e levemente rosada (rosa bebê)
+- **Folha:** Lisa (diferente da Petúnia Mexicana *Ruellia simplex* que tem porosidade)
+- **Medicina oriental:** Usada na medicina chinesa e japonesa para várias funções
+
+---
 
 ### Alecrim
 
-Nome Científico e Popular
-O nome científico mais tradicional mencionado é rosmarinus officinalis.
-É conhecido popularmente como "alecrim do campo" (variedade grande).
-Classificação Energética
-É classificado como uma erva morna.
-Associações Espirituais e Usos na Umbanda
-Possui um poder espiritual gigantesco.
-É amplamente utilizado para limpar e descarregar.
-Acredita-se que tem um poder encaminhador e dissipador muito grande.
-Algumas doutrinas o unificam com os quatro elementos.
-É considerado um defumador natural e o bastão feito com ele é muito bom.
-É uma carta coringa.
-É utilizado nas energias de Oxalá, Oxóssi, Oxum e Xangô.
-Também é cultivado na força de Obá e Ibeji.
-Sua defumação é recomendada para trazer harmonia, alegria, felicidade e prosperidade.
-Pode ser adicionado a outras ervas como canela, louro e cúrcuma para potencializar a prosperidade.
-É uma das melhores ervas para fortalecer o Ori (cabeça, intuição, concentração e desenvolvimento).
-Pode ser usado para ativar a energia em banhos de Oxalá, juntamente com rosa branca, boldo e outras ervas.
-É uma das 12 ervas com poder atrator.
-É utilizado em defumações para conflitos domésticos, trazendo harmonia.
-É conhecido como erva da harmonia e da alegria.
-Benefícios Medicinais
-É útil para enxaquecas e dores de cabeça, pois tem uma ação muito legal para isso, mas deve ser usado com cuidado por quem tem pressão baixa, pois pode derrubar a pressão.
-Pode ser combinado com guaco, gengibre, mastruz, limão, mel e alho em xaropes para gripes e resfriados, sendo uma receita poderosa.
-Ajuda na capacidade cognitiva.
-Outras Características
-Suas resinas são importantes por serem um conservador natural, mantendo o poder da essência por muito tempo.
+Erva de poder espiritual gigantesco, amplamente utilizada na Umbanda e reconhecida por suas propriedades medicinais e mágicas.
+
+**Nome Científico e Popular:**
+- **Nome científico:** *Rosmarinus officinalis*
+- **Nome popular:** Alecrim do campo (variedade grande)
+
+**Classificação Energética:** Erva morna
+
+**Orixás Associados:**
+- Oxalá, Oxóssi, Oxum e Xangô
+- Também cultivado na força de Obá e Ibeji
+- **Carta coringa** (sem restrições)
+
+**Associações Espirituais:**
+- Algumas doutrinas o unificam com os quatro elementos
+- Defumador natural (bastão muito bom)
+
+**Usos Espirituais e Mágicos:**
+
+**1. Limpeza e Descarrego:**
+- Amplamente utilizado para limpar e descarregar
+- Poder encaminhador e dissipador muito grande
+
+**2. Desenvolvimento Espiritual:**
+- **Uma das melhores ervas para fortalecer o Ori** (cabeça, intuição, concentração e desenvolvimento)
+- Ativa energia em banhos de Oxalá (com rosa branca, boldo e outras)
+
+**3. Harmonia e Prosperidade:**
+- Defumação traz: harmonia, alegria, felicidade e prosperidade
+- **Potencializar prosperidade:** Adicionar canela, louro e cúrcuma
+- Erva da harmonia e da alegria
+
+**4. Poder Atrator:**
+- Uma das 12 ervas com poder atrator
+- Defumações para conflitos domésticos
+
+**Benefícios Medicinais:**
+
+- ✅ Enxaquecas e dores de cabeça (ação muito eficaz)
+- ⚠️ Cuidado com pressão baixa (pode derrubar a pressão)
+- ✅ Xaropes para gripes/resfriados: combinar com guaco, gengibre, mastruz, limão, mel e alho
+- ✅ Ajuda na capacidade cognitiva
+
+**Outras Características:**
+- **Resinas:** Conservador natural, mantém poder da essência por muito tempo
+
+---
 
 ### Alibé
 
-Nome e Classificação
-O Alibé é a mesma planta conhecida como Aridan, cujo nome científico é Afirmante Tetrapleura Tetraptera.
-Usos Espirituais e Magísticos
-É muito utilizado em assentamentos de Orixás como Ogum, Omulu, Exu e Iansã.
-É considerado uma das favas mais poderosas para quebrar feitiços (magia negativa) e para proteção.
-É amplamente empregado em patuás e breves (amuletos de proteção).
-Está ligado à ativação da vitalidade e da energia do fogo.
-Pode ser usado em banhos: a fava pode ser quebrada em três pedaços ou ralada (embora seja dura) e fervida. Recomenda-se seu uso em banhos de uma única vez, a menos que uma entidade ou guia oriente o contrário.
-Possui um forte poder ligado à fala e comunicação.
-É uma das duas principais favas utilizadas para Exu em assentamentos.
-Propriedades Adicionais
-Possui benefícios medicinais.
-É uma fava muito dura para ser macerada ou ralada.
+**Nome e Classificação:**
+- **Nome popular:** Alibé
+- **Também conhecido como:** Aridan
+- **Nome científico:** *Tetrapleura tetraptera*
+
+**Classificação:** Fava (uma das mais poderosas)
+
+**Orixás Associados:**
+- Ogum, Omulu, Exu e Iansã
+- Uma das duas principais favas para Exu em assentamentos
+
+**Usos Espirituais e Mágicos:**
+
+**1. Proteção Poderosa:**
+- Uma das favas mais poderosas para quebrar feitiços (magia negativa)
+- Proteção muito forte
+- Amplamente empregado em patuás e breves (amuletos)
+
+**2. Ativação e Vitalidade:**
+- Ligado à ativação da vitalidade
+- Energia do fogo
+- Forte poder ligado à fala e comunicação
+
+**3. Assentamentos:**
+- Muito utilizado em assentamentos de Orixás
+- Uma das duas favas principais para Exu
+
+**Uso em Banhos:**
+- Fava pode ser quebrada em três pedaços ou ralada (embora seja dura)
+- Fervida para banho
+- ✅ Recomenda-se uso em banhos de uma única vez
+- Exceção: Se entidade ou guia orientar diferente
+
+**Propriedades Adicionais:**
+- Possui benefícios medicinais
+- Fava muito dura para macerar ou ralar
+
+---
 
 ### Araçazeira
 
-A Araçazeira, ou Araçá, é uma planta de grande valor nas práticas espirituais e possui características energéticas e botânicas distintas, além de ser semelhante à Goiabeira em alguns aspectos.
-Nomes Populares e Científicos
-É popularmente conhecida como Araçá ou Araçá da praia.
-Seu nome científico é Psidium cattleianum.
-Semelhança com a Goiabeira
-Possui semelhança energética muito grande com a Goiabeira (Psidium guajava), tanto no gosto quanto na energia.
-Classificação Energética
-É classificada como uma erva morna.
-É descrita como uma erva condutora de energias.
-Orixás e Energias Associadas
-Está fortemente ligada a Iemanjá, Oxóssi, Xangô, Ogum e Ossaim.
-É considerada uma das principais ervas da linha de Caboclo.
-Alguns a associam à força dos Marinheiros devido à sua afinidade com a areia e praias, onde costuma nascer.
-Usos Espirituais e Mágicos
-Expansão e Crescimento: Traz expansão de energias, crescimento e confiança.
-Abertura de Caminhos: Está ligada à abertura de caminhos.
-Cura: É uma planta associada à cura.
-Transe Espiritual: Auxilia no transe espiritual e na condução de energias.
-Limpeza e Proteção: Possui funções de limpeza e proteção.
-Características Físicas
-Gosta muito de areia e geralmente nasce em praias.
-Pode atingir grandes proporções em locais como o Guarujá.
-Em resumo, a Araçazeira é uma erva versátil, com grande poder de condução e expansão energética, utilizada principalmente para abertura de caminhos, crescimento espiritual e cura, e é um importante elemento para diversas linhas de trabalho espiritual.
+A Araçazeira, ou Araçá, é uma planta de grande valor nas práticas espirituais e possui características energéticas e botânicas distintas, além de ser semelhante à Goiabeira.
+
+**Nomes Populares e Científicos:**
+- **Nome popular:** Araçá, Araçá da praia
+- **Nome científico:** *Psidium cattleianum*
+
+**Semelhança com a Goiabeira:**
+- Grande semelhança energética com Goiabeira (*Psidium guajava*)
+- Similar no gosto e na energia
+
+**Classificação Energética:** Erva morna
+- Erva condutora de energias
+
+**Orixás e Energias Associadas:**
+- **Fortemente ligada a:** Iemanjá, Oxóssi, Xangô, Ogum e Ossaim
+- **Principal erva:** Linha de Caboclo
+- **Também:** Força dos Marinheiros (afinidade com areia e praias)
+
+**Usos Espirituais e Mágicos:**
+
+**1. Expansão e Crescimento:**
+- Expansão de energias
+- Crescimento e confiança
+
+**2. Abertura de Caminhos:**
+- Ligada à abertura de caminhos
+
+**3. Cura:**
+- Planta associada à cura
+
+**4. Transe Espiritual:**
+- Auxilia no transe espiritual
+- Condução de energias
+
+**5. Limpeza e Proteção:**
+- Funções de limpeza e proteção
+
+**Características Físicas:**
+- Gosta muito de areia
+- Geralmente nasce em praias
+- Pode atingir grandes proporções (ex: Guarujá)
+
+**Resumo:**
+A Araçazeira é uma erva versátil, com grande poder de condução e expansão energética, utilizada principalmente para abertura de caminhos, crescimento espiritual e cura, e é um importante elemento para diversas linhas de trabalho espiritual.
+
+---
 
 ### Babosa
 
-A Babosa, cientificamente conhecida como Aloe vera, é uma planta amplamente valorizada por suas propriedades de cura, restauração e força, e por seu uso em rituais de quebra de energias negativas e destravamento mediúnico.
-Nomes Populares e Científicos
-É conhecida popularmente como Babosa.
-Uma das espécies mencionadas é Aloe saponaria.
-Usos Espirituais e Mágicos
-Cura e Restauração: É amplamente utilizada para cura, restauração e força.
-Quebra de Energias Negativas: Ajuda na quebra de energias negativas.
-Destravamento Mediúnico: É muito utilizada para destravamento mediúnico.
-Limpeza: Possui poder de limpeza.
-Vitalidade: Traz a ativação da vitalidade.
-Renovação de Energia: Gosta-se de utilizá-la para renovar a energia de cruzeiros.
-Conexão Espiritual: É ligada à pele, às almas e ao transporte de energias.
-Preparo para Banhos: Não se deve macerar a babosa diretamente, pois é difícil e pode machucar as mãos devido aos espinhos. Recomenda-se tirar a polpa com uma faca, limpá-la e unificá-la com água, podendo até pilar com menos água para dissolver melhor.
-Lavagem de guias: É utilizada na lavagem de guias de Pretos Velhos quando recomendado por entidades.
-Benefícios Medicinais
-Poder Cicatrizante e Regenerador: Possui função cicatrizadora e ajuda na regeneração das células. Um exemplo dado foi o caso de um rapaz com uma ferida no pé que não cicatrizava e foi curado com babosa.
-Cabelo: É excelente para o cabelo, sendo rica em vitamina A, antioxidantes e vitamina K. Pode ser usada com clara de ovo para queda de cabelo e com mel para brilho. Também pode ser misturada ao shampoo para ativar a raiz do cabelo, e a unificação com folha de goiabeira potencializa os benefícios capilares.
-Problemas Estomacais: É muito boa para gastrite, esofagite e problemas de digestão.
-Preparo Medicinal (Xarope): Um remédio tradicional para problemas estomacais pode ser feito com 250g de polpa de babosa para cada 500g de mel, com uma a duas colheres de cachaça de alambique para conservação. Deve ser mantido em local fresco e fora do sol.
-Outros Benefícios: Ajuda em inflamações e dores de cabeça.
-Observação sobre Suplementos: Existem produtos naturais de babosa no mercado (como suco de babosa), mas vale ressaltar a importância de verificar a pureza e a quantidade.
-Precauções e Toxicidade
-Aloína: Ao cortar a babosa, ela libera um líquido amarelo chamado aloína, que tem um cheiro forte e pode causar problemas estomacais se ingerido. É crucial eliminar essa aloína, seja deixando a babosa escorrer por 2-3 horas ou, preferencialmente, cortando a polpa e lavando-a muito bem.
-Alergias e Queimaduras: Algumas pessoas têm alergia à babosa e ela pode causar queimaduras. Recomenda-se cautela, especialmente ao aplicar em queimaduras ou machucados, e é bom combinar com pomadas como a neomicina.
-Problemas de fígado: Mesmo sem a aloína, pessoas com problemas de fígado (como hepatite, cirrose ou genética para problemas hepáticos) devem ter muito cuidado com o uso da babosa.
-Uso Interno: Embora tenha benefícios medicinais para uso interno, sempre buscando recomendação médica e cuidado com o excesso.
-A Babosa é, portanto, uma erva poderosa e versátil, com vasta aplicação na saúde e em rituais espirituais, mas seu manuseio e consumo exigem atenção às suas particularidades e potenciais efeitos adversos.
+<span class="drop-cap">B</span>abosa, cientificamente conhecida como *Aloe vera*, é uma planta amplamente valorizada por suas propriedades de cura, restauração e força, e por seu uso em rituais de quebra de energias negativas e destravamento mediúnico.
+
+**Nomes Populares e Científicos:**
+- **Nome popular:** Babosa
+- **Espécies:** *Aloe vera*, *Aloe saponaria*
+
+**Classificação Energética:** Erva morna
+
+**Usos Espirituais e Mágicos:**
+
+**1. Cura e Restauração:**
+- Amplamente utilizada para cura, restauração e força
+- Quebra de energias negativas
+- Destravamento mediúnico
+
+**2. Vitalidade e Limpeza:**
+- Poder de limpeza
+- Ativação da vitalidade
+- Renovação de energia de cruzeiros
+
+**3. Conexão Espiritual:**
+- Ligada à pele, às almas e ao transporte de energias
+- Lavagem de guias de Pretos Velhos (quando recomendado por entidades)
+
+**Preparo para Banhos:**
+⚠️ **Não macerar diretamente** (espinhos podem machucar)
+- Tirar a polpa com uma faca
+- Limpar bem
+- Unificar com água
+- Pode pilar com menos água para dissolver melhor
+
+**Benefícios Medicinais:**
+
+**1. Cicatrização e Regeneração:**
+- Função cicatrizadora poderosa
+- Regeneração das células
+- Eficaz em feridas que não cicatrizam
+
+**2. Cabelo:**
+- Rica em vitamina A, antioxidantes e vitamina K
+- Com clara de ovo: queda de cabelo
+- Com mel: brilho
+- Misturada ao shampoo: ativa raiz do cabelo
+- Unificação com folha de goiabeira: potencializa benefícios
+
+**3. Problemas Estomacais:**
+- Gastrite
+- Esofagite
+- Problemas de digestão
+
+**4. Outros Benefícios:**
+- Ajuda em inflamações
+- Dores de cabeça
+
+**Preparo Medicinal (Xarope):**
+- 250g de polpa de babosa
+- 500g de mel
+- 1-2 colheres de cachaça de alambique (conservação)
+- Manter em local fresco e fora do sol
+
+⚠️ **PRECAUÇÕES E TOXICIDADE:**
+
+**Aloína (líquido amarelo):**
+- Cheiro forte
+- Pode causar problemas estomacais
+- **Como eliminar:**
+  - Deixar escorrer 2-3 horas, OU
+  - Cortar a polpa e lavar muito bem
+
+**Alergias:**
+- Algumas pessoas têm alergia à babosa
+- Pode causar queimaduras
+- Cautela ao aplicar em queimaduras/machucados
+- Combinar com pomadas (neomicina)
+
+**Problemas de fígado:**
+- Pessoas com hepatite, cirrose ou genética para problemas hepáticos: muito cuidado
+- Mesmo sem aloína, requer precaução
+
+**Uso Interno:**
+- Sempre buscar recomendação médica
+- Cuidado com excesso
+
+**Suplementos:**
+- Verificar pureza e quantidade de produtos comerciais
+
+**Resumo:**
+A Babosa é uma erva poderosa e versátil, com vasta aplicação na saúde e em rituais espirituais, mas seu manuseio e consumo exigem atenção às suas particularidades e potenciais efeitos adversos.
+
+---
 
 ### Beldroega
 
-A Beldroega é uma erva valorizada tanto por suas propriedades espirituais quanto medicinais, sendo classificada como uma erva morna e reconhecida por suas qualidades regeneradoras e nutritivas .
-Nomes Populares e Científicos
-É conhecida popularmente como Beldroega.
-Seu nome científico é Portulaca oleracea.
-Classificação Energética
-É classificada como uma erva morna . Apesar de ser rasteira, não é considerada quente .
-Orixás e Energias Associadas
-É associada a Exu e Omolu .
-Também tem uma ligação forte com Obaluaiê devido à sua função regeneradora e de cura física e espiritual .
-Usos Espirituais e Mágicos
-Regeneração e Cura: É uma erva regeneradora, ideal para quem está esgotado, e traz cura tanto espiritual quanto física . É muito utilizada em locais de tambor de mina para regeneração de pessoas "caídas" ou "derrubadas" .
-Vitalidade e Ativação Energética: Possui poder de ativação energética e vitalidade .
-Limpeza: Possui um grande poder de limpeza .
-Transformação: A floração da Beldroega, em algumas doutrinas, é ativada como "pipoca", simbolizando transformação e rompimento .
-Banhos e Oferendas: Utilizada em banhos e também em oferendas e trabalhos com pipoca para fortalecer a cura . Também é usada em oferendas para a linha da malandragem e dos baianos, sendo tradicional na Bahia .
-Prevenção de Doenças: Mencionada em rituais para a prevenção de doenças, especialmente em situações onde há muito sofrimento ou excesso de carga energética em benzedeiras .
-Benefícios Medicinais
-Rica em Nutrientes: É rica em cálcio e ferro, e também em zinco, magnésio e potássio .
-Combate à Anemia: Muito utilizada para combater a anemia e dificuldades de alimentação .
-Fortalecimento do Sistema Imunológico: Ajuda a fortalecer o sistema imunológico devido à sua riqueza em vitamina C .
-Regula Colesterol e Diabetes: Ajuda a combater o colesterol alto e o diabetes .
-Outros Benefícios: Contribui para a calcificação e absorção de nutrientes (devido ao magnésio) . Não tem gosto ruim, sendo fácil de consumir .
-Consumo: Pode ser consumida crua (como em sucos ou saladas), e sua absorção de nutrientes é melhor quando refogada.
-Precauções e Manuseio
-Para o chá, recomenda-se uma colher de chá seca para cada xícara, ou uma colher de sopa de erva fresca para cada xícara (cerca de 10g) .
-Embora seja nutritiva, pessoas com problemas renais devem evitar o excesso devido à quantidade de proteína.
-A Beldroega é, portanto, uma erva poderosa para quem busca renovação, força vital e equilíbrio, além de ser um excelente complemento nutricional e medicinal.
+A Beldroega é uma erva valorizada tanto por suas propriedades espirituais quanto medicinais, sendo classificada como uma erva morna e reconhecida por suas qualidades regeneradoras e nutritivas.
+
+**Nomes Populares e Científicos:**
+- **Nome popular:** Beldroega
+- **Nome científico:** *Portulaca oleracea*
+
+**Classificação Energética:** Erva morna
+- Apesar de rasteira, não é considerada quente
+
+**Orixás e Energias Associadas:**
+- **Associada a:** Exu e Omolu
+- **Ligação forte:** Obaluaiê (função regeneradora e cura física/espiritual)
+
+**Usos Espirituais e Mágicos:**
+
+**1. Regeneração e Cura:**
+- Erva regeneradora, ideal para quem está esgotado
+- Cura espiritual e física
+- Muito utilizada em tambor de mina para regeneração de pessoas "caídas" ou "derrubadas"
+
+**2. Vitalidade e Ativação:**
+- Poder de ativação energética
+- Vitalidade
+
+**3. Limpeza:**
+- Grande poder de limpeza
+
+**4. Transformação:**
+- Floração ativada como "pipoca" (simboliza transformação e rompimento)
+
+**Rituais e Aplicações:**
+- **Banhos:** Utilizada para limpeza e regeneração
+- **Oferendas e trabalhos com pipoca:** Fortalecer a cura
+- **Oferendas:** Linha da malandragem e baianos (tradicional na Bahia)
+- **Prevenção de doenças:** Rituais para quem sofre muito ou benzedeiras com excesso de carga
+
+**Benefícios Medicinais:**
+
+**Rica em Nutrientes:**
+- 💊 Cálcio e ferro
+- 💊 Zinco, magnésio e potássio
+- 💊 Vitamina C (fortalece sistema imunológico)
+
+**Benefícios:**
+- ✅ Combate anemia e dificuldades de alimentação
+- ✅ Fortalece sistema imunológico
+- ✅ Regula colesterol alto
+- ✅ Ajuda no diabetes
+- ✅ Calcificação e absorção de nutrientes (magnésio)
+- ✅ Não tem gosto ruim
+
+**Consumo:**
+- Crua: sucos ou saladas
+- Refogada: melhor absorção de nutrientes
+
+**Preparo do Chá:**
+- 1 colher de chá seca por xícara, OU
+- 1 colher de sopa fresca (~10g) por xícara
+
+⚠️ **Precauções:**
+- Pessoas com problemas renais: evitar excesso (devido à proteína)
+
+**Resumo:**
+A Beldroega é uma erva poderosa para quem busca renovação, força vital e equilíbrio, além de ser um excelente complemento nutricional e medicinal.
+
+---
 
 ### Boldo
 
-O boldo é uma planta amplamente conhecida e utilizada tanto por suas propriedades medicinais quanto espirituais, especialmente na Umbanda. 
-Nomes Populares e Científicos
-É popularmente conhecido como boldo.
-Uma de suas espécies é chamada de Plectranthus barbatus.
-No Brasil, uma espécie é conhecida como "tapete de oxalá" por conta de sua folha aveludada, embora o verdadeiro Tapete de Oxalá seja outra espécie rasteira (Colleos fomosos).
-Existem diversas famílias de Plectranthus e Colleus que podem ser confundidas com o boldo, como o Colleos Barbáos e o Colleos Amboicitos (hortelã pimenta).
-O Plectranthus Boldos é o mais famoso e é utilizado na fabricação de medicamentos, como o Hepatil.
-Classificação Energética e Orixás
-O boldo é classificado como uma erva morna.
-Dentro da Umbanda, é atrelado à energia de Oxalá.
-As ervas mornas, como o boldo, são mais calmas e têm a função de equilibrar ervas quentes e proporcionar uma limpeza e descarrego mais suaves.
-Usos Espirituais e Mágicos na Umbanda
-Equilíbrio e Energização: Sua principal função é fortalecer e trazer equilíbrio e energização.
-Intuição: Ajuda a trabalhar a intuição.
-Limpeza: Possui uma função de limpeza, embora não seja o foco principal de sua energia.
-Consagração: É muito utilizado para a consagração de aratos (objetos sagrados), imagens e em banhos pré-gira.
-"Carta Coringa": Pode ser utilizado como uma "carta coringa" dentro da Umbanda, permitindo sua mistura com ervas quentes.
-Banhos Macerados: É ideal para ser utilizado em banhos macerados, aplicados da cabeça para baixo.
-A quantidade de folhas para banho deve ser generosa; por exemplo, sete folhas grandes ou cerca de 30 folhas pequenas para um banho eficaz. Uma pequena quantidade como sete folhinhas de boldo não seria suficiente.
-Quartinhas: Usa-se para conversar e ativar a energia de Oxalá em quartinhas, muitas vezes com água de tempestade (água de chuva forte), para uma ativação direta entre a pessoa e o orixá, trazendo o "ejé verde" (sangue verde da planta).
-"Bate-Folhas": Não é tão eficaz para "bate-folhas" devido à sua folha ser mole e quebrar facilmente.
-Benefícios Medicinais
-Saúde do fígado: Atua na questão do fígado, auxiliando na reconstrução e como antioxidante.
-Diurético: É uma erva diurética.
-Pressão Arterial: É "fantástico" para quem tem pressão arterial alta.
-Sistema Digestivo: Ajuda em problemas de queimação no estômago devido à sua ação digestiva, impulsionada pelo nutriente chamado barbatusina.
-Problemas de Bile: Auxilia em questões relacionadas à bile.
-Medicamentos: É a base para a fabricação de alguns medicamentos conhecidos, como o Hepatil.
-A semelhança entre as espécies de boldo não é apenas no nome científico, mas também nos benefícios que a erva oferece quando utilizada como chá.
-Outras Características
-Apesar de ser uma erva morna, o boldo pode ser combinado com ervas quentes para equilibrar o banho.
-Como outras ervas mornas, o boldo é considerado "mais tranquilo".
-Seu chá pode ter uma função calmante, embora a Losna (Artemisia absinthium) seja mais conhecida por essa característica.
+O boldo é uma planta amplamente conhecida e utilizada tanto por suas propriedades medicinais quanto espirituais, especialmente na Umbanda.
+
+**Nomes Populares e Científicos:**
+- **Nome popular:** Boldo
+- **Nome científico principal:** *Plectranthus barbatus* (mais famoso, usado em medicamentos como Hepatil)
+- **Também:** "Tapete de oxalá" no Brasil (folha aveludada)
+  - 🚨 Verdadeiro Tapete de Oxalá: *Coleus forskohlii* (espécie rasteira)
+
+**Confusões comuns:**
+- Diversas famílias de *Plectranthus* e *Coleus*
+- *Coleus barbatus*
+- *Coleus amboinicus* (hortelã pimenta)
+
+**Classificação Energética:** Erva morna
+- Mais calma
+- Função: equilibrar ervas quentes
+- Limpeza e descarrego mais suaves
+
+**Orixá Associado:**
+- **Oxalá** (principal)
+
+**Usos Espirituais e Mágicos na Umbanda:**
+
+**1. Equilíbrio e Energização:**
+- Função principal: fortalecer e trazer equilíbrio
+- Energização
+
+**2. Intuição:**
+- Ajuda a trabalhar a intuição
+
+**3. Limpeza:**
+- Função de limpeza (não é o foco principal)
+
+**4. Consagração:**
+- Muito utilizado para consagração de aratos (objetos sagrados)
+- Imagens
+- Banhos pré-gira
+
+**5. "Carta Coringa":**
+- Pode ser utilizado como carta coringa na Umbanda
+- Permite mistura com ervas quentes
+
+**Banhos Macerados:**
+- Ideal para banhos macerados
+- Aplicados da cabeça para baixo
+- **Quantidade:** Generosa
+  - 7 folhas grandes, OU
+  - ~30 folhas pequenas
+  - ⚠️ 7 folhinhas pequenas não são suficientes
+
+**Quartinhas:**
+- Usado para conversar e ativar energia de Oxalá
+- Com água de tempestade (água de chuva forte)
+- Ativação direta entre pessoa e orixá
+- Traz "ejé verde" (sangue verde da planta)
+
+**Bate-Folhas:**
+- ⚠️ Não tão eficaz (folha mole quebra facilmente)
+
+**Benefícios Medicinais:**
+
+- ✅ **Saúde do fígado:** Reconstrói, antioxidante
+- ✅ **Diurético**
+- ✅ **Pressão arterial alta:** Fantástico
+- ✅ **Sistema digestivo:** Queimação no estômago (ação digestiva da barbatusina)
+- ✅ **Problemas de bile**
+- ✅ **Medicamentos:** Base do Hepatil e outros
+
+**Outras Características:**
+- Pode ser combinado com ervas quentes para equilibrar banho
+- Erva "mais tranquila"
+- Chá pode ter função calmante (Losna é mais conhecida)
+- Semelhança entre espécies no nome e benefícios
+
+---
 
 ### Folha da Fortuna
 
-A Folha da Fortuna é uma planta bastante conhecida e valorizada em diversas práticas, especialmente na Umbanda e em algumas tradições indígenas, sendo frequentemente associada à prosperidade e abertura de caminhos.
-Nomes Populares e Científicos
-É também conhecida como Folha da Costa.
-Seu nome científico é Kalanchoe pinnata ou Bryophyllum pinnata.
-É importante notar que a Folha da Fortuna é frequentemente confundida visualmente com a Mãe de Milhares (Bryophyllum daigremontianum ou Kalanchoe daigremontiana) e o Saião (Kalanchoe brasiliensis), pois todas pertencem à mesma família (suculentas) e são muito parecidas. No entanto, são espécies diferentes.
-Classificação Energética
-Classificada como uma erva morna.
-Orixás e Entidades Associadas
-É amplamente utilizada na força de Iemanjá e Oxalá.
-Também é associada a Exu para prosperidade.
-Usos Espirituais e Mágicos
-Prosperidade e Abertura de Caminhos: É uma das principais folhas para trazer vitalidade, prosperidade, fala e abertura de caminho, especialmente para quem trabalha com comércio e lida com pessoas.
-Quebra de Energias Negativas: O "fogo ativador" da planta ajuda a quebrar energias negativas, destruir laços e ciclos de desânimo.
-Assentamentos, Breves e Patuás: É utilizada em assentamentos, breves e patuás.
-Defumação: Para defumação, é um pouco mais complicado de usar porque é uma planta suculenta. O processo de dessecação (secagem) deve ser feito na sombra e em local não úmido, pois se for colocada diretamente no sol, pode apodrecer, comprometendo sua potência.
-Comunicação: Traz uma força de comunicação e auxilia na melhora da energia de quem lida com pessoas.
-Benefícios Medicinais e Precauções
-Uso Medicinal Indígena: Indígenas, como os Caiapós e Xavantes, utilizavam-na em compressas para dores de joelho, artrite, artrose e outras dores articulares.
-Problemas de estômago: Possui funções medicinais até para o estômago, mas o uso requer cautela, pois há muitos estudos ainda sendo feitos sobre ela.
-Toxicidade: A Mãe de Milhares, que é da mesma família e parecida, pode ser tóxica se utilizada fresca, especialmente para quem tem problemas hepáticos. É sugerido cautela ao comprar a erva seca, pois pode haver trocas de espécies.
-É uma planta suculenta, o que significa que retém muita água.
-Em resumo, a Folha da Fortuna é uma erva poderosa para ativação de prosperidade, abertura de caminhos e quebra de energias negativas, com forte ligação a Oxalá e Iemanjá. Seu uso em defumação exige um processo de secagem específico, e seu consumo medicinal ainda demanda cautela e mais estudos.
+<span class="drop-cap">F</span>olha da Fortuna é uma planta bastante conhecida e valorizada em diversas práticas, especialmente na Umbanda e em algumas tradições indígenas, sendo frequentemente associada à prosperidade e abertura de caminhos.
+
+**Nomes Populares e Científicos:**
+- **Nome popular:** Folha da Fortuna, Folha da Costa
+- **Nome científico:** *Kalanchoe pinnata* ou *Bryophyllum pinnata*
+
+**⚠️ Confusão com outras espécies:**
+- Mãe de Milhares (*Bryophyllum daigremontianum* ou *Kalanchoe daigremontiana*)
+- Saião (*Kalanchoe brasiliensis*)
+- Todas pertencem à mesma família (suculentas) e são muito parecidas, mas são espécies diferentes
+
+**Classificação Energética:** Erva morna
+
+**Orixás e Entidades Associadas:**
+- **Principal:** Iemanjá e Oxalá
+- **Também:** Exu (para prosperidade)
+
+**Usos Espirituais e Mágicos:**
+
+**1. Prosperidade e Abertura de Caminhos:**
+- Uma das principais folhas para trazer vitalidade
+- Prosperidade
+- Fala e abertura de caminho
+- Especialmente para quem trabalha com comércio e lida com pessoas
+
+**2. Quebra de Energias Negativas:**
+- "Fogo ativador" da planta
+- Quebra energias negativas
+- Destrói laços e ciclos de desânimo
+
+**3. Assentamentos, Breves e Patuás:**
+- Utilizada em assentamentos
+- Breves
+- Patuás
+
+**4. Defumação:**
+- ⚠️ Mais complicado (planta suculenta)
+- Dessecação (secagem) deve ser feita na sombra
+- Local não úmido
+- Se colocada diretamente no sol, pode apodrecer
+
+**5. Comunicação:**
+- Traz força de comunicação
+- Melhora energia de quem lida com pessoas
+
+**Benefícios Medicinais:**
+
+**Uso Medicinal Indígena:**
+- Indígenas (Caiapós, Xavantes) utilizavam em compressas
+- Dores de joelho
+- Artrite
+- Artrose
+- Outras dores articulares
+
+**Problemas de estômago:**
+- Possui funções medicinais
+- ⚠️ Uso requer cautela (muitos estudos ainda sendo feitos)
+
+**⚠️ Toxicidade:**
+- Mãe de Milhares (mesma família) pode ser tóxica se utilizada fresca
+- Especialmente para quem tem problemas hepáticos
+- Cautela ao comprar erva seca (pode haver troca de espécies)
+- É uma planta suculenta (retém muita água)
+
+**Resumo:**
+A Folha da Fortuna é uma erva poderosa para ativação de prosperidade, abertura de caminhos e quebra de energias negativas, com forte ligação a Oxalá e Iemanjá. Seu uso em defumação exige processo de secagem específico, e seu consumo medicinal demanda cautela.
+
+---
 
 ### Fruta do Conde
 
-Classificação
-A fruta do conde pertence à mesma família da pinha e da graviola, mas são plantas diferentes.
-Nome Científico
-Embora não seja explicitamente dado para a fruta do conde, é mencionado que todas as plantas dessa família (incluindo pinha e graviola) têm "Annona" como o primeiro nome científico.
-Uso Espiritual e Magístico
-No Batuque (uma tradição do Sul do Brasil), a fruta do conde é amplamente utilizada em magias para a justiça.
-Algumas tradições também a utilizam em oferendas para Xangô.
-Benefícios Medicinais
-Assim como a pinha, que pertence à mesma família, a fruta do conde (e suas folhas) possui benefícios diuréticos, mesmo que não contenha outros antioxidantes específicos.
-Características Notáveis
-Em relação à pinha, a fruta do conde "ganhou conotação no sul, no batuque, como uma folha amplamente usada para injustiças".
+A Fruta do Conde pertence à mesma família da pinha e da graviola, mas são plantas diferentes.
+
+**Nome Científico:**
+- Todas as plantas dessa família (incluindo pinha e graviola) têm "Annona" como primeiro nome científico
+
+**Classificação Energética:** (Não especificada explicitamente)
+
+**Uso Espiritual e Mágico:**
+
+**1. Batuque (Tradição do Sul do Brasil):**
+- Amplamente utilizada em magias para a justiça
+- Ganhou conotação como "folha amplamente usada para injustiças"
+
+**2. Oferendas:**
+- Algumas tradições a utilizam em oferendas para Xangô
+
+**Benefícios Medicinais:**
+- ✅ **Diurético:** Assim como a pinha (mesma família), a fruta do conde e suas folhas possuem benefícios diuréticos
+- Mesmo que não contenha outros antioxidantes específicos
+
+---
 
 ### Goiabeira
 
@@ -860,75 +1817,174 @@ O nome científico dela é Psidium guajava. Ela possui semelhança com a Araçaz
 Classificação Energética
 É classificada como uma erva morna.
 Ervas mornas têm uma função de limpeza e de equilibrar ervas quentes, amenizando seus lados negativos.
-Orixás e Energias Associadas
-Está muito ligada a Iemanjá, Oxóssi e Xangô.
-É considerada uma das principais ervas da linha de Caboclo.
-Alguns a associam à força dos Marinheiros por sua ligação com a energia da praia e da areia, pois é uma planta que gosta muito de areia e normalmente nasce em praias.
-É uma erva muito recomendada para filhos de Oxóssi.
-Usos Espirituais e Mágicos
-Limpeza e Equilíbrio: Possui uma função de limpeza muito forte e de equilíbrio.
-Expansão e Crescimento: Traz expansão de energias, crescimento e confiança.
-Cura: É uma planta ligada à cura.
-Abertura de Caminhos: Está associada à abertura de caminhos.
-Desenvolvimento Espiritual: É considerada uma erva condutora de energias que auxilia no transe espiritual.
-Banhos: É muito utilizada em banhos, podendo ser combinada com ervas quentes para descarrego. 
-Rituais: Pode ser utilizada em bate-folhas e na consagração de ferramentas ou firmezas de Oxóssi.
-Benefícios Medicinais
-Diarreia: É excelente para diarreia.
-Sistema Imunológico: Fortalece o sistema imunológico devido à sua riqueza em Vitamina C.
-Gripes e Resfriados: Ajuda a combater gripes e resfriados.
-Diabetes: Contribui para a redução da diabetes.
-Função Diurética: Possui uma função diurética muito forte, ajudando a expelir o excesso de água extracelular do corpo, o que pode auxiliar na regulação da pressão arterial.
-Saúde Capilar: É excepcional para quedas de cabelo e problemas de caspa. Para uso capilar, o chá deve ser feito com água fria e esfregado no couro cabeludo, podendo ser usado com shampoo para melhor fixação.
-Pode ser combinada com babosa para potencializar os resultados capilares.
-Precauções e Outras Informações
-A principal vitamina da goiabeira é a Vitamina A, mas também é riquíssima em Vitamina C.
-A Goiabeira é uma planta que cresce bastante, podendo atingir grandes proporções em locais como o Guarujá.
-É uma das ervas recomendadas para repor energias e combater problemas de intestino preso, junto com o suco de caju.
+### Goiabeira
+
+A Goiabeira é uma planta altamente valorizada em práticas espirituais e também reconhecida por suas propriedades medicinais.
+
+**Nomes Populares e Científicos:**
+- **Nome popular:** Goiabeira
+- **Nome científico:** *Psidium guajava*
+- **Semelhança:** Araçazeira (*Psidium cattleianum*) em termos de gosto e energia (espécies diferentes)
+
+**Classificação Energética:** Erva morna
+- Função de limpeza
+- Equilibrar ervas quentes, amenizando seus lados negativos
+
+**Orixás e Energias Associadas:**
+- **Principal:** Iemanjá, Oxóssi e Xangô
+- **Linha:** Uma das principais ervas da linha de Caboclo
+- **Marinheiros:** Por ligação com energia da praia e areia (planta que gosta de areia e nasce em praias)
+- **Recomendada:** Muito recomendada para filhos de Oxóssi
+
+**Usos Espirituais e Mágicos:**
+
+**1. Limpeza e Equilíbrio:**
+- Função de limpeza muito forte
+- Equilíbrio
+
+**2. Expansão e Crescimento:**
+- Traz expansão de energias
+- Crescimento
+- Confiança
+
+**3. Cura:**
+- Planta ligada à cura
+
+**4. Abertura de Caminhos:**
+- Associada à abertura de caminhos
+
+**5. Desenvolvimento Espiritual:**
+- Erva condutora de energias
+- Auxilia no transe espiritual
+
+**Rituais:**
+- **Banhos:** Muito utilizada, podendo ser combinada com ervas quentes para descarrego
+- **Bate-folhas:** Pode ser utilizada
+- **Consagração:** Ferramentas ou firmezas de Oxóssi
+
+**Benefícios Medicinais:**
+
+- ✅ **Diarreia:** Excelente
+- ✅ **Sistema imunológico:** Fortalece (riqueza em Vitamina C)
+- ✅ **Gripes e resfriados:** Combate
+- ✅ **Diabetes:** Contribui para redução
+- ✅ **Função diurética:** Muito forte
+  - Ajuda a expelir excesso de água extracelular
+  - Auxilia na regulação da pressão arterial
+- ✅ **Saúde capilar:** Excepcional para quedas de cabelo e caspa
+  - Chá com água fria
+  - Esfregar no couro cabeludo
+  - Pode ser usado com shampoo para melhor fixação
+  - Combinar com babosa potencializa resultados
+
+**Precauções e Outras Informações:**
+- **Principal vitamina:** Vitamina A
+- **Também riquíssima:** Vitamina C
+- Planta que cresce bastante (pode atingir grandes proporções)
+- **Recomendada:** Repor energias e combater intestino preso (junto com suco de caju)
+
+---
 
 ### Graviola
 
-Classificação e Nomes Científicos
 A graviola pertence à mesma família da pinha e da fruta do conde.
-Seu nome científico é Annona muricata.
-É mencionado que todas as plantas dessa família (incluindo pinha e fruta do conde) têm "Annona" como o primeiro nome científico.
-Associações Espirituais
-A graviola é extremamente utilizada na energia de Iemanjá.
-No Candomblé, a graviola é oferecida a Oxalá.
-Apesar de ter uma força também ligada a Oxóssi, ela é principalmente utilizada para Iemanjá.
-Benefícios Medicinais
-A graviola é utilizada no tratamento de cânceres, sendo às vezes indicada até por oncologistas, principalmente na prevenção de câncer.
-É uma planta muito boa para a cura.
-A folha da graviola é fantástica para combater problemas de gastrite.
-Como muitas espécies de folhas, a graviola possui função diurética, o que a torna útil, por exemplo, para diabetes, mesmo sem outros antioxidantes específicos.
+
+**Nomes Científicos:**
+- **Nome científico:** *Annona muricata*
+- **Família:** Todas as plantas dessa família (incluindo pinha e fruta do conde) têm "Annona" como primeiro nome científico
+
+**Classificação Energética:** (Não especificada)
+
+**Associações Espirituais:**
+- **Principal:** Iemanjá (extremamente utilizada)
+- **Candomblé:** Oferecida a Oxalá
+- **Também:** Força ligada a Oxóssi (mas principalmente para Iemanjá)
+
+**Benefícios Medicinais:**
+
+- ✅ **Tratamento de cânceres:** Às vezes indicada por oncologistas
+  - Principalmente na prevenção de câncer
+- ✅ **Cura:** Planta muito boa para a cura
+- ✅ **Gastrite:** Folha fantástica para combater problemas de gastrite
+- ✅ **Função diurética:** Como muitas espécies de folhas
+  - Útil para diabetes
+  - Mesmo sem outros antioxidantes específicos
+
+---
 
 ### Guaco
 
-O Guaco é uma erva reconhecida por suas propriedades que promovem mudança, crescimento e desobstrução, tanto no campo espiritual quanto no medicinal. É classificado como uma erva morna e possui notáveis benefícios, especialmente para o sistema respiratório.
-Nomes e Classificação
-É popularmente conhecido como Guaco, Guaco liso, Erva cobra, Erva da catinga e Erva arco-íris.
-Seu nome científico é Mikania glomerata.
-É classificado como uma erva morna.
-Orixás e Energias Associadas
-É ligado a Oxumarê e Oxóssi.
-Também é associado a Ossaim e, em algumas ramificações, a Exu.
-Na magia indígena, é utilizado pela tribo Cariri-Açu para cura e novos ciclos.
-Usos Espirituais e Mágicos
-Quebra de Ciclos Negativos: Tem um poder fantástico para quebrar ciclos negativos, negatividade, tristezas passadas, angústia e sofrimento.
-Sabedoria e Crescimento: Simboliza a sabedoria e a capacidade de encontrar caminhos, não tendo um "caminho fechado". É visto como uma planta de tomada de decisão, crescimento e mudança.
-Movimento e Transformação: Traz vibrações de mudança, movimento, troca de energias e limpeza.
-Destravamento Espiritual: Utilizado para destravamento na linha de Caboclo e Boiadeiro.
-Banhos: Pode ser usado em banhos macerados ou em infusão, embora possa ser um pouco difícil de macerar devido à sua consistência.
-Xaropes e Magias: Pode ser transformado em xaropes e utilizado em magias de pontos e imantação, além de consagrações.
-Poder de Limpeza: Possui um poder de limpeza e descarrego.
-Benefícios Medicinais
-Problemas Respiratórios: É amplamente conhecido por seu poder gigantesco no combate a tosse, catarro, asma, problemas respiratórios, gripes e resfriados.
-Preparo de Xaropes: Pode ser preparado como xarope de duas maneiras: queimando açúcar e adicionando a erva (com gengibre e outras ervas), ou macerando/pilando as folhas com açúcar mascavo e deixando na geladeira para liberar o sumo.
-Precauções Medicinais: O excesso de Guaco pode causar vômito e ataque epilético, pois possui toxicidade. É fundamental ter cuidado ao manuseá-lo e consumi-lo.
-Precauções e Manuseio
-Como mencionado, o excesso pode ser tóxico e causar efeitos adversos.
-Sempre se deve ter cuidado ao manusear a planta.
-O Guaco é, portanto, uma erva poderosa que oferece suporte para quem busca superar obstáculos, promover a mudança e tratar problemas respiratórios, mas seu uso deve ser feito com cautela devido à sua toxicidade em excesso.
+O Guaco é uma erva reconhecida por suas propriedades que promovem mudança, crescimento e desobstrução, tanto no campo espiritual quanto no medicinal.
+
+**Nomes Populares e Científicos:**
+- **Nomes populares:** Guaco, Guaco liso, Erva cobra, Erva da catinga, Erva arco-íris
+- **Nome científico:** *Mikania glomerata*
+
+**Classificação Energética:** Erva morna
+
+**Orixás e Energias Associadas:**
+- **Principal:** Oxumarê e Oxóssi
+- **Também:** Ossaim
+- **Algumas ramificações:** Exu
+- **Magia indígena:** Utilizado pela tribo Cariri-Açu para cura e novos ciclos
+
+**Usos Espirituais e Mágicos:**
+
+**1. Quebra de Ciclos Negativos:**
+- Poder fantástico para quebrar ciclos negativos
+- Negatividade
+- Tristezas passadas
+- Angústia e sofrimento
+
+**2. Sabedoria e Crescimento:**
+- Simboliza sabedoria
+- Capacidade de encontrar caminhos
+- Não tem "caminho fechado"
+- Planta de tomada de decisão, crescimento e mudança
+
+**3. Movimento e Transformação:**
+- Vibrações de mudança
+- Movimento
+- Troca de energias
+- Limpeza
+
+**4. Destravamento Espiritual:**
+- Utilizado para destravamento na linha de Caboclo e Boiadeiro
+
+**5. Poder de Limpeza:**
+- Poder de limpeza e descarrego
+
+**Rituais:**
+- **Banhos:** Macerados ou em infusão
+  - ⚠️ Pode ser um pouco difícil de macerar devido à consistência
+- **Xaropes e magias:** Pontos e imantação
+- **Consagrações**
+
+**Benefícios Medicinais:**
+
+**Problemas Respiratórios:**
+- ✅ **Poder gigantesco** no combate a:
+  - Tosse
+  - Catarro
+  - Asma
+  - Problemas respiratórios
+  - Gripes e resfriados
+
+**Preparo de Xaropes:**
+- **Método 1:** Queimar açúcar e adicionar a erva (com gengibre e outras ervas)
+- **Método 2:** Macerar/pilar as folhas com açúcar mascavo e deixar na geladeira para liberar o sumo
+
+**⚠️ Precauções Medicinais:**
+- **Excesso pode causar:**
+  - Vômito
+  - Ataque epilético
+- **Toxicidade:** Possui toxicidade
+- **Cuidado fundamental:** Ao manusear e consumir
+
+**Resumo:**
+O Guaco é uma erva poderosa que oferece suporte para quem busca superar obstáculos, promover mudança e tratar problemas respiratórios, mas seu uso deve ser feito com cautela devido à sua toxicidade em excesso.
+
+---
 
 ### Hortelã Pimenta
 
