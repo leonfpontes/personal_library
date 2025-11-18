@@ -1475,9 +1475,9 @@ A Araçazeira é uma erva versátil, com grande poder de condução e expansão 
 
 ### Babosa
 
-<span class="drop-cap">B</span>abosa, cientificamente conhecida como *Aloe vera*, é uma planta amplamente valorizada por suas propriedades de cura, restauração e força, e por seu uso em rituais de quebra de energias negativas e destravamento mediúnico.
+A Babosa, cientificamente conhecida como *Aloe vera*, é uma planta amplamente valorizada por suas propriedades de cura, restauração e força, e por seu uso em rituais de quebra de energias negativas e destravamento mediúnico.
 
-**Nomes Populares e Científicos:**
+**Nome científico:** *Aloe vera*, *Aloe saponaria*
 - **Nome popular:** Babosa
 - **Espécies:** *Aloe vera*, *Aloe saponaria*
 
@@ -1811,20 +1811,10 @@ A Fruta do Conde pertence à mesma família da pinha e da graviola, mas são pla
 ### Goiabeira
 
 A Goiabeira é uma planta altamente valorizada em práticas espirituais e também reconhecida por suas propriedades medicinais.
-Nomes Populares e Científicos
-É popularmente conhecida como Goiabeira.
-O nome científico dela é Psidium guajava. Ela possui semelhança com a Araçazeira (Psidium cattleianum) em termos de gosto e energia, embora sejam espécies diferentes.
-Classificação Energética
-É classificada como uma erva morna.
-Ervas mornas têm uma função de limpeza e de equilibrar ervas quentes, amenizando seus lados negativos.
-### Goiabeira
 
-A Goiabeira é uma planta altamente valorizada em práticas espirituais e também reconhecida por suas propriedades medicinais.
+**Nome científico:** *Psidium guajava*
 
-**Nomes Populares e Científicos:**
-- **Nome popular:** Goiabeira
-- **Nome científico:** *Psidium guajava*
-- **Semelhança:** Araçazeira (*Psidium cattleianum*) em termos de gosto e energia (espécies diferentes)
+**Semelhança:** Araçazeira (*Psidium cattleianum*) em termos de gosto e energia (espécies diferentes)
 
 **Classificação Energética:** Erva morna
 - Função de limpeza
@@ -2007,139 +1997,291 @@ Equilíbrio de Chakras: É amplamente utilizada para o equilíbrio de chakras, i
 Defumação: Possui uma tradição de força em defumação, contribuindo para trazer harmonia, alegria e felicidade.
 Troca de Energia: Por ser uma planta que retém bastante água, é muito usada na troca de energia.
 Consagrações e Batismos: É utilizada em consagrações, especialmente em rituais de casamento e batismo.
-Banhos: É eficaz em banhos, mas não é ideal para "bate-folhas" devido à sua folha mole, que quebra facilmente.
-Benefícios Medicinais
-Problemas Respiratórios: É muito utilizada para sinusites, rinites, tosse, catarro e asma.
-Redução de colesterol: Ajuda na redução do colesterol.
-Redução de Triglicerídeos: É fantástica para quem tem problemas de triglicerídeos.
-Redução de Diabetes: Contribui para a redução da diabetes devido à sua função diurética "fora do comum".
-Antioxidante: É rica em antioxidantes.
-Sistema Imunológico: É rica em vitamina C, o que ajuda a fortalecer o sistema imunológico.
-Cálculos Renais: Antigos herveiros a utilizavam para combater cálculos renais.
-Saúde do fígado: É muito boa para a saúde do fígado.
-Chá: Seus benefícios medicinais são notáveis quando usada como chá.
-Pode ser utilizada para fazer tintura para problemas respiratórios.
-A confirmação de seus benefícios medicinais pode ser encontrada em sites como tuasaude.com, que é validado por hospitais como o São Luís.
-Outras Características e Precauções
-Tem um cheiro bem marcante.
-Pode causar alergia na pele em algumas pessoas, especialmente aquelas com pele mais clara, devido ao seu aroma forte. Recomenda-se fazer um pequeno teste macerando um pedaço no dedo.
-O sumo da planta pode ocasionar queimaduras se a pele for exposta ao sol após o banho. Portanto, é aconselhável evitar a exposição solar após o uso.
-Apesar de ter a mesma família do boldo, Colleos Barbáos, ela é chamada de Hortelã Pimenta (Colleos Amoicitos).
-Há uma dificuldade em secá-la devido à sua folha grossa, mas ela possui uma tradição de força.
+#### Rituais e Aplicações
 
-### Jaboticabeira
+**Banhos:**
+- Eficaz em banhos
+- ⚠️ Não ideal para "bate-folhas" (folha mole quebra facilmente)
 
-A Jabuticabeira é uma planta com forte poder energético e diversas utilizações, tanto no campo espiritual quanto em suas propriedades naturais.
-Com base nas informações fornecidas, os detalhes sobre a Jabuticabeira são:
-Nomes e Associações
-É amplamente utilizada na força dos Caboclos de Couro, associados aos Boiadeiros.
-Está ligada à energia de Oxóssi e também de Exu.
-Classificação Energética
-É considerada uma erva morna.
-Possui uma questão energética muito forte, sendo classificada como uma planta extremamente energética.
-Usos Espirituais e Mágicos
-Banhos e Defumação: É muito utilizada em bate-folhas e para defumação.
-Limpeza e Descarrego: Embora seja uma erva morna, tem uma função de descarrego.
-Prosperidade e Abertura de Caminhos: Contribui para o crescimento, prosperidade e abertura de caminhos.
-Quebra de Demandas: É eficaz na quebra de demandas.
-Oferendas: O fruto da jabuticaba é muito utilizado em oferendas.
-Simbolismo: O fruto é dito que representa a conexão entre o escuro e o claro, e também a conexão entre o ser humano e o produto espiritual. Essa representação não se dá apenas pelas cores preta e branca do fruto, mas também pela sua utilização por algumas famílias ao longo dos anos nessa função.
-Em resumo, a Jabuticabeira é uma erva versátil e poderosa, empregada para energização, limpeza, prosperidade e abertura de caminhos, sendo especialmente valorizada nas práticas espirituais associadas a Oxóssi, Exu e Caboclos.
+#### Benefícios Medicinais
+
+- ✅ **Problemas respiratórios:** Sinusites, rinites, tosse, catarro e asma
+- ✅ **Colesterol:** Redução eficaz
+- ✅ **Triglicerídeos:** Excelente para controle
+- ✅ **Diabetes:** Função diurética excepcional auxilia no controle
+- ✅ **Antioxidante:** Rica em antioxidantes
+- ✅ **Sistema imunológico:** Rica em vitamina C
+- ✅ **Cálculos renais:** Utilizada por antigos erveiros
+- ✅ **Saúde do fígado:** Muito benéfica
+- ✅ **Chá:** Benefícios medicinais notáveis
+- ✅ **Tintura:** Pode ser usada para problemas respiratórios
+
+⚠️ **Precauções:**
+
+- Cheiro bem marcante
+- Pode causar alergia na pele (especialmente em peles claras)
+- **Teste recomendado:** Macerar pequena quantidade no dedo antes do uso
+- ⚠️ **Queimaduras solares:** O sumo pode causar queimaduras se exposto ao sol após banho
+- Evitar exposição solar após uso
+- Dificuldade em secá-la devido à folha grossa
+
+**Nome científico:** *Coleus amboinicus*
+
+**Família:** Mesma do boldo (*Coleus barbatus*)
+
+--- Jaboticabeira
+
+A Jaboticabeira é uma planta com forte poder energético e diversas utilizações, tanto no campo espiritual quanto em suas propriedades naturais.
+
+**Classificação Energética:** Erva morna
+- Possui uma questão energética muito forte
+- Classificada como planta extremamente energética
+
+#### Orixás e Energias Associadas
+
+- **Caboclos de Couro:** Amplamente utilizada, associados aos Boiadeiros
+- **Oxóssi:** Ligação energética principal
+- **Exu:** Também ligada a esta energia
+
+#### Usos Espirituais e Mágicos
+
+**1. Banhos e Defumação:**
+- Muito utilizada em bate-folhas
+- Defumação
+
+**2. Limpeza e Descarrego:**
+- Embora seja erva morna, tem função de descarrego
+
+**3. Prosperidade:**
+- Crescimento
+- Prosperidade
+- Abertura de caminhos
+
+**4. Proteção:**
+- Quebra de demandas
+
+**5. Oferendas:**
+- O fruto da jabuticaba é muito utilizado em oferendas
+
+#### Simbolismo
+
+O fruto representa:
+- Conexão entre o escuro e o claro
+- Conexão entre o ser humano e o produto espiritual
+- Representação não apenas pelas cores preta e branca
+- Utilização tradicional por algumas famílias ao longo dos anos
+
+**Resumo:**
+A Jaboticabeira é uma erva versátil e poderosa, empregada para energização, limpeza, prosperidade e abertura de caminhos, sendo especialmente valorizada nas práticas espirituais associadas a Oxóssi, Exu e Caboclos.
+
+---
 
 ### Jambolão
 
-O Jambolão, também conhecido como Jamelão e Azeitona Preta, é uma planta valorizada por sua capacidade de reativar a vitalidade e por suas associações com a fertilidade e a prosperidade . Seu nome científico é Syzygium cumini.
-Nomes Populares e Científicos
-É conhecido como Jambolão, Jamelão e Azeitona Preta .
-Seu nome científico é Syzygium cumini .
-Classificação Energética
-Não é considerada uma erva quente; possui uma função morna .
-Orixás e Energias Associadas
-É amplamente utilizado para Exu e Exu Mirim .
-Seu fruto (João Bolão) é frequentemente usado em oferendas para Exu Mirim e também para Oxum e outros orixás, simbolizando fertilidade, colheita e prosperidade .
-É associado à Exu Orixá e, em particular, a Exu Catito, com uma forte ligação à terra, força, crescimento e expansão .
-É uma planta muito resistente, sendo uma das últimas a sentir a seca.
-Usos Espirituais e Mágicos
-Reativação de Vitalidade: É grande em seu poder de reativar a vitalidade .
-Assentamentos: É muito utilizado em assentamentos, incluindo a lavagem de assentamentos e a sacralização para ativar a vitalidade . É mencionado como sendo muito usado em "tronqueiras" (provavelmente assentamentos de Exu) .
-Oferendas: Seu fruto é bastante usado em oferendas para Exu Mirim e também em oferendas onde se busca a unificação de energias (doce, amargo, salgado, ácido) .
-Banhos e Magias: Pode ser usado em banhos macerados e também em magias de pontos e imantação .
-Limpeza e Abertura de Caminhos: Possui um grande poder de limpeza, além de promover comunicação, abertura de caminho e prosperidade financeira .
-É uma planta versátil, sendo utilizada com Mamona e Mangueira em oferendas para prosperidade, muitas vezes combinada com moedas e búzios, que simbolizam movimento, prosperidade e negociação devido ao seu uso como moeda corrente na colonização .
-Benefícios Medicinais
-Não há detalhes sobre benefícios medicinais específicos para a planta em si, focando mais em seus usos espirituais e mágicos. No entanto, o texto menciona que "a fruta [João Bolão] é muito utilizada em oferenda para exu mirim, e que "não só ela [Jambolão], como a outra que a gente está falando ali, pai, da francesa ali, a lavanda", sendo que a lavanda, em seu lado medicinal, é utilizada para sinusite, rinite, tosse, catarro, asma e resfriados, além de reduzir colesterol e diabetes. 
-A folha é cheirosa e pode ser macerada.
-Em suma, o Jambolão é uma erva de fundamental importância em rituais de Umbanda e Candomblé, especialmente para Exu e Exu Mirim, simbolizando a reativação de energia, a prosperidade e a força da terra.
+O Jambolão, também conhecido como Jamelão e Azeitona Preta, é uma planta valorizada por sua capacidade de reativar a vitalidade e por suas associações com a fertilidade e a prosperidade.
 
-### Lavanda
+**Nome científico:** *Syzygium cumini*
 
-Classificação e Nomes Científicos
-A lavanda é da mesma espécie que a alfazema.
-Existem espécies como Lavandula dentata.
-A que foi apresentada é conhecida como lavanda francesa.
-Associações Espirituais e Usos na Umbanda
-É utilizada nas energias de Oxalá, Oxum e Iemanjá.
-Pode ser utilizada para Ibejis (crianças).
-É uma erva associada à fertilidade.
-Traz emoção, alegria, harmonia e felicidade.
-Ajuda na concentração e no desenvolvimento espiritual.
-É uma erva que também traz muito empoderamento, especialmente no sagrado feminino.
-Pode ser usada em oferendas e defumação.
-É considerada uma erva morna.
-No contexto de defumação, ela acalma e baixa a frequência. É uma das ervas essenciais para a defumação e é boa para a preparação.
-Benefícios Medicinais e Outras Propriedades
-Na medicina, é usada de algumas formas, mas é preciso ter cuidado com as contraindicações, pois pode causar problemas em muitas pessoas.
-É muito utilizada em óleo essencial para auxiliar em casos de sinusite e rinite.
-Ajuda a dormir e pode ser colocada em travesseiros.
-A resina de plantas como a lavanda é importante porque não perde a essência com o tempo do aroma, sendo um conservador.
+**Outros nomes:** Jamelão, Azeitona Preta, João Bolão (fruto)
 
-### Língua de Vaca
+**Classificação Energética:** Erva morna
 
-A Língua de Vaca é uma erva que tem uma semelhança visual com a Beldroega, mas são plantas distintas.
-Nomes e Confusão
-É conhecida como Língua de Vaca.
-É facilmente confundida com a Beldroega, mas a flor da Língua de Vaca é colorida com tons de rosa ou amarelo, diferente da Beldroega que mantém uma cor estritamente branca.
-Orixás e Energias Associadas
-É uma erva ligada a Xangô.
-Também é utilizada na energia de Iansã e Obá.
-Características Notáveis
-A planta em si é descrita como "bonitinha".
-Sua semelhança com a Beldroega foi notada, mas a diferença na flor é um ponto chave.
+#### Orixás e Energias Associadas
+
+- **Exu e Exu Mirim:** Amplamente utilizado
+- **Exu Orixá:** Especialmente Exu Catito
+- **Oxum:** Fruto usado em oferendas
+- **Ligação:** Terra, força, crescimento e expansão
+- **Resistência:** Uma das últimas plantas a sentir a seca
+
+#### Usos Espirituais e Mágicos
+
+**1. Reativação de Vitalidade:**
+- Grande poder de reativar a vitalidade
+
+**2. Assentamentos:**
+- Muito utilizado em assentamentos
+- Lavagem de assentamentos
+- Sacralização para ativar vitalidade
+- Tronqueiras (assentamentos de Exu)
+
+**3. Oferendas:**
+- Fruto usado em oferendas para Exu Mirim
+- Unificação de energias (doce, amargo, salgado, ácido)
+- Simboliza fertilidade, colheita e prosperidade
+- Combinado com Mamona e Mangueira para prosperidade
+- Usado com moedas e búzios (movimento, prosperidade, negociação)
+
+**4. Banhos e Magias:**
+- Banhos macerados
+- Magias de pontos e imantação
+
+**5. Limpeza e Abertura de Caminhos:**
+- Grande poder de limpeza
+- Comunicação
+- Abertura de caminho
+- Prosperidade financeira
+
+#### Propriedades Adicionais
+
+- Folha cheirosa
+- Pode ser macerada
+- Planta versátil
+
+**Resumo:**
+O Jambolão é uma erva de fundamental importância em rituais de Umbanda e Candomblé, especialmente para Exu e Exu Mirim, simbolizando a reativação de energia, a prosperidade e a força da terra.
+
+--- Lavanda
+
+A lavanda é uma planta de grande importância espiritual e medicinal, conhecida por suas propriedades calmantes e harmonizadoras.
+
+**Nome científico:** *Lavandula dentata* (Lavanda Francesa)
+
+**Relação:** Mesma espécie que a alfazema
+
+**Classificação Energética:** Erva morna
+
+#### Orixás e Energias Associadas
+
+- Oxalá
+- Oxum
+- Iemanjá
+- Ibejis (crianças)
+
+#### Propriedades Espirituais
+
+- Fertilidade
+- Emoção, alegria, harmonia e felicidade
+- Concentração
+- Desenvolvimento espiritual
+- Empoderamento (especialmente sagrado feminino)
+
+#### Usos Espirituais e Mágicos
+
+**Defumação:**
+- Acalma e baixa a frequência
+- Uma das ervas essenciais para defumação
+- Boa para preparação
+
+**Oferendas:**
+- Pode ser usada em oferendas
+
+#### Benefícios Medicinais
+
+- ✅ **Óleo essencial:** Sinusite e rinite
+- ✅ **Insônia:** Ajuda a dormir (pode ser colocada em travesseiros)
+- ✅ **Aroma:** Resina não perde essência com o tempo (conservador natural)
+
+⚠️ **Precauções:**
+
+- Cuidado com contraindicações
+- Pode causar problemas em algumas pessoas
+
+--- Língua de Vaca
+
+A Língua de Vaca é uma erva que tem semelhança visual com a Beldroega, mas são plantas distintas.
+
+#### Identificação e Diferença
+
+**Confusão comum:**
+- Facilmente confundida com a Beldroega
+
+**Diferença chave:**
+- **Flor da Língua de Vaca:** Colorida com tons de rosa ou amarelo
+- **Flor da Beldroega:** Cor estritamente branca
+
+#### Orixás e Energias Associadas
+
+- Xangô (principal)
+- Iansã
+- Obá
+
+#### Características
+
+- Planta descrita como "bonitinha"
+- Semelhança visual com Beldroega
+- Diferença na flor é ponto chave de identificação
+
+---
 
 ### Louro
 
-Usos Espirituais e Magísticos
-É uma das 12 ervas com poder atrator, especialmente para prosperidade financeira e abertura de caminhos.
-Pode ser combinado com canela, cravo e orégano para potencializar a prosperidade.
-É utilizado em defumações, sendo considerado um elemento que não falta em defumações de terreiro.
-Em defumações, pode ser usado para trazer harmonia, alegria, felicidade e prosperidade.
-É muito utilizado em patuás, como a recomendação de benzedeiras antigas de usar uma casquinha de canela com folha de louro e uma moeda.
-É uma erva para desenvolvimento espiritual e transe espiritual.
-Pode ser utilizado para a consagração de pedras e outras formas de imantação.
-É uma das principais ervas para negócios e comércio, sendo recomendado para defumar comércios.
-Alguns o associam aos orixás Oxalá, Xangô, Iansã, Oxum e também à linha cigana.
-Traz um sabor prosperador e é usado em quartinhas de Oxalá e Iemanjá.
-Benefícios Medicinais
-Possui propriedades antimicrobianas e pode ajudar no controle do diabetes tipo 2.
-Auxilia na regulação dos níveis de colesterol.
-Alivia problemas gastrointestinais e dores.
-Pode ajudar a prevenir tumores.
-Alivia problemas respiratórios e ajuda no combate a cálculos renais.
-Promove o relaxamento e fortalece o sistema imunológico.
-É benéfico para a capacidade cognitiva.
-O consumo de chá de louro deve ser evitado por grávidas e lactantes.
-Também é muito bom para o tratamento de gastrite, sendo eficaz junto com a espinheira santa e a folha da graviola.
-Características e Preparo
-A folha do louro é bem seca e um pouco difícil de macerar, mas é possível extrair seu axé dessa forma.
-Para o chá da folha seca, recomenda-se cerca de 3 a 5 gramas por xícara (200 ml).
-Pode ser usado em infusão.
-Se for para uso em chás, deve-se ter cuidado com o excesso para quem tem enxaqueca, pois ele ativa o metabolismo.
-Não é recomendado tomar banho de louro se for uma quantidade muito pequena, pois não terá efeito.
-Outros Detalhes
-Seu nome científico é Laurus nobilis.
-O louro também é muito bom para dor de cabeça.
+O Louro é uma das ervas mais versáteis e poderosas da Umbanda, reconhecido por suas propriedades de prosperidade, proteção e desenvolvimento espiritual.
 
-### Mãe de Milhares
+**Nome científico:** *Laurus nobilis*
+
+**Classificação Energética:** Erva morna
+
+#### Orixás e Energias Associadas
+
+- Oxalá
+- Xangô
+- Iansã
+- Oxum
+- Linha Cigana
+
+#### Usos Espirituais e Mágicos
+
+**1. Prosperidade:**
+- Uma das 12 ervas com poder atrator
+- Especialmente para prosperidade financeira
+- Abertura de caminhos
+- Pode ser combinado com canela, cravo e orégano
+
+**2. Defumação:**
+- Elemento essencial em defumações de terreiro
+- Traz harmonia, alegria, felicidade e prosperidade
+- Recomendado para defumar comércios
+
+**3. Patuás:**
+- Receita tradicional de benzedeiras:
+  - Casquinha de canela
+  - Folha de louro
+  - Uma moeda
+
+**4. Desenvolvimento Espiritual:**
+- Desenvolvimento e transe espiritual
+- Consagração de pedras
+- Imantação
+
+**5. Negócios:**
+- Uma das principais ervas para comércio
+
+**6. Quartinhas:**
+- Usado em quartinhas de Oxalá e Iemanjá
+- Traz sabor prosperador
+
+#### Benefícios Medicinais
+
+- ✅ **Antimicrobiano:** Propriedades antimicrobianas
+- ✅ **Diabetes:** Controle do diabetes tipo 2
+- ✅ **Colesterol:** Regulação dos níveis
+- ✅ **Gastrintestinal:** Alivia problemas e dores
+- ✅ **Tumores:** Pode ajudar a prevenir
+- ✅ **Respiratório:** Alivia problemas
+- ✅ **Cálculos renais:** Auxilia no combate
+- ✅ **Relaxamento:** Promove relaxamento
+- ✅ **Sistema imunológico:** Fortalece
+- ✅ **Cognitivo:** Benéfico para capacidade cognitiva
+- ✅ **Gastrite:** Eficaz (combinar com espinheira santa e folha de graviola)
+- ✅ **Dor de cabeça:** Muito bom
+
+#### Preparo e Uso
+
+**Chá:**
+- Folha seca: 3 a 5 gramas por xícara (200 ml)
+- Pode ser usado em infusão
+
+**Banhos:**
+- Folha bem seca, um pouco difícil de macerar
+- ⚠️ Não usar quantidade muito pequena (não terá efeito)
+
+⚠️ **Precauções:**
+
+- ⚠️ **CONTRA INDICADO:** Grávidas e lactantes
+- Cuidado com excesso para quem tem enxaqueca (ativa metabolismo)
+
+--- Mãe de Milhares
 
 A Mãe de Milhares é uma planta de grande importância e é frequentemente confundida com outras espécies da mesma família visualmente parecidas, como a Folha da Fortuna e o Saião.
 Nomes e Identificação
@@ -2208,470 +2350,1104 @@ Precisa de água regularmente; a falta de água a faz secar rapidamente.
 
 ### Moringa
 
-Sobre a Moringa
-É uma planta muito utilizada na energia de Oxóssi, Ossaim e Caboclo.
-É associada a expansão, crescimento, boas vibrações, boas energias e desenvolvimento espiritual.
-No passado, quando não existiam as tigelas ou louças, a moringa (juntamente com o coité e a cabaça) era utilizada para fazer o ibá, que são as louças para os orixás, servindo como recipiente para as oferendas e sacralização.
+A Moringa é uma planta sagrada na Umbanda, historicamente utilizada como recipiente para oferendas e sacralização.
+
+**Nome científico:** *Moringa oleifera*
+
+#### Orixás e Energias Associadas
+
+- Oxóssi
+- Ossaim
+- Caboclo
+
+#### Propriedades Espirituais
+
+- Expansão
+- Crescimento
+- Boas vibrações e energias
+- Desenvolvimento espiritual
+
+#### Contexto Histórico
+
+**Ibá (louças para orixás):**
+- No passado, antes das tigelas e louças modernas
+- Moringa (junto com coité e cabaça) servia como recipiente
+- Usada para oferendas e sacralização
+
+---
 
 ### Obi
 
-Nomes e Associações
-É associado ao "nó de cola".
-Também é conhecido como "Gori" ou "Guri".
-Usos Espirituais e na Umbanda/Candomblé
-Ativação e Comunicação: O Obi está ligado à ativação de força para Exu e à fala, funcionando como um meio de comunicação entre o espiritual e os praticantes.
-Oráculo e Confirmação de Orixás:
-É amplamente utilizado para determinar o orixá de iniciação em 80-90% das famílias de Candomblé, através do "jogo de Obi".
-É jogado pela mão de jogo do babalorixá, ialorixá ou sacerdote para confirmação.
-Tradicionalmente, existem o Obi de quatro gomos (considerado o mais tradicional) e o Obi de dois gomos, ambos usados como forma oracular tanto na África quanto no Brasil, embora o uso do Obi de dois gomos tenha se perdido ao longo do tempo em algumas práticas.
-Assentamentos: É muito utilizado em assentamentos de Exu. O Obi africano é usado em assentamento de guarda.
-Ativação da Fala: Pode ser utilizado na mastigação junto com pimenta da costa (atarê) para ativar a fala e permitir a comunicação com o Exu do jogo.
-Cura: É empregado em várias magias de cura e em Ebós.
-Obi-água: O Obi branco, conhecido como "obi-água", é utilizado para o anjo da guarda, sendo deixado na água do álcool.
-Versatilidade Doutrinária: Cada doutrina de Umbanda pode utilizar o Obi para uma energia específica, dependendo de suas práticas.
-É considerado um elemento "primordial", sempre presente em certos contextos.
-Características e Origem
-Embora a planta física não estivesse presente na apresentação, é mencionado que o Obi é uma fruta.
-Existe a discussão de que o Obi pode ser de origem brasileira, embora exista a necessidade de mais pesquisa sobre isso.
+O Obi é um elemento sagrado fundamental no Candomblé e Umbanda, utilizado como oráculo, meio de comunicação espiritual e em assentamentos.
+
+**Também conhecido como:**
+- Nó de Cola
+- Gori / Guri
+
+#### Usos Espirituais
+
+**1. Ativação e Comunicação:**
+- Ligado à ativação de força para Exu
+- Meio de comunicação entre o espiritual e os praticantes
+- Relacionado à fala
+
+**2. Oráculo:**
+- "Jogo de Obi" determina orixá de iniciação
+- Usado em 80-90% das famílias de Candomblé
+- Jogado por babalorixá, ialorixá ou sacerdote
+- **Obi de 4 gomos:** Mais tradicional
+- **Obi de 2 gomos:** Uso tradicional perdido em algumas práticas
+
+**3. Assentamentos:**
+- Muito utilizado em assentamentos de Exu
+- Obi africano usado em assentamento de guarda
+
+**4. Ativação da Fala:**
+- Mastigado com pimenta da costa (atarê)
+- Permite comunicação com o Exu do jogo
+
+**5. Cura:**
+- Empregado em várias magias de cura
+- Usado em Ebós
+
+**6. Obi-água:**
+- Obi branco usado para anjo da guarda
+- Deixado na água com álcool
+
+#### Características
+
+- É uma fruta
+- Elemento primordial sempre presente
+- Versatilidade doutrinária (cada doutrina usa para energia específica)
+- Possível origem brasileira (necessita mais pesquisa)
+
+---
 
 ### Ora-pro-nobis
 
-Nomes e Identificação
-Seu nome científico é Pereskia aculeata.
-É popularmente conhecida como "carne do pobre" e "ora por nós, rogai por nós".
-Possui espinhos nos caules.
-Suas flores podem ter várias cores, incluindo avermelhadas, alaranjadas e brancas por fora. É mais comum no Nordeste.
-Uso Culinário
-A folha pode ser consumida crua.
-É descrita como "uma delícia".
-Pode ser utilizada em farofas para Malandragem e Baianos.
-Sua absorção de nutrientes é melhor quando refogada do que crua.
-É rica em proteína, contendo 25g de proteína a cada 100g, comparável à carne e à soja.
-Pode ser usada em chás e sucos, e misturada com frutas.
-Benefícios Medicinais e Nutricionais
-É recomendada para anemia, sendo riquíssima em ferro.
-Ajuda a combater o colesterol.
-É rica em magnésio, que auxilia na absorção de cálcio e outros nutrientes.
-Ajuda no sono (devido ao magnésio).
-É extremamente nutritiva.
-Pode ser unificada com outras plantas ricas em cálcio, como bredo e caruru, para calcificação.
-Pessoas com problemas renais devem evitar o excesso devido à quantidade de proteína.
-Uso Espiritual e Energético na Umbanda
-É uma erva associada a Exu.
-É classificada como uma erva morna.
-Proporciona boas energias, energia alta e força.
-Utilizada em banhos, mas exige uma quantidade significativa de folhas devido à sua natureza carnuda (20 a 30 folhas para um banho legal, ou até 50).
-Possui uma função de limpeza mais leve, comum à maioria das ervas mornas.
-Demonstra alta resistência, pois mesmo podada, ela cresce novamente.
-Pode ser usada para descarrego.
-É uma das principais ervas usadas em banhos para Exu-mirim e Exu de força.
-É empregada em oferendas e na ativação da vitalidade.
-Suas flores são utilizadas como fonte de energia e em oferendas para Cigana e Oxum.
+A Ora-pro-nobis é conhecida como "carne do pobre" devido ao seu altíssimo teor proteico, sendo valorizada tanto na culinária quanto na espiritualidade.
+
+**Nome científico:** *Pereskia aculeata*
+
+**Nomes populares:** Carne do pobre, Ora por nós, Rogai por nós
+
+**Características:** Possui espinhos nos caules
+
+**Flores:** Várias cores (avermelhadas, alaranjadas, brancas). Mais comum no Nordeste
+
+**Classificação Energética:** Erva morna
+
+#### Orixás e Energias Associadas
+
+- Exu (principal)
+- Cigana (flores)
+- Oxum (flores)
+
+#### Uso Culinário
+
+**Consumo:**
+- Pode ser consumida crua ("uma delícia")
+- Melhor absorção quando refogada
+- Farofas para Malandragem e Baianos
+- Chás e sucos
+- Misturada com frutas
+
+**Valor nutricional:**
+- ✅ **Proteína:** 25g por 100g (comparável à carne e soja)
+
+#### Benefícios Medicinais
+
+- ✅ **Anemia:** Riquíssima em ferro
+- ✅ **Colesterol:** Ajuda a combater
+- ✅ **Magnésio:** Auxilia absorção de cálcio e nutrientes
+- ✅ **Insônia:** Ajuda no sono (magnésio)
+- ✅ **Calcificação:** Combinar com bredo e caruru
+- ✅ Extremamente nutritiva
+
+⚠️ **Precauções:**
+- Pessoas com problemas renais devem evitar excesso (alta proteína)
+
+#### Usos Espirituais
+
+**Propriedades:**
+- Boas energias
+- Energia alta e força
+- Função de limpeza leve (típica de ervas mornas)
+
+**Banhos:**
+- Uma das principais ervas para Exu-mirim e Exu de força
+- ⚠️ Requer quantidade significativa (20-30 folhas, até 50)
+- Natureza carnuda das folhas
+
+**Outros usos:**
+- Descarrego
+- Oferendas
+- Ativação da vitalidade
+- Flores: fonte de energia (Cigana e Oxum)
+
+**Resistência:**
+- Alta resistência: mesmo podada, cresce novamente
+
+---
 
 ### Orégano
 
-Classificação e Nomes Científicos
-Existem espécies como Origanum majorana, que é mencionada como tendo um cheiro bem forte.
-É da mesma família do tomilho, e o primeiro nome científico de ambos é Origanum.
-Classificação Energética
-É considerado uma erva morna.
-Associações Espirituais e Usos na Umbanda
-É utilizado na energia de Oxumarê e Oxalá.
-Algumas doutrinas também o utilizam para Oxum.
-Promove prosperidade, abertura de caminhos, felicidade e alegria.
-É muito utilizado em defumações para ambientes com muito conflito dentro de casa, por trazer harmonia.
-É bom para patuás e potes da prosperidade.
-Pode ser combinado com canela, cravo e louro para potencializar a prosperidade financeira.
-É uma erva harmonizadora.
-É uma das 12 ervas mencionadas como boas para poder atrator.
-Benefícios Medicinais e Outras Propriedades
-É diurético.
-Auxilia no tratamento de cálculos renais e pressão arterial.
-Ajuda a combater gripes e resfriados.
-É extremamente digestivo.
-Tem função calmante.
-É utilizado para função cognitiva, remetendo à memória e aumentando o índice cognitivo, sendo recomendado espremer a folha ou cheirar todo dia de manhã.
-Possui propriedades anti-inflamatórias, podendo ser usado em compressas para dores musculares.
-Outras Características
-É uma planta aromática.
-Gosta de sol.
-O cultivo é super fácil e não precisa de muita água, se adaptando bem ao sol e à chuva.
-Quando a planta floresce, é importante tirar as flores, caso contrário, ela seca e completa seu ciclo de vida.
-É uma das plantas cujas folhas e caules são utilizados para extrair resina, que é um conservador e mantém o poder da essência por muito tempo.
-Pode ser usado em banhos, sendo considerado muito bom para esse fim.
-Assim como o guaco, o orégano é uma planta de fácil cultivo, que se adapta bem ao sol e chuva.
+O orégano é uma planta aromática amplamente conhecida na culinária e na espiritualidade, sendo uma das 12 ervas com poder atrator.
+
+**Nome científico:** *Origanum majorana*, *Origanum vulgare*
+
+**Família:** Mesma do tomilho (*Origanum*)
+
+**Classificação Energética:** Erva morna
+
+#### Orixás e Energias Associadas
+
+- Oxumarê
+- Oxalá
+- Oxum (algumas doutrinas)
+
+#### Propriedades Espirituais
+
+- Prosperidade
+- Abertura de caminhos
+- Felicidade e alegria
+- Harmonia (ambientes com conflito)
+- Erva harmonizadora
+- Uma das 12 ervas com poder atrator
+
+#### Usos Espirituais
+
+**Defumações:**
+- Muito utilizado para ambientes com conflito
+- Traz harmonia
+
+**Patuás e Prosperidade:**
+- Potes da prosperidade
+- Combinar com canela, cravo e louro (potencializa prosperidade financeira)
+
+**Banhos:**
+- Considerado muito bom
+
+#### Benefícios Medicinais
+
+- ✅ **Diurético:** Função diurética
+- ✅ **Cálculos renais:** Auxilia no tratamento
+- ✅ **Pressão arterial:** Ajuda na regulação
+- ✅ **Gripes e resfriados:** Combate eficaz
+- ✅ **Digestivo:** Extremamente digestivo
+- ✅ **Calmante:** Função calmante
+- ✅ **Função cognitiva:** Memória e índice cognitivo
+  - Recomendação: Espremer folha ou cheirar todo dia de manhã
+- ✅ **Anti-inflamatório:** Compressas para dores musculares
+
+#### Características e Cultivo
+
+**Cultivo:**
+- Super fácil
+- Gosta de sol
+- Não precisa de muita água
+- Adapta-se bem ao sol e chuva
+- Semelhante ao guaco em facilidade
+
+**Manutenção:**
+- ⚠️ Quando floresce, tirar as flores (senão seca e completa ciclo)
+
+**Outras propriedades:**
+- Planta aromática
+- Cheiro bem forte
+- Folhas e caules usados para extrair resina (conservador)
+- Mantém poder da essência por muito tempo
+
+---
 
 ### Orobô
 
-Natureza e Nome Científico
-É uma planta cujo nome científico é García.
-É um elemento que alguns conhecem e outros não.
-Usos Espirituais e Oraculares
-É utilizado na magia de Xangô.
-É considerado um oráculo.
-A diferença do Orobô em relação a outros elementos oraculares é que ele é normalmente utilizado em dois gomos. Uma pessoa na conversa confirma que "só responde nele".
-É muito utilizado em patuás e breves.
-É associado a Exu.
-Benefícios Medicinais
-Possui funções medicinais fantásticas.
-Comparação com Outros Elementos
-É mencionado em comparação com o Obi, que é o "nó de cola" e também um oráculo.
-É comparado à fava Aridã (Tetapleura tetrapitera), mencionada por ser utilizada em assentamentos de diversos orixás e por sua capacidade de quebrar feitiços e oferecer proteção.
+O Orobô é um elemento oracular pouco conhecido mas de grande poder espiritual, especialmente na magia de Xangô.
+
+**Nome científico:** *García* sp.
+
+**Classificação:** Elemento oracular vegetal
+
+#### Orixás e Energias Associadas
+
+- Xangô (principal)
+- Exu
+
+#### Usos Espirituais e Oraculares
+
+**Como oráculo:**
+- Considerado um oráculo poderoso
+- Diferença dos outros oráculos: utilizado em **dois gomos**
+- Algumas pessoas "só respondem nele" (oráculo pessoal)
+
+**Aplicações mágicas:**
+- Muito utilizado em **patuás** e **breves**
+- Magia de Xangô
+- Trabalhos com Exu
+
+#### Benefícios Medicinais
+
+- ✅ **Funções medicinais fantásticas** (diversas propriedades)
+
+#### Comparações com Outros Elementos Oraculares
+
+- **Obi:** "Nó de cola", oráculo de 4 gomos
+- **Fava Aridã** (*Tetrapleura tetrapitera*):
+  - Usada em assentamentos de diversos orixás
+  - Quebra feitiços
+  - Oferece proteção
+
+---
 
 ### Pata de Vaca
 
-A Pata de Vaca é uma planta com diversas aplicações, tanto espirituais quanto medicinais, e é reconhecida por sua energia e benefícios para a saúde.
-Nomes e Identificação
-Existem três espécies de Pata de Vaca.
-A espécie da flor branca é a Bauhinia forficata ou Bauhinia variegata (o nome científico Bauhinia purpurica também é mencionado como a única espécie da qual se pode tomar chá).
-Outras espécies incluem as de flor roxa e rosa.
-É uma árvore.
-Classificação Energética
-A Pata de Vaca, apesar de não ser considerada uma erva quente, é descrita como uma erva morna.
-É dita como uma planta "pancada" (com grande impacto energético).
-Traz uma vibração forte e energia alta.
-Orixás e Entidades Associadas
-A Pata de Vaca de flor branca é muito utilizada na força de Iemanjá, Oxalá e Obaluaê.
-A de flor roxa é usada na força de Nanã e também para Obaluaê.
-A de flor rosa é associada a Iansã e a algumas rainhas da força de Obá.
-É também muito associada a Oxumarê.
-Usos Espirituais e Mágicos
-Banhos: É amplamente utilizada em banhos, sendo uma das ervas preferidas do Pai Cláudio. O banho é feito com as folhas. Recomenda-se usar uma quantidade significativa de folhas (cerca de 20-30, ou até 50) no banho, pois ela é "carnuda". O banho com Pata de Vaca faz sentir a diferença.
-Concentração e Intuição: Auxilia na concentração e intuição.
-Fortalecimento do Ori e Tomada de Decisão: Fortalece o Ori e é boa para tomadas de decisão. É descrita como uma erva que fortalece.
-Cura Espiritual e Física: É uma erva que traz cura espiritual e física.
-Equilíbrio de Chakras: Utilizada para o fortalecimento e equilíbrio de chakras.
-Defumação: Gosta-se de utilizá-la em defumações preparatórias.
-Transformação: Sua flor e o estouro da pipoca (associados a Omulu) são ligados à transformação.
-Benefícios Medicinais e Precauções
-Diabetes: É uma planta que combate o diabetes, sendo usada até no combate ao diabetes tipo 2. A casca do Murici também é mencionada como muito boa para diabetes.
-Cálculos Renais e de Vesícula: Combate cálculos renais e de vesícula.
-Colesterol Alto: Ajuda a combater o colesterol alto.
-Diurética: É extremamente diurética.
-Pressão Arterial Alta: Benéfica para a pressão arterial alta.
-Emagrecimento: Auxilia no emagrecimento.
-Dores de Cabeça: Traz tranquilidade para dores de cabeça.
-Forma de Consumo: Para uso medicinal, o chá da Pata de Vaca deve ser feito preferencialmente com a flor branca. A recomendação é de 10g para cada 500-700ml de água, ou 3-5g da erva seca para cada xícara de 200ml.
-Precauções: Apenas a espécie de flor branca (Bauhinia purpurica) é recomendada para chá; as outras espécies podem causar problemas. O excesso de ervas calmantes pode derrubar a pressão em quem já tem pressão baixa.
-Em resumo, a Pata de Vaca é uma erva versátil, com forte ligação a diversos Orixás, sendo amplamente utilizada para fins espirituais como intuição, concentração e abertura de caminhos, além de possuir um vasto leque de benefícios medicinais, principalmente no combate ao diabetes e cálculos renais.
+A Pata de Vaca é uma árvore com diversas aplicações espirituais e medicinais, reconhecida por sua energia forte e grande impacto energético.
+
+**Nomes científicos:**
+- *Bauhinia forficata* (flor branca)
+- *Bauhinia variegata* (flor branca)
+- *Bauhinia purpurea* (flor roxa)
+
+**Classificação Energética:** Erva morna
+
+**Energia:** Planta "pancada" (grande impacto energético), vibração forte, energia alta
+
+#### Espécies e Associações
+
+**Flor Branca (*Bauhinia forficata*):**
+- Iemanjá
+- Oxalá
+- Obaluaê
+
+**Flor Roxa:**
+- Nanã
+- Obaluaê
+
+**Flor Rosa:**
+- Iansã
+- Rainhas da força de Obá
+
+**Todas as espécies:**
+- Oxumarê
+
+#### Usos Espirituais e Mágicos
+
+**1. Banhos (uso principal):**
+- Uma das ervas preferidas para banhos
+- Usar quantidade significativa: **20-50 folhas** (folha "carnuda")
+- O banho faz sentir a diferença imediatamente
+
+**2. Concentração e Intuição:**
+- Auxilia concentração
+- Fortalece intuição
+
+**3. Fortalecimento do Ori:**
+- Fortalece o Ori
+- Excelente para tomadas de decisão
+- Erva que fortalece estrutura espiritual
+
+**4. Cura:**
+- Cura espiritual
+- Cura física
+
+**5. Chakras:**
+- Fortalecimento de chakras
+- Equilíbrio energético
+
+**6. Defumação:**
+- Defumações preparatórias
+
+**7. Transformação:**
+- Flor associada à transformação (como pipoca de Omulu)
+
+#### Benefícios Medicinais
+
+- ✅ **Diabetes:** Combate diabetes tipo 2 (uso principal)
+- ✅ **Cálculos renais:** Combate eficaz
+- ✅ **Cálculos de vesícula:** Dissolve
+- ✅ **Colesterol alto:** Reduz
+- ✅ **Diurético:** Extremamente diurética
+- ✅ **Pressão arterial alta:** Regula
+- ✅ **Emagrecimento:** Auxilia
+- ✅ **Dores de cabeça:** Traz tranquilidade
+
+#### Forma de Consumo (Chá)
+
+**Dosagem:**
+- 10g para 500-700ml de água
+- **OU** 3-5g de erva seca para 200ml (1 xícara)
+
+⚠️ **Precauções:**
+- **Apenas a espécie de flor branca** (*Bauhinia purpurea*) é recomendada para chá
+- **As outras espécies podem causar problemas**
+- Excesso de ervas calmantes pode derrubar a pressão em quem já tem pressão baixa
+- Consulte médico antes do uso medicinal
+
+---
 
 ### Petúnia Mexicana
 
-Nome Popular
-É conhecida como Petúnia Mexicana.
-Nome Científico
-Seu nome científico é Ruélia Simplex.
-Diferenciação
-É importante notar que a Petúnia Mexicana é frequentemente confundida com a "Vence Demandas" (Justicia gendarussa). Para diferenciá-las, a folha da Petúnia Mexicana possui uma porosidade e não tem um desenho liso, ao contrário da folha da "Vence Demandas", que é mais lisa.
-Energia
-Embora toda planta possui energia, a Petúnia Mexicana, apesar de ter sua própria energia e característica energética, não é a verdadeira "Vence Demandas".
-Flor
-Sua flor é roxa.
+**Nome científico:** *Ruellia simplex*
+
+**Flor:** Roxa
+
+#### Diferenciação Importante
+
+⚠️ **Cuidado com a confusão:** A Petúnia Mexicana é **frequentemente confundida** com a **"Vence Demandas"** (*Justicia gendarussa*), mas **não são a mesma planta**.
+
+**Como diferenciar:**
+
+**Petúnia Mexicana** (*Ruellia simplex*):
+- Folha com **porosidade**
+- Folha **não tem desenho liso**
+- Flor roxa
+- Possui energia própria, mas **não é a verdadeira "Vence Demandas"**
+
+**Vence Demandas** (*Justicia gendarussa*):
+- Folha **mais lisa**
+- Sem porosidade visível
+- Planta com propriedades espirituais específicas
+
+#### Propriedades
+
+Embora toda planta possua energia, a Petúnia Mexicana tem sua própria característica energética, diferente da verdadeira "Vence Demandas".
+
+---
 
 ### Pinha
 
-Classificação e Nomes Científicos
-A pinha pertence à mesma família da fruta do conde e da graviola, mas são pés (plantas) diferentes.
-Seu nome científico é Annona squamosa.
-A graviola, da mesma família, é Annona muricata.
-Características Físicas e Cultivo
-A pinha não aguenta bem o frio.
-Folhas doentes, queimadas pelo frio, ou com pragas (como cochonilha, pulgão, fumagina) não devem ser usadas em banhos, assim como um animal com defeito não é usado em sacralização, pois representam doença.
-Associações Espirituais e Uso na Umbanda
-É muito utilizada na força de Xangô, Oxóssi, Iansã e Iemanjá.
-A fruta da pinha, por ser internamente branca, é extremamente utilizada para a energia de Oxalá e Iemanjá.
-É uma folha que se pode utilizar em banhos de desenvolvimento espiritual.
-O pó ou as sementes da pinha também podem ser utilizadas em magia.
-No Batuque (tradição do Sul do Brasil), a fruta do conde (da mesma família) é utilizada em magias para a justiça e em oferendas para Xangô.
-Benefícios Medicinais
-A fruta da pinha é rica em fibras, auxiliando quem tem problemas de intestino preso.
-Ajuda na digestibilidade e a combater gases.
-É rica em vitaminas e fortalece o sistema imunológico.
-Muitas espécies de folhas, incluindo a pinha, possuem função diurética, o que as torna úteis, por exemplo, para diabetes, mesmo sem outros antioxidantes específicos.
+A pinha pertence à mesma família da fruta do conde e da graviola, sendo plantas distintas com propriedades espirituais e medicinais importantes.
+
+**Nome científico:** *Annona squamosa*
+
+**Família:** Annonaceae (mesma da graviola - *Annona muricata*)
+
+#### Orixás e Energias Associadas
+
+- Xangô
+- Oxóssi
+- Iansã
+- Iemanjá
+- Oxalá (pelo fruto branco internamente)
+
+#### Usos Espirituais e Mágicos
+
+**Banhos:**
+- Folha utilizada em banhos de desenvolvimento espiritual
+
+**Oferendas:**
+- Fruta da pinha: muito utilizada para Oxalá e Iemanjá (internamente branca)
+- No Batuque (Sul do Brasil): fruta do conde usada em magias para justiça e oferendas para Xangô
+
+**Elementos mágicos:**
+- Pó da pinha
+- Sementes
+
+#### Benefícios Medicinais
+
+- ✅ **Intestino preso:** Rica em fibras
+- ✅ **Digestibilidade:** Ajuda digestão
+- ✅ **Gases:** Combate eficaz
+- ✅ **Sistema imunológico:** Rica em vitaminas, fortalece
+- ✅ **Diurético:** Função diurética (útil para diabetes)
+
+#### Cultivo e Cuidados
+
+**Sensibilidade ao frio:**
+- Não aguenta bem o frio
+
+⚠️ **Importante:**
+- **Folhas doentes, queimadas pelo frio ou com pragas** (cochonilha, pulgão, fumagina) **NÃO devem ser usadas em banhos**
+- Representam doença (assim como animal com defeito não é usado em sacralização)
+
+---
 
 ### Romã
 
-A Romã (cientificamente conhecida como Punica Granatum) é uma planta com diversas aplicações e significados.
-Associações Espirituais e Usos na Umbanda
-Orixás e Entidades: É ativada na energia de Xangô, Oxum, Obá, Exu, Pombagira e também na energia cigana.
-Significado: A Romã traz um grande significado de empoderamento feminino, amor, vitalidade, sexualidade e vigor. Ela também está ligada à liderança.
-Limpeza e Proteção: Possui função de limpeza e é usada para proteção.
-Fertilidade e Prosperidade: O fruto da Romã, o João Bolão, é muito utilizado em oferendas para Exu Mirim e outros orixás, simbolizando fertilidade, colheita e prosperidade. A semente é utilizada em magia para ativação da fertilidade, vitalidade, expansão e encontros. É um atrator para prosperidade e finanças. A folha e a semente pilada em magia são usadas para prosperidade, clientes e caminhos.
-Comunicação e Fala: Suas sementes também estão ligadas à comunicação e fala.
-Uso em Rituais:
-Pode ser utilizada em banhos macerados ou por infusão.
-A semente, por ser muito seca, é mais adequada para magia pilada do que para banhos.
-A casca da Romã pode ser usada em magias.
-É muito utilizada em oferendas para Pombagira, especialmente em combinação com rosa vermelha, para ativar o empoderamento feminino e o amor.
-Pode ser utilizada em "bate-folhas".
-Seus galhos e frutos são utilizados em oferendas para ativar energias.
-Temperatura da Erva: Alguns herveiros a classificam como erva morna e também como erva fria atratora. Apesar de ser morna, tem um poder atrator.
-Benefícios Medicinais
-Combate cálculos renais e problemas de vesícula biliar.
-Ajuda a reduzir triglicerídeos.
-Combate gripes e resfriados.
-Ajuda na saúde do fígado (para esteatose, por exemplo).
-Reduz a pressão arterial.
-Ajuda na insônia, pois seu chá tem função calmante.
-É utilizada em tratamentos na medicina alternativa, inclusive para síndrome do pânico.
-Possui função anti-inflamatória e vermífuga (contra amebas e outros vermes).
-É rica em vitaminas e tem baixa caloria, sendo boa para o sistema imunológico.
-O chá da casca e da folha da Romã é muito bom para faringite, rinite e gargarejos.
-Seus benefícios medicinais são considerados "fora da curva".
-Precauções e Contraindicações
-Não é recomendada para crianças, gestantes ou durante a amamentação.
-A casca da Romã pode manchar a pele.
-É importante consultar um médico antes de usar para fins medicinais, especialmente durante a gravidez.
-Outras Características
-Pode ser utilizada como xarope em combinação com guaco, gengibre, alecrim e mastruz.
-O plantio é fácil, pois é uma árvore que se adapta bem ao sol e à chuva.
-A casca da Romã tende a ter uma energia mais concentrada do que as folhas.
-A semente da Romã é muito seca e é melhor para magia.
+A Romã é uma planta poderosa com aplicações espirituais e medicinais extraordinárias, símbolo de empoderamento feminino, fertilidade e prosperidade.
+
+**Nome científico:** *Punica granatum*
+
+**Classificação Energética:** Erva morna com poder atrator (alguns herveiros também classificam como erva fria atratora)
+
+#### Orixás e Energias Associadas
+
+- Xangô
+- Oxum
+- Obá
+- Exu
+- Pombagira
+- Energia cigana
+
+#### Significados Espirituais
+
+- **Empoderamento feminino** (principal)
+- Amor
+- Vitalidade
+- Sexualidade e vigor
+- Liderança
+- Fertilidade
+- Prosperidade
+- Comunicação e fala
+
+#### Usos Espirituais e Mágicos
+
+**1. Oferendas:**
+- **Para Pombagira:** Especialmente combinada com rosa vermelha (ativa empoderamento feminino e amor)
+- **Para Exu Mirim:** Fruto (João Bolão) simbolizando fertilidade, colheita e prosperidade
+- Galhos e frutos para ativar energias
+
+**2. Magia e Prosperidade:**
+- **Semente pilada:** Fertilidade, vitalidade, expansão, encontros
+- **Atrator:** Prosperidade, finanças, clientes, caminhos
+- **Folha e semente:** Magia para prosperidade e abertura
+
+**3. Limpeza e Proteção:**
+- Função de limpeza
+- Proteção espiritual
+
+**4. Rituais:**
+- Banhos macerados ou por infusão
+- "Bate-folhas"
+- Casca da Romã em magias
+
+⚠️ **Observação:** A semente é muito seca, mais adequada para **magia pilada** do que para banhos.
+
+#### Benefícios Medicinais
+
+- ✅ **Cálculos renais:** Combate eficaz
+- ✅ **Vesícula biliar:** Problemas diversos
+- ✅ **Triglicerídeos:** Reduz
+- ✅ **Gripes e resfriados:** Combate
+- ✅ **Fígado:** Saúde hepática (esteatose)
+- ✅ **Pressão arterial:** Reduz
+- ✅ **Insônia:** Chá com função calmante
+- ✅ **Síndrome do pânico:** Medicina alternativa
+- ✅ **Anti-inflamatório:** Função comprovada
+- ✅ **Vermífugo:** Contra amebas e vermes
+- ✅ **Sistema imunológico:** Rica em vitaminas, baixa caloria
+- ✅ **Faringite, rinite:** Chá da casca e folha para gargarejos
+
+> **Benefícios medicinais considerados "fora da curva"**
+
+#### Outras Aplicações
+
+**Xarope medicinal:**
+- Combinação: guaco, gengibre, alecrim e mastruz
+
+**Cultivo:**
+- Plantio fácil
+- Árvore que se adapta bem ao sol e chuva
+
+**Energia concentrada:**
+- Casca tem energia mais concentrada que as folhas
+
+⚠️ **Precauções e Contraindicações:**
+- **NÃO recomendada para:**
+  - Crianças
+  - Gestantes
+  - Durante amamentação
+- **Casca da Romã pode manchar a pele**
+- **Consulte médico antes do uso medicinal, especialmente na gravidez**
+
+---
 
 ### Rosas
 
-As Rosas são ervas amplamente valorizadas em diversas práticas espirituais, especialmente na Umbanda, e são conhecidas por suas variadas conotações energéticas e usos.
-Nomes e Variações
-Existem diferentes tipos de rosas mencionadas, como a rosa branca, rosa vermelha e rosa laranja.
-Menciona-se também a rosa grande flora e a rosa alva. A "rosa menina" é citada como a variedade de rosa branca, rosa e vermelha.
-Classificação Energética
-A rosa branca é frequentemente classificada como uma erva fria energética.
-A rosa vermelha e a rosa laranja são classificadas como frias atratoras.
-Orixás e Energias Associadas
-A rosa branca é muito ligada a Oxalá, Ibeji e Iemanjá.
-A rosa vermelha é associada a Pombagira e ligada a Oxum, Obaluaê, Iansã e ciganos. Também é utilizada para trabalhar o empoderamento feminino e o amor.
-A rosa laranja é associada a Oxum e à atração.
-Rosas em geral também são ligadas a Oxum, Iansã, Oxalá, Ibeji, Exu e a linha cigana.
-Usos Espirituais e Mágicos
-Banhos: São amplamente utilizadas em banhos. Para bebês, a rosa branca e a quaresmeira roxa são as mais recomendadas.
-Cura e Equilíbrio: A rosa branca é uma ativação fria energética, excelente para fortalecer o ori (cabeça), intuição e concentração.
-Empoderamento e Atração: Rosas, especialmente a vermelha, são usadas para empoderamento feminino, amor, sexualidade e vitalidade. São consideradas "atradoras" para trazer prosperidade, dinheiro, crescimento, e boas energias em geral.
-Oferendas e Consagrações: Pétalas de rosas são utilizadas em oferendas e consagrações, ligadas à fertilidade e ao amor.
-Outros Usos:
-São usadas para acalmar e harmonizar.
-As pétalas são preferidas para banhos em detrimento das folhas, pois as folhas podem liberar resinas tóxicas ou irritar a pele.
-Podem ser utilizadas frescas ou secas para banhos e defumações.
-São associadas à alegria, harmonia, felicidade e concentração.
-Benefícios Medicinais e Precauções
-É enfatizada a importância de usar as pétalas das rosas, pois as folhas podem liberar uma resina tóxica que pode queimar a pele.
-A flor não perde tanto a essência quanto a folha ao secar.
-Em geral, para gestantes, é altamente desaconselhado o uso de chás e banhos de ervas sem recomendação médica.
-Em suma, as Rosas, em suas diversas cores e tipos, são vistas como elementos poderosos para banhos de energização, atração e equilíbrio espiritual, com cada cor trazendo uma nuance diferente de energia e associação com os Orixás. A preferência é sempre por suas pétalas em usos que envolvam contato direto com a pele.
+As Rosas são ervas amplamente valorizadas em práticas espirituais, cada cor trazendo energias e significados específicos.
+
+**Variedades principais:**
+- Rosa branca
+- Rosa vermelha
+- Rosa laranja
+- Rosa grande flora
+- Rosa alva
+- "Rosa menina" (variedade de rosa branca, rosa e vermelha)
+
+#### Classificação Energética por Cor
+
+- **Rosa branca:** Erva fria energética
+- **Rosa vermelha:** Erva fria atratora
+- **Rosa laranja:** Erva fria atratora
+
+#### Orixás e Energias Associadas
+
+**Rosa Branca:**
+- Oxalá
+- Ibeji
+- Iemanjá
+
+**Rosa Vermelha:**
+- Pombagira (principal)
+- Oxum
+- Obaluaê
+- Iansã
+- Ciganos
+- Empoderamento feminino e amor
+
+**Rosa Laranja:**
+- Oxum
+- Atração
+
+**Rosas em geral:**
+- Oxum, Iansã, Oxalá, Ibeji, Exu, linha cigana
+
+#### Usos Espirituais e Mágicos
+
+**1. Banhos:**
+- Amplamente utilizadas
+- **Para bebês:** Rosa branca e quaresmeira roxa são as mais recomendadas
+- **Preferência:** Usar pétalas (não folhas)
+
+**2. Cura e Equilíbrio:**
+- Rosa branca: ativação fria energética
+- Fortalece o Ori (cabeça)
+- Intuição e concentração
+
+**3. Empoderamento e Atração:**
+- Rosa vermelha: empoderamento feminino, amor, sexualidade, vitalidade
+- "Atradoras": prosperidade, dinheiro, crescimento, boas energias
+
+**4. Oferendas e Consagrações:**
+- Pétalas em oferendas e consagrações
+- Ligadas à fertilidade e ao amor
+
+**5. Harmonização:**
+- Acalmar e harmonizar
+- Alegria e felicidade
+
+**6. Formas de uso:**
+- Frescas ou secas (banhos e defumações)
+
+#### Benefícios e Características
+
+- Alegria
+- Harmonia
+- Felicidade
+- Concentração
+
+⚠️ **Precauções Importantes:**
+
+- **USE APENAS AS PÉTALAS** das rosas em banhos
+- **AS FOLHAS podem liberar resina tóxica** que queima a pele
+- A flor não perde tanto a essência quanto a folha ao secar
+
+⚠️ **Para gestantes:**
+- **Altamente desaconselhado** uso de chás e banhos de ervas sem recomendação médica
+
+---
 
 ### Quebra-pedra
 
-Nome Popular e Científico
-É conhecida popularmente como "erva pombinha".
-A espécie mais utilizada e conhecida é a Phyllanthus niruri.
-Outra espécie mencionada, também muito boa, é a Tenerbos.
-Associações Espirituais e Usos na Umbanda
-É muito associada aos Pretos Velhos.
-É utilizada para quebrar energia, oferecendo proteção e resistência.
-Simboliza a capacidade de superar obstáculos, como "furar parede" e "passar obstáculos".
-É uma das ervas recomendadas para fortalecer o Ori (cabeça, intuição, concentração e desenvolvimento).
-Pode ser utilizada em guias de Oxalá para fortalecer a imantação energética.
-Benefícios Medicinais
-É amplamente reconhecida por seus benefícios para cálculos renais e da vesícula.
-Possui ação diurética.
-Auxilia no emagrecimento e no tratamento de triglicerídeos.
-Tem função calmante.
-Um dos textos menciona que é uma das cinco ervas muito relatadas para cálculos renais.
-Também é citada em uma receita poderosa para gripes e resfriados, combinada com guaco, gengibre, alecrim, limão, mel e alho.
-Forma de Uso
-Para banhos, recomenda-se fazer a maceração da erva e utilizá-la da cabeça para baixo.
-Para problemas de gastrite, pode ser combinada com espinheira santa, louro e folha de graviola.
-Classificação Energética
-Embora não explicitamente classificada como "morna", ela é mencionada em um contexto onde outras ervas mornas são listadas como "mais tranquilas" e sem "ativação tão tóxica, tão grave e tão quente".
-Outras Observações
-Seus benefícios são comprovados medicinalmente e podem ser pesquisados em sites como tuasaude.com.
+Conhecida popularmente como "erva pombinha", a Quebra-pedra é uma das ervas mais poderosas para cálculos renais e fortalecimento espiritual.
+
+**Nomes científicos:**
+- *Phyllanthus niruri* (mais utilizada)
+- *Tenerbos* sp. (também muito boa)
+
+**Classificação Energética:** Erva morna (tranquila, sem ativação tóxica ou muito quente)
+
+#### Orixás e Energias Associadas
+
+- Pretos Velhos (muito associada)
+- Oxalá (em guias para imantação)
+
+#### Usos Espirituais e Mágicos
+
+**1. Proteção e Resistência:**
+- Quebrar energias densas
+- Proteção espiritual
+- Resistência energética
+
+**2. Superar Obstáculos:**
+- Simboliza "furar parede"
+- "Passar obstáculos"
+- Quebrar barreiras
+
+**3. Fortalecimento do Ori:**
+- Uma das ervas principais para fortalecer o Ori
+- Intuição
+- Concentração
+- Desenvolvimento espiritual
+
+**4. Imantação:**
+- Utilizada em guias de Oxalá
+- Fortalece a imantação energética
+
+#### Benefícios Medicinais
+
+- ✅ **Cálculos renais:** Amplamente reconhecida (uma das 5 ervas principais)
+- ✅ **Cálculos de vesícula:** Eficaz
+- ✅ **Diurético:** Ação diurética
+- ✅ **Emagrecimento:** Auxilia
+- ✅ **Triglicerídeos:** Tratamento
+- ✅ **Calmante:** Função calmante
+- ✅ **Gripes e resfriados:** Receita poderosa combinada com guaco, gengibre, alecrim, limão, mel e alho
+- ✅ **Gastrite:** Combinar com espinheira santa, louro e folha de graviola
+
+#### Forma de Uso
+
+**Banhos:**
+- Maceração da erva
+- Usar da cabeça para baixo
+
+> Benefícios comprovados medicinalmente (consultar tuasaude.com para mais informações)
+
+---
 
 ### Saião
 
-O Saião é uma planta bastante conhecida e utilizada em diversas práticas espirituais, especialmente na Umbanda, e é frequentemente associada à abertura de caminhos e à vitalidade. É importante notar que ele é visualmente parecido e muitas vezes confundido com outras plantas da mesma família, como a Folha da Fortuna e a Mãe de Milhares.
-Nomes e Identificação
-O nome científico do Saião é Kalanchoe brasiliensis.
-Ele pertence à família das suculentas, o que significa que retém bastante água.
-É muito parecido visualmente com a Folha da Fortuna (Kalanchoe pinnata ou Bryophyllum pinnata) e a Mãe de Milhares (Bryophyllum daigremontianum ou Kalanchoe daigremontiana). Inclusive, um novo nome científico liga a Mãe de Milhares como Kalanchoe daigremontiana, mostrando essa interconexão entre as espécies.
-O Saião pode ter flores de várias cores, incluindo amarela, branca, roxa e rosa.
-Classificação Energética
-Classificada como uma erva morna.
-Orixás e Entidades Associadas
-É uma das ervas que o Pai Cláudio mais gosta de usar em banhos.
-É associado a Exu para prosperidade.
-Usos Espirituais e Mágicos
-Vitalidade, Prosperidade e Abertura de Caminhos: É considerado um banho que traz vitalidade, prosperidade, fala e abertura de caminho, sendo muito bom para quem trabalha com comércio e lida com pessoas, e também para questões financeiras.
-Quebra de Energias Negativas: O "fogo ativador" da planta ajuda a quebrar energias negativas, destruir laços e ciclos de desânimo.
-Comunicação: Traz uma força de comunicação.
-Limpeza e Transformação: Tem uma função de limpeza e de troca de energias, ligada à transformação.
-Benefícios Medicinais e Precauções
-O Saião (Kalanchoe brasiliensis) tem muitos benefícios, mas deve ser usado com cuidado devido à potencial toxicidade se utilizada fresca, podendo causar problemas hepáticos. Há também a ressalva de que ela tenha funções medicinais até para o estômago, mas que o uso ainda requer muitos estudos.
-Como outras plantas suculentas, para ser usada em defumações, a secagem deve ser feita na sombra e em local não úmido, pois o sol pode fazer com que apodreça, comprometendo sua potência.
-Em resumo, o Saião é uma erva valorosa para atrair prosperidade, vitalidade e abrir caminhos, sendo também um bom elemento para limpeza e quebra de energias negativas. Sua semelhança com a Folha da Fortuna e a Mãe de Milhares é um ponto a ser considerado na identificação.
+O Saião é uma planta suculenta conhecida por sua energia de abertura de caminhos e vitalidade. É visualmente semelhante a outras plantas da mesma família.
+
+**Nome científico:** *Kalanchoe brasiliensis*
+
+**Família:** Suculentas (Crassulaceae) - retém bastante água
+
+**Classificação Energética:** Erva morna
+
+**Flores:** Amarela, branca, roxa ou rosa
+
+#### Plantas Semelhantes (Fácil Confusão)
+
+- **Folha da Fortuna:** *Kalanchoe pinnata* ou *Bryophyllum pinnata*
+- **Mãe de Milhares:** *Bryophyllum daigremontianum* ou *Kalanchoe daigremontiana*
+
+> Novo nome científico liga Mãe de Milhares como *Kalanchoe daigremontiana*, mostrando interconexão entre as espécies.
+
+#### Orixás e Energias Associadas
+
+- Exu (para prosperidade)
+
+#### Usos Espirituais e Mágicos
+
+**1. Vitalidade e Prosperidade:**
+- Banho que traz vitalidade
+- Prosperidade
+- Abertura de caminhos
+- Fala e comunicação
+- Muito bom para **comércio** e quem **lida com pessoas**
+- **Questões financeiras**
+
+**2. Quebra de Energias Negativas:**
+- "Fogo ativador" quebra energias negativas
+- Destrói laços tóxicos
+- Rompe ciclos de desânimo
+
+**3. Limpeza e Transformação:**
+- Função de limpeza
+- Troca de energias
+- Ligada à transformação
+
+#### Benefícios Medicinais
+
+- ✅ Benefícios diversos (requer mais estudos)
+- ✅ Possivelmente bom para o estômago (ainda em estudo)
+
+⚠️ **Precauções Importantes:**
+
+- **POTENCIAL TOXICIDADE** se utilizada fresca
+- **Pode causar problemas hepáticos**
+- Usar com cuidado e orientação
+
+#### Cultivo e Preparação
+
+**Secagem para defumações:**
+- Secar **na sombra**
+- Local **não úmido**
+- **NÃO secar no sol** (pode apodrecer e comprometer potência)
+
+> Uma das ervas favoritas para banhos do Pai Cláudio
+
+---
 
 ### Samambaia Americana
 
-A Samambaia Americana é uma planta comumente utilizada em práticas espirituais, especialmente na Umbanda, e possui características específicas tanto em seu cultivo quanto em suas aplicações.
-Nome Científico
-Seu nome científico é Nephrolepis exaltata.
+A Samambaia Americana é uma planta de altíssima vibração espiritual, considerada uma das principais ervas para desenvolvimento e crescimento.
 
+**Nome científico:** *Nephrolepis exaltata*
 
-Nomes Populares
-É conhecida como Samambaia Americana. Outras espécies de samambaia mencionadas incluem Samambaia do Mato (Nephrolepis dentata) e Samambaia Prateada, que é considerada mais tranquila para uso.
+**Outras espécies relacionadas:**
+- Samambaia do Mato (*Nephrolepis dentata*)
+- Samambaia Prateada (mais tranquila para uso)
 
+**Classificação Energética:** Erva morna
 
-Classificação Energética
-É classificada como uma erva morna.
+#### Orixás e Energias Associadas
 
+- Oxóssi (principal)
+- Caboclo
+- Boiadeiro
+- Xangô
+- **"Carta coringa"**: Pode ser usada em diversas outras energias (não restrita apenas a filhos destes orixás)
 
-Orixás e Energias Associadas
-É tradicionalmente utilizada nas energias de Oxóssi, Caboclo, Boiadeiro e Xangô.
-É considerada uma das principais ervas para um banho de desenvolvimento espiritual para essas linhas.
-Pode ser utilizada como uma "carta coringa" em diversas outras energias, não se restringindo apenas aos filhos destes orixás.
-É muito utilizada em oferendas para Oxóssi, sendo encontrada facilmente na mata, em cachoeiras ou entre pedras, o que a liga diretamente à energia deste orixá.
-Usos Espirituais e Mágicos
-Desenvolvimento Espiritual: É considerada uma das plantas que traz as cargas energéticas mais altas para o desenvolvimento espiritual.
-Força e Vibração: Traz uma questão energética e de vibração muito forte.
-Limpeza: Possui uma função de limpeza.
-Tomada de Decisões: É ativada para auxiliar na tomada de decisões, ligada à energia de Oxóssi de fazer a escolha certa com uma única flecha.
-Crescimento: Contribui para o crescimento profissional e espiritual.
-Consagração e Imantação
-Utilizada em oferendas, muitas vezes cobrindo outros elementos na mata.
-Pode ser usada para imantar guias (colares de proteção), ativando a energia com pontos riscados, velas, cânticos e elementos como quartzo verde e água de coco.
-Uso em Banhos: É considerada uma boa erva para banhos.
-Pó da Erva: O pó da erva (pólen ou esporos) pode ser utilizado magicamente, inclusive em patuás.
-Cuidados e Cultivo
-Produção: Muitas pessoas têm dificuldade em cultivar samambaias, pois elas secam e morrem no vaso.
-Vaso: Recomenda-se trocar o vaso a cada um ano, especialmente se for pequeno.
-Vento: A samambaia não gosta de vento; evite colocá-la em varandas ou locais com muita corrente de ar.
-Rega: Nunca se deve regar a samambaia por cima. O ideal é colocar o vaso em uma bacia com água para que a raiz absorva a umidade (rega por baixo).
-Adubação: Possui folhas lisas, o que dificulta a absorção de nutrientes pela folha. Por isso, a adubação pela raiz é mais recomendada, utilizando nitrogênio ou aminoácidos para a parte foliar.
-Toxicidade e Alergia: É necessário ter cuidado ao utilizá-la em banhos, especialmente para pessoas de pele mais clara, pois os "pelinhos" da samambaia de metro ou a própria erva podem causar alergia e coceira. Se for uma planta mais tóxica, deve-se usar em menor quantidade. A samambaia prateada é considerada mais segura nesse aspecto.
-Samambaia do Mato
+#### Usos Espirituais e Mágicos
 
-A Samambaia do Mato é uma planta amplamente valorizada em diversas práticas espirituais, especialmente na Umbanda, conhecida por suas propriedades energéticas e protetivas.
-Nomes Populares e Científicos
-É conhecida como Samambaia do Mato.
-Seu nome científico mais tradicional é Nephrolepis dentata.
-Existem três espécies de samambaia do mato, e é diferenciada da Samambaia Americana (Nephrolepis exaltata).
-Uma variação mencionada é a Samambaia Prateada, considerada mais tranquila para uso.
-Classificação Energética e Orixás Associados
-É classificada como uma erva morna.
-É tradicionalmente utilizada nas energias de Oxóssi, Caboclo, Boiadeiro e Xangô.
-É considerada uma das principais ervas para banhos de desenvolvimento para essas linhas de trabalho.
-Sua conexão com o "brejo" (terreno pantanoso) também a liga à energia de Nanã em outras tradições.
-Embora seja associada a orixás específicos, ela não é restrita apenas aos filhos destes orixás, podendo ser usada como uma "carta coringa" em diversas outras energias.
-Usos Espirituais e Mágicos
-Desenvolvimento Espiritual: É uma das plantas que traz as cargas energéticas mais altas para o desenvolvimento espiritual.
-Força e Vibração: Traz uma questão energética e de vibração muito forte.
-Limpeza: Possui uma função de limpeza.
-Abertura de Caminhos e Crescimento:
-É ativada para auxiliar na tomada de decisões, ligada à energia de Oxóssi de fazer a escolha certa com uma única flecha.
-Contribui para o crescimento profissional e espiritual.
-Rituais e Oferendas
-É muito utilizada em oferendas para Oxóssi, sendo facilmente encontrada na mata, cachoeiras ou entre pedras, o que a liga diretamente à energia deste orixá.
-Pode ser utilizada para imantar guias (colares de proteção), ativando a energia com pontos riscados, velas, cânticos, quartzo verde e água de coco.
-O pó da erva (pólen ou esporos) pode ser utilizado magicamente, inclusive em patuás.
-Cuidados e Cultivo (aplicáveis às samambaias em geral)
-Muitas pessoas têm dificuldade em cultivar samambaias em vasos, pois elas tendem a secar e morrer.
-Trocar o vaso a cada ano é recomendado se ele for muito pequeno.
-A samambaia não gosta de vento; deve-se evitar colocá-la em varandas ou locais com muita corrente de ar, pois isso pode secá-la.
-A rega ideal é por baixo (colocando o vaso em uma bacia com água para que a raiz absorva a umidade), não por cima.
-A adubação é mais eficaz pela raiz, utilizando nitrogênio ou aminoácidos para a parte foliar, devido à dificuldade de absorção de nutrientes pelas folhas lisas da planta.
-Toxicidade e Precauções: É necessário ter cuidado ao utilizá-la em banhos, especialmente para pessoas de pele mais clara, pois os "pelinhos" da samambaia (de metro ou outras variedades) ou a própria erva podem causar alergia e coceira. Se for uma planta mais tóxica, deve-se usar em menor quantidade. A Samambaia Prateada é considerada mais segura nesse aspecto.
-Sua resistência a torna uma planta com o "quesito da resistência, da força".
+**1. Desenvolvimento Espiritual (uso principal):**
+- **Uma das plantas com cargas energéticas mais altas** para desenvolvimento espiritual
+- Principal erva para banhos de desenvolvimento das linhas de Oxóssi, Caboclos, Boiadeiros e Xangô
+
+**2. Força e Vibração:**
+- Questão energética muito forte
+- Vibração elevada
+
+**3. Limpeza:**
+- Função de limpeza espiritual
+
+**4. Tomada de Decisões:**
+- Ligada à energia de Oxóssi: fazer a escolha certa com uma única flecha
+- Auxilia decisões importantes
+
+**5. Crescimento:**
+- Crescimento profissional
+- Crescimento espiritual
+
+#### Consagração e Imantação
+
+**Oferendas:**
+- Muito utilizada em oferendas para Oxóssi
+- Encontrada na mata, cachoeiras ou entre pedras
+- Muitas vezes cobrindo outros elementos na mata
+
+**Imantação de guias:**
+- Ativar energia com:
+  - Pontos riscados
+  - Velas
+  - Cânticos
+  - Quartzo verde
+  - Água de coco
+
+**Pó da erva:**
+- Pólen ou esporos
+- Utilizado magicamente
+- Pode ser usado em patuás
+
+#### Uso em Banhos
+
+- Considerada boa erva para banhos
+
+⚠️ **Cuidado com alergias:**
+- Pessoas de pele mais clara podem ter alergia aos "pelinhos" da samambaia
+- Pode causar coceira
+- Se planta for mais tóxica, usar em menor quantidade
+- **Samambaia Prateada é mais segura**
+
+#### Cuidados e Cultivo
+
+**Dificuldades comuns:**
+- Muitas pessoas têm dificuldade: samambaias secam e morrem no vaso
+
+**Vaso:**
+- Trocar a cada **1 ano** (especialmente se pequeno)
+
+**Vento:**
+- **NÃO gosta de vento**
+- Evitar varandas ou locais com corrente de ar
+
+**Rega (IMPORTANTE):**
+- **NUNCA regar por cima**
+- **Rega por baixo:** Colocar vaso em bacia com água
+- Deixar raiz absorver umidade
+
+**Adubação:**
+- Folhas lisas dificultam absorção de nutrientes pela folha
+- **Adubação pela raiz** é mais recomendada
+- Usar nitrogênio ou aminoácidos para parte foliar
+
+---
+
+### Samambaia do Mato
+
+A Samambaia do Mato possui características semelhantes à Samambaia Americana, com propriedades energéticas e protetivas poderosas.
+
+**Nome científico:** *Nephrolepis dentata*
+
+**Classificação Energética:** Erva morna
+
+**Nota:** Existem 3 espécies de samambaia do mato, diferenciadas da Samambaia Americana.
+
+#### Orixás e Energias Associadas
+
+- Oxóssi (principal)
+- Caboclo
+- Boiadeiro
+- Xangô
+- Nanã (conexão com o "brejo" - terreno pantanoso)
+- **"Carta coringa"** em diversas energias
+
+#### Características e Usos
+
+**Desenvolvimento Espiritual:**
+- Uma das plantas com **cargas energéticas mais altas**
+- Principal para banhos de desenvolvimento
+
+**Força e Resistência:**
+- "Quesito da resistência, da força"
+- Vibração muito forte
+
+**Limpeza:**
+- Função de limpeza espiritual
+
+**Abertura de Caminhos:**
+- Tomada de decisões (energia de Oxóssi)
+- Crescimento profissional e espiritual
+
+#### Rituais e Oferendas
+
+- Oferendas para Oxóssi (facilmente encontrada na mata, cachoeiras, entre pedras)
+- Imantação de guias com pontos riscados, velas, quartzo verde e água de coco
+- Pó da erva (esporos) em patuás
+
+⚠️ **Precauções:**
+- Mesmos cuidados da Samambaia Americana com alergias
+- Samambaia Prateada é mais segura para banhos
+
+---
 
 ### Tomilho
 
-Classificação Científica e Família
-É da mesma família do orégano, e o primeiro nome científico de ambos é Origanum.
-Há menção de diferentes espécies, com cheiros variados.
-Classificação Energética
-É considerado uma erva morna.
-Associações Espirituais e Usos na Umbanda:
-É uma erva harmonizadora.
-É utilizado nas energias de Oxalá e Oxum.
-É muito voltado à prosperidade, crescimento financeiro, harmonia, alegria e reconciliação.
-Pode ser usado em "bate-folhas" para trazer boas vibrações, energia e prosperidade.
-Possui uma função muito semelhante à do orégano.
+Erva harmonizadora da mesma família do orégano, voltada à prosperidade e reconciliação.
+
+**Nome científico:** *Origanum* sp. (mesma família do orégano)
+
+**Classificação Energética:** Erva morna
+
+#### Orixás e Energias Associadas
+
+- Oxalá
+- Oxum
+
+#### Propriedades Espirituais
+
+- Erva harmonizadora
+- Prosperidade
+- Crescimento financeiro
+- Harmonia
+- Alegria
+- Reconciliação
+
+#### Usos Espirituais
+
+- **"Bate-folhas":** Traz boas vibrações, energia e prosperidade
+- Função muito semelhante ao orégano
+
+**Observação:** Existem diferentes espécies com cheiros variados.
+
+---
 
 ## CAPÍTULO 7 – ERVAS FRIAS
 
 ### Algodão
 
-Classificação Energética e Poder de Cura
-Na maioria das doutrinas, é considerado uma erva fria, embora um ou outro autor menciona o uso como erva quente.
-É utilizado na canjica por seu poder de cura.
-Usos Espirituais e na Umbanda
-É amplamente empregado para o equilíbrio dos chakras, especialmente o chakra coronário e o chakra frontal.
-É recomendado para mulheres durante o período menstrual, pois este é um momento de troca de energias. O algodão veda e oferece uma proteção leve e calma.
-Ajuda a bloquear energias negativas e a proteger o chakra sexual.
-É associado a um poderio ligado ao branco, à clareza, à classe e à intuição.
-Utilizado na imantação de energia de Oxalá.
-Para banhos, utiliza-se a folha. No entanto, ao macerar o algodão, não se consegue extrair axé dele.
-Características e Cultivo
-Existem diferentes tipos de algodão (pequeno e grande), mas todos possuem o mesmo nome científico.
-A transgenia (manipulação em laboratório) é empregada para aumentar a resistência da planta contra pragas, fungos, doenças e chuvas, otimizando o investimento dos produtores rurais nas sementes e inseticidas.
-Não é uma planta que necessita de muita água.
-Pode atingir um tamanho considerável e, em alguns casos, pés de algodão podem durar anos e produzir continuamente, enquanto outros podem secar após um período.
-Em certas regiões, é difícil encontrar a folha de algodão fresca, sendo mais comum adquiri-la seca.
-Não é recomendado usar o algodão diretamente em machucados, pois não é esterilizado.
+O algodão é uma erva protetora, voltada ao equilíbrio dos chakras e à proteção energética suave.
+
+**Classificação Energética:** Erva fria (maioria das doutrinas) - alguns autores mencionam uso como erva quente
+
+#### Orixás e Energias Associadas
+
+- Oxalá (principal)
+
+#### Usos Espirituais e na Umbanda
+
+**1. Equilíbrio de Chakras:**
+- **Chakra coronário**
+- **Chakra frontal**
+
+**2. Proteção para Mulheres:**
+- **Período menstrual:** Momento de troca de energias
+- Veda e oferece proteção leve e calma
+- Bloqueia energias negativas
+- Protege o chakra sexual
+
+**3. Propriedades:**
+- Poderio ligado ao branco
+- Clareza
+- Classe
+- Intuição
+
+**4. Imantação:**
+- Utilizado na imantação de energia de Oxalá
+
+**5. Cura:**
+- Utilizado na canjica por seu poder de cura
+
+#### Uso em Banhos
+
+- **Utiliza-se a folha**
+
+⚠️ **Observação:** Ao macerar o algodão, **não se consegue extrair axé** dele.
+
+#### Características e Cultivo
+
+**Tipos:**
+- Existem diferentes tipos (pequeno e grande)
+- Todos possuem o mesmo nome científico
+
+**Transgenia:**
+- Manipulação em laboratório para aumentar resistência contra pragas, fungos, doenças e chuvas
+- Otimiza investimento em sementes e inseticidas
+
+**Cultivo:**
+- Não necessita de muita água
+- Pode atingir tamanho considerável
+- Alguns pés duram anos e produzem continuamente
+- Outros podem secar após um período
+
+**Disponibilidade:**
+- Em certas regiões, difícil encontrar folha fresca
+- Mais comum adquirir seca
+
+⚠️ **Cuidado:** Não usar algodão diretamente em machucados (não é esterilizado).
+
+---
 
 ### Alface
 
-A Alface é uma planta amplamente reconhecida por suas propriedades e usos tanto no âmbito espiritual quanto em suas características naturais.
-Nome Popular e Científico
-É popularmente conhecida como Alface.
-O nome científico mencionado é Lactuca sativa.
-Origem
-Ao contrário de algumas ervas africanas, a alface veio da Ásia.
-Foi amplamente utilizada no período da colonização, por volta de 1500, chegando com um "poderio muito grande".
-Classificação Energética
-É classificada como uma erva calmante.
-Possui uma "energia legal".
-Não é considerada uma "vence demandas".
-Orixás e Entidades Associadas
-Em algumas doutrinas, é ligada a Iansã, enquanto em outras, a Oxalá.
-A Alface d'água (conhecida também como Ewé OjúOró), e em alguns lugares como erva de Santa Luzia) tem ligação com a alface e é amplamente utilizada para Oxum e Iemanjá, e também para Exu para questões de equilíbrio.
-Usos Espirituais e Mágicos
-Acalmamento: É utilizada para pessoas que sofrem de estresse e compulsividade, promovendo o acalmamento.
-Sono: O consumo em excesso de alface pode causar sono.
-No culto de Ifá, a alface é utilizada para acalmar quem vai "vaiar" (possivelmente referindo-se a estados de transe ou incorporação).
-Benefícios Medicinais
-Seu principal benefício medicinal é o efeito calmante, podendo induzir o sono.
-Outras Observações
-É mencionado que a alface não é a melhor alimentação para tartarugas; ervas mais escuras e nutritivas como espinafre, rúcula e agrião são mais indicadas para elas.
+A Alface é uma planta reconhecida por suas propriedades calmantes, com origem asiática e grande uso na colonização brasileira.
+
+**Nome científico:** *Lactuca sativa*
+
+**Origem:** Ásia (ao contrário de muitas ervas africanas)
+
+**Classificação Energética:** Erva calmante (energia "legal")
+
+**Nota:** Não é considerada uma "vence demandas"
+
+#### Orixás e Entidades Associadas
+
+- Iansã (algumas doutrinas)
+- Oxalá (outras doutrinas)
+
+**Alface d'água** (Ewé OjúOró, ou erva de Santa Luzia):
+- Oxum
+- Iemanjá
+- Exu (para questões de equilíbrio)
+
+#### Usos Espirituais e Mágicos
+
+**1. Acalmamento:**
+- Para pessoas que sofrem de estresse
+- Compulsividade
+- Promove acalmamento
+
+**2. Sono:**
+- Consumo em excesso pode causar sono
+
+**3. Culto de Ifá:**
+- Utilizada para acalmar quem vai "vaiar" (estados de transe/incorporação)
+
+#### Benefícios Medicinais
+
+- ✅ **Calmante:** Efeito principal
+- ✅ **Indução do sono:** Pode induzir sono
+
+#### Histórico
+
+- Chegou ao Brasil por volta de **1500**
+- Utilizada amplamente na colonização
+- Chegou com "poderio muito grande"
+
+#### Outras Observações
+
+- Não é a melhor alimentação para tartarugas
+- Para tartarugas: preferir ervas mais escuras e nutritivas (espinafre, rúcula, agrião)
+
+---
 
 ### Café
 
-O Café, cientificamente conhecido por espécies como Coffea arabica e Coffea conilon, é uma planta com um significado histórico e energético muito forte, especialmente no Brasil.
-Com base nas informações fornecidas, aqui estão os detalhes sobre o Café:
-Nomes Científicos
-As duas principais espécies mencionadas são Coffea arabica (mais tradicional, com folhas compridas) e Coffea conilon (também chamada de Robusta).
-Classificação Energética
-Em muitas doutrinas, o café é classificado como uma erva fria energética.
-No entanto, alguns autores o classificam como quente.
-É considerado uma das ervas energéticas de mais alta vibração.
-Orixás e Entidades Associadas
-É ligado a Oxumarê, Xangô e Omulu.
-É amplamente utilizado na vibração de Pretos Velhos.
-Também é muito utilizado para as linhas de Boiadeiro e Caboclo de Boiadeiro, e para a linha cigana, Exu e Pombagira.
-Usos Espirituais e Mágicos
-Ativação Energética: Sua principal função é trazer energia e vitalidade. Assim como a bebida que nos deixa acelerados e tira o sono, o café proporciona uma alta vitalidade.
-Prosperidade e Crescimento: É amplamente utilizado para prosperidade, crescimento e expansão. Plantar um pé de café é associado a plantar prosperidade.
-Resistência e História: O café foi o sustento do Brasil por anos, e sua energia está ligada à resistência e à história do povo que trabalhou no campo e lidou com animais bravos, como os Boiadeiros.
-Limpeza: Possui função de limpeza, embora não seja sua característica principal.
-Oferendas e Consagrações: É utilizado em oferendas, especialmente para Pretos Velhos. Pode ser usado para consagrar elementos e ativar energia.
-Banhos e Defumação: A folha do café pode ser utilizada em banhos para limpeza e energia. O pó do café também é usado para defumação e para banhos, sendo uma opção acessível para quem não tem a folha fresca. O fruto do café é muito bom para defumação.
-Potencialização: O café no bate-folhas, por exemplo, pode ser combinado com outras ervas como a canela (para prosperidade) para unificar energias.
-Ativação da Fala: Junto com a pimenta, a folha da mangueira, e o marafo, o café é muito bom para ativação da fala e para oráculos.
-Fertilidade: O fruto do café, especialmente pilado seco, pode trazer uma energia ligada à fertilidade e expansão.
-Rasto do Café: Algumas famílias mencionam a história de deixar o rastro do café (folha e fruto) para encontrar quilombos, unificando o poder da cana e do café.
-Formas de Uso e Precauções
-Pode ser usado o pó de café comum (batizado) para banhos e defumações.
-As folhas são usadas para banhos. A flor é mais difícil de achar, e o fruto pode ser usado torrado ou não torrado.
-A semente torrada e as folhas podem ser piladas para magia ou defumação.
-O cultivo do café é considerado super fácil, adaptando-se bem ao sol e à chuva.
-O Café, portanto, é uma erva versátil, com forte conexão com a história brasileira e amplas aplicações para vitalidade, prosperidade e ativação energética em diversas práticas espirituais.
+O Café é uma planta com significado histórico e energético muito forte no Brasil, considerada uma das ervas de mais alta vibração.
+
+**Nomes científicos:**
+- *Coffea arabica* (mais tradicional, folhas compridas)
+- *Coffea conilon* (Robusta)
+
+**Classificação Energética:**
+- Erva fria energética (muitas doutrinas)
+- Erva quente (alguns autores)
+- **Uma das ervas energéticas de mais alta vibração**
+
+#### Orixás e Entidades Associadas
+
+- Oxumarê
+- Xangô
+- Omulu
+- Pretos Velhos (amplamente utilizado)
+- Boiadeiro e Caboclo de Boiadeiro
+- Linha cigana
+- Exu
+- Pombagira
+
+#### Usos Espirituais e Mágicos
+
+**1. Ativação Energética (principal):**
+- Traz energia e vitalidade
+- Alta vitalidade (como a bebida que acelera e tira o sono)
+
+**2. Prosperidade e Crescimento:**
+- Amplamente utilizado para prosperidade
+- Crescimento
+- Expansão
+- **Plantar um pé de café = plantar prosperidade**
+
+**3. Resistência e História:**
+- Sustento do Brasil por anos
+- Energia ligada à resistência
+- História do povo que trabalhou no campo
+- Conexão com Boiadeiros
+
+**4. Limpeza:**
+- Função de limpeza (não é característica principal)
+
+**5. Oferendas e Consagrações:**
+- Especialmente para Pretos Velhos
+- Consagrar elementos
+- Ativar energia
+
+**6. Ativação da Fala:**
+- Combinado com pimenta, folha da mangueira e marafo
+- Muito bom para fala e oráculos
+
+**7. Fertilidade:**
+- Fruto pilado seco: energia de fertilidade e expansão
+
+**8. Potencialização:**
+- No bate-folhas, combinar com canela (prosperidade)
+- Unifica energias
+
+**9. Rasto do Café:**
+- História: deixar rastro de folha e fruto para encontrar quilombos
+- Unificação do poder da cana e do café
+
+#### Formas de Uso
+
+**Banhos:**
+- Folhas
+- Pó de café comum ("batizado")
+
+**Defumação:**
+- Pó de café
+- Fruto (muito bom)
+- Semente torrada pilada
+- Folhas piladas
+
+**Magia:**
+- Semente torrada pilada
+- Folhas piladas
+
+**Elementos utilizáveis:**
+- Folha (mais comum)
+- Fruto (torrado ou não torrado)
+- Flor (mais difícil de achar)
+- Pó de café
+
+#### Cultivo
+
+- Super fácil
+- Adapta-se bem ao sol e à chuva
+
+> O Café é uma erva versátil, com forte conexão com a história brasileira e amplas aplicações para vitalidade, prosperidade e ativação energética.
+
+---
 
 ---
 
