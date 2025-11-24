@@ -169,6 +169,120 @@
       #backTop.show { opacity: 1; transform: translateY(0); }
       @media (min-width: 640px) { #backTop { right: 16px; bottom: 16px; } }
 
+      /* Hero Cover Section */
+      .hero-cover {
+        position: relative;
+        width: 100%;
+        max-width: var(--maxw);
+        margin: 20px auto 32px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        background: var(--card);
+      }
+      
+      .hero-cover .media {
+        position: relative;
+        height: 380px;
+        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+      }
+      
+      .hero-cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+      
+      .hero-cover .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.75) 0%,
+          rgba(0, 0, 0, 0.45) 40%,
+          rgba(0, 0, 0, 0.65) 100%
+        );
+      }
+      
+      .hero-cover .text {
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: 40px;
+        color: #ffffff;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+      
+      .hero-cover h1 {
+        margin: 0 0 12px;
+        font-family: var(--heading-font);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+      
+      .hero-cover p {
+        margin: 0;
+        font-family: var(--content-font);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.92);
+        max-width: 600px;
+      }
+      
+      @media (max-width: 768px) {
+        .hero-cover {
+          margin: 16px auto 24px;
+          border-radius: 12px;
+        }
+        
+        .hero-cover .media {
+          height: 280px;
+        }
+        
+        .hero-cover .text {
+          left: 28px;
+          right: 28px;
+          bottom: 28px;
+        }
+        
+        .hero-cover h1 {
+          font-size: 32px;
+          margin-bottom: 10px;
+        }
+        
+        .hero-cover p {
+          font-size: 16px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .hero-cover .media {
+          height: 240px;
+        }
+        
+        .hero-cover .text {
+          left: 20px;
+          right: 20px;
+          bottom: 20px;
+        }
+        
+        .hero-cover h1 {
+          font-size: 26px;
+          margin-bottom: 8px;
+        }
+        
+        .hero-cover p {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+
       @media print {
         .topbar, aside#toc, .progress { display: none !important; }
         article#content { border: none; box-shadow: none; }
@@ -190,6 +304,17 @@
         <button class="btn" id="incFont" aria-label="Aumentar fonte">A+</button>
       </div>
     </header>
+
+    <section class="hero-cover" aria-label="Capa">
+      <div class="media">
+        <img src="../Source/img/vivencia_pombogira.jpg" alt="Capa do livro Os Mistérios de Pombogira" loading="lazy" />
+        <div class="overlay"></div>
+        <div class="text">
+          <h1>Os Mistérios de Pombogira</h1>
+          <p>Interior, Emoção e Evolução na Umbanda Sagrada.</p>
+        </div>
+      </div>
+    </section>
 
     <div class="layout">
       <aside id="toc">
