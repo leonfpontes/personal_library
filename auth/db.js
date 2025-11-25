@@ -20,8 +20,9 @@ async function query(sqlText, params = []) {
   // Converter ? para $1, $2...
   let paramIndex = 1;
   const convertedSql = sqlText.replace(/\?/g, () => `$${paramIndex++}`);
-  const result = await client(convertedSql, params);
-  return { rows: result };
+  // sql.query() returns an array directly, not { rows: [...] }
+  const result = await client.query(convertedSql, params);
+  return { rows: result };  // Wrap array in { rows } for consistency
 }
 
 async function getUserByEmail(email) {
