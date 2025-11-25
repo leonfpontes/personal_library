@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oyá Logunã: Senhora do Tempo e da Fé — Livro Digital</title>
+    <meta name="description" content="Uma obra sobre o Mistério do Tempo, fé e desenvolvimento mediúnico na Umbanda Sagrada. Compreenda a força divina que rege o tempo espiritual." />
+    <meta name="author" content="Terreiro Tia Maria e Cabocla Jupira" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oyá Logunã: Senhora do Tempo e da Fé — Livro Digital" />
+    <meta property="og:description" content="Uma obra sobre o Mistério do Tempo, fé e desenvolvimento mediúnico na Umbanda Sagrada." />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="canonical" href="/livros/aula_oya_loguna" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Oyá Logunã: Senhora do Tempo e da Fé — Livro Digital" />
+    <meta name="twitter:description" content="Uma obra sobre o Mistério do Tempo, fé e desenvolvimento mediúnico na Umbanda Sagrada." />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232e5c8f'/%3E%3Cpath d='M32 12c-6 0-12 4-12 12v8c0 6 6 10 12 10s12-4 12-10v-8c0-8-6-12-12-12zm0 8a4 4 0 110 8 4 4 0 010-8zm-8 24h16l-2 8h-12l-2-8z' fill='%23fff' opacity='.65'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/theme-oya_loguna.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+    <header class="topbar">
+      <div class="brand">
+        <h1>Oyá Logunã</h1>
+        <nav aria-label="Breadcrumb">
+          <a href="../index.html">← Biblioteca</a>
+          <span class="sep">›</span>
+          <span>Livro</span>
+        </nav>
+      </div>
+      <div class="controls">
+        <a href="../index.html" class="btn" aria-label="Voltar à biblioteca">← Voltar</a>
+        <button class="icon-btn" id="fontDecrease" aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
+        <button class="icon-btn" id="fontIncrease" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">◐</button>
+      </div>
+    </header>
+
+      <section class="hero-cover" aria-label="Capa do livro">
+        <div class="media">
+          <img src="../Source/img/Oya_Loguna.png" alt="Imagem de capa da apostila Oyá Logunã" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="text">
+            <h1>Oyá Logunã: Tempo e Fé</h1>
+            <p>A Senhora do Mistério do Tempo, da Fé e da Maturação Mediúnica.</p>
+          </div>
+        </div>
+      </section>
+
+    <div class="layout">
+      <aside id="toc" aria-label="Índice">
+        <h2>Índice</h2>
+        <div class="toc-search">
+          <input type="search" id="tocSearch" placeholder="Filtrar capítulos…" aria-label="Filtrar capítulos" />
+        </div>
+        <ul id="tocList"></ul>
+      </aside>
+      <main>
+        <article id="content" aria-label="Conteúdo do livro"></article>
+      </main>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const mdPath = '../Source/Aula_oya_loguna.md';
+
+      // Theme Management
+      const themeToggle = document.getElementById('themeToggle');
+      const themes = ['light', 'dark', 'sepia'];
+      let currentThemeIndex = parseInt(localStorage.getItem('theme-index') || '0');
+      function applyTheme() {
+        document.documentElement.setAttribute('data-theme', themes[currentThemeIndex] || 'light');
+        localStorage.setItem('theme-index', currentThemeIndex);
+      }
+      themeToggle.addEventListener('click', () => {
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+        applyTheme();
+      });
+      applyTheme();
+
+      // Font Size Management
+      const fontIncrease = document.getElementById('fontIncrease');
+      const fontDecrease = document.getElementById('fontDecrease');
+      let fontSize = parseFloat(localStorage.getItem('font-size') || '16');
+      function applyFontSize() {
+        document.documentElement.style.setProperty('--content-size', `${fontSize}px`);
+        localStorage.setItem('font-size', fontSize);
+      }
+      fontIncrease.addEventListener('click', () => {
+        if (fontSize < 24) { fontSize += 2; applyFontSize(); }
+      });
+      fontDecrease.addEventListener('click', () => {
+        if (fontSize > 12) { fontSize -= 2; applyFontSize(); }
+      });
+      applyFontSize();
+
+      // Progress Bar
+      const progressBar = document.getElementById('progressBar');
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = `${progress}%`;
+      });
+
+      // Back to Top Button
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Markdown Rendering
+      fetch(mdPath)
+        .then(response => response.text())
+        .then(text => {
+          const contentEl = document.getElementById('content');
+          contentEl.innerHTML = marked.parse(text);
+
+          // Add anchor links to headings
+          contentEl.querySelectorAll('h1, h2, h3, h4').forEach(heading => {
+            const id = heading.textContent.trim().toLowerCase()
+              .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+              .replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+            heading.id = id;
+            const anchor = document.createElement('a');
+            anchor.href = `#${id}`;
+            anchor.textContent = '#';
+            anchor.setAttribute('aria-label', `Link para ${heading.textContent}`);
+            heading.appendChild(anchor);
+          });
+
+          // Generate TOC
+          const tocList = document.getElementById('tocList');
+          contentEl.querySelectorAll('h1, h2, h3, h4').forEach(heading => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `#${heading.id}`;
+            a.textContent = heading.textContent.replace('#', '').trim();
+            a.classList.add(`toc-${heading.tagName.toLowerCase()}`);
+            li.appendChild(a);
+            tocList.appendChild(li);
+          });
+
+          // TOC Search
+          const tocSearch = document.getElementById('tocSearch');
+          tocSearch.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            tocList.querySelectorAll('li').forEach(li => {
+              const text = li.textContent.toLowerCase();
+              li.style.display = text.includes(query) ? '' : 'none';
+            });
+          });
+
+          // Active TOC Item (Intersection Observer)
+          const observerOptions = {
+            rootMargin: '-80px 0px -80% 0px',
+            threshold: 0
+          };
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                tocList.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+                const activeLink = tocList.querySelector(`a[href="#${entry.target.id}"]`);
+                if (activeLink) {
+                  activeLink.classList.add('active');
+                  if (getComputedStyle(activeLink).display !== 'none') {
+                    activeLink.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+                  }
+                }
+              }
+            });
+          }, observerOptions);
+          contentEl.querySelectorAll('h1, h2, h3, h4').forEach(heading => observer.observe(heading));
+
+          // Smooth Scroll for TOC Links
+          tocList.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+              e.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              if (target) {
+                const offset = 80;
+                const targetPos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: targetPos, behavior: 'smooth' });
+              }
+            });
+          });
+        })
+        .catch(err => {
+          document.getElementById('content').innerHTML = `<p style="color: var(--accent);">Erro ao carregar o manuscrito: ${err.message}</p>`;
+        });
+    </script>
+  </body>
+</html>
