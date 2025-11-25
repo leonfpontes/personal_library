@@ -1,0 +1,25 @@
+{
+  "errors": {
+    "invalid_credentials": "Email ou senha incorretos",
+    "inactive_user": "Usuário inativo",
+    "missing_fields": "Parâmetros obrigatórios ausentes",
+    "access_denied": "Acesso negado",
+    "internal_error": "Erro interno",
+    "method_not_allowed": "Método não permitido"
+  },
+  "protection": {
+    "copy_blocked": "Cópia bloqueada pela política de proteção.",
+    "print_blocked": "Impressão bloqueada pela política de proteção.",
+    "save_blocked": "Salvar página bloqueado.",
+    "context_blocked": "Menu de contexto desativado.",
+    "policy_notice": "Este conteúdo é protegido. Tentativas são registradas."
+  },
+  "ui": {
+    "login": "Entrar",
+    "logout": "Sair",
+    "email": "Email",
+    "password": "Senha",
+    "submit": "Enviar",
+    "denied": "Você não possui acesso a este conteúdo."
+  }
+}

@@ -1,0 +1,33 @@
+# Node.js / Vercel
+node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+dist/
+build/
+.vercel/
+
+# Env files
+.env
+.env.*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# Python (if any)
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+logs/
+
+# SQLite local files (if used)
+*.db
+*.sqlite
+*.sqlite3

@@ -1,0 +1,650 @@
+openapi: 3.0.3
+info:
+  title: Personal Library Auth API
+  version: 1.0.0
+  description: |
+    API de autenticação e controle de acesso para biblioteca digital pessoal.
+    Todos os endpoints retornam JSON e usam pt-BR nas mensagens de erro.
+
+servers:
+  - url: https://your-library.vercel.app/api
+    description: Produção (Vercel)
+
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: session
+      description: JWT session token (HttpOnly cookie)
+    
+    adminAuth:
+      type: apiKey
+      in: header
+      name: X-Admin-Token
+      description: Admin token (env var ADMIN_TOKEN)
+
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "550e8400-e29b-41d4-a716-446655440000"
+        nome:
+          type: string
+          minLength: 3
+          maxLength: 100
+          example: "João Silva"
+        cpf:
+          type: string
+          pattern: '^\d{11}$'
+          example: "12345678901"
+        cpfMasked:
+          type: string
+          description: CPF mascarado para exibição (ex.: 123***01)
+          example: "123***01"
+        email:
+          type: string
+          format: email
+          example: "joao@example.com"
+        status:
+          type: string
+          enum: [active, inactive]
+          example: "active"
+        consentAt:
+          type: integer
+          format: int64
+          description: Timestamp do consentimento LGPD
+        grants:
+          type: array
+          items:
+            type: string
+          example: ["vivencia_pombogira", "guia_de_ervas"]
+      required: [id, nome, cpf, email, status]
+
+    Grant:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        bookSlug:
+          type: string
+          example: "vivencia_pombogira"
+        status:
+          type: string
+          enum: [active, revoked]
+        grantedAt:
+          type: integer
+          format: int64
+          description: Unix timestamp
+        revokedAt:
+          type: integer
+          format: int64
+          description: Unix timestamp (optional)
+      required: [userId, bookSlug, status, grantedAt]
+
+    AuditLog:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          nullable: true
+        action:
+          type: string
+          enum: [login_success, login_failure, access_granted, access_denied, copy_attempt, logout]
+        bookSlug:
+          type: string
+          nullable: true
+        timestamp:
+          type: integer
+          format: int64
+        ipHash:
+          type: string
+          nullable: true
+        userAgent:
+          type: string
+          nullable: true
+      required: [id, action, timestamp]
+
+    Error:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        error:
+          type: string
+          example: "Credenciais inválidas"
+      required: [success, error]
+
+paths:
+  /auth/login:
+    post:
+      summary: Autenticar usuário
+      description: |
+        Valida credenciais e retorna JWT no cookie HttpOnly.
+        Cookie expira em 24 horas.
+      tags: [Authentication]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: "joao@example.com"
+                password:
+                  type: string
+                  format: password
+                  example: "senha123"
+              required: [email, password]
+      responses:
+        '200':
+          description: Login bem-sucedido
+          headers:
+            Set-Cookie:
+              schema:
+                type: string
+                example: "session=jwt_token; HttpOnly; Secure; SameSite=Strict; Max-Age=86400"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  user:
+                    $ref: '#/components/schemas/User'
+                  token:
+                    type: string
+                    description: JWT (também enviado em cookie)
+                    example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        '401':
+          description: Credenciais inválidas
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              example:
+                success: false
+                error: "Email ou senha incorretos"
+        '400':
+          description: Requisição inválida
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              example:
+                success: false
+                error: "Email e senha são obrigatórios"
+
+  /auth/logout:
+    post:
+      summary: Encerrar sessão
+      description: Invalida o JWT e limpa o cookie de sessão
+      tags: [Authentication]
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: Logout bem-sucedido
+          headers:
+            Set-Cookie:
+              schema:
+                type: string
+                example: "session=; Max-Age=0"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+        '401':
+          description: Não autenticado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /auth/validate:
+    get:
+      summary: Validar sessão (uso interno - middleware)
+      description: |
+        Endpoint interno usado pelo Edge Middleware para validar JWT e grants.
+        Não deve ser chamado diretamente pelo frontend.
+      tags: [Authentication]
+      security:
+        - cookieAuth: []
+      parameters:
+        - name: bookSlug
+          in: query
+          description: Slug do livro para verificar permissão
+          required: false
+          schema:
+            type: string
+            example: "vivencia_pombogira"
+      responses:
+        '200':
+          description: Sessão válida
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  valid:
+                    type: boolean
+                    example: true
+                  user:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      nome:
+                        type: string
+                      cpf:
+                        type: string
+                  grants:
+                    type: array
+                    items:
+                      type: string
+                    example: ["vivencia_pombogira", "guia_de_ervas"]
+        '401':
+          description: Sessão inválida ou expirada
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  valid:
+                    type: boolean
+                    example: false
+                  error:
+                    type: string
+                    example: "Token expirado"
+
+  /users:
+    get:
+      summary: Listar todos os usuários
+      description: Retorna lista de usuários com suas concessões (admin only)
+      tags: [Users]
+      security:
+        - adminAuth: []
+      responses:
+        '200':
+          description: Lista de usuários
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  users:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/User'
+        '403':
+          description: Acesso negado (não admin)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    post:
+      summary: Criar novo usuário
+      description: Cadastra usuário com validação de CPF e email (admin only)
+      tags: [Users]
+      security:
+        - adminAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                  minLength: 3
+                  maxLength: 100
+                  example: "Maria Santos"
+                cpf:
+                  type: string
+                  pattern: '^\d{11}$'
+                  example: "98765432109"
+                email:
+                  type: string
+                  format: email
+                  example: "maria@example.com"
+                password:
+                  type: string
+                  minLength: 8
+                  example: "senha123"
+              required: [nome, cpf, email, password]
+      responses:
+        '201':
+          description: Usuário criado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  user:
+                    $ref: '#/components/schemas/User'
+        '400':
+          description: Validação falhou
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                cpf_invalido:
+                  value:
+                    success: false
+                    error: "CPF inválido (deve ter 11 dígitos)"
+                cpf_duplicado:
+                  value:
+                    success: false
+                    error: "CPF já cadastrado"
+                email_duplicado:
+                  value:
+                    success: false
+                    error: "Email já cadastrado"
+        '403':
+          description: Acesso negado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{userId}:
+    get:
+      summary: Obter detalhes de usuário
+      tags: [Users]
+      security:
+        - adminAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Detalhes do usuário
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Usuário não encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    delete:
+      summary: Excluir usuário
+      description: Remove usuário e todas as concessões (LGPD compliance)
+      tags: [Users]
+      security:
+        - adminAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Usuário excluído
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+        '404':
+          description: Usuário não encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /grants:
+    post:
+      summary: Conceder ou revogar acesso a livro
+      description: Gerencia permissões de acesso por livro (admin only)
+      tags: [Grants]
+      security:
+        - adminAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  format: uuid
+                  example: "550e8400-e29b-41d4-a716-446655440000"
+                bookSlug:
+                  type: string
+                  enum:
+                    - vivencia_pombogira
+                    - guia_de_ervas
+                    - aula_iansa
+                    - aula_oba
+                    - aula_oya_loguna
+                  example: "vivencia_pombogira"
+                action:
+                  type: string
+                  enum: [grant, revoke]
+                  example: "grant"
+              required: [userId, bookSlug, action]
+      responses:
+        '200':
+          description: Concessão atualizada
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  grant:
+                    $ref: '#/components/schemas/Grant'
+        '400':
+          description: Parâmetros inválidos
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                book_invalido:
+                  value:
+                    success: false
+                    error: "Livro não existe"
+                usuario_inexistente:
+                  value:
+                    success: false
+                    error: "Usuário não encontrado"
+        '403':
+          description: Acesso negado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /grants/{userId}:
+    get:
+      summary: Listar concessões de um usuário
+      tags: [Grants]
+      security:
+        - adminAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Lista de concessões
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  grants:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Grant'
+        '404':
+          description: Usuário não encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /audit/logs:
+    get:
+      summary: Listar logs (paginado, admin)
+      tags: [Audit]
+      security:
+        - adminAuth: []
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 50
+        - in: query
+          name: offset
+          schema:
+            type: integer
+            default: 0
+        - in: query
+          name: action
+          schema:
+            type: string
+            enum: [login_success, login_failure, access_granted, access_denied, copy_attempt, logout]
+        - in: query
+          name: bookSlug
+          schema:
+            type: string
+        - in: query
+          name: userId
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Lista de logs
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  logs:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/AuditLog'
+        '403':
+          description: Acesso negado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /audit/user/{userId}:
+    get:
+      summary: Logs por usuário (admin)
+      tags: [Audit]
+      security:
+        - adminAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Logs do usuário
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  logs:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/AuditLog'
+        '403':
+          description: Acesso negado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /audit/book/{bookSlug}:
+    get:
+      summary: Logs por livro (admin)
+      tags: [Audit]
+      security:
+        - adminAuth: []
+      parameters:
+        - name: bookSlug
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Logs do livro
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  logs:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/AuditLog'
+        '403':
+          description: Acesso negado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+tags:
+  - name: Authentication
+    description: Endpoints de login/logout/validação
+  - name: Users
+    description: Gerenciamento de usuários (admin)
+  - name: Grants
+    description: Controle de acesso por livro (admin)
+  - name: Audit
+    description: Consulta de registros de auditoria (admin)
