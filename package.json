@@ -1,0 +1,21 @@
+{
+  "name": "personal-library-auth",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Auth and access control for personal library (Vercel functions)",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

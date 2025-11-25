@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Painel Admin — Biblioteca</title>
+    <meta name="description" content="Gerencie usuários e concessões de acesso por livro." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root { --bg:#f7f6f4; --fg:#161514; --card:#fff; --border:#e6e2dc; --accent:#2e5c8f; --accent-2:#689dd9; --muted:#6b665f; }
+      body { margin:0; background:var(--bg); color:var(--fg); font: 400 16px/1.6 Inter, system-ui; }
+      header { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid var(--border); background:var(--card); position:sticky; top:0; z-index:10; }
+      main { padding: 16px; max-width: 960px; margin: 0 auto; }
+      .panel { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:16px; }
+      h2 { margin:0 0 10px; font-weight:600; }
+      label { display:block; margin:8px 0 4px; font-weight:600; }
+      input[type="text"], input[type="email"], input[type="password"] { width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; background:#fff; }
+      .row { display:flex; gap:12px; }
+      .row > div { flex: 1 1 0; }
+      .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--accent); color:#fff; background:var(--accent); border-radius:10px; font-weight:600; cursor:pointer; }
+      .btn.secondary { color: var(--fg); background: var(--card); border-color: var(--border); }
+      table { width:100%; border-collapse: collapse; }
+      th, td { border-bottom:1px solid var(--border); padding:10px; text-align:left; }
+      .tags { display:flex; gap:8px; flex-wrap:wrap; }
+      .tag { padding:4px 10px; border:1px solid var(--border); border-radius:999px; font-size:12px; color: var(--muted); }
+      .notice { padding:10px; background: #eaf2fb; border:1px solid #cfe0f5; color:#2e5c8f; border-radius:10px; margin-bottom:12px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <strong>Painel Admin</strong>
+      </div>
+      <nav>
+        <a href="/index.html" class="btn secondary">Voltar ao catálogo</a>
+      </nav>
+    </header>
+    <main>
+      <section class="panel">
+        <h2>Autorização</h2>
+        <div class="notice">Informe o token admin para realizar operações.</div>
+        <label for="adminToken">Token Admin (X-Admin-Token)</label>
+        <input id="adminToken" type="text" placeholder="cole aqui o ADMIN_TOKEN" />
+      </section>
+
+      <section class="panel">
+        <h2>Cadastrar novo usuário</h2>
+        <div class="row">
+          <div>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Nome completo" />
+          </div>
+          <div>
+            <label for="cpf">CPF (11 dígitos)</label>
+            <input id="cpf" type="text" placeholder="Somente números" pattern="^\d{11}$" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="email@exemplo.com" />
+          </div>
+          <div>
+            <label for="password">Senha</label>
+            <input id="password" type="password" placeholder="mínimo 8 caracteres" />
+          </div>
+        </div>
+        <label><input id="consent" type="checkbox" /> Confirmo consentimento LGPD para cadastro</label>
+        <div style="margin-top:10px;">
+          <button id="createUser" class="btn">Cadastrar usuário</button>
+        </div>
+        <div id="createMsg" class="notice" style="display:none;"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Usuários</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Status</th>
+              <th>Acessos</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="usersTbody"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="../scripts/admin.js"></script>
+  </body>
+</html>
