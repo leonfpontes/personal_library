@@ -1,507 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Obá: Senhora da Concentração e do Conhecimento — Livro Digital</title>
-    <meta name="description" content="Apostila completa sobre Obá, a Senhora da Concentração, da Terra Fértil e do Conhecimento. Fundamentos teológicos, desenvolvimento mediúnico e práticas." />
-    <meta name="author" content="Terreiro Tia Maria e Cabocla Jupira" />
-    <meta name="color-scheme" content="light dark" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Obá: Senhora da Concentração e do Conhecimento — Livro Digital" />
-    <meta property="og:description" content="Apostila completa sobre Obá, a Senhora da Concentração, da Terra Fértil e do Conhecimento. Fundamentos teológicos, desenvolvimento mediúnico e práticas." />
-    <meta property="og:locale" content="pt_BR" />
-    <link rel="canonical" href="/livros/aula_oba" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Obá: Senhora da Concentração e do Conhecimento — Livro Digital" />
-    <meta name="twitter:description" content="Apostila completa sobre Obá, a Senhora da Concentração, da Terra Fértil e do Conhecimento. Fundamentos teológicos, desenvolvimento mediúnico e práticas." />
-
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%236b4423'/%3E%3Cpath d='M32 20v24M20 32h24' stroke='%23fff' stroke-width='3' opacity='.7'/%3E%3C/svg%3E" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-      :root {
-        --bg: #faf9f7;
-        --fg: #18161a;
-        --muted: #5b5561;
-        --card: #ffffff;
-        --border: #eae4ee;
-        --accent: #6b4423;
-        --accent-2: #8b5a3c;
-        --shadow: 0 8px 24px rgba(24, 22, 26, 0.08);
-        --maxw: 88ch;
-        --content-font: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
-        --heading-font: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
-        --content-size: 1rem;
-        --line: 1.8;
-        --toc-w: 280px;
-        --header-h: 64px;
-        --paper-tint: radial-gradient(1200px 600px at 50% -10%, rgba(107,68,35,0.06), transparent 60%),
-                       radial-gradient(800px 300px at 90% 10%, rgba(139,90,60,0.05), transparent 60%),
-                       radial-gradient(900px 400px at 10% 0%, rgba(24,22,26,0.03), transparent 60%);
-      }
-      [data-theme="dark"] {
-        --bg: #0f0e11;
-        --fg: #f5f1f6;
-        --muted: #a89daf;
-        --card: #1a171d;
-        --border: #2d2832;
-        --accent: #8b5a3c;
-        --accent-2: #a67350;
-        --shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
-        --paper-tint: radial-gradient(1200px 600px at 50% -10%, rgba(139,90,60,0.08), transparent 60%),
-                       radial-gradient(800px 300px at 90% 10%, rgba(166,115,80,0.06), transparent 60%);
-      }
-      [data-theme="sepia"] {
-        --bg: #f4ede4;
-        --fg: #2d2520;
-        --muted: #6b5d52;
-        --card: #fef9f2;
-        --border: #ddd0c0;
-        --accent: #6b4423;
-        --accent-2: #8b5a3c;
-        --shadow: 0 8px 24px rgba(45, 37, 32, 0.10);
-        --paper-tint: radial-gradient(1200px 600px at 50% -10%, rgba(107,68,35,0.07), transparent 60%),
-                       radial-gradient(800px 300px at 90% 10%, rgba(139,90,60,0.06), transparent 60%);
-      }
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html { scroll-behavior: smooth; overflow-y: scroll; }
-      body {
-        background: var(--bg);
-        color: var(--fg);
-        font-family: var(--content-font);
-        font-size: var(--content-size);
-        line-height: var(--line);
-        transition: background-color 0.3s ease, color 0.3s ease;
-        position: relative;
-      }
-      body::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        background: var(--paper-tint);
-        pointer-events: none;
-        z-index: 0;
-      }
-
-      .topbar {
-        position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: var(--header-h);
-        background: var(--card);
-        border-bottom: 1px solid var(--border);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-        z-index: 1100;
-        box-shadow: var(--shadow);
-      }
-      .brand { display: flex; align-items: center; gap: 16px; }
-      .brand h1 { font: 700 18px/1.4 var(--heading-font); color: var(--fg); }
-      .brand nav { font: 500 14px var(--content-font); color: var(--muted); }
-      .controls { display: flex; gap: 8px; }
-      .btn {
-        background: transparent;
-        border: 1px solid var(--border);
-        color: var(--fg);
-        padding: 8px 14px;
-        border-radius: 8px;
-        cursor: pointer;
-        font: 500 14px var(--content-font);
-        transition: .2s ease background, .2s ease border-color;
-      }
-      .btn:hover { background: var(--border); border-color: var(--accent); }
-
-      .layout {
-        display: grid;
-        grid-template-columns: var(--toc-w) 1fr;
-        gap: 32px;
-        max-width: calc(var(--maxw) + var(--toc-w) + 64px);
-        margin: 0 auto;
-        padding: 32px 20px 80px;
-        position: relative;
-        z-index: 1;
-      }
-      @media (max-width: 1024px) {
-        .layout { grid-template-columns: 1fr; gap: 0; }
-        aside#toc { display: none; }
-      }
-
-      aside#toc {
-        position: sticky;
-        top: calc(var(--header-h) + 20px);
-        align-self: start;
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 20px;
-        box-shadow: var(--shadow);
-        max-height: calc(100vh - var(--header-h) - 40px);
-        overflow-y: auto;
-      }
-      aside#toc h2 { font: 700 16px/1.4 var(--heading-font); margin-bottom: 12px; color: var(--fg); }
-      .toc-search { margin-bottom: 16px; }
-      .toc-search input {
-        width: 100%;
-        padding: 10px 12px;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: var(--bg);
-        color: var(--fg);
-        font: 400 14px var(--content-font);
-        transition: .2s ease border-color;
-      }
-      .toc-search input:focus { outline: none; border-color: var(--accent); }
-      #tocList { list-style: none; padding-left: 0; }
-      #tocList li { margin: 0; }
-      #tocList a {
-        display: block;
-        padding: 8px 12px;
-        margin: 2px 0;
-        border-radius: 8px;
-        text-decoration: none;
-        color: var(--muted);
-        font: 500 14px/1.5 var(--content-font);
-        transition: .2s ease background, .2s ease color;
-      }
-      #tocList a:hover { background: var(--border); color: var(--fg); }
-      #tocList a.active { background: rgba(107,68,35,0.12); color: var(--accent); font-weight: 600; }
-      #tocList li li a { padding-left: 24px; font-size: 13px; }
-      #tocList li li li a { padding-left: 36px; font-size: 12px; }
-
-      article#content {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 48px;
-        box-shadow: var(--shadow);
-        min-height: 50vh;
-      }
-      @media (max-width: 640px) { article#content { padding: 28px 20px; } }
-
-      article#content h1, article#content h2, article#content h3, article#content h4 {
-        font-family: var(--heading-font);
-        font-weight: 700;
-        color: var(--fg);
-        margin-top: 32px;
-        margin-bottom: 16px;
-        position: relative;
-      }
-      article#content h1 { font-size: 2.2rem; line-height: 1.2; margin-top: 0; padding-bottom: 12px; }
-      article#content h2 { font-size: 1.8rem; line-height: 1.3; padding-bottom: 10px; }
-      article#content h3 { font-size: 1.4rem; line-height: 1.4; }
-      article#content h4 { font-size: 1.15rem; line-height: 1.5; }
-      article#content h1::after, article#content h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 80px; height: 3px; background: linear-gradient(90deg, var(--accent), transparent); border-radius: 2px; }
-
-      article#content h2.chapter { margin-top: 48px; }
-      article#content h2.chapter::before { content: "◦"; color: var(--accent); font-size: 22px; position: absolute; left: -22px; top: 2px; }
-      article#content h4.sintese { padding: 4px 10px; background: rgba(107,68,35,0.08); border: 1px solid var(--border); border-radius: 999px; display: inline-block; }
-
-      .anchor-link { opacity: 0; margin-left: 8px; text-decoration: none; font-weight: 600; color: var(--muted); }
-      #content h1:hover .anchor-link, #content h2:hover .anchor-link, #content h3:hover .anchor-link, #content h4:hover .anchor-link { opacity: 1; }
-
-      .progress { position: fixed; top: 0; left: 0; height: 3px; width: 100%; background: transparent; z-index: 1200; }
-      .progress .bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
-
-      #backTop { position: fixed; right: 12px; bottom: 12px; z-index: 1200; border: 1px solid var(--border); background: var(--card); color: var(--fg);
-        padding: 12px; border-radius: 50%; cursor: pointer; box-shadow: var(--shadow); opacity: 0; transform: translateY(8px); transition: .2s ease opacity, .2s ease transform; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; }
-      #backTop.show { opacity: 1; transform: translateY(0); }
-      @media (min-width: 640px) { #backTop { right: 16px; bottom: 16px; } }
-
-      /* Hero Cover Section */
-      .hero-cover {
-        position: relative;
-        width: 100%;
-        max-width: var(--maxw);
-        margin: 20px auto 32px;
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-        background: var(--card);
-      }
-      
-      .hero-cover .media {
-        position: relative;
-        height: 380px;
-        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-      }
-      
-      .hero-cover img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-      }
-      
-      .hero-cover .overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.75) 0%,
-          rgba(0, 0, 0, 0.45) 40%,
-          rgba(0, 0, 0, 0.65) 100%
-        );
-      }
-      
-      .hero-cover .text {
-        position: absolute;
-        left: 40px;
-        right: 40px;
-        bottom: 40px;
-        color: #ffffff;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-      }
-      
-      .hero-cover h1 {
-        margin: 0 0 12px;
-        font-family: var(--heading-font);
-        font-size: 42px;
-        font-weight: 700;
-        line-height: 1.15;
-        letter-spacing: -0.02em;
-        color: #ffffff;
-      }
-      
-      .hero-cover p {
-        margin: 0;
-        font-family: var(--content-font);
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.6;
-        color: rgba(255, 255, 255, 0.92);
-        max-width: 600px;
-      }
-      
-      @media (max-width: 768px) {
-        .hero-cover {
-          margin: 16px auto 24px;
-          border-radius: 12px;
-        }
-        
-        .hero-cover .media {
-          height: 280px;
-        }
-        
-        .hero-cover .text {
-          left: 28px;
-          right: 28px;
-          bottom: 28px;
-        }
-        
-        .hero-cover h1 {
-          font-size: 32px;
-          margin-bottom: 10px;
-        }
-        
-        .hero-cover p {
-          font-size: 16px;
-        }
-      }
-      
-      @media (max-width: 480px) {
-        .hero-cover .media {
-          height: 240px;
-        }
-        
-        .hero-cover .text {
-          left: 20px;
-          right: 20px;
-          bottom: 20px;
-        }
-        
-        .hero-cover h1 {
-          font-size: 26px;
-          margin-bottom: 8px;
-        }
-        
-        .hero-cover p {
-          font-size: 14px;
-          line-height: 1.5;
-        }
-      }
-
-      @media print {
-        .topbar, aside#toc, .progress { display: none !important; }
-        article#content { border: none; box-shadow: none; }
-        body { background: #fff; color: #000; }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="progress"><div class="bar" id="progressBar"></div></div>
-
-    <header class="topbar">
-      <div class="brand">
-        <h1>Obá: Conhecimento e Concentração</h1>
-        <nav aria-label="Breadcrumb"><a href="../index.html">← Biblioteca</a> <span class="sep">›</span> <span>Livro</span></nav>
-      </div>
-      <div class="controls">
-        <a href="../index.html" class="btn" aria-label="Voltar à biblioteca">← Voltar</a>
-        <button class="btn" id="themeBtn" aria-label="Alternar tema">Tema</button>
-        <button class="btn" id="decFont" aria-label="Diminuir fonte">A−</button>
-        <button class="btn" id="incFont" aria-label="Aumentar fonte">A+</button>
-      </div>
-    </header>
-
-    <section class="hero-cover" aria-label="Capa">
-      <div class="media">
-        <img src="../Source/img/Capa_Oba.png" alt="Capa da apostila Obá: Concentração e Conhecimento" loading="lazy" />
-        <div class="overlay"></div>
-        <div class="text">
-          <h1>Obá: Conhecimento e Terra Fértil</h1>
-          <p>A Senhora da Concentração, desenvolvimento mediúnico e sabedoria profunda.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="layout">
-      <aside id="toc">
-        <h2>Sumário</h2>
-        <div class="toc-search"><input id="tocSearch" type="search" placeholder="Filtrar tópicos…" aria-label="Filtrar tópicos" /></div>
-        <ul id="tocList"></ul>
-      </aside>
-
-      <article id="content">
-        <p>Carregando conteúdo...</p>
-      </article>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Obá: Senhora da Concentração e do Conhecimento — Livro Digital</title>
+  <meta name="description" content="Apostila completa sobre Obá, a Senhora da Concentração, da Terra Fértil e do Conhecimento. Fundamentos teológicos, desenvolvimento mediúnico e práticas." />
+  <meta name="author" content="Terreiro Tia Maria e Cabocla Jupira" />
+  <meta name="color-scheme" content="light dark" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Obá: Senhora da Concentração e do Conhecimento — Livro Digital" />
+  <meta property="og:description" content="Apostila completa sobre Obá, a Senhora da Concentração, da Terra Fértil e do Conhecimento." />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="canonical" href="/livros/aula_oba" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%236b4423'/%3E%3Cpath d='M32 20v24M20 32h24' stroke='%23fff' stroke-width='3' opacity='.7'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/theme-oba.css" />
+</head>
+<body>
+  <div class="progress"><div class="bar" id="progressBar"></div></div>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Obá: Concentração e Conhecimento</h1>
+      <nav aria-label="Breadcrumb"><a href="../index.html">← Biblioteca</a><span class="sep">›</span><span>Livro</span></nav>
     </div>
+    <div class="controls">
+      <a href="../index.html" class="btn" aria-label="Voltar à biblioteca">← Voltar</a>
+      <button class="btn" id="themeBtn" aria-label="Alternar tema">Tema</button>
+      <button class="btn" id="decFont" aria-label="Diminuir fonte">A−</button>
+      <button class="btn" id="incFont" aria-label="Aumentar fonte">A+</button>
+    </div>
+  </header>
 
-    <button id="backTop" aria-label="Voltar ao topo">↑</button>
+  <section class="hero-cover" aria-label="Capa">
+    <div class="media">
+      <img src="../Source/img/Capa_Oba.png" alt="Capa da apostila Obá" loading="lazy" />
+      <div class="overlay"></div>
+      <div class="text">
+        <h1>Obá: Terra Fértil e Foco</h1>
+        <p>A Senhora da Concentração, do Conhecimento e da Força Mental.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.0/marked.min.js"></script>
-    <script>
-      const mdPath = '../Source/Aula_oba.md';
-      const contentEl = document.getElementById('content');
-      const tocList = document.getElementById('tocList');
-      const tocSearch = document.getElementById('tocSearch');
-      const progressBar = document.getElementById('progressBar');
-      const backTop = document.getElementById('backTop');
-      const themeBtn = document.getElementById('themeBtn');
-      const decFont = document.getElementById('decFont');
-      const incFont = document.getElementById('incFont');
+  <div class="layout">
+    <aside id="toc">
+      <h2>Sumário</h2>
+      <div class="toc-search"><input id="tocSearch" type="search" placeholder="Filtrar tópicos…" aria-label="Filtrar tópicos" /></div>
+      <ul id="tocList"></ul>
+    </aside>
+    <main>
+      <article id="content" aria-label="Conteúdo do livro"><p style="color: var(--muted);">Carregando conteúdo…</p></article>
+    </main>
+  </div>
+  <button id="backTop" title="Voltar ao topo">Topo</button>
 
-      // Theme management
-      const themes = ['light', 'dark', 'sepia'];
-      let currentTheme = localStorage.getItem('theme') || 'light';
-      document.documentElement.setAttribute('data-theme', currentTheme === 'light' ? '' : currentTheme);
-      themeBtn.addEventListener('click', () => {
-        const idx = themes.indexOf(currentTheme);
-        currentTheme = themes[(idx + 1) % themes.length];
-        document.documentElement.setAttribute('data-theme', currentTheme === 'light' ? '' : currentTheme);
-        localStorage.setItem('theme', currentTheme);
-      });
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+  const STORAGE_KEYS = { theme: 'oba-theme', font: 'oba-font-size' };
+  const mdPath = '../Source/Aula_oba.md';
 
-      // Font size management
-      let fontSize = parseFloat(localStorage.getItem('fontSize')) || 1;
-      document.documentElement.style.setProperty('--content-size', fontSize + 'rem');
-      decFont.addEventListener('click', () => {
-        fontSize = Math.max(0.875, fontSize - 0.0625);
-        document.documentElement.style.setProperty('--content-size', fontSize + 'rem');
-        localStorage.setItem('fontSize', fontSize);
-      });
-      incFont.addEventListener('click', () => {
-        fontSize = Math.min(1.25, fontSize + 0.0625);
-        document.documentElement.style.setProperty('--content-size', fontSize + 'rem');
-        localStorage.setItem('fontSize', fontSize);
-      });
+  // Restore theme
+  const savedTheme = localStorage.getItem(STORAGE_KEYS.theme);
+  if (savedTheme === 'dark' || savedTheme === 'sepia') document.documentElement.setAttribute('data-theme', savedTheme);
 
-      // Progress bar
-      function updateProgress() {
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const progress = (scrollTop / docHeight) * 100;
-        progressBar.style.width = progress + '%';
-        if (scrollTop > 300) backTop.classList.add('show');
-        else backTop.classList.remove('show');
-      }
-      window.addEventListener('scroll', updateProgress);
-      backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  // Restore font size
+  const savedFont = localStorage.getItem(STORAGE_KEYS.font);
+  if (savedFont) document.documentElement.style.setProperty('--content-size', savedFont);
 
-      // Fetch and render markdown
-      fetch(mdPath)
-        .then(r => r.text())
-        .then(md => {
-          const html = marked.parse(md);
-          contentEl.innerHTML = html;
+  // Slugify helper
+  const slugify = (str) => str.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9\s\-_.]/g,'').trim().replace(/\s+/g,'-');
 
-          // Build TOC
-          const headings = contentEl.querySelectorAll('h1, h2, h3, h4');
-          const tocItems = [];
-          headings.forEach((h, i) => {
-            const id = 'heading-' + i;
-            h.id = id;
-            const level = parseInt(h.tagName[1]);
-            const link = document.createElement('a');
-            link.href = '#' + id;
-            link.textContent = h.textContent;
-            link.classList.add('toc-link');
-            const li = document.createElement('li');
-            li.style.marginLeft = (level - 1) * 12 + 'px';
-            li.appendChild(link);
-            tocList.appendChild(li);
-            tocItems.push({ element: h, link });
+  // Fetch + render markdown
+  fetch(mdPath).then(r=>r.text()).then(md => {
+    const content = document.getElementById('content');
+    content.innerHTML = marked.parse(md);
+    // Anchor links
+    content.querySelectorAll('h1,h2,h3,h4').forEach(h => { if(!h.id) h.id = slugify(h.textContent); const a=document.createElement('a'); a.href='#'+h.id; a.textContent='#'; a.setAttribute('aria-label','Link para '+h.textContent); h.appendChild(a); });
+    buildTOC();
+  }).catch(err => { document.getElementById('content').innerHTML = `<p style="color: var(--accent);">Erro ao carregar: ${err.message}</p>`; });
 
-            // Add anchor link
-            const anchor = document.createElement('a');
-            anchor.href = '#' + id;
-            anchor.className = 'anchor-link';
-            anchor.textContent = '#';
-            anchor.setAttribute('aria-label', 'Link para este título');
-            h.appendChild(anchor);
-          });
+  // Build TOC
+  function buildTOC(){
+    const container = document.getElementById('tocList');
+    container.innerHTML='';
+    const headings = document.querySelectorAll('#content h1,#content h2,#content h3,#content h4');
+    const stack=[container];
+    headings.forEach(h=>{ const level=parseInt(h.tagName.substring(1),10); const li=document.createElement('li'); const a=document.createElement('a'); a.textContent=h.textContent; a.href='#'+h.id; a.className='lvl-'+level; li.appendChild(a); while(stack.length>level) stack.pop(); while(stack.length<level){ const ul=document.createElement('ul'); stack[stack.length-1].lastElementChild?.appendChild(ul); stack.push(ul);} stack[stack.length-1].appendChild(li); });
+    // Active highlight
+    const links = container.querySelectorAll('a');
+    const map=new Map(); links.forEach(a=>{ const el=document.getElementById(a.getAttribute('href').slice(1)); if(el) map.set(el,a); });
+    const io=new IntersectionObserver(entries=>{ entries.forEach(e=>{ const l=map.get(e.target); if(!l) return; if(e.isIntersecting){ links.forEach(x=>x.classList.remove('active')); l.classList.add('active'); if(getComputedStyle(l).display!=='none') l.scrollIntoView({block:'nearest',inline:'nearest'}); } }); },{rootMargin:'0px 0px -70% 0px'});
+    map.forEach((_,el)=>io.observe(el));
+  }
 
-          // TOC search filter
-          tocSearch.addEventListener('input', e => {
-            const query = e.target.value.toLowerCase();
-            tocList.querySelectorAll('li').forEach(li => {
-              const text = li.textContent.toLowerCase();
-              li.style.display = text.includes(query) ? 'block' : 'none';
-            });
-          });
+  // TOC search
+  document.getElementById('tocSearch').addEventListener('input', e=>{
+    const q=e.target.value.toLowerCase();
+    document.querySelectorAll('#tocList a').forEach(a=>{ a.parentElement.style.display=a.textContent.toLowerCase().includes(q)?'':'none'; });
+  });
 
-          // Intersection Observer for active TOC highlighting
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              const item = tocItems.find(t => t.element === entry.target);
-              if (item && entry.isIntersecting) {
-                tocList.querySelectorAll('a').forEach(a => a.classList.remove('active'));
-                item.link.classList.add('active');
-              }
-            });
-          }, { rootMargin: '-80px 0px -80% 0px' });
-          tocItems.forEach(t => observer.observe(t.element));
+  // Theme toggle
+  document.getElementById('themeBtn').addEventListener('click', ()=>{
+    const order=['light','dark','sepia'];
+    let current=document.documentElement.getAttribute('data-theme')||'light';
+    const next=order[(order.indexOf(current)+1)%order.length];
+    document.documentElement.setAttribute('data-theme', next==='light'?'':next);
+    localStorage.setItem(STORAGE_KEYS.theme, next);
+  });
 
-          // Mark chapters with CAPÍTULO
-          contentEl.querySelectorAll('h2').forEach(h2 => {
-            if (/cap[ií]tulo/i.test(h2.textContent)) {
-              h2.classList.add('chapter');
-            }
-          });
+  // Font size
+  document.getElementById('incFont').addEventListener('click',()=>{ const val=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--content-size'))||16; if(val<24){ const nv=val+2; document.documentElement.style.setProperty('--content-size',nv+'px'); localStorage.setItem(STORAGE_KEYS.font,nv+'px'); } });
+  document.getElementById('decFont').addEventListener('click',()=>{ const val=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--content-size'))||16; if(val>12){ const nv=val-2; document.documentElement.style.setProperty('--content-size',nv+'px'); localStorage.setItem(STORAGE_KEYS.font,nv+'px'); } });
 
-          // Drop caps on first paragraph of chapters
-          contentEl.querySelectorAll('h1, h2.chapter').forEach(h => {
-            let next = h.nextElementSibling;
-            while (next && next.tagName === 'HR') next = next.nextElementSibling;
-            if (next && next.tagName === 'P' && next.textContent.trim().length > 50) {
-              const text = next.innerHTML;
-              next.innerHTML = '<span style="float:left;font-size:3.5em;line-height:.9;margin:4px 8px 0 0;font-family:var(--heading-font);color:var(--accent);">' + text[0] + '</span>' + text.slice(1);
-            }
-          });
-        })
-        .catch(err => {
-          contentEl.innerHTML = '<p style="color:var(--muted);">Erro ao carregar o manuscrito. Verifique o caminho do arquivo.</p>';
-          console.error(err);
-        });
-    </script>
-  </body>
+  // Progress bar
+  window.addEventListener('scroll',()=>{ const st=window.pageYOffset||document.documentElement.scrollTop; const sh=document.documentElement.scrollHeight-window.innerHeight; const pct=(st/sh)*100; document.getElementById('progressBar').style.width=pct+'%'; });
+
+  // Back to top
+  const back=document.getElementById('backTop');
+  window.addEventListener('scroll',()=>{ if(window.scrollY>400){ back.classList.add('show'); } else { back.classList.remove('show'); } });
+  back.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  </script>
+</body>
 </html>
