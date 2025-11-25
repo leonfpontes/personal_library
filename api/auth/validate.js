@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { getGrantStatus, query } = require('../../../auth/db');
+const { getGrantStatus, query } = require('../../auth/db');
 
 // dev-server: ignore Vercel ESM export config
 // export const config = { runtime: 'nodejs' };

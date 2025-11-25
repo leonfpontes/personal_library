@@ -43,6 +43,9 @@
   </div>
 
   <script>
+    // Clear any previous user session data
+    sessionStorage.removeItem('user');
+    
     const form = document.getElementById('loginForm');
     const btn = document.getElementById('submitBtn');
     const msg = document.getElementById('msg');
@@ -71,12 +74,18 @@
         }
         ok.textContent = 'Login realizado! Redirecionando...';
         ok.style.display = 'block';
+        
+        // Store user info in sessionStorage to show admin link if needed
+        if (data.user) {
+          sessionStorage.setItem('user', JSON.stringify(data.user));
+        }
+        
         // Cookie HttpOnly é setado pela API. Só redirecionar.
         setTimeout(() => {
-          // Se veio com ?next=, retorna para o destino solicitado; senão admin
+          // Se veio com ?next=, retorna para o destino solicitado; senão catálogo
           const params = new URLSearchParams(window.location.search);
           const next = params.get('next');
-          window.location.href = next || '/auth/admin.html';
+          window.location.href = next || '/index.html';
         }, 600);
       } catch (err) {
         msg.textContent = 'Erro de rede. Tente novamente.';

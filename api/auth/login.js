@@ -1,4 +1,4 @@
-const { getUserByEmail, insertSession } = require('../../../auth/db');
+const { getUserByEmail, insertSession } = require('../../auth/db');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
@@ -19,23 +19,32 @@ module.exports = async (req, res) => {
 
   try {
     const { email, password } = req.body || {};
+    console.log('[LOGIN] Tentativa de login:', { email, hasPassword: !!password });
+    
     if (!email || !password) {
       res.statusCode = 400;
       return res.json({ success: false, error: 'Email e senha são obrigatórios' });
     }
 
     const user = await getUserByEmail(email);
+    console.log('[LOGIN] Usuário encontrado:', user ? { id: user.id, email: user.email, status: user.status } : null);
+    
     if (!user) {
+      console.log('[LOGIN] Usuário não encontrado');
       res.statusCode = 401;
       return res.json({ success: false, error: 'Email ou senha incorretos' });
     }
     if (user.status !== 'active') {
+      console.log('[LOGIN] Usuário inativo');
       res.statusCode = 401;
       return res.json({ success: false, error: 'Usuário inativo' });
     }
 
     const ok = await bcrypt.compare(password, user.hashed_password);
+    console.log('[LOGIN] Senha válida:', ok);
+    
     if (!ok) {
+      console.log('[LOGIN] Senha incorreta');
       res.statusCode = 401;
       return res.json({ success: false, error: 'Email ou senha incorretos' });
     }
@@ -49,7 +58,18 @@ module.exports = async (req, res) => {
 
     res.setHeader('Set-Cookie', `session=${token}; HttpOnly; Secure; SameSite=Strict; Max-Age=${ttl}; Path=/`);
     res.statusCode = 200;
-    return res.json({ success: true, user: { id: user.id, nome: user.nome, cpfMasked: maskCpf(user.cpf), email: user.email, status: user.status }, token });
+    return res.json({ 
+      success: true, 
+      user: { 
+        id: user.id, 
+        nome: user.nome, 
+        cpfMasked: maskCpf(user.cpf), 
+        email: user.email, 
+        status: user.status,
+        isAdmin: user.id === 'admin'
+      }, 
+      token 
+    });
   } catch (err) {
     console.error('login error', err);
     res.statusCode = 500;
