@@ -87,6 +87,10 @@
 				<h1>Biblioteca</h1>
 				<small>Catálogo de obras</small>
 			</div>
+			<div class="login-hint" style="margin-left:auto; color: var(--muted); font-size: 12px;">
+				Para acessar os livros, faça login.
+				<a href="/auth/login.html" style="margin-left:8px; color: var(--accent); text-decoration:none; font-weight:600;">Entrar →</a>
+			</div>
 		</header>
 
 		<section class="hero">
@@ -192,7 +196,7 @@
 				</article>
 				<article class="card" data-title="oyá logunã" data-type="apostila" data-tags="umbanda oyá logunã tempo fé desenvolvimento mediúnico">
 					<div class="cover" style="background: linear-gradient(135deg, #6b2d8f 0%, #9b60c0 100%);">
-						<img src="Source/img/oya_loguna.png" alt="Capa - Oyá Logunã" loading="lazy" onerror="this.style.display='none'" />
+						<img src="Source/img/Oya_Loguna.png" alt="Capa - Oyá Logunã" loading="lazy" onerror="this.style.display='none'" />
 						<div class="cover-overlay"></div>
 					</div>
 					<div class="body">
@@ -280,6 +284,28 @@
 				}
 				applyState();
 			})();
+		</script>
+		<script>
+		(function(){
+		  const params = new URLSearchParams(location.search);
+		  if (params.get('denied') === 'true') {
+		    const banner = document.createElement('div');
+		    banner.style.position = 'fixed';
+		    banner.style.bottom = '16px';
+		    banner.style.left = '50%';
+		    banner.style.transform = 'translateX(-50%)';
+		    banner.style.background = 'var(--card)';
+		    banner.style.border = '1px solid var(--border)';
+		    banner.style.boxShadow = 'var(--shadow)';
+		    banner.style.padding = '10px 14px';
+		    banner.style.borderRadius = '10px';
+		    banner.style.color = 'var(--accent)';
+		    banner.style.font = '600 14px var(--content-font)';
+		    banner.textContent = 'Acesso negado: faça login ou verifique sua permissão.';
+		    document.body.appendChild(banner);
+		    setTimeout(()=> banner.remove(), 6000);
+		  }
+		})();
 		</script>
 		<noscript>Ative o JavaScript para usar busca e filtros.</noscript>
 	</body>

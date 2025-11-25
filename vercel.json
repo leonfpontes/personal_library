@@ -3,6 +3,11 @@
   "public": true,
   "cleanUrls": true,
   "trailingSlash": false,
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "headers": [
     {
       "source": "/(.*)",
@@ -20,6 +25,15 @@
           "value": "1; mode=block"
         }
       ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/livros/(.*)",
+      "dest": "/livros/$1",
+      "headers": {
+        "Cache-Control": "private, no-cache, no-store, must-revalidate"
+      }
     }
   ]
 }
