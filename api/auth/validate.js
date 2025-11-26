@@ -39,17 +39,15 @@ module.exports = async (req, res) => {
     if (bookSlug) {
       const status = await getGrantStatus(userId, bookSlug);
       if (status !== 'active') {
-        res.statusCode = 401;
-        return res.json({ valid: false, error: 'Acesso negado' });
+        res.status(401).json({ valid: false, error: 'Acesso negado' });
+        return;
       }
       grants = [bookSlug];
     }
 
-    res.statusCode = 200;
-    return res.json({ valid: true, user: { id: userId, nome, cpfMasked }, grants });
+    res.status(200).json({ valid: true, user: { id: userId, nome, cpfMasked }, grants });
   } catch (err) {
     console.error('validate error', err);
-    res.statusCode = 401;
-    return res.json({ valid: false, error: 'Token inválido' });
+    res.status(401).json({ valid: false, error: 'Token inválido' });
   }
 };
