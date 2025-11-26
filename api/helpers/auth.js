@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { query } = require('../auth/db');
+const { query } = require('../../auth/db');
 
 /**
  * Validates if the current session belongs to an admin user
@@ -23,17 +23,8 @@ async function isAdmin(req) {
     const userId = decoded.userId;
 
     // Check if user is admin (id === 'admin')
-    if (userId === 'admin') {
-      return true;
-    }
-
-    // Alternatively, check if user has admin role in database
-    const result = await query('SELECT id FROM users WHERE id = ? AND status = ?', [userId, 'active']);
-    if (result.rows?.length && result.rows[0].id === 'admin') {
-      return true;
-    }
-
-    return false;
+    // Simple check - if userId is 'admin', they're admin
+    return userId === 'admin';
   } catch (err) {
     console.error('Error validating admin session:', err);
     return false;
