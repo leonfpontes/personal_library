@@ -15,6 +15,18 @@ module.exports = async (req, res) => {
   }
 
   try {
+    // Check required env vars
+    if (!process.env.DATABASE_URL) {
+      console.error('[LOGIN] Missing DATABASE_URL');
+      res.status(500).json({ success: false, error: 'Server configuration error', detail: 'DATABASE_URL not set' });
+      return;
+    }
+    if (!process.env.JWT_SECRET) {
+      console.error('[LOGIN] Missing JWT_SECRET');
+      res.status(500).json({ success: false, error: 'Server configuration error', detail: 'JWT_SECRET not set' });
+      return;
+    }
+    
     // Parse body if needed (Vercel doesn't auto-parse)
     let body = req.body;
     if (typeof body === 'string') {
