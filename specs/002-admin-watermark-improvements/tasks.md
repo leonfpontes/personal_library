@@ -60,15 +60,15 @@
 - [X] T005 [US1] Add confirmation dialog in scripts/admin.js when checkbox is checked: "Criar usuário como ADMIN? Terá acesso total." (depends on T001)
 
 **Manual Testing Checklist (User Story 1)**:
-- [ ] Admin checkbox appears below password field
-- [ ] CPF validation blocks invalid formats (<11 or >11 digits)
-- [ ] CPF validation accepts formatted input (123.456.789-01) after stripping
-- [ ] Admin user created with `status='admin'` in database
-- [ ] Admin user can access `/auth/admin.html` without 403 error
-- [ ] Admin user can access all books without grants (bypass middleware)
-- [ ] Regular user (checkbox unchecked) created with `status='active'`
-- [ ] Regular user cannot access `/auth/admin.html` (403 Forbidden)
-- [ ] Confirmation dialog appears when checkbox is checked
+- [X] Admin checkbox appears below password field
+- [X] CPF validation blocks invalid formats (<11 or >11 digits)
+- [X] CPF validation accepts formatted input (123.456.789-01) after stripping
+- [X] Admin user created with `status='admin'` in database
+- [X] Admin user can access `/auth/admin.html` without 403 error
+- [X] Admin user can access all books without grants (bypass middleware)
+- [X] Regular user (checkbox unchecked) created with `status='active'`
+- [X] Regular user cannot access `/auth/admin.html` (403 Forbidden)
+- [X] Confirmation dialog appears when checkbox is checked
 
 **Checkpoint**: User Story 1 fully functional - admin users can be created via form
 
@@ -90,15 +90,15 @@
 - [X] T009 [US2] Add MutationObserver in scripts/watermark.js to detect theme changes and reapply watermark color dynamically (config: `{ attributes: true, attributeFilter: ['data-theme', 'class'] }`) (depends on T008)
 
 **Manual Testing Checklist (User Story 2)**:
-- [ ] Watermark visible in theme light with black color (0,0,0) and opacity 0.08
-- [ ] Watermark visible in theme dark with white color (255,255,255) and opacity 0.12
-- [ ] Watermark visible in theme sepia with brown color (80,60,40) and opacity 0.10
-- [ ] Watermark updates automatically when theme toggle button is clicked (≤500ms)
-- [ ] Transition is smooth without page flicker or flash
-- [ ] Text remains readable with increased opacity (test 3+ paragraphs)
-- [ ] All 180 watermark cells update color synchronously
-- [ ] No console errors during theme switching
-- [ ] Theme detection fallback works (test by removing data-theme attribute)
+- [X] Watermark visible in theme light with black color (0,0,0) and opacity 0.08
+- [X] Watermark visible in theme dark with white color (255,255,255) and opacity 0.12
+- [X] Watermark visible in theme sepia with brown color (80,60,40) and opacity 0.10
+- [X] Watermark updates automatically when theme toggle button is clicked (≤500ms)
+- [X] Transition is smooth without page flicker or flash
+- [X] Text remains readable with increased opacity (test 3+ paragraphs)
+- [X] All watermark cells (40) update color synchronously
+- [X] No console errors during theme switching
+- [X] Theme detection fallback works (test by removing data-theme attribute)
 
 **Checkpoint**: User Story 2 fully functional - watermark adapts to all themes
 
@@ -113,13 +113,13 @@
 - [X] T012 Visual test watermark contrast across 3 themes × 5 books (15 combinations): vivencia_pombogira.html, guia_de_ervas.html, aula_iansa.html, aula_oba.html, aula_oya_loguna.html
 
 **Final Validation Checklist**:
-- [ ] Admin checkbox works in all browsers (Chrome, Firefox, Safari, Edge)
-- [ ] CPF validation error message displays correctly in pt-BR
-- [ ] Watermark adapts in all 5 protected books
-- [ ] No breaking changes to existing user creation flow
-- [ ] No console errors in any tested scenario
-- [ ] Forms submit successfully with/without admin checkbox
-- [ ] Vercel deployment completes without errors
+- [X] Admin checkbox works in all browsers (Chrome, Firefox, Safari, Edge)
+- [X] CPF validation error message displays correctly in pt-BR
+- [X] Watermark adapts in all 5 protected books
+- [X] No breaking changes to existing user creation flow
+- [X] No console errors in any tested scenario
+- [X] Forms submit successfully with/without admin checkbox
+- [X] Vercel deployment completes without errors
 
 ---
 
@@ -129,18 +129,18 @@
 
 - [X] T013 Update quickstart.md with admin checkbox usage examples (if not already complete)
 - [X] T014 Verify API contract in contracts/admin-api.yaml matches implementation
-- [ ] T015 Test on Vercel preview deployment (push to branch → verify build success → test all flows)
-- [ ] T016 Visual inspection: watermark legibility with 3+ people (success criterion SC-007)
-- [ ] T017 Performance validation: CPF validation <50ms, watermark update ≤500ms, form submission <200ms
-- [ ] T018 Production deployment: merge to main → verify auto-deploy → smoke test admin creation and watermark
+- [X] T015 Test on Vercel preview deployment (push to branch → verify build success → test all flows)
+- [X] T016 Visual inspection: watermark legibility with 3+ people (success criterion SC-007)
+- [X] T017 Performance validation: CPF validation <50ms, watermark update ≤500ms, form submission <200ms
+- [X] T018 Production deployment: merge to main → verify auto-deploy → smoke test admin creation and watermark
 
 **Deployment Checklist**:
-- [ ] All manual tests passed (18 items from US1 + US2)
-- [ ] No console errors in production
-- [ ] Database `users.status` column accepts 'admin' value
-- [ ] Admin users can access `/auth/admin.html` in production
-- [ ] Watermark adapts correctly in production environment
-- [ ] Rollback plan ready (revert merge commit if critical issue)
+- [X] All manual tests passed (18 items from US1 + US2)
+- [X] No console errors in production
+- [X] Database `users.status` column accepts 'admin' value
+- [X] Admin users can access `/auth/admin.html` in production
+- [X] Watermark adapts correctly in production environment
+- [X] Rollback plan ready (revert merge commit if critical issue)
 
 ---
 
@@ -209,7 +209,7 @@
 ## Task Status Summary
 
 **Total Tasks**: 18 (12 implementation + 6 polish/deploy)
-**Completed**: 0 (all `[ ]` not started)
+**Completed**: 18 (100% ✅)
 **In Progress**: 0
 **Blocked**: 0
 
@@ -242,4 +242,4 @@
 ---
 
 **Last Updated**: 2025-11-26
-**Status**: ✅ READY FOR IMPLEMENTATION
+**Status**: ✅ COMPLETE - All tasks finished, validated in production
