@@ -88,6 +88,8 @@
 		<a href="#catalogo" class="sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Pular para o catálogo</a>
 		<header class="topbar">
 			<div class="brand">
+				<img src="Source/img/Logo_Terreiro_Black.png" alt="Logo do Terreiro" class="logo black" style="height:26px;vertical-align:middle;" />
+				<img src="Source/img/Logo_Terreiro_White.png" alt="Logo do Terreiro" class="logo white" style="height:26px;vertical-align:middle;display:none;" />
 				<h1>Biblioteca</h1>
 				<small>Catálogo de obras</small>
 			</div>
@@ -223,12 +225,26 @@
 			</div>
 		</section>
 
-		<footer>© Biblioteca pessoal — leitura livre e responsável</footer>
+		<footer>© Copyright Terreiro Tia Maria e Cabocla Jupira</footer>
 
 		<script>
 			// Theme cycle and shortcut (t)
 			const savedTheme = localStorage.getItem('book-theme');
 			if (savedTheme === 'dark' || savedTheme === 'sepia') document.documentElement.setAttribute('data-theme', savedTheme);
+			// Swap logo by theme
+			(function(){
+			  const swap = () => {
+			    const t = document.documentElement.getAttribute('data-theme') || 'light';
+			    const white = document.querySelector('.brand .logo.white');
+			    const black = document.querySelector('.brand .logo.black');
+			    if (!white || !black) return;
+			    if (t === 'dark') { white.style.display='inline-block'; black.style.display='none'; }
+			    else { white.style.display='none'; black.style.display='inline-block'; }
+			  };
+			  swap();
+			  const mo = new MutationObserver(swap);
+			  mo.observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
+			})();
 			const themeBtn = document.getElementById('themeBtn');
 			const cycleTheme = () => {
 				const current = document.documentElement.getAttribute('data-theme') || 'light';

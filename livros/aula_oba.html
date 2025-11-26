@@ -72,14 +72,16 @@
   <div class="progress"><div class="bar" id="progressBar"></div></div>
   <header class="topbar">
     <div class="brand">
+      <img src="../Source/img/Logo_Terreiro_Black.png" alt="Logo do Terreiro" class="logo black" />
+      <img src="../Source/img/Logo_Terreiro_White.png" alt="Logo do Terreiro" class="logo white" />
       <h1>Obá: Concentração e Conhecimento</h1>
       <nav aria-label="Breadcrumb"><a href="../index.html">← Biblioteca</a><span class="sep">›</span><span>Livro</span></nav>
     </div>
     <div class="controls">
       <a href="../index.html" class="btn" aria-label="Voltar à biblioteca">← Voltar</a>
-      <button class="btn" id="themeBtn" aria-label="Alternar tema">Tema</button>
-      <button class="btn" id="decFont" aria-label="Diminuir fonte">A−</button>
-      <button class="btn" id="incFont" aria-label="Aumentar fonte">A+</button>
+      <button class="icon-btn" id="fontDecrease" aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
+      <button class="icon-btn" id="fontIncrease" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+      <button class="icon-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">◐</button>
     </div>
   </header>
 
@@ -104,7 +106,7 @@
       <article id="content" aria-label="Conteúdo do livro"><p style="color: var(--muted);">Carregando conteúdo…</p></article>
     </main>
   </div>
-  <button id="backTop" title="Voltar ao topo">Topo</button>
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
@@ -151,25 +153,33 @@
     document.querySelectorAll('#tocList a').forEach(a=>{ a.parentElement.style.display=a.textContent.toLowerCase().includes(q)?'':'none'; });
   });
 
-  // Theme toggle
-  document.getElementById('themeBtn').addEventListener('click', ()=>{
-    const order=['light','dark','sepia'];
-    let current=document.documentElement.getAttribute('data-theme')||'light';
-    const next=order[(order.indexOf(current)+1)%order.length];
-    document.documentElement.setAttribute('data-theme', next==='light'?'':next);
-    localStorage.setItem(STORAGE_KEYS.theme, next);
-  });
+  // Theme Management (padrão Oyá Logunã)
+  (function(){
+    const themeToggle = document.getElementById('themeToggle');
+    const themes=['light','dark','sepia'];
+    let idx=parseInt(localStorage.getItem('theme-index')||'0');
+    function apply(){ document.documentElement.setAttribute('data-theme', themes[idx]||'light'); localStorage.setItem('theme-index', idx); }
+    themeToggle.addEventListener('click', ()=>{ idx=(idx+1)%themes.length; apply(); });
+    apply();
+  })();
 
-  // Font size
-  document.getElementById('incFont').addEventListener('click',()=>{ const val=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--content-size'))||16; if(val<24){ const nv=val+2; document.documentElement.style.setProperty('--content-size',nv+'px'); localStorage.setItem(STORAGE_KEYS.font,nv+'px'); } });
-  document.getElementById('decFont').addEventListener('click',()=>{ const val=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--content-size'))||16; if(val>12){ const nv=val-2; document.documentElement.style.setProperty('--content-size',nv+'px'); localStorage.setItem(STORAGE_KEYS.font,nv+'px'); } });
+  // Font size (padrão Oyá Logunã)
+  (function(){
+    const plus=document.getElementById('fontIncrease');
+    const minus=document.getElementById('fontDecrease');
+    let size=parseFloat(localStorage.getItem('font-size')||'16');
+    function apply(){ document.documentElement.style.setProperty('--content-size', size+'px'); localStorage.setItem('font-size', size); }
+    plus.addEventListener('click',()=>{ if(size<24){ size+=2; apply(); } });
+    minus.addEventListener('click',()=>{ if(size>12){ size-=2; apply(); } });
+    apply();
+  })();
 
   // Progress bar
   window.addEventListener('scroll',()=>{ const st=window.pageYOffset||document.documentElement.scrollTop; const sh=document.documentElement.scrollHeight-window.innerHeight; const pct=(st/sh)*100; document.getElementById('progressBar').style.width=pct+'%'; });
 
-  // Back to top
-  const back=document.getElementById('backTop');
-  window.addEventListener('scroll',()=>{ if(window.scrollY>400){ back.classList.add('show'); } else { back.classList.remove('show'); } });
+  // Back to top (padronizado)
+  const back=document.getElementById('backToTop');
+  window.addEventListener('scroll',()=>{ if(window.scrollY>400){ back.classList.add('visible'); } else { back.classList.remove('visible'); } });
   back.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
     </script>
     <script src="../scripts/protection.js"></script>

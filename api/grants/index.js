@@ -2,10 +2,6 @@ const { upsertGrant, listGrantsByUser } = require('../../auth/db');
 const { isAdmin } = require('../helpers/auth');
 const { v4: uuidv4 } = require('uuid');
 
-export const config = {
-  runtime: 'nodejs',
-};
-
 const VALID_BOOKS = new Set(['vivencia_pombogira','guia_de_ervas','aula_iansa','aula_oba','aula_oya_loguna']);
 
 module.exports = async (req, res) => {
