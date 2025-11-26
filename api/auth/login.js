@@ -3,9 +3,6 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
 
-// dev-server: ignore Vercel ESM export config
-// export const config = { runtime: 'nodejs' };
-
 function maskCpf(cpf) {
   if (!cpf || cpf.length !== 11) return cpf;
   return `${cpf.slice(0,3)}***${cpf.slice(-2)}`;
@@ -13,17 +10,23 @@ function maskCpf(cpf) {
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
-    res.statusCode = 405;
-    return res.json({ success: false, error: 'Método não permitido' });
+    res.status(405).json({ success: false, error: 'Método não permitido' });
+    return;
   }
 
   try {
-    const { email, password } = req.body || {};
+    // Parse body if needed (Vercel doesn't auto-parse)
+    let body = req.body;
+    if (typeof body === 'string') {
+      body = JSON.parse(body);
+    }
+    
+    const { email, password } = body || {};
     console.log('[LOGIN] Tentativa de login:', { email, hasPassword: !!password });
     
     if (!email || !password) {
-      res.statusCode = 400;
-      return res.json({ success: false, error: 'Email e senha são obrigatórios' });
+      res.status(400).json({ success: false, error: 'Email e senha são obrigatórios' });
+      return;
     }
 
     const user = await getUserByEmail(email);
@@ -31,13 +34,13 @@ module.exports = async (req, res) => {
     
     if (!user) {
       console.log('[LOGIN] Usuário não encontrado');
-      res.statusCode = 401;
-      return res.json({ success: false, error: 'Email ou senha incorretos' });
+      res.status(401).json({ success: false, error: 'Email ou senha incorretos' });
+      return;
     }
     if (user.status !== 'active') {
       console.log('[LOGIN] Usuário inativo');
-      res.statusCode = 401;
-      return res.json({ success: false, error: 'Usuário inativo' });
+      res.status(401).json({ success: false, error: 'Usuário inativo' });
+      return;
     }
 
     const ok = await bcrypt.compare(password, user.hashed_password);
@@ -45,8 +48,8 @@ module.exports = async (req, res) => {
     
     if (!ok) {
       console.log('[LOGIN] Senha incorreta');
-      res.statusCode = 401;
-      return res.json({ success: false, error: 'Email ou senha incorretos' });
+      res.status(401).json({ success: false, error: 'Email ou senha incorretos' });
+      return;
     }
 
     const sessionId = uuidv4();
@@ -57,8 +60,7 @@ module.exports = async (req, res) => {
     const token = jwt.sign({ sessionId, userId: user.id }, process.env.JWT_SECRET, { expiresIn: ttl });
 
     res.setHeader('Set-Cookie', `session=${token}; HttpOnly; Secure; SameSite=Strict; Max-Age=${ttl}; Path=/`);
-    res.statusCode = 200;
-    return res.json({ 
+    res.status(200).json({ 
       success: true, 
       user: { 
         id: user.id, 
@@ -72,7 +74,6 @@ module.exports = async (req, res) => {
     });
   } catch (err) {
     console.error('login error', err);
-    res.statusCode = 500;
-    return res.json({ success: false, error: 'Erro interno' });
+    res.status(500).json({ success: false, error: 'Erro interno', message: err.message });
   }
 };
