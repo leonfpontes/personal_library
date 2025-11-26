@@ -31,7 +31,7 @@
       console.log('[ACCESS GUARD] Starting validation...');
       const path = window.location.pathname;
       console.log('[ACCESS GUARD] Path:', path);
-      const match = path.match(/\/livros\/(.+?)\.html$/);
+      const match = path.match(/\/livros\/(.+?)(?:\.html)?$/);
       if (!match) {
         console.log('[ACCESS GUARD] Not a book page, showing content');
         document.documentElement.style.visibility = 'visible';
