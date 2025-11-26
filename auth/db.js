@@ -96,8 +96,16 @@ async function deleteUser(id) {
 }
 
 async function listGrantsByUser(userId) {
-  const res = await query('SELECT id, book_slug AS bookSlug, status, granted_at AS grantedAt, revoked_at AS revokedAt FROM grants WHERE user_id=?', [userId]);
-  return res.rows || [];
+  const res = await query('SELECT id, book_slug, status, granted_at, revoked_at FROM grants WHERE user_id=?', [userId]);
+  const rows = res.rows || [];
+  // Map to camelCase for JavaScript
+  return rows.map(row => ({
+    id: row.id,
+    bookSlug: row.book_slug,
+    status: row.status,
+    grantedAt: row.granted_at,
+    revokedAt: row.revoked_at
+  }));
 }
 
 async function insertAudit({ id, userId, action, bookSlug, timestamp, ipHash, userAgent }) {

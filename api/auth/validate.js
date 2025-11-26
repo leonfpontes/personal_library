@@ -30,6 +30,13 @@ module.exports = async (req, res) => {
     const bookSlug = req.query?.bookSlug || undefined;
 
     let grants = [];
+    
+    // Admin has access to everything
+    if (userId === 'admin') {
+      res.status(200).json({ valid: true, user: { id: userId, nome: 'Administrador', cpfMasked: '000***00' }, grants: bookSlug ? [bookSlug] : [] });
+      return;
+    }
+    
     // Fetch user details for watermark
     const ures = await query('SELECT nome, cpf FROM users WHERE id=?', [userId]);
     const urow = ures.rows?.[0];
