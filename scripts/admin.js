@@ -58,7 +58,7 @@
   }
 
   async function loadGrants(userId, container){
-    const res = await fetch(`/api/grants/${encodeURIComponent(userId)}`, { headers: { 'X-Admin-Token': token() } });
+    const res = await fetch(`/api/grants?userId=${encodeURIComponent(userId)}`, { headers: { 'X-Admin-Token': token() } });
     if (!res.ok) return;
     const data = await res.json();
     const active = new Set((data.grants||[]).filter(g => g.status === 'active').map(g => g.bookSlug));

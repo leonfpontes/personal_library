@@ -1,4 +1,4 @@
-const { createUser, listUsers, query } = require('../../auth/db');
+const { createUser, listUsers, getUserById, deleteUser, query } = require('../../auth/db');
 const { isAdmin } = require('../helpers/auth');
 const bcrypt = require('bcryptjs');
 const { v4: uuidv4 } = require('uuid');
@@ -12,6 +12,43 @@ module.exports = async (req, res) => {
     res.status(403).json({ success: false, error: 'Acesso negado' });
     return;
   }
+
+  // Handle /api/users?userId=xxx (single user GET/DELETE)
+  const userId = req.query?.userId;
+  
+  if (userId) {
+    // Single user operations
+    if (req.method === 'GET') {
+      try {
+        const u = await getUserById(userId);
+        if (!u) {
+          res.status(404).json({ success: false, error: 'Usuário não encontrado' });
+          return;
+        }
+        res.status(200).json({ id: u.id, nome: u.nome, cpfMasked: u.cpfMasked, email: u.email, status: u.status });
+      } catch (e) {
+        console.error('users [id] GET error', e);
+        res.status(500).json({ success: false, error: 'Erro interno' });
+      }
+      return;
+    }
+
+    if (req.method === 'DELETE') {
+      try {
+        await deleteUser(userId);
+        res.status(200).json({ success: true });
+      } catch (e) {
+        console.error('users [id] DELETE error', e);
+        res.status(500).json({ success: false, error: 'Erro interno' });
+      }
+      return;
+    }
+
+    res.status(405).json({ success: false, error: 'Método não permitido' });
+    return;
+  }
+
+  // List all users (GET /api/users)
 
   if (req.method === 'GET') {
     try {
