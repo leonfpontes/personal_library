@@ -27,7 +27,10 @@ module.exports = async (req, res) => {
     const token = decodeURIComponent(match[1]);
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     const userId = decoded.userId;
-    const bookSlug = req.query?.bookSlug || undefined;
+    
+    // Extract bookSlug from query params (Vercel uses url for serverless functions)
+    const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
+    const bookSlug = url.searchParams.get('bookSlug');
 
     let grants = [];
     
@@ -43,9 +46,12 @@ module.exports = async (req, res) => {
     const nome = urow?.nome || '';
     const cpf = urow?.cpf || '';
     const cpfMasked = (cpf && cpf.length === 11) ? `${cpf.slice(0,3)}***${cpf.slice(-2)}` : cpf;
+    
+    // If bookSlug is provided, check grant (this is the middleware validation)
     if (bookSlug) {
       const status = await getGrantStatus(userId, bookSlug);
       if (status !== 'active') {
+        console.log(`[VALIDATE] Access denied: userId=${userId}, bookSlug=${bookSlug}, status=${status}`);
         res.status(401).json({ valid: false, error: 'Acesso negado' });
         return;
       }

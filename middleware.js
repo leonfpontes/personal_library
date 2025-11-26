@@ -25,9 +25,11 @@ export default async function middleware(req) {
     try {
       const validateUrl = new URL('/api/auth/validate', url.origin);
       validateUrl.searchParams.set('bookSlug', bookSlug);
+      console.log(`[MIDDLEWARE] Validating access to: ${bookSlug}`);
       const res = await fetch(validateUrl.toString(), {
         headers: { cookie },
       });
+      console.log(`[MIDDLEWARE] Validation response status: ${res.status}`);
       if (!res.ok) {
         // Redirect to no-access page instead of login
         const noAccessUrl = new URL('/auth/no-access.html', url.origin);
