@@ -1,8 +1,9 @@
 # Quickstart: Login e Controle de Acesso da Biblioteca
 
-**Date**: 2025-11-25  
+**Date**: 26-11-2025  
 **Stack**: Vercel Edge Functions + Neon PostgreSQL  
-**Status**: ✅ MVP Completo
+**Status**: ✅ **100% Funcional em Produção**  
+**URL**: https://personal-library.vercel.app
 
 ---
 
@@ -11,8 +12,9 @@
 Sistema completo de autenticação e controle de acesso implementado com:
 - **Vercel Edge Middleware** para validação de sessão/ACL
 - **Vercel Functions** para APIs de auth/admin
-- **Neon PostgreSQL** (serverless, sa-east-1) para armazenamento
+- **Neon PostgreSQL** (serverless, sa-east-1, tier gratuito) para armazenamento
 - **Proteção em múltiplas camadas** (middleware + client-side + watermark)
+- **Clean URLs** com Vercel (`/livros/livro` e `/livros/livro.html` funcionam)
 
 ---
 
@@ -56,11 +58,12 @@ npm run dev
 ## 🗄️ Banco de Dados (Neon PostgreSQL)
 
 ### Por que Neon?
-- ✅ Integração nativa com Vercel
-- ✅ PostgreSQL serverless (escala para zero)
-- ✅ Região sa-east-1 (Brasil)
+- ✅ Integração nativa com Vercel Edge Functions
+- ✅ PostgreSQL serverless (escala para zero, tier gratuito)
+- ✅ Região sa-east-1 (Brasil) para baixa latência
 - ✅ Tier gratuito: 512 MB storage, 200h compute/mês
 - ✅ Branching (um DB por preview deployment)
+- ✅ Pooling automático para Edge Functions
 
 ### Criar banco (se ainda não tiver)
 1. Acesse [console.neon.tech](https://console.neon.tech)

@@ -1,16 +1,20 @@
 # 📚 Personal Library - Sistema de Controle de Acesso
 
+**Status**: ✅ **100% Funcional em Produção** | **Última Atualização**: 26 Nov 2025
+
 Biblioteca digital privada com sistema de autenticação, controle de acesso por livro, auditoria LGPD e proteção contra cópia.
 
 ## 🎯 Visão Geral
 
-Este projeto implementa um sistema completo de gestão de acesso para uma biblioteca digital de manuscritos em português. O sistema protege conteúdo sensível através de:
+Este projeto implementa um sistema completo de gestão de acesso para uma biblioteca digital de manuscritos em português (pt-BR). O sistema protege conteúdo sensível através de:
 
-- **Autenticação JWT** com sessões seguras (HttpOnly cookies)
-- **ACL granular** por livro (grants individuais por usuário)
-- **Proteção em múltiplas camadas** (middleware + client-side + watermark)
-- **Auditoria completa** em conformidade com LGPD
-- **Admin dashboard** para gestão de usuários e permissões
+- ✅ **Autenticação JWT** com sessões seguras (HttpOnly cookies + SameSite)
+- ✅ **ACL granular** por livro (grants individuais por usuário)
+- ✅ **Proteção em múltiplas camadas** (Edge Middleware + client-side + watermark)
+- ✅ **Auditoria completa** em conformidade com LGPD (retenção 90 dias)
+- ✅ **Admin dashboard** responsivo para gestão de usuários e permissões
+- ✅ **Clean URLs** com Vercel (regex otimizado para `/livros/livro` e `/livros/livro.html`)
+- ✅ **Tipografia consistente** (Roboto em UI, Inter+Merriweather nos livros)
 
 ## 🏗️ Arquitetura
 

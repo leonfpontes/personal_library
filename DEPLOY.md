@@ -1,6 +1,16 @@
 # Deploy na Vercel
 
-Este repositório está pronto para publicação na Vercel.
+**Status**: ✅ Projeto 100% funcional em produção  
+**URL**: https://personal-library.vercel.app (ou seu domínio custom)
+
+Este repositório está **pronto** e **testado** para publicação na Vercel com autenticação completa.
+
+## ⚠️ Pré-requisitos
+
+- ✅ Banco Neon PostgreSQL provisionado (sa-east-1)
+- ✅ Variáveis de ambiente configuradas no Vercel
+- ✅ Migrations aplicadas (`node migrate-postgres.js`)
+- ✅ Seed executado (`node seed.js`)
 
 ## Passos para deploy
 
@@ -11,12 +21,12 @@ Este repositório está pronto para publicação na Vercel.
 npm i -g vercel
 
 # Na raiz do projeto
-cd c:\Users\Educacross\Documents\personal_library
+cd personal_library
 
 # Fazer login (primeira vez)
 vercel login
 
-# Deploy
+# Deploy para preview
 vercel
 
 # Deploy para produção
@@ -25,18 +35,33 @@ vercel --prod
 
 ### 2. Via Dashboard da Vercel
 
-1. Acesse [vercel.com](https://vercel.com)
+1. Acesse [vercel.com/dashboard](https://vercel.com/dashboard)
 2. Clique em "Add New Project"
 3. Importe o repositório `leonfpontes/personal_library`
-4. Vercel detecta automaticamente que é um site estático
-5. Clique em "Deploy"
+4. Vercel detecta automaticamente: **Edge Functions + Middleware**
+5. Configure variáveis de ambiente (veja seção abaixo)
+6. Clique em "Deploy"
 
-## Configuração
+## 🔧 Configuração de Variáveis (CRÍTICO)
 
-- **Framework Preset**: Nenhum (site estático)
-- **Build Command**: (vazio)
+**Settings → Environment Variables** no Vercel Dashboard:
+
+| Variable | Example | Environments |
+|----------|---------|-------------|
+| `DATABASE_URL` | `postgresql://neondb_owner:npg_XXX@ep-XXX-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require` | Production, Preview, Development |
+| `JWT_SECRET` | `openssl rand -base64 32` | Production, Preview, Development |
+| `ADMIN_TOKEN` | `openssl rand -hex 16` | Production, Preview, Development |
+| `SESSION_TTL_SECONDS` | `86400` | Production, Preview, Development |
+
+**⚠️ IMPORTANTE**: Use a URL do Neon **com pooling** (`-pooler` no hostname).
+
+## Configuração Técnica
+
+- **Framework Preset**: Other
+- **Build Command**: (vazio - sem build)
 - **Output Directory**: `.` (raiz)
-- **Install Command**: (vazio, não há dependências)
+- **Install Command**: `npm install`
+- **Node Version**: 18.x
 
 ## Estrutura
 

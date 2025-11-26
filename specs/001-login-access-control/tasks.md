@@ -48,12 +48,14 @@
 
 - [X] T029 Definir critérios objetivos de proteção (lista de eventos bloqueados + fallback documentado)
 - [X] T030 Implementar detecção best-effort de PrintScreen (key events / blur heurística) + log `copy_attempt`
-- [X] T031 Implementar máscara de CPF na marca d’água (ex.: 123***01) + ajustar script watermark
+- [X] T031 Implementar máscara de CPF na marca d'água (ex.: 123***01) + ajustar script watermark
 - [X] T032 Logging de consentimento: armazenar `consent_at` e não permitir criação sem checkbox
 - [X] T033 Catálogo de mensagens pt-BR (JSON) com códigos e textos padronizados (erro, acesso negado, proteção)
 - [X] T034 Critérios de sucesso do pipeline: documento de verificação (lista: build ausente, funções edge respondem <300ms em warm) e ajuste se necessário
 - [X] T035 Job/rotina de limpeza (sessions expiradas, audit >90d) script manual (`scripts/cleanup.js`)
 - [X] T036 Verificação de performance watermark (injeção <300ms) medição e ajuste
+- [X] T037 [FR-008] Implementar detecção de offline/cache e bloquear conteúdo sem sessão válida (verificar `navigator.onLine`, bloquear render se sessão ausente, exibir mensagem pt-BR)
+- [X] T038 [FR-015] Validar opacidade da marca d'água não excede 15% (teste visual + ajuste CSS se necessário)
 
 ---
 

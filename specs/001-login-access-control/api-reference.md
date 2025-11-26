@@ -1,5 +1,9 @@
 # API Reference — Exemplos de Uso
 
+**Status**: ✅ Todas APIs testadas e funcionando em produção  
+**Base URL Produção**: `https://personal-library.vercel.app`  
+**Última Atualização**: 26 Nov 2025
+
 Este documento contém exemplos práticos de uso das APIs do sistema de autenticação e controle de acesso.
 
 ## Autenticação
@@ -11,7 +15,7 @@ Este documento contém exemplos práticos de uso das APIs do sistema de autentic
 **Request**:
 
 ```powershell
-curl -X POST https://<seu-dominio>/api/auth/login `
+curl -X POST https://personal-library.vercel.app/api/auth/login `
   -H "Content-Type: application/json" `
   -d '{"email":"admin@library.local","password":"changeme123"}'
 ```

@@ -1,26 +1,33 @@
 # Guia de Deploy — Personal Library Auth
 
-## Pré-requisitos
-- Conta Vercel conectada ao repositório GitHub
-- Node.js 18+ instalado localmente (para seed e testes)
+**Status**: ✅ Projeto deployado e funcional em produção  
+**Última Atualização**: 26 Nov 2025
 
-## Passo 1: Provisionar SQLite Edge (Turso)
+## ✅ Pré-requisitos (Já Completos)
 
-```powershell
-# Instalar Turso CLI (opcional, ou usar dashboard)
-# https://turso.tech/
+- ✅ Conta Vercel conectada ao repositório GitHub
+- ✅ Node.js 18+ instalado localmente
+- ✅ Banco Neon PostgreSQL provisionado (sa-east-1)
+- ✅ Variáveis de ambiente configuradas no Vercel
+- ✅ Migrations aplicadas
+- ✅ Seed executado
 
-# Criar banco
-turso db create personal_library
+---
 
-# Obter URL e token
-turso db show personal_library
-turso db tokens create personal_library
-```
+## Passo 1: Provisionar Neon PostgreSQL
+
+**Já Completo** - Banco provisionado em `sa-east-1` (São Paulo)
+
+### Para criar novo banco (se necessário):
+
+1. Acesse [console.neon.tech](https://console.neon.tech)
+2. Clique em "New Project"
+3. Nome: `personal-library`
+4. Região: **South America (São Paulo) - sa-east-1**
+5. Copie a **Connection String com pooling** (`-pooler` no hostname)
 
 Anote:
-- `DATABASE_URL`: `libsql://<seu-db>.turso.io`
-- `DATABASE_AUTH_TOKEN`: token de acesso
+- `DATABASE_URL`: `postgresql://neondb_owner:npg_XXX@ep-XXX-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require`
 
 ## Passo 2: Configurar Variáveis de Ambiente (Vercel)
 

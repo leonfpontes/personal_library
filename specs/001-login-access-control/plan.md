@@ -13,7 +13,7 @@ Implementar sistema de autenticação, controle de acesso por livro (concessão/
 
 **Language/Version**: HTML5, CSS3, JavaScript (ES6+) — estático, sem transpilação  
 **Primary Dependencies**: Vercel Edge Middleware/Functions, @libsql/client (Turso, SQLite edge/serverless), jsonwebtoken, bcryptjs, uuid  
-**Storage**: SQLite edge/serverless (Turso, Deno KV, LiteFS) — usuários, concessões, sessões e auditoria em tabelas relacionais  
+**Storage**: SQLite edge/serverless via **Turso** (escolha final implementada) — usuários, concessões, sessões e auditoria em tabelas relacionais  
 **Testing**: Manual (navegadores Chrome/Firefox/Safari) — sem framework de testes automatizados  
 **Target Platform**: Web estático (Vercel), navegadores modernos (últimas 2 versões de Chrome, Firefox, Safari, Edge)  
 **Project Type**: Web estático (frontend-only com possível layer serverless para autenticação)  
@@ -85,7 +85,7 @@ deve ser mínimo e manter o princípio de site estático para conteúdo público
 
 **Rationale**: Sem backend, autenticação real é impossível. Client-side puro não atende requisitos de segurança. Vercel Edge/Functions são recursos da plataforma, não requerem builds, e mantêm pipeline de publicação inalterado.
 
-**Approval Status**: ⏳ Pending (deve ser aprovado antes de Phase 2 - tasks)
+**Approval Status**: ✅ Approved (2025-11-25) — Implementação completa validou necessidade de serverless
 
 ## Project Structure
 
