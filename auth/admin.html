@@ -16,16 +16,41 @@
       .panel { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:16px; }
       h2 { margin:0 0 10px; font-weight:600; }
       label { display:block; margin:8px 0 4px; font-weight:600; }
-      input[type="text"], input[type="email"], input[type="password"] { width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; background:#fff; }
-      .row { display:flex; gap:12px; }
-      .row > div { flex: 1 1 0; }
+      input[type="text"], input[type="email"], input[type="password"] { 
+        width: 100%; 
+        max-width: 100%;
+        padding: 10px 12px; 
+        border: 1px solid var(--border); 
+        border-radius: 10px; 
+        background: #fff;
+        box-sizing: border-box;
+      }
+      .row { 
+        display: flex; 
+        gap: 12px; 
+        flex-wrap: wrap;
+      }
+      .row > div { 
+        flex: 1 1 200px; 
+        min-width: 0;
+      }
       .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--accent); color:#fff; background:var(--accent); border-radius:10px; font-weight:600; cursor:pointer; }
       .btn.secondary { color: var(--fg); background: var(--card); border-color: var(--border); }
-      table { width:100%; border-collapse: collapse; }
-      th, td { border-bottom:1px solid var(--border); padding:10px; text-align:left; }
+      table { width:100%; border-collapse: collapse; overflow-x: auto; }
+      th, td { border-bottom:1px solid var(--border); padding:10px; text-align:left; white-space: nowrap; }
       .tags { display:flex; gap:8px; flex-wrap:wrap; }
       .tag { padding:4px 10px; border:1px solid var(--border); border-radius:999px; font-size:12px; color: var(--muted); }
       .notice { padding:10px; background: #eaf2fb; border:1px solid #cfe0f5; color:#2e5c8f; border-radius:10px; margin-bottom:12px; }
+      
+      /* Responsividade */
+      @media (max-width: 640px) {
+        .row { flex-direction: column; }
+        .row > div { flex: 1 1 auto; }
+        table { font-size: 14px; }
+        th, td { padding: 8px; }
+        .panel { padding: 12px; }
+        main { padding: 12px; }
+      }
     </style>
   </head>
   <body>
@@ -69,18 +94,20 @@
 
       <section class="panel">
         <h2>Usuários</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>Status</th>
-              <th>Acessos</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody id="usersTbody"></tbody>
-        </table>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Acessos</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="usersTbody"></tbody>
+          </table>
+        </div>
       </section>
     </main>
     <script src="../scripts/admin.js"></script>
