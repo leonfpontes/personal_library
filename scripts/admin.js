@@ -7,7 +7,13 @@
     { slug: 'aula_oya_loguna', title: 'Aula Oyá Logunã' },
   ];
 
-  function token(){ return document.getElementById('adminToken').value.trim(); }
+  // Admin token is retrieved from session storage (set during login)
+  function token(){ 
+    const user = JSON.parse(sessionStorage.getItem('user') || '{}');
+    // In production, the backend validates session cookie, so we just need to identify as admin
+    // For API calls that need X-Admin-Token, we'll use a placeholder since session cookie handles auth
+    return 'from-session'; // Backend will validate via session cookie
+  }
   function showMsg(el, msg){ el.textContent = msg; el.style.display = 'block'; setTimeout(()=>{ el.style.display='none'; }, 5000); }
 
   async function fetchUsers(){
@@ -99,7 +105,11 @@
 
   function init(){
     document.getElementById('createUser').addEventListener('click', (e) => { e.preventDefault(); createUser().catch(err => alert(err.message)); });
-    document.getElementById('adminToken').addEventListener('change', () => refresh().catch(()=>{}));
+    // Auto-load users on page load
+    refresh().catch(err => {
+      console.error('Erro ao carregar usuários:', err);
+      alert('Erro ao carregar usuários. Verifique se você está logado como admin.');
+    });
   }
 
   document.addEventListener('DOMContentLoaded', init);

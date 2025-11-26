@@ -1,32 +1,32 @@
-const { listGrantsByUser } = require('../../../auth/db');
+const { listGrantsByUser } = require('../../auth/db');
+const { isAdmin } = require('../helpers/auth');
 
 export const config = { runtime: 'nodejs' };
 
 module.exports = async (req, res) => {
-  const adminToken = req.headers['x-admin-token'];
-  if (!adminToken || adminToken !== process.env.ADMIN_TOKEN) {
-    res.statusCode = 403;
-    return res.json({ success: false, error: 'Acesso negado' });
+  // Validate admin access via session cookie or admin token
+  const adminAccess = await isAdmin(req);
+  if (!adminAccess) {
+    res.status(403).json({ success: false, error: 'Acesso negado' });
+    return;
   }
 
   const { userId } = req.query || {};
   if (!userId) {
-    res.statusCode = 400;
-    return res.json({ success: false, error: 'Parâmetro userId é obrigatório' });
+    res.status(400).json({ success: false, error: 'Parâmetro userId é obrigatório' });
+    return;
   }
 
   if (req.method !== 'GET') {
-    res.statusCode = 405;
-    return res.json({ success: false, error: 'Método não permitido' });
+    res.status(405).json({ success: false, error: 'Método não permitido' });
+    return;
   }
 
   try {
     const grants = await listGrantsByUser(userId);
-    res.statusCode = 200;
-    return res.json({ grants });
+    res.status(200).json({ grants });
   } catch (e) {
     console.error('grants [user] GET error', e);
-    res.statusCode = 500;
-    return res.json({ success: false, error: 'Erro interno' });
+    res.status(500).json({ success: false, error: 'Erro interno' });
   }
 };
