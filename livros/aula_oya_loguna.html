@@ -33,7 +33,7 @@
       (function() {
         'use strict';
         const path = window.location.pathname;
-        const match = path.match(/\/livros\/(.+?)\.html$/);
+        const match = path.match(/\/livros\/(.+?)(?:\.html)?$/);
         if (!match) {
           document.documentElement.style.visibility = 'visible';
           document.documentElement.style.opacity = '1';
