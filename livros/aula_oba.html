@@ -24,19 +24,25 @@
   </style>
   <script>
     // CRITICAL: Block rendering until access validated
+    // Version: 3 (force cache bust)
+    console.log('[ACCESS GUARD] Script loaded - v3');
     (function() {
       'use strict';
+      console.log('[ACCESS GUARD] Starting validation...');
       const path = window.location.pathname;
+      console.log('[ACCESS GUARD] Path:', path);
       const match = path.match(/\/livros\/(.+?)\.html$/);
       if (!match) {
+        console.log('[ACCESS GUARD] Not a book page, showing content');
         document.documentElement.style.visibility = 'visible';
         document.documentElement.style.opacity = '1';
         return;
       }
       
       const bookSlug = match[1];
+      console.log('[ACCESS GUARD] Book slug:', bookSlug);
       
-      fetch('/api/auth/validate?bookSlug=' + encodeURIComponent(bookSlug))
+      fetch('/api/auth/validate?bookSlug=' + encodeURIComponent(bookSlug) + '&_=' + Date.now())
         .then(function(res) {
           console.log('[ACCESS GUARD] Response status:', res.status);
           return res.json().then(function(data) {
@@ -44,8 +50,10 @@
           });
         })
         .then(function(result) {
+          console.log('[ACCESS GUARD] Result:', result);
           if (!result.ok || !result.data.valid) {
             console.log('[ACCESS GUARD] ❌ Access DENIED to:', bookSlug);
+            alert('Acesso negado. Você será redirecionado.');
             window.location.replace('/auth/no-access.html');
           } else {
             console.log('[ACCESS GUARD] ✅ Access GRANTED to:', bookSlug);
@@ -55,6 +63,7 @@
         })
         .catch(function(err) {
           console.error('[ACCESS GUARD] Error:', err);
+          alert('Erro ao validar acesso: ' + err.message);
           window.location.replace('/auth/no-access.html');
         });
     })();
