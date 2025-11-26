@@ -1,8 +1,10 @@
 const { neon } = require('@neondatabase/serverless');
 
 function getEnv(name) {
-  const val = process.env[name];
+  let val = process.env[name];
   if (!val) throw new Error(`Missing env var ${name}`);
+  // Remove quotes if present
+  val = val.replace(/^["']|["']$/g, '');
   return val;
 }
 
@@ -61,21 +63,24 @@ async function upsertGrant({ id, userId, bookSlug, action, timestamp }) {
   throw new Error('Invalid action');
 }
 
-async function createUser({ id, nome, cpf, email, hashedPassword, status, createdAt, consentAt }) {
+async function createUser({ id, nome, cpf, email, hashedPassword, status, isAdmin, createdAt, consentAt }) {
+  // T040: consentAt is now optional (US6 - removed LGPD checkbox)
   await query(
-    'INSERT INTO users (id,nome,cpf,email,hashed_password,status,created_at,last_access_at,consent_at) VALUES (?,?,?,?,?,?,?,?,?)',
-    [id, nome, cpf, email.toLowerCase(), hashedPassword, status, createdAt, createdAt, consentAt]
+    'INSERT INTO users (id,nome,cpf,email,hashed_password,status,is_admin,created_at,last_access_at,consent_at) VALUES (?,?,?,?,?,?,?,?,?,?)',
+    [id, nome, cpf, email.toLowerCase(), hashedPassword, status, !!isAdmin, createdAt, createdAt, consentAt || createdAt]
   );
 }
 
 async function listUsers() {
-  const res = await query('SELECT id, nome, cpf, email, status FROM users ORDER BY created_at DESC');
+  const res = await query('SELECT id, nome, cpf, email, status, is_admin FROM users ORDER BY created_at DESC');
   const rows = res.rows || [];
-  // Mask CPF before returning
+  // Return full CPF for admin context (needed for editing)
+  // CPF is only exposed through admin-protected endpoints
   return rows.map(row => ({
     ...row,
-    cpfMasked: row.cpf ? `${row.cpf.slice(0,3)}***${row.cpf.slice(-2)}` : null,
-    cpf: undefined // Remove raw CPF
+    isAdmin: row.is_admin,
+    cpfMasked: row.cpf ? `${row.cpf.slice(0,3)}***${row.cpf.slice(-2)}` : null
+    // Keep cpf for admin editing purposes
   }));
 }
 
@@ -92,7 +97,49 @@ async function getUserById(id) {
 }
 
 async function deleteUser(id) {
+  // T037: Grants cascade automatically if foreign key has ON DELETE CASCADE
+  // Otherwise, manually delete grants first
+  await query('DELETE FROM grants WHERE user_id=?', [id]);
   await query('DELETE FROM users WHERE id=?', [id]);
+}
+
+// T030: Update user function with partial updates
+async function updateUser(id, data) {
+  const fields = [];
+  const values = [];
+  
+  if (data.nome !== undefined) {
+    fields.push('nome = ?');
+    values.push(data.nome);
+  }
+  if (data.cpf !== undefined) {
+    fields.push('cpf = ?');
+    values.push(data.cpf);
+  }
+  if (data.email !== undefined) {
+    fields.push('email = ?');
+    values.push(data.email);
+  }
+  if (data.status !== undefined) {
+    fields.push('status = ?');
+    values.push(data.status);
+  }
+  if (data.isAdmin !== undefined) {
+    fields.push('is_admin = ?');
+    values.push(!!data.isAdmin);
+  }
+  if (data.hashedPassword !== undefined) {
+    fields.push('hashed_password = ?');
+    values.push(data.hashedPassword);
+  }
+  
+  if (fields.length === 0) {
+    throw new Error('No fields to update');
+  }
+  
+  values.push(id); // WHERE id = ?
+  const sql = `UPDATE users SET ${fields.join(', ')} WHERE id = ?`;
+  await query(sql, values);
 }
 
 async function listGrantsByUser(userId) {
@@ -123,6 +170,7 @@ module.exports = {
   listUsers,
   getUserById,
   deleteUser,
+  updateUser,
   listGrantsByUser,
   insertAudit,
 };
