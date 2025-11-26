@@ -25,15 +25,15 @@
           "value": "1; mode=block"
         }
       ]
-    }
-  ],
-  "routes": [
+    },
     {
-      "src": "/livros/(.*)",
-      "dest": "/livros/$1",
-      "headers": {
-        "Cache-Control": "private, no-cache, no-store, must-revalidate"
-      }
+      "source": "/livros/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-cache, no-store, must-revalidate"
+        }
+      ]
     }
   ]
 }
