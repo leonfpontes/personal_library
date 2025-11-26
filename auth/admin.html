@@ -85,9 +85,16 @@
             <input id="password" type="password" placeholder="mínimo 8 caracteres" />
           </div>
         </div>
-        <label><input id="consent" type="checkbox" /> Confirmo consentimento LGPD para cadastro</label>
+        <label style="margin-top: 12px;">
+          <input id="isAdmin" type="checkbox" /> 
+          Usuário Admin (acesso total)
+        </label>
+        <!-- T025: Hidden field to track edit mode -->
+        <input id="editingUserId" type="hidden" value="" />
         <div style="margin-top:10px;">
           <button id="createUser" class="btn">Cadastrar usuário</button>
+          <!-- T028: Cancel edit button -->
+          <button id="cancelEdit" class="btn secondary" style="display:none; margin-left:8px;">Cancelar edição</button>
         </div>
         <div id="createMsg" class="notice" style="display:none;"></div>
       </section>

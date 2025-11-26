@@ -65,14 +65,16 @@
     <div class="progress"><div class="bar" id="progressBar"></div></div>
     <header class="topbar">
       <div class="brand">
+        <img src="../Source/img/Logo_Terreiro_Black.png" alt="Logo do Terreiro" class="logo black" />
+        <img src="../Source/img/Logo_Terreiro_White.png" alt="Logo do Terreiro" class="logo white" />
         <h1>Vivência Pombogira</h1>
         <nav aria-label="Breadcrumb"><a href="../index.html">← Biblioteca</a> <span class="sep">›</span> <span>Livro</span></nav>
       </div>
       <div class="controls">
         <a href="../index.html" class="btn" aria-label="Voltar à biblioteca">← Voltar</a>
-        <button class="btn" id="themeBtn" aria-label="Alternar tema">Tema</button>
-        <button class="btn" id="decFont" aria-label="Diminuir fonte">A−</button>
-        <button class="btn" id="incFont" aria-label="Aumentar fonte">A+</button>
+        <button class="icon-btn" id="fontDecrease" aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
+        <button class="icon-btn" id="fontIncrease" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">◐</button>
       </div>
     </header>
 
@@ -99,18 +101,28 @@
         </article>
       </main>
     </div>
-    <button id="backTop" title="Voltar ao topo">Topo</button>
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-      const STORAGE_KEYS = { theme: 'book-theme', font: 'book-font-size' };
       const mdPath = '../Source/vivencia_pombogira.md';
 
-      const savedTheme = localStorage.getItem(STORAGE_KEYS.theme);
-      if (savedTheme === 'dark' || savedTheme === 'sepia') document.documentElement.setAttribute('data-theme', savedTheme);
+      // Theme Management (padrão Oyá Logunã)
+      const themeToggle = document.getElementById('themeToggle');
+      const themes = ['light', 'dark', 'sepia'];
+      let currentThemeIndex = parseInt(localStorage.getItem('theme-index') || '0');
+      function applyTheme() { document.documentElement.setAttribute('data-theme', themes[currentThemeIndex] || 'light'); localStorage.setItem('theme-index', currentThemeIndex); }
+      themeToggle.addEventListener('click', () => { currentThemeIndex = (currentThemeIndex + 1) % themes.length; applyTheme(); });
+      applyTheme();
 
-      const savedFont = localStorage.getItem(STORAGE_KEYS.font);
-      if (savedFont) document.documentElement.style.setProperty('--content-size', savedFont);
+      // Font Size Management (padrão Oyá Logunã)
+      const fontIncrease = document.getElementById('fontIncrease');
+      const fontDecrease = document.getElementById('fontDecrease');
+      let fontSize = parseFloat(localStorage.getItem('font-size') || '16');
+      function applyFontSize() { document.documentElement.style.setProperty('--content-size', `${fontSize}px`); localStorage.setItem('font-size', fontSize); }
+      fontIncrease.addEventListener('click', () => { if (fontSize < 24) { fontSize += 2; applyFontSize(); } });
+      fontDecrease.addEventListener('click', () => { if (fontSize > 12) { fontSize -= 2; applyFontSize(); } });
+      applyFontSize();
 
       const slugify = (str) => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9\s\-_.]/g, '').trim().replace(/\s+/g, '-');
 
@@ -169,9 +181,9 @@
       document.addEventListener('scroll', () => { updateProgress(); toggleBackTop(); }, { passive: true });
 
       const toggleBackTop = () => {
-        const btn = document.getElementById('backTop');
+        const btn = document.getElementById('backToTop');
         const y = window.scrollY || document.documentElement.scrollTop;
-        if (y > 600) btn.classList.add('show'); else btn.classList.remove('show');
+        if (y > 600) btn.classList.add('visible'); else btn.classList.remove('visible');
       };
 
       const escapeHtml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -228,7 +240,7 @@
         });
       }
 
-      document.getElementById('backTop').addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      document.getElementById('backToTop').addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
       document.getElementById('tocList').addEventListener('click', (e) => {
         const target = e.target.closest('a');
@@ -239,13 +251,7 @@
         if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 12, behavior: 'smooth' });
       });
 
-      document.getElementById('themeBtn').addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme') || 'light';
-        const next = current === 'light' ? 'dark' : current === 'dark' ? 'sepia' : 'light';
-        if (next === 'light') document.documentElement.removeAttribute('data-theme');
-        else document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem(STORAGE_KEYS.theme, next);
-      });
+      // (Tema alternado via themeToggle)
     </script>
     <script src="../scripts/protection.js"></script>
     <script src="../scripts/watermark.js"></script>

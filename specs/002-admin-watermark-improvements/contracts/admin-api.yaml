@@ -1,0 +1,560 @@
+openapi: 3.0.3
+info:
+  title: Admin API - User Management
+  description: |
+    API endpoints for admin user management (CRUD operations).
+    
+    **Version History**:
+    - v1.2.0 (2025-11-26): Added PATCH /users/{userId} for editing, enhanced DELETE with self-deletion check
+    - v1.1.0: Added isAdmin parameter to POST /users for admin creation
+    - v1.0.0: Initial version with user creation and listing
+  version: 1.2.0
+  contact:
+    name: personal_library API
+    url: https://personal-library.vercel.app
+
+servers:
+  - url: https://personal-library.vercel.app/api
+    description: Production
+  - url: http://localhost:3000/api
+    description: Local development
+
+paths:
+  /users:
+    post:
+      summary: Create new user
+      description: |
+        Create a new user with optional admin role assignment.
+        
+        **Changes in v1.1.0**:
+        - Added `isAdmin` boolean parameter
+        - Admin users created with `status='admin'` in database
+        - Regular users default to `status='active'`
+        
+        **Authentication**: Requires admin session (X-Admin-Token header)
+      operationId: createUser
+      tags:
+        - Users
+      security:
+        - adminSession: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - nome
+                - cpf
+                - email
+                - password
+              properties:
+                nome:
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  description: Full name
+                  example: "Maria Silva"
+                cpf:
+                  type: string
+                  pattern: '^\d{11}$'
+                  description: CPF (11 numeric digits, no formatting)
+                  example: "12345678901"
+                email:
+                  type: string
+                  format: email
+                  maxLength: 255
+                  description: Email address (unique)
+                  example: "maria@example.com"
+                password:
+                  type: string
+                  minLength: 6
+                  maxLength: 255
+                  description: Plain text password (will be hashed with bcrypt)
+                  example: "senha123"
+                isAdmin:
+                  type: boolean
+                  default: false
+                  description: |
+                    **NEW in v1.1.0**: Mark user as admin.
+                    - true: User created with `status='admin'` (full access, bypass grants)
+                    - false: User created with `status='active'` (requires grants per book)
+                  example: false
+            examples:
+              regularUser:
+                summary: Regular user (default)
+                value:
+                  nome: "João Silva"
+                  cpf: "98765432109"
+                  email: "joao@example.com"
+                  password: "senha456"
+                  isAdmin: false
+              adminUser:
+                summary: Admin user
+                value:
+                  nome: "Maria Admin"
+                  cpf: "12345678901"
+                  email: "maria@example.com"
+                  password: "admin123"
+                  isAdmin: true
+              formattedCPF:
+                summary: CPF with formatting (will be stripped)
+                value:
+                  nome: "Carlos User"
+                  cpf: "123.456.789-01"
+                  email: "carlos@example.com"
+                  password: "senha789"
+                  isAdmin: false
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  userId:
+                    type: string
+                    format: uuid
+                    description: UUID v4 of created user
+                    example: "550e8400-e29b-41d4-a716-446655440000"
+              examples:
+                success:
+                  summary: User created
+                  value:
+                    success: true
+                    userId: "550e8400-e29b-41d4-a716-446655440000"
+        '400':
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                invalidCPF:
+                  summary: Invalid CPF format
+                  value:
+                    success: false
+                    error: "CPF inválido (deve ter 11 dígitos)"
+                invalidEmail:
+                  summary: Invalid email format
+                  value:
+                    success: false
+                    error: "Email inválido"
+                missingFields:
+                  summary: Missing required fields
+                  value:
+                    success: false
+                    error: "Campos obrigatórios: nome, cpf, email, password"
+        '403':
+          description: Forbidden - Not admin
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                notAdmin:
+                  summary: User not admin
+                  value:
+                    success: false
+                    error: "Acesso negado"
+        '409':
+          description: Conflict - Email or CPF already exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                emailExists:
+                  summary: Email already registered
+                  value:
+                    success: false
+                    error: "Email já cadastrado"
+                cpfExists:
+                  summary: CPF already registered
+                  value:
+                    success: false
+                    error: "CPF já cadastrado"
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                serverError:
+                  summary: Database or server error
+                  value:
+                    success: false
+                    error: "Erro interno do servidor"
+
+    get:
+      summary: List all users
+      description: |
+        Retrieve list of all users (admin only).
+        
+        **No changes in v1.1.0** - Response now includes `status` field.
+      operationId: listUsers
+      tags:
+        - Users
+      security:
+        - adminSession: []
+      responses:
+        '200':
+          description: List of users
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  users:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/User'
+        '403':
+          description: Forbidden - Not admin
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{userId}:
+    get:
+      summary: Get user by ID
+      description: Retrieve single user details (admin only)
+      operationId: getUserById
+      tags:
+        - Users
+      security:
+        - adminSession: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+          description: User UUID
+      responses:
+        '200':
+          description: User found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - Not admin
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    patch:
+      summary: Update user
+      description: |
+        Update user data (admin only).
+        
+        **NEW in v1.2.0**: Full user editing capability
+        - Update name, email, CPF, password, admin status
+        - Password field is optional (omit to keep current password)
+        - Validates email/CPF uniqueness
+        - Cannot edit own account to prevent privilege escalation
+      operationId: updateUser
+      tags:
+        - Users
+      security:
+        - adminSession: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+          description: User UUID to update
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  description: Full name (optional)
+                  example: "Maria Silva Updated"
+                cpf:
+                  type: string
+                  pattern: '^\d{11}$'
+                  description: CPF - 11 digits, no formatting (optional)
+                  example: "98765432109"
+                email:
+                  type: string
+                  format: email
+                  maxLength: 255
+                  description: Email address (optional, must be unique)
+                  example: "maria.updated@example.com"
+                password:
+                  type: string
+                  minLength: 6
+                  maxLength: 255
+                  description: New password (optional - omit to keep current)
+                  example: "newpassword123"
+                isAdmin:
+                  type: boolean
+                  description: |
+                    Admin status (optional):
+                    - true: Set `status='admin'` (full access)
+                    - false: Set `status='active'` (requires grants)
+                  example: true
+            examples:
+              updateName:
+                summary: Update only name
+                value:
+                  nome: "João Updated"
+              promoteToAdmin:
+                summary: Promote user to admin
+                value:
+                  isAdmin: true
+              demoteToRegular:
+                summary: Demote admin to regular user
+                value:
+                  isAdmin: false
+              fullUpdate:
+                summary: Update all fields including password
+                value:
+                  nome: "Carlos Complete Update"
+                  email: "carlos.new@example.com"
+                  cpf: "11122233344"
+                  password: "newpass456"
+                  isAdmin: false
+      responses:
+        '200':
+          description: User updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  user:
+                    $ref: '#/components/schemas/User'
+        '400':
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                invalidCPF:
+                  summary: Invalid CPF format
+                  value:
+                    success: false
+                    error: "CPF inválido (deve ter 11 dígitos)"
+                invalidEmail:
+                  summary: Invalid email
+                  value:
+                    success: false
+                    error: "Email inválido"
+                selfEdit:
+                  summary: Cannot edit own account
+                  value:
+                    success: false
+                    error: "Não é possível editar sua própria conta"
+        '403':
+          description: Forbidden - Not admin
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: Conflict - Email or CPF already in use
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                emailExists:
+                  summary: Email already taken by another user
+                  value:
+                    success: false
+                    error: "Email já cadastrado"
+                cpfExists:
+                  summary: CPF already taken by another user
+                  value:
+                    success: false
+                    error: "CPF já cadastrado"
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    delete:
+      summary: Delete user
+      description: |
+        Delete user by ID (admin only).
+        
+        **Updated in v1.2.0**:
+        - Blocks self-deletion (cannot delete own account)
+        - Cascades to grants table (removes all associated grants)
+      operationId: deleteUser
+      tags:
+        - Users
+      security:
+        - adminSession: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+          description: User UUID
+      responses:
+        '200':
+          description: User deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: "Usuário excluído com sucesso"
+        '400':
+          description: Bad request - Self-deletion blocked
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                selfDelete:
+                  summary: Cannot delete own account
+                  value:
+                    success: false
+                    error: "Não é possível excluir sua própria conta"
+        '403':
+          description: Forbidden - Not admin
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: User UUID
+          example: "550e8400-e29b-41d4-a716-446655440000"
+        nome:
+          type: string
+          description: Full name
+          example: "Maria Silva"
+        cpfMasked:
+          type: string
+          description: Masked CPF (123***789-01)
+          example: "123***789-01"
+        email:
+          type: string
+          format: email
+          description: Email address
+          example: "maria@example.com"
+        status:
+          type: string
+          enum: [active, admin, inactive]
+          description: |
+            User status/role:
+            - `active`: Regular user (requires grants per book)
+            - `admin`: Administrator (full access, bypass grants)
+            - `inactive`: Disabled account (cannot login)
+          example: "active"
+        createdAt:
+          type: string
+          format: date-time
+          description: Account creation timestamp
+          example: "2025-11-26T10:30:00Z"
+      required:
+        - id
+        - nome
+        - cpfMasked
+        - email
+        - status
+
+    Error:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        error:
+          type: string
+          description: Error message in pt-BR
+          example: "CPF inválido (deve ter 11 dígitos)"
+      required:
+        - success
+        - error
+
+  securitySchemes:
+    adminSession:
+      type: apiKey
+      in: header
+      name: X-Admin-Token
+      description: |
+        Admin session token from login.
+        
+        **How to obtain**:
+        1. Login as admin user: POST /api/auth/login
+        2. Session cookie set automatically (HttpOnly)
+        3. X-Admin-Token header derived from session
+        4. Middleware validates admin status
+
+tags:
+  - name: Users
+    description: User management operations (admin only)
+
+externalDocs:
+  description: Feature Specification
+  url: https://github.com/leonfpontes/personal_library/blob/main/specs/002-admin-watermark-improvements/spec.md
