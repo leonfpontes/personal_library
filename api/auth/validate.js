@@ -31,11 +31,14 @@ module.exports = async (req, res) => {
     // Extract bookSlug from query params (Vercel uses url for serverless functions)
     const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
     const bookSlug = url.searchParams.get('bookSlug');
+    
+    console.log(`[VALIDATE] Request: userId=${userId}, bookSlug=${bookSlug}, url=${req.url}`);
 
     let grants = [];
     
     // Admin has access to everything
     if (userId === 'admin') {
+      console.log('[VALIDATE] Admin access granted');
       res.status(200).json({ valid: true, user: { id: userId, nome: 'Administrador', cpfMasked: '000***00' }, grants: bookSlug ? [bookSlug] : [] });
       return;
     }
@@ -49,13 +52,18 @@ module.exports = async (req, res) => {
     
     // If bookSlug is provided, check grant (this is the middleware validation)
     if (bookSlug) {
+      console.log(`[VALIDATE] Checking grant for userId=${userId}, bookSlug=${bookSlug}`);
       const status = await getGrantStatus(userId, bookSlug);
+      console.log(`[VALIDATE] Grant status: ${status}`);
       if (status !== 'active') {
-        console.log(`[VALIDATE] Access denied: userId=${userId}, bookSlug=${bookSlug}, status=${status}`);
+        console.log(`[VALIDATE] ❌ Access DENIED: userId=${userId}, bookSlug=${bookSlug}, status=${status}`);
         res.status(401).json({ valid: false, error: 'Acesso negado' });
         return;
       }
+      console.log(`[VALIDATE] ✅ Access granted: userId=${userId}, bookSlug=${bookSlug}`);
       grants = [bookSlug];
+    } else {
+      console.log(`[VALIDATE] No bookSlug provided, returning all user info without validation`);
     }
 
     res.status(200).json({ valid: true, user: { id: userId, nome, cpfMasked }, grants });

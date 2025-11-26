@@ -5,6 +5,8 @@ export const config = {
 
 export default async function middleware(req) {
   const url = new URL(req.url);
+  console.log(`[MIDDLEWARE] Request to: ${url.pathname}`);
+  
   const cookie = req.headers.get('cookie') || '';
   const hasSession = /(?:^|; )session=/.test(cookie);
 
