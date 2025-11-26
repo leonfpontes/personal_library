@@ -19,8 +19,8 @@ export default async function middleware(req) {
   }
 
   // Validate grant for current book slug via internal API (Node runtime)
-  const path = url.pathname; // e.g., /livros/vivencia_pombogira.html
-  const match = path.match(/\/livros\/(.+?)\.html$/);
+  const path = url.pathname; // e.g., /livros/vivencia_pombogira or /livros/vivencia_pombogira.html
+  const match = path.match(/\/livros\/(.+?)(?:\.html)?$/);
   const bookSlug = match ? match[1] : undefined;
 
   if (bookSlug) {
