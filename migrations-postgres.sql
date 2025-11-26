@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS users (
   email TEXT NOT NULL,
   hashed_password TEXT NOT NULL,
   status TEXT NOT NULL CHECK (status IN ('active','inactive')),
+  is_admin BOOLEAN NOT NULL DEFAULT FALSE,
   created_at BIGINT NOT NULL,
   last_access_at BIGINT NOT NULL,
   consent_at BIGINT NOT NULL,
