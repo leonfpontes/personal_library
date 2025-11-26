@@ -32,30 +32,31 @@ module.exports = async (req, res) => {
 
   // Handle POST /api/grants (grant or revoke access)
   if (req.method === 'POST') {
+    try {
+      const { userId, bookSlug, action } = req.body || {};
+      if (!userId || !bookSlug || !action) {
+        res.status(400).json({ success: false, error: 'Parâmetros obrigatórios ausentes' });
+        return;
+      }
+      if (!VALID_BOOKS.has(bookSlug)) {
+        res.status(400).json({ success: false, error: 'Livro não existe' });
+        return;
+      }
+      if (!['grant','revoke'].includes(action)) {
+        res.status(400).json({ success: false, error: 'Ação inválida' });
+        return;
+      }
 
-  try {
-    const { userId, bookSlug, action } = req.body || {};
-    if (!userId || !bookSlug || !action) {
-      res.status(400).json({ success: false, error: 'Parâmetros obrigatórios ausentes' });
-      return;
-    }
-    if (!VALID_BOOKS.has(bookSlug)) {
-      res.status(400).json({ success: false, error: 'Livro não existe' });
-      return;
-    }
-    if (!['grant','revoke'].includes(action)) {
-      res.status(400).json({ success: false, error: 'Ação inválida' });
-      return;
-    }
+      const id = uuidv4();
+      const ts = Math.floor(Date.now() / 1000);
+      const grantId = await upsertGrant({ id, userId, bookSlug, action, timestamp: ts });
 
-    const id = uuidv4();
-    const ts = Math.floor(Date.now() / 1000);
-    const grantId = await upsertGrant({ id, userId, bookSlug, action, timestamp: ts });
-
-    res.status(200).json({ success: true, grant: { id: grantId, userId, bookSlug, status: action === 'grant' ? 'active' : 'revoked', grantedAt: ts, revokedAt: action === 'revoke' ? ts : null } });
-  } catch (err) {
-    console.error('grants error', err);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+      res.status(200).json({ success: true, grant: { id: grantId, userId, bookSlug, status: action === 'grant' ? 'active' : 'revoked', grantedAt: ts, revokedAt: action === 'revoke' ? ts : null } });
+    } catch (err) {
+      console.error('grants error', err);
+      res.status(500).json({ success: false, error: 'Erro interno' });
+    }
+    return;
   }
 
   res.status(405).json({ success: false, error: 'Método não permitido' });
