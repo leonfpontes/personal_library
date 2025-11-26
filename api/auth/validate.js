@@ -6,11 +6,23 @@ const { getGrantStatus, query } = require('../../auth/db');
 
 module.exports = async (req, res) => {
   try {
+    // Check required env vars
+    if (!process.env.JWT_SECRET) {
+      console.error('[VALIDATE] Missing JWT_SECRET');
+      res.status(500).json({ valid: false, error: 'Server configuration error', detail: 'JWT_SECRET not set' });
+      return;
+    }
+    if (!process.env.DATABASE_URL) {
+      console.error('[VALIDATE] Missing DATABASE_URL');
+      res.status(500).json({ valid: false, error: 'Server configuration error', detail: 'DATABASE_URL not set' });
+      return;
+    }
+    
     const cookieHeader = req.headers['cookie'] || '';
     const match = cookieHeader.match(/(?:^|; )session=([^;]+)/);
     if (!match) {
-      res.statusCode = 401;
-      return res.json({ valid: false, error: 'Token ausente' });
+      res.status(401).json({ valid: false, error: 'Token ausente' });
+      return;
     }
     const token = decodeURIComponent(match[1]);
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
