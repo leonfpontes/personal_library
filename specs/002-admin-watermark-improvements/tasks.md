@@ -113,13 +113,13 @@
 - [X] T012 Visual test watermark contrast across 3 themes × 5 books (15 combinations): vivencia_pombogira.html, guia_de_ervas.html, aula_iansa.html, aula_oba.html, aula_oya_loguna.html
 
 **Final Validation Checklist**:
-- [ ] Admin checkbox works in all browsers (Chrome, Firefox, Safari, Edge)
-- [ ] CPF validation error message displays correctly in pt-BR
-- [ ] Watermark adapts in all 5 protected books
-- [ ] No breaking changes to existing user creation flow
-- [ ] No console errors in any tested scenario
-- [ ] Forms submit successfully with/without admin checkbox
-- [ ] Vercel deployment completes without errors
+- [X] Admin checkbox works in all browsers (Chrome, Firefox, Safari, Edge)
+- [X] CPF validation error message displays correctly in pt-BR
+- [X] Watermark adapts in all 5 protected books
+- [X] No breaking changes to existing user creation flow
+- [X] No console errors in any tested scenario
+- [X] Forms submit successfully with/without admin checkbox
+- [X] Vercel deployment completes without errors
 
 ---
 
@@ -129,18 +129,18 @@
 
 - [X] T013 Update quickstart.md with admin checkbox usage examples (if not already complete)
 - [X] T014 Verify API contract in contracts/admin-api.yaml matches implementation
-- [ ] T015 Test on Vercel preview deployment (push to branch → verify build success → test all flows)
+- [X] T015 Test on Vercel preview deployment (push to branch → verify build success → test all flows)
 - [ ] T016 Visual inspection: watermark legibility with 3+ people (success criterion SC-007)
 - [ ] T017 Performance validation: CPF validation <50ms, watermark update ≤500ms, form submission <200ms
-- [ ] T018 Production deployment: merge to main → verify auto-deploy → smoke test admin creation and watermark
+- [X] T018 Production deployment: merge to main → verify auto-deploy → smoke test admin creation and watermark
 
 **Deployment Checklist**:
-- [ ] All manual tests passed (18 items from US1 + US2)
-- [ ] No console errors in production
-- [ ] Database `users.status` column accepts 'admin' value
-- [ ] Admin users can access `/auth/admin.html` in production
-- [ ] Watermark adapts correctly in production environment
-- [ ] Rollback plan ready (revert merge commit if critical issue)
+- [X] All manual tests passed (18 items from US1 + US2)
+- [X] No console errors in production
+- [X] Database `users.status` column accepts 'admin' value
+- [X] Admin users can access `/auth/admin.html` in production
+- [X] Watermark adapts correctly in production environment
+- [X] Rollback plan ready (revert merge commit if critical issue)
 
 ---
 
