@@ -1,8 +1,8 @@
 <!--
-Sync Impact Report (v1.0.0 → v1.1.0)
-- Version change: 1.0.0 → 1.1.0 (MINOR)
+Sync Impact Report (v1.1.0 → v1.2.0)
+- Version change: 1.1.0 → 1.2.0 (MINOR)
 - Modified principles: None (addition only)
-- Added sections: Amendment 1.1.0 - Serverless Exception
+- Added sections: Amendment 1.2.0 - UI Standardization & Branding, VI. User Experience Consistency
 - Removed sections: None
 - Templates requiring updates:
 	- .specify/templates/plan-template.md: ✅ no changes required
@@ -10,8 +10,9 @@ Sync Impact Report (v1.0.0 → v1.1.0)
 	- .specify/templates/tasks-template.md: ✅ no changes required
 	- .specify/templates/commands/*.md: ✅ no changes required
 - Follow-up TODOs: None
-- Rationale: Added serverless exception to support authentication system (feature 001-login-access-control)
-  while maintaining static site principles for content delivery.
+- Rationale: Feature 002-admin-watermark-improvements established patterns for UI consistency (reader
+  controls standardization), adaptive watermarking (theme-aware colors), and institutional branding
+  (logo integration with theme swap). These patterns must be preserved for future reader additions.
 -->
 
 # personal_library Constitution
@@ -54,6 +55,17 @@ Toda nova obra deve ganhar um card em `index.html` com tags, descrição breve e
 link para o leitor correspondente em `livros/`. Garanta responsividade móvel e
 coerência visual. Imagens e ativos residem em `Source/assets` ou `Source/img`.
 
+### VI. Consistência de Experiência do Usuário
+
+Garanta uniformidade nos controles interativos entre todos os leitores HTML.
+Use classes padronizadas (`icon-btn`, `back-to-top`) e IDs consistentes
+(`fontDecrease`, `fontIncrease`, `themeToggle`, `backToTop`). Preserve a
+lógica de gerenciamento de tema (cycling light/dark/sepia com localStorage) e
+ajuste de fonte (incremento/decremento com localStorage). Marca d'água deve
+adaptar cores ao tema (preta em light/sepia, branca em dark). Logo
+institucional deve ter variantes por tema com swap automático via CSS e
+MutationObserver.
+
 ## Project Constraints
 
 - Direitos autorais: respeite a seção "Direitos Autorais" dos manuscritos; não
@@ -69,7 +81,7 @@ coerência visual. Imagens e ativos residem em `Source/assets` ou `Source/img`.
 **Exceção para Autenticação**: Permitido o uso de recursos serverless da plataforma
 de hospedagem (Vercel Edge Middleware e Functions) exclusivamente para autenticação,
 controle de acesso por livro e auditoria LGPD, sem introduzir pipelines de build.
-O código serverless deve ser mínimo (API routes em `/api/`, middleware em 
+O código serverless deve ser mínimo (API routes em `/api/`, middleware em
 `middleware.js`) e manter o princípio de site estático para conteúdo público.
 Banco de dados: Neon PostgreSQL (serverless, sa-east-1) via `@neondatabase/serverless`.
 
@@ -80,6 +92,48 @@ manuscritos permanece estático.
 
 **Implementation**: Feature 001-login-access-control (38 tasks, status: ✅ completo,
 produção funcional desde 2025-11-25).
+
+### Amendment 1.2.0 - UI Standardization & Branding (2025-11-26)
+
+**Padronização de Controles**: Todos os leitores HTML devem seguir o padrão
+estabelecido em `livros/vivencia_pombogira.html` para controles interativos:
+
+- Classes padronizadas: `icon-btn` para controles de fonte/tema, `back-to-top` para
+  botão de retorno ao topo
+- IDs consistentes: `fontDecrease`, `fontIncrease`, `themeToggle`, `backToTop`
+- Lógica de tema: cycling através de ['light', 'dark', 'sepia'] com persistência
+  em localStorage ('theme-index')
+- Lógica de fonte: incremento/decremento de `--content-size` (2px por ação) com
+  persistência em localStorage ('font-size')
+- Back-to-top: toggle de classe 'visible' ao atingir 600px de scroll
+
+**Marca d'Água Adaptativa**: A marca d'água deve reagir automaticamente ao tema da
+página via MutationObserver:
+
+- Tema light: rgba(0,0,0,0.08) - texto preto com opacidade reduzida
+- Tema dark: rgba(255,255,255,0.12) - texto branco com opacidade aumentada
+- Tema sepia: rgba(80,60,40,0.10) - texto marrom compatível com fundo bege
+- Layout: 40 células em grid 4 colunas × 260px altura (densidade reduzida vs. 180
+  células anteriores)
+- Desabilitar grid de fundo (backgroundImage: 'none')
+
+**Identidade Visual Institucional**: Logo do Terreiro Tia Maria e Cabocla Jupira
+deve aparecer em todos os headers (leitores e index) com swap automático por tema:
+
+- Versões: `Source/img/Logo_Terreiro_Black.png` e `Logo_Terreiro_White.png`
+- CSS: `.logo.black` visível em light/sepia; `.logo.white` visível em dark
+- Implementação: regras CSS em `styles/base.css` + MutationObserver no index.html
+- Tamanho: height 28px nos leitores, 26px no index
+- Copyright: rodapé com "© Copyright Terreiro Tia Maria e Cabocla Jupira"
+
+**Rationale**: Feature 002 revelou inconsistências críticas nos controles dos
+leitores (Iansã não funcionava), marca d'água invisível em temas escuros e
+ausência de branding institucional. A padronização garante experiência uniforme,
+a adaptação cromática resolve problemas de contraste e o branding estabelece
+identidade visual profissional.
+
+**Implementation**: Feature 002-admin-watermark-improvements (18 tasks, status:
+em produção via PR #5, branch `2-admin-watermark-improvements`).
 
 ## Development Workflow
 
@@ -98,7 +152,9 @@ produção funcional desde 2025-11-25).
 
 5) Verificação: passar pelo checklist funcional do leitor (TOC, busca, tema,
    fonte, progress bar, âncoras, smooth scroll, drop caps, decoradores de
-   capítulo, responsividade, persistência de preferências, cores consistentes).
+   capítulo, responsividade, persistência de preferências, cores consistentes,
+   controles padronizados com IDs/classes corretos, marca d'água adaptativa ao
+   tema, logo institucional com swap automático).
 
 ### Mudanças Menores
 
@@ -121,6 +177,7 @@ leitor.
   - MINOR: novos princípios/seções ou expansão material
   - PATCH: clarificações e ajustes redacionais sem impacto semântico
 - Revisão/Compliance: antes de merge, validar o checklist de leitor e links
-  relativos, `mdPath`, tema/cores/favicon e card no catálogo.
+  relativos, `mdPath`, tema/cores/favicon, card no catálogo, controles
+  padronizados (IDs e classes), marca d'água adaptativa e logo institucional.
 
-**Version**: 1.1.0 | **Ratified**: 2025-11-25 | **Last Amended**: 2025-11-26
+**Version**: 1.2.0 | **Ratified**: 2025-11-25 | **Last Amended**: 2025-11-26
