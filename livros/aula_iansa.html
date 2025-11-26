@@ -26,32 +26,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/theme-iansa.css" />
-  </head>
-  <body>
+    <style>
+      html { visibility: hidden; opacity: 0; }
+    </style>
     <script>
-      (async function() {
+      (function() {
+        'use strict';
         const path = window.location.pathname;
         const match = path.match(/\/livros\/(.+?)\.html$/);
-        if (!match) return;
-        const bookSlug = match[1];
-        try {
-          const res = await fetch(`/api/auth/validate?bookSlug=${encodeURIComponent(bookSlug)}`);
-          const data = await res.json();
-          if (!res.ok || !data.valid) {
-            console.log(`[ACCESS GUARD] Access denied to: ${bookSlug}`);
-            document.documentElement.style.display = 'none';
-            window.location.replace('/auth/no-access.html');
-            throw new Error('Access denied');
-          }
-          console.log(`[ACCESS GUARD] Access granted to: ${bookSlug}`);
-        } catch (err) {
-          console.error('[ACCESS GUARD] Error:', err);
-          document.documentElement.style.display = 'none';
-          window.location.replace('/auth/no-access.html');
-          throw err;
+        if (!match) {
+          document.documentElement.style.visibility = 'visible';
+          document.documentElement.style.opacity = '1';
+          return;
         }
+        const bookSlug = match[1];
+        fetch('/api/auth/validate?bookSlug=' + encodeURIComponent(bookSlug))
+          .then(function(res) {
+            console.log('[ACCESS GUARD] Response status:', res.status);
+            return res.json().then(function(data) { return { ok: res.ok, data: data }; });
+          })
+          .then(function(result) {
+            if (!result.ok || !result.data.valid) {
+              console.log('[ACCESS GUARD] ❌ Access DENIED to:', bookSlug);
+              window.location.replace('/auth/no-access.html');
+            } else {
+              console.log('[ACCESS GUARD] ✅ Access GRANTED to:', bookSlug);
+              document.documentElement.style.visibility = 'visible';
+              document.documentElement.style.opacity = '1';
+            }
+          })
+          .catch(function(err) {
+            console.error('[ACCESS GUARD] Error:', err);
+            window.location.replace('/auth/no-access.html');
+          });
       })();
     </script>
+  </head>
     <div class="progress"><div class="bar" id="progressBar"></div></div>
     <header class="topbar">
       <div class="brand">
