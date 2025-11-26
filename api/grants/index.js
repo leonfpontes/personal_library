@@ -1,4 +1,5 @@
-const { upsertGrant } = require('../../../auth/db');
+const { upsertGrant } = require('../../auth/db');
+const { isAdmin } = require('../helpers/auth');
 const { v4: uuidv4 } = require('uuid');
 
 export const config = {
@@ -9,40 +10,39 @@ const VALID_BOOKS = new Set(['vivencia_pombogira','guia_de_ervas','aula_iansa','
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
-    res.statusCode = 405;
-    return res.json({ success: false, error: 'Método não permitido' });
+    res.status(405).json({ success: false, error: 'Método não permitido' });
+    return;
   }
 
-  const adminToken = req.headers['x-admin-token'];
-  if (!adminToken || adminToken !== process.env.ADMIN_TOKEN) {
-    res.statusCode = 403;
-    return res.json({ success: false, error: 'Acesso negado' });
+  // Validate admin access via session cookie or admin token
+  const adminAccess = await isAdmin(req);
+  if (!adminAccess) {
+    res.status(403).json({ success: false, error: 'Acesso negado' });
+    return;
   }
 
   try {
     const { userId, bookSlug, action } = req.body || {};
     if (!userId || !bookSlug || !action) {
-      res.statusCode = 400;
-      return res.json({ success: false, error: 'Parâmetros obrigatórios ausentes' });
+      res.status(400).json({ success: false, error: 'Parâmetros obrigatórios ausentes' });
+      return;
     }
     if (!VALID_BOOKS.has(bookSlug)) {
-      res.statusCode = 400;
-      return res.json({ success: false, error: 'Livro não existe' });
+      res.status(400).json({ success: false, error: 'Livro não existe' });
+      return;
     }
     if (!['grant','revoke'].includes(action)) {
-      res.statusCode = 400;
-      return res.json({ success: false, error: 'Ação inválida' });
+      res.status(400).json({ success: false, error: 'Ação inválida' });
+      return;
     }
 
     const id = uuidv4();
     const ts = Math.floor(Date.now() / 1000);
     const grantId = await upsertGrant({ id, userId, bookSlug, action, timestamp: ts });
 
-    res.statusCode = 200;
-    return res.json({ success: true, grant: { id: grantId, userId, bookSlug, status: action === 'grant' ? 'active' : 'revoked', grantedAt: ts, revokedAt: action === 'revoke' ? ts : null } });
+    res.status(200).json({ success: true, grant: { id: grantId, userId, bookSlug, status: action === 'grant' ? 'active' : 'revoked', grantedAt: ts, revokedAt: action === 'revoke' ? ts : null } });
   } catch (err) {
     console.error('grants error', err);
-    res.statusCode = 500;
-    return res.json({ success: false, error: 'Erro interno' });
+    res.status(500).json({ success: false, error: 'Erro interno' });
   }
 };
