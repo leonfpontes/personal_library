@@ -29,20 +29,21 @@ export default async function middleware(req) {
         headers: { cookie },
       });
       if (!res.ok) {
-        const loginUrl = new URL('/auth/login.html', url.origin);
-        loginUrl.searchParams.set('next', url.pathname);
-        return Response.redirect(loginUrl.toString(), 302);
+        // Redirect to no-access page instead of login
+        const noAccessUrl = new URL('/auth/no-access.html', url.origin);
+        return Response.redirect(noAccessUrl.toString(), 302);
       }
       const data = await res.json();
       if (!data.valid) {
-        const loginUrl = new URL('/auth/login.html', url.origin);
-        loginUrl.searchParams.set('next', url.pathname);
-        return Response.redirect(loginUrl.toString(), 302);
+        // Redirect to no-access page instead of login
+        const noAccessUrl = new URL('/auth/no-access.html', url.origin);
+        return Response.redirect(noAccessUrl.toString(), 302);
       }
     } catch (e) {
-      const loginUrl = new URL('/auth/login.html', url.origin);
-      loginUrl.searchParams.set('next', url.pathname);
-      return Response.redirect(loginUrl.toString(), 302);
+      console.error('Middleware validation error:', e);
+      // Redirect to no-access page on error
+      const noAccessUrl = new URL('/auth/no-access.html', url.origin);
+      return Response.redirect(noAccessUrl.toString(), 302);
     }
   }
 

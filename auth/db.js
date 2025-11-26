@@ -42,12 +42,17 @@ async function getGrantStatus(userId, bookSlug) {
 
 async function upsertGrant({ id, userId, bookSlug, action, timestamp }) {
   if (action === 'grant') {
-    // PostgreSQL upsert com ON CONFLICT
-    await query(
-      'INSERT INTO grants (id,user_id,book_slug,status,granted_at,revoked_at) VALUES (?,?,?,?,?,NULL) ON CONFLICT (user_id,book_slug) DO UPDATE SET status=?, granted_at=?, revoked_at=NULL',
-      [id, userId, bookSlug, 'active', timestamp, 'active', timestamp]
-    );
-    return id;
+    // PostgreSQL upsert: insert or update if exists
+    const exists = await query('SELECT id FROM grants WHERE user_id=? AND book_slug=?', [userId, bookSlug]);
+    if (exists.rows?.length) {
+      // Update existing grant
+      await query('UPDATE grants SET status=?, granted_at=?, revoked_at=NULL WHERE user_id=? AND book_slug=?', ['active', timestamp, userId, bookSlug]);
+      return exists.rows[0].id;
+    } else {
+      // Insert new grant
+      await query('INSERT INTO grants (id,user_id,book_slug,status,granted_at,revoked_at) VALUES (?,?,?,?,?,NULL)', [id, userId, bookSlug, 'active', timestamp]);
+      return id;
+    }
   }
   if (action === 'revoke') {
     await query('UPDATE grants SET status=?, revoked_at=? WHERE user_id=? AND book_slug=?', ['revoked', timestamp, userId, bookSlug]);
