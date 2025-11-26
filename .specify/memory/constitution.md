@@ -1,16 +1,17 @@
 <!--
-Sync Impact Report
-- Version change: N/A → 1.0.0
-- Modified principles: (initial adoption) — all principles added
-- Added sections: Core Principles, Project Constraints, Development Workflow, Governance
-- Removed sections: none
+Sync Impact Report (v1.0.0 → v1.1.0)
+- Version change: 1.0.0 → 1.1.0 (MINOR)
+- Modified principles: None (addition only)
+- Added sections: Amendment 1.1.0 - Serverless Exception
+- Removed sections: None
 - Templates requiring updates:
-	- .specify/templates/plan-template.md: ✅ updated (Constitution Check gates + note cleanup)
-	- .specify/templates/spec-template.md: ✅ reviewed (no changes required)
-	- .specify/templates/tasks-template.md: ✅ reviewed (tests remain optional)
-	- .specify/templates/agent-file-template.md: ✅ reviewed (no changes)
-- Follow-up TODOs:
-	- TODO(RATIFICATION_DATE): Confirm original adoption date for this constitution
+	- .specify/templates/plan-template.md: ✅ no changes required
+	- .specify/templates/spec-template.md: ✅ no changes required
+	- .specify/templates/tasks-template.md: ✅ no changes required
+	- .specify/templates/commands/*.md: ✅ no changes required
+- Follow-up TODOs: None
+- Rationale: Added serverless exception to support authentication system (feature 001-login-access-control)
+  while maintaining static site principles for content delivery.
 -->
 
 # personal_library Constitution
@@ -55,13 +56,30 @@ coerência visual. Imagens e ativos residem em `Source/assets` ou `Source/img`.
 
 ## Project Constraints
 
-- Direitos autorais: respeite a seção “Direitos Autorais” dos manuscritos; não
+- Direitos autorais: respeite a seção "Direitos Autorais" dos manuscritos; não
   distribua conteúdo sem autorização.
 - Hospedagem: site estático (ex.: Vercel). Não incluir código de servidor.
 - Dependências: use apenas HTML/CSS/JS puros; bibliotecas via CDN (ex.: Marked.js)
   são aceitáveis no leitor. Não introduza toolchains de build.
 - Caminhos: sempre relativos (`../Source/...`). Evite caminhos absolutos.
 - Encoding: UTF-8 em todos os arquivos; preserve acentuação.
+
+### Amendment 1.1.0 - Serverless Exception (2025-11-26)
+
+**Exceção para Autenticação**: Permitido o uso de recursos serverless da plataforma
+de hospedagem (Vercel Edge Middleware e Functions) exclusivamente para autenticação,
+controle de acesso por livro e auditoria LGPD, sem introduzir pipelines de build.
+O código serverless deve ser mínimo (API routes em `/api/`, middleware em 
+`middleware.js`) e manter o princípio de site estático para conteúdo público.
+Banco de dados: Neon PostgreSQL (serverless, sa-east-1) via `@neondatabase/serverless`.
+
+**Rationale**: Sem backend, autenticação real é impossível. Client-side puro não
+atende requisitos de segurança. Vercel Edge/Functions são recursos da plataforma,
+não requerem builds, e mantêm pipeline de publicação inalterado. Conteúdo dos
+manuscritos permanece estático.
+
+**Implementation**: Feature 001-login-access-control (38 tasks, status: ✅ completo,
+produção funcional desde 2025-11-25).
 
 ## Development Workflow
 
@@ -105,4 +123,4 @@ leitor.
 - Revisão/Compliance: antes de merge, validar o checklist de leitor e links
   relativos, `mdPath`, tema/cores/favicon e card no catálogo.
 
-**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE) | **Last Amended**: 2025-11-25
+**Version**: 1.1.0 | **Ratified**: 2025-11-25 | **Last Amended**: 2025-11-26
