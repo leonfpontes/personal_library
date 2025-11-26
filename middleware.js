@@ -1,6 +1,6 @@
 export const config = {
   runtime: 'edge',
-  matcher: ['/livros/:path*'],
+  matcher: '/livros/:path*',
 };
 
 export default async function middleware(req) {
