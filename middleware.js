@@ -47,8 +47,6 @@ export default async function middleware(req) {
     }
   }
 
-  // Continue to the requested page
-  return new Response(null, {
-    headers: req.headers
-  });
+  // Allow the request to continue (Edge runtime will pass through)
+  return;
 }
