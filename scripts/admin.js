@@ -61,9 +61,12 @@
     const res = await fetch(`/api/grants?userId=${encodeURIComponent(userId)}`, { headers: { 'X-Admin-Token': token() } });
     if (!res.ok) return;
     const data = await res.json();
+    console.log('[loadGrants] Data received:', data);
     const active = new Set((data.grants||[]).filter(g => g.status === 'active').map(g => g.bookSlug));
+    console.log('[loadGrants] Active grants:', Array.from(active));
     container.querySelectorAll('input[type="checkbox"]').forEach(cb => {
       cb.checked = active.has(cb.dataset.slug);
+      console.log(`[loadGrants] Checkbox ${cb.dataset.slug}: ${cb.checked}`);
     });
   }
 
