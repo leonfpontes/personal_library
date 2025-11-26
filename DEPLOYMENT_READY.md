@@ -2,13 +2,15 @@
 
 ## ✅ Status Atual do Projeto
 
-- ✅ **Código 100% implementado** (33 tasks concluídas)
-- ✅ **Database migrado para Neon PostgreSQL** (serverless, sa-east-1)
+- ✅ **Código 100% implementado** (38 tasks concluídas)
+- ✅ **Database: Neon PostgreSQL** (serverless, sa-east-1, tier gratuito)
 - ✅ **Migrations aplicadas** (`migrate-postgres.js`)
-- ✅ **Seed executado** (admin criado)
-- ✅ **Dependências atualizadas** (`@neondatabase/serverless`)
-- ✅ **Documentação completa** (README.md + quickstart.md)
-- ⏳ **Deploy na Vercel** (próximo passo)
+- ✅ **Seed executado** (admin criado: admin@library.local)
+- ✅ **Dependências atualizadas** (`@neondatabase/serverless`, `bcryptjs`, `jsonwebtoken`, `uuid`)
+- ✅ **Documentação completa** (README.md + quickstart.md + api-reference.md)
+- ✅ **Deploy na Vercel COMPLETO** (produção funcionando)
+- ✅ **Bugs críticos corrigidos** (regex clean URLs, grant persistence, admin access)
+- ✅ **UI/UX polido** (responsividade, favicon, tipografia)
 
 ---
 

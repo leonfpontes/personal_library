@@ -1,6 +1,8 @@
 # 🚀 Como Rodar o Projeto Personal Library
 
-**Guia passo a passo para desenvolvedores**
+**Guia passo a passo para desenvolvedores**  
+**Status**: ✅ Projeto 100% funcional em produção  
+**Última Atualização**: 26 Nov 2025
 
 ---
 
@@ -11,7 +13,7 @@ Antes de começar, certifique-se que você tem:
 - ✅ **Node.js 18+** instalado ([baixar aqui](https://nodejs.org))
 - ✅ **Git** instalado
 - ✅ **Conta Vercel** (para deploy) → [criar conta gratuita](https://vercel.com/signup)
-- ✅ **Banco Neon PostgreSQL** já provisionado (ou criar um novo)
+- ✅ **Banco Neon PostgreSQL** provisionado (região sa-east-1, tier gratuito disponível)
 
 ---
 

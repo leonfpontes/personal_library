@@ -1,28 +1,32 @@
 # 📊 Resumo Executivo - Personal Library
 
 **Projeto:** Sistema de Controle de Acesso para Biblioteca Digital  
-**Status:** ✅ MVP Completo e Pronto para Deploy  
-**Data:** 25 de Novembro de 2025
+**Status:** ✅ **100% Funcional em Produção**  
+**Última Atualização:** 26 de Novembro de 2025  
+**URL Produção:** https://personal-library.vercel.app
 
 ---
 
 ## ✅ O que foi implementado
 
 ### Funcionalidades Core
-- ✅ Sistema de autenticação JWT (HttpOnly cookies)
-- ✅ Controle de acesso granular por livro (ACL)
-- ✅ Dashboard administrativo completo
-- ✅ Proteção em múltiplas camadas (middleware + client-side)
+- ✅ Sistema de autenticação JWT (HttpOnly cookies + SameSite=Strict)
+- ✅ Controle de acesso granular por livro (ACL com grants)
+- ✅ Dashboard administrativo responsivo (mobile-first)
+- ✅ Proteção em múltiplas camadas (Edge Middleware + client-side guards)
 - ✅ Auditoria LGPD com retenção de 90 dias
-- ✅ Watermark dinâmico com CPF do usuário
-- ✅ Bloqueio de cópia, print e DevTools
+- ✅ Watermark dinâmico com CPF mascarado (123***01)
+- ✅ Bloqueio de cópia, print, DevTools e PrintScreen (best-effort)
+- ✅ Clean URLs com Vercel (`/livros/livro` e `/livros/livro.html`)
+- ✅ Tipografia padronizada (Roboto em UI, Inter+Merriweather nos livros)
 
 ### Infraestrutura
-- ✅ Backend em Vercel Edge Functions
-- ✅ Database migrado para Neon PostgreSQL (serverless, sa-east-1)
-- ✅ Migrations automatizadas via script
-- ✅ Seed para criação de admin inicial
-- ✅ Todas as 36 tasks técnicas concluídas
+- ✅ Backend em Vercel Edge Functions + Middleware
+- ✅ Database: Neon PostgreSQL (serverless, sa-east-1, tier gratuito)
+- ✅ Migrations automatizadas via script (`migrate-postgres.js`)
+- ✅ Seed para criação de admin inicial (`seed.js`)
+- ✅ **38 tasks técnicas concluídas** (incluindo T037 offline + T038 opacity)
+- ✅ Pipeline Vercel testado e funcional (deploy automático em commits)
 
 ### Documentação
 - ✅ README.md completo com arquitetura

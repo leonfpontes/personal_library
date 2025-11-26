@@ -1,70 +1,27 @@
 # Próximos Passos — Personal Library Auth
 
-## Tasks Restantes (Manual)
+## ✅ Status: 100% Completo
 
-Todas as tarefas de implementação foram concluídas. Restam apenas 3 tarefas **manuais** que requerem ação do desenvolvedor:
-
-### T001: Criar Banco SQLite Edge/Serverless ⏳ MANUAL
-
-**Status**: Pendente
-
-**Ação requerida**:
-
-1. Acesse [Turso](https://turso.tech/) ou provedor equivalente (Deno KV, LiteFS)
-2. Crie um banco de dados chamado `personal_library`
-3. Crie um token de acesso para o banco
-4. Anote `DATABASE_URL` e `DATABASE_AUTH_TOKEN`
-
-**Documentação**: Ver `specs/001-login-access-control/deploy.md` (Passo 1)
-
-### T002: Configurar Variáveis de Ambiente ⏳ MANUAL
-
-**Status**: Pendente
-
-**Ação requerida**:
-
-1. Acesse Vercel Dashboard → Projeto → Settings → Environment Variables
-2. Adicione para Production, Preview e Development:
-   - `DATABASE_URL`: URL do Turso (ex: `libsql://personal-xyz.turso.io`)
-   - `DATABASE_AUTH_TOKEN`: Token do Turso
-   - `JWT_SECRET`: Gerar via `openssl rand -base64 32`
-   - `ADMIN_TOKEN`: Gerar via `openssl rand -base64 24`
-   - `SESSION_TTL_SECONDS`: `86400` (opcional, 24h padrão)
-
-**Documentação**: Ver `specs/001-login-access-control/deploy.md` (Passo 2)
-
-### T027: Testar Pipeline Vercel ⏳ MANUAL
-
-**Status**: Pendente
-
-**Ação requerida**:
-
-1. Aplicar migrations no banco (executar SQL de `specs/001-login-access-control/checklists/migrations.sql`)
-2. Executar seed: `node seed.js`
-3. Fazer push para branch: `git push origin 001-login-access-control`
-4. Verificar deploy automático no Vercel Dashboard
-5. Testar endpoints no preview URL:
-   - `/livros/vivencia_pombogira.html` sem login → redireciona
-   - `/auth/admin.html` com `ADMIN_TOKEN` → funciona
-   - Criar usuário, conceder grant, fazer login → watermark aparece
-6. Validar performance conforme `deploy.md` (Passo 7)
-
-**Documentação**: Ver `specs/001-login-access-control/deploy.md` (Passos 3-7)
+**Última Atualização:** 26 Nov 2025  
+**Deploy Status:** ✅ Produção funcional  
+**Total de Tasks:** 38/38 concluídas
 
 ---
 
-## Tasks Implementadas ✅
+## ✅ Todas as Tasks Implementadas
 
 ### Phase 1: Setup e Scaffold
 
-- [X] T003 Instalar dependências (`@libsql/client`, `bcryptjs`, `jsonwebtoken`, `uuid`)
+- [X] T001 Criar banco Neon PostgreSQL (provisionado em sa-east-1)
+- [X] T002 Configurar variáveis de ambiente no Vercel
+- [X] T003 Instalar dependências (`@neondatabase/serverless`, `bcryptjs`, `jsonwebtoken`, `uuid`)
 - [X] T004 Criar estrutura de pastas (`api/`, `auth/`, `scripts/`)
 - [X] T005 Configurar `vercel.json` (runtime, routes, headers)
 
 ### Phase 2: Database e Seed
 
 - [X] T006 Criar script de seed (`seed.js`)
-- [X] T007 Escrever migrations SQL (`migrations.sql`)
+- [X] T007 Escrever migrations SQL (`migrations-postgres.sql`)
 - [X] T008 Implementar utilitário de DB (`auth/db.js`)
 
 ### Phase 3: Auth, Middleware e Proteção

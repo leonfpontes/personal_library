@@ -1,9 +1,22 @@
 # Guia de Resolução do Erro 500 em Produção
 
-## Problema
+## ✅ Status: RESOLVIDO
+
+**Problema Original:** Erro 500 no endpoint `/api/auth/login` em produção (Vercel).  
+**Causa:** Variáveis de ambiente não configuradas no Vercel.  
+**Solução Aplicada:** Variáveis configuradas corretamente no Vercel Dashboard.  
+**Data da Correção:** 25 Nov 2025
+
+---
+
+## 📝 Histórico (Para Referência Futura)
+
+Este documento foi preservado como referência para troubleshooting futuro de erros 500 em produção.
+
+### Problema
 Erro 500 no endpoint `/api/auth/login` em produção (Vercel).
 
-## Causa mais provável
+### Causa mais provável
 **Variáveis de ambiente não configuradas no Vercel**.
 
 ---

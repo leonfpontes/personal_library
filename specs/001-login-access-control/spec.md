@@ -99,7 +99,7 @@ Administrador revoga a concessão de acesso de um usuário a um livro; o usuári
 - **FR-010**: O sistema DEVE registrar eventos mínimos de auditoria (autenticação, acesso permitido/negado, tentativas de cópia/impressão), respeitando a privacidade.
 - **FR-011**: O sistema NÃO DEVE quebrar o pipeline de publicação na Vercel; o fluxo de commit na `main` deve continuar publicando normalmente.
 - **FR-012**: O sistema DEVE apresentar interface e mensagens em pt-BR.
-- **FR-013**: O CPF DEVE ser coletado (regex ^\d{11}$), consentimento explícito via checkbox no cadastro (armazenar `consent_at`), exibição mascarada na marca d’água (ex.: 123***01); retenção: remover com exclusão do usuário ou após 12 meses de inatividade se política LGPD exigir.
+- **FR-013**: O CPF DEVE ser coletado (regex ^\d{11}$), consentimento explícito via checkbox no cadastro (armazenar `consent_at`), exibição mascarada na marca d'água (ex.: 123***01 - primeiros 3 dígitos + *** + últimos 2 dígitos; armazenamento no banco permanece 11 dígitos sem máscara); retenção: remover com exclusão do usuário ou após 12 meses de inatividade se política LGPD exigir.
 - **FR-014**: O sistema DEVE garantir que dados pessoais (CPF, nome) não apareçam em URLs, títulos de página ou em requisições externas (apenas no render do leitor).
 - **FR-015**: O sistema DEVE manter legibilidade: marca d’água com opacidade e repetição configuradas para não comprometer a leitura (p.ex., opacidade ≤ 10–15%).
 
@@ -124,13 +124,12 @@ Notas importantes sobre proteção de conteúdo: é tecnicamente impossível imp
 
 - **SC-001**: Usuário autorizado consegue abrir o livro e ver a marca d’água personalizada em ≤ 3 segundos após login em rede típica.
 - **SC-002**: 100% dos carregamentos autorizados exibem marca d’água com nome + CPF e 0% a exibem ausente ou incorreta.
-- **SC-003**: 95% das tentativas usuais de copiar/imprimir/salvar (atalhos, menu, seleção) são bloqueadas com mensagem de aviso em navegadores suportados.
+- **SC-003**: Bloqueio de proteção deve interceptar ≥95% das tentativas de copiar/imprimir/salvar em navegadores Chromium/Firefox/Edge recentes. Lista explícita de ações bloqueadas: seleção de texto (mouse drag), Ctrl/Cmd+C (copiar), Ctrl/Cmd+X (cortar), Ctrl/Cmd+V (colar), Ctrl/Cmd+S (salvar página), Ctrl/Cmd+P (imprimir), menu de contexto (botão direito), arrastar/soltar texto. Eventos logados na tabela audit_log com tipo `copy_attempt`. Fallback: apresentar aviso em navegadores não suportados.
 - **SC-004**: Usuário sem concessão tem 0% de acesso ao conteúdo do livro (bloqueio consistente) — verificado por tentativa direta via URL do leitor.
 - **SC-005**: Revogação de acesso reflete em ≤ 1 minuto ou no próximo carregamento do leitor (o que ocorrer primeiro), bloqueando o acesso.
 - **SC-006**: Publicações via commit na `main` continuam com taxa de sucesso de 100% no pipeline da Vercel para este projeto.
-- **SC-007**: Bloqueios de proteção: ≥95% dos eventos de seleção, copiar, cortar, colar, imprimir, salvar página, abrir menu de contexto interceptados e logados em navegadores Chromium/Firefox/Edge recentes; fallback apresenta aviso em outros navegadores.
-- **SC-008**: Detecção de PrintScreen (best-effort) gera log `copy_attempt` em até 500ms quando suportado (Windows key events / focus blur heurística). Onde não suportado, política de limitação documentada.
-- **SC-009**: Tempo de injeção da marca d’água (do DOMContentLoaded à renderização completa) ≤ 300ms em dispositivos padrão.
+- **SC-007**: Detecção de PrintScreen (best-effort) gera log `copy_attempt` em até 500ms quando suportado (Windows key events / focus blur heurística). Onde não suportado, política de limitação documentada.
+- **SC-008**: Tempo de injeção da marca d'água (do DOMContentLoaded à renderização completa) ≤ 300ms em dispositivos baseline (Intel i5 ou equivalente, 8GB RAM, Chrome 120+ ou Firefox 121+, conexão 10Mbps+).
 
 
 
