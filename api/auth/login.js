@@ -15,51 +15,52 @@ module.exports = async (req, res) => {
   }
 
   try {
-    // Check required env vars
-    if (!process.env.DATABASE_URL) {
-      console.error('[LOGIN] Missing DATABASE_URL');
-      res.status(500).json({ success: false, error: 'Server configuration error', detail: 'DATABASE_URL not set' });
+    if (!process.env.DATABASE_URL || !process.env.JWT_SECRET) {
+      console.error('[LOGIN] Missing envs', { hasDB: !!process.env.DATABASE_URL, hasJWT: !!process.env.JWT_SECRET });
+      res.status(500).json({ success: false, error: 'Configuração inválida' });
       return;
     }
-    if (!process.env.JWT_SECRET) {
-      console.error('[LOGIN] Missing JWT_SECRET');
-      res.status(500).json({ success: false, error: 'Server configuration error', detail: 'JWT_SECRET not set' });
-      return;
-    }
-    
-    // Parse body if needed (Vercel doesn't auto-parse)
+
+    // Parse body (dev-server pode entregar string)
     let body = req.body;
     if (typeof body === 'string') {
-      body = JSON.parse(body);
+      try { body = JSON.parse(body); } catch { body = {}; }
     }
-    
+
     const { email, password } = body || {};
-    console.log('[LOGIN] Tentativa de login:', { email, hasPassword: !!password });
-    
+    console.log('[LOGIN] Tentativa', { email, hasPassword: !!password });
+
     if (!email || !password) {
       res.status(400).json({ success: false, error: 'Email e senha são obrigatórios' });
       return;
     }
 
-    const user = await getUserByEmail(email);
-    console.log('[LOGIN] Usuário encontrado:', user ? { id: user.id, email: user.email, status: user.status } : null);
-    
-    if (!user) {
-      console.log('[LOGIN] Usuário não encontrado');
-      res.status(401).json({ success: false, error: 'Email ou senha incorretos' });
-      return;
-    }
-    if (user.status !== 'active') {
-      console.log('[LOGIN] Usuário inativo');
-      res.status(401).json({ success: false, error: 'Usuário inativo' });
+    let user;
+    try {
+      user = await getUserByEmail(email);
+    } catch (e) {
+      console.error('[LOGIN] Erro getUserByEmail', e);
+      res.status(500).json({ success: false, error: 'Falha ao consultar usuário' });
       return;
     }
 
-    const ok = await bcrypt.compare(password, user.hashed_password);
-    console.log('[LOGIN] Senha válida:', ok);
-    
+    console.log('[LOGIN] Usuário', user ? { id: user.id, status: user.status } : 'não encontrado');
+
+    if (!user || user.status !== 'active') {
+      res.status(401).json({ success: false, error: 'Email ou senha incorretos' });
+      return;
+    }
+
+    let ok = false;
+    try {
+      ok = await bcrypt.compare(password, user.hashed_password);
+    } catch (e) {
+      console.error('[LOGIN] Erro bcrypt.compare', e);
+      res.status(500).json({ success: false, error: 'Falha na validação de senha' });
+      return;
+    }
+
     if (!ok) {
-      console.log('[LOGIN] Senha incorreta');
       res.status(401).json({ success: false, error: 'Email ou senha incorretos' });
       return;
     }
@@ -67,25 +68,46 @@ module.exports = async (req, res) => {
     const sessionId = uuidv4();
     const now = Math.floor(Date.now() / 1000);
     const ttl = parseInt(process.env.SESSION_TTL_SECONDS || '86400', 10);
-    await insertSession({ id: sessionId, userId: user.id, createdAt: now, expiresAt: now + ttl, ipHash: null, userAgent: req.headers['user-agent'] || null });
 
-    const token = jwt.sign({ sessionId, userId: user.id }, process.env.JWT_SECRET, { expiresIn: ttl });
+    try {
+      await insertSession({ id: sessionId, userId: user.id, createdAt: now, expiresAt: now + ttl, ipHash: null, userAgent: req.headers['user-agent'] || null });
+    } catch (e) {
+      console.error('[LOGIN] Erro insertSession', e);
+      res.status(500).json({ success: false, error: 'Falha ao criar sessão' });
+      return;
+    }
 
-    res.setHeader('Set-Cookie', `session=${token}; HttpOnly; Secure; SameSite=Strict; Max-Age=${ttl}; Path=/`);
-    res.status(200).json({ 
-      success: true, 
-      user: { 
-        id: user.id, 
-        nome: user.nome, 
-        cpfMasked: maskCpf(user.cpf), 
-        email: user.email, 
+    let token;
+    try {
+      token = jwt.sign({ sessionId, userId: user.id }, process.env.JWT_SECRET, { expiresIn: ttl });
+    } catch (e) {
+      console.error('[LOGIN] Erro jwt.sign', e);
+      res.status(500).json({ success: false, error: 'Falha ao gerar token' });
+      return;
+    }
+
+    try {
+      res.setHeader('Set-Cookie', `session=${token}; HttpOnly; Secure; SameSite=Strict; Max-Age=${ttl}; Path=/`);
+    } catch (e) {
+      console.error('[LOGIN] Erro set cookie', e);
+    }
+
+    res.status(200).json({
+      success: true,
+      user: {
+        id: user.id,
+        nome: user.nome,
+        cpfMasked: maskCpf(user.cpf),
+        email: user.email,
         status: user.status,
         isAdmin: user.id === 'admin'
-      }, 
-      token 
+      },
+      token
     });
   } catch (err) {
-    console.error('login error', err);
-    res.status(500).json({ success: false, error: 'Erro interno', message: err.message });
+    console.error('[LOGIN] Erro inesperado', err);
+    if (!res.headersSent) {
+      res.status(500).json({ success: false, error: 'Erro interno', message: err.message });
+    }
   }
 };
