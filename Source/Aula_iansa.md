@@ -69,8 +69,11 @@ E é exatamente por isso que Iansã é o Orixá da Lei: ela corrige a vibração
 A mitologia trazida na aula não é contada como fábula, mas como linguagem simbólica que revela a atuação energética da Divindade. Entre as narrativas apresentadas, algumas ganham destaque:
 
 **Iansã é uma das senhoras do Balê**, estando presente nos processos ligados ao desencarne, transição e encaminhamento espiritual. Sua força direciona cada espírito para o ponto que corresponde ao seu estado vibratório. Isso não se dá pelo julgamento humano, mas pela atração energética: a alma vai para onde sua vibração a puxa, e Iansã é a guardiã desse fluxo.
+
 A história dos nove eguns, os “nove filhos de Iansã”, revela os nove campos emocionais e seus níveis de equilíbrio e desequilíbrio. A cada um corresponde um magnetismo que ela rege e transforma. São forças que vivem entre o emocional humano e o emocional espiritual, constituindo uma parte importante do seu mistério.
+
 Há também a lenda do choque entre Iansã e Ogum — ela partindo Ogum em sete partes, e Ogum partindo Iansã em nove — simbolizando que, diante da Lei, ninguém permanece intacto quando age fora do eixo. A energia cósmica não protege: corrige.
+
 Outra narrativa conta que, em certas guerras, Iansã ia antes de Xangô porque sabia que seu vento minimizaria a calamidade e protegeria aqueles que não tinham parte na disputa. Essa imagem revela seu aspecto guerreiro e maternal ao mesmo tempo: firme, protetora e justa.
 Todas essas histórias são usadas como metáforas vivas para explicar como seu axé atua dentro da Umbanda, dentro do médium e dentro da gira. Nada é literal. Tudo é energia.
 
@@ -83,6 +86,7 @@ Todas essas histórias são usadas como metáforas vivas para explicar como seu 
 Para compreender Iansã, é preciso compreender o movimento. E, para compreender o movimento, é preciso olhar de frente o desequilíbrio — porque é nele que a energia da Mãe se manifesta com maior intensidade.
 
 O emocional humano não é linear. Ele oscila, cresce, diminui, esgota, transborda. Nas palavras da dirigente, o campo emocional de Iansã funciona como uma **espiral**: ele envolve, gira, pressiona e liberta. Cada volta retira um excesso, cada giro desloca um acúmulo, cada movimento abre espaço para que o equilíbrio retorne.
+
 Filhos e filhas de Iansã raramente vivem emoções "mornas". Tudo é mais intenso: o amor, a raiva, o entusiasmo, a desmotivação. É comum que um simples detalhe do dia — um trânsito ruim, uma mensagem atravessada, um conflito inesperado — tenha impacto emocional profundo. O coração acelera, a respiração muda, o corpo reage.
 
 **Não se trata de fraqueza. Trata-se de uma sensibilidade ativa.**
@@ -116,6 +120,7 @@ E, conforme a dirigente explica na aula, filhos de Iansã — especialmente aque
 
 Essas negatividades, quando não tratadas, começam a reverberar em todos os sentidos da vida: na fé, no amor, no trabalho, nos relacionamentos, no conhecimento, na prosperidade e, principalmente, na evolução.
 O ciclo é sempre o mesmo: primeiro vem a estagnação, depois a confusão, depois o excesso.
+
 É nesse momento que Iansã chega.
 Sua presença — tanto na vida quanto na gira — é o primeiro sinal de que a energia precisa ser desfeita para que possa ser refeita. E quanto mais profundo é o desequilíbrio, mais intensa é a atuação da Mãe.
 A negativação não é punição; é alerta. O caos não é destruição; é reordenação. E a tempestade não é castigo; é cura em processo.
@@ -124,12 +129,18 @@ A negativação não é punição; é alerta. O caos não é destruição; é re
 
 O modo como Iansã reequilibra não é suave, mas é preciso. Não é delicado, mas é justo. Ela não atua como quem acaricia. Atua como quem desperta.
 A aula mostra que, quando alguém busca Iansã para recuperar equilíbrio, ela age de forma muito clara: envolve o ser com seu movimento espiralado, desloca as emoções estagnadas, desmancha padrões rígidos, reduz excessos e libera aquilo que estava acumulado.
+
 Esse movimento interno pode ser sentido fisicamente: o coração acelera, o corpo aquece, a cabeça gira, a respiração muda. É o vento da Mãe soprando por dentro.
+
 Essa ação é tão intensa que, muitas vezes, antes de melhorar, tudo parece piorar. Não porque ela desorganize por crueldade, mas porque é impossível organizar o que está fora de ordem sem antes expor a desordem.
 É por isso que, quando estamos profundamente desequilibrados, a diretiva da casa é clara: não se busca Ogum. Busque Iansã primeiro.
+
 Ogum penaliza o excesso, corta a raiz do erro e impõe a ordem pela via rígida da Lei. Mas Iansã prepara. Ela movimenta, tira o peso, limpa o campo e recoloca o ser em condições de receber o corte necessário — sem destruir o indivíduo no processo.
+
 É ela quem te devolve ao eixo. É ela quem te tira do torpor. É ela quem te faz levantar quando você está preso à própria emoção.
+
 Seu papel cósmico é mobilizar. Seu papel humano é ensinar movimento. Seu papel ritualístico é permitir que a energia volte a fluir.
+
 Depois que ela reorganiza o emocional, a vida volta a andar. E, quando a vida volta a andar, a Lei volta a se manifestar em ordem. Somente então é Ogum quem assume, sustentando o caminho que ela abriu.
 É assim no astral. É assim na gira. É assim na vida.
 
@@ -144,25 +155,32 @@ A força de Iansã se manifesta em locais onde o vento reina. Não apenas o vent
 #### Campo Aberto
 
 O campo aberto é um dos lugares mais naturais para sentir e oferecer a energia de Iansã. Onde o vento circula livremente, a vibração da Mãe se expande e encontra menos resistência. Campos, chapadas, áreas descampadas, clareiras altas e espaços onde o ar corre sem obstáculos tornam-se pontos ideais para firmezas e oferendas simples.
+
 O vento ali não é só meteorológico — é energético. Ele carrega, movimenta, dispersa, recolhe e redireciona. É um espelho externo daquilo que a Divindade faz dentro do emocional humano.
 
 #### Pedra de Paralelepípedo
 
 No ensinamento da casa, existe um fundamento muito importante: o paralelipípedo. Não como objeto urbano, mas como símbolo vibratório. A dirigente explica que a estrutura de pedra cortada, assentada e estruturada em solo firme representa a estabilidade que Iansã permite recuperar.
+
 O paralelipípedo é atravessado por vento, água e desgaste do tempo — e ainda assim permanece firme. Essa imagem é essencial: ela traduz a forma como a Mãe age no desequilíbrio. Por isso, esse elemento é utilizado em certos pontos e firmezas específicas, especialmente em processos mais profundos ou vinculados à Lei.
-Altitudes, Montanhas e Pontos Ventosos
+
+#### Altitudes, Montanhas e Pontos Ventosos
 Lugares altos, onde o vento se intensifica e muda de direção rapidamente, também são domínios naturais de Iansã. A energia ali não é estática; é atravessada por correntes ascendentes e descendentes. É nos topos de morros, serras e encostas ventiladas que sua vibração se revela de forma poderosa, especialmente quando se busca romper estagnações profundas.
+
 Nesses lugares, a atuação da Mãe é direta: o vento "fala", empurra, aciona e desobstrui.
 
 #### Porta do Cemitério – O Mistério do Balê
 
 A aula destaca com clareza que Iansã tem atuação no Balê, no processo de transição e recolhimento de espíritos após o desencarne. Por isso, a porta do cemitério é um ponto de força da Divindade.
+
 Não se trata de culto aos mortos, mas à Lei que rege passagem, direção e encaminhamento. Quando a casa realiza trabalhos no cemitério, a saudação à direita é acompanhada da saudação à Mãe — porque ali seu campo vibra de forma intensa e ativa.
+
 A porta do cemitério simboliza limiar, travessia, vento que leva e vento que reconduz. É ponto de força usado apenas quando necessário, dentro de orientação ritual e jamais de forma aleatória.
 
 #### Água de Temporal
 
 A aula enfatiza a distinção entre tipos de chuva. Nem toda chuva é água de Iansã. Aquela que vibra sua energia é a chuva de vento, de movimento, de deslocamento.
+
 A chuva inclinada, com gotas que batem forte, ou aquela chuva fina levada por rajadas rápidas — essa é a água da Mãe. Ela carrega força emocional, desbloqueio, movimento, limpeza vibratória e dispersão de cargas densas.
 Essa água é usada com extremo cuidado, sempre dentro das regras explicadas pela dirigente, pois sua força é intensa e não pode ser manuseada de qualquer maneira.
 
@@ -195,19 +213,25 @@ Cada pedra trabalha uma faceta da Mãe e pode ser usada tanto para firmezas quan
 
 A lista de ervas de Iansã é ampla, e a aula destaca várias delas, entre as quais:
 Calêndula, hibisco, rosa vermelha, rosa amarela, espinheira-santa, catinga-de-mulata, artemísia, arnica, canela, espada de Santa Bárbara, gengibre, folha de pitanga, girassol, laranjeira, samambaia e outras de natureza quente, estimulante e movimentadora.
+
 As ervas são usadas para banhos, defumações, camas de oferenda e firmezas específicas, sempre dentro da estrutura ritual ensinada pela dirigente.
 
 #### Elemento: Ar
 
 O ar é o coração do mistério de Iansã. É o que movimenta o fogo, o que carrega emoções, o que dispersa, o que limpa, o que desloca.
+
 Sem o ar, nada se transforma. Com ele, tudo muda.
+
 Nos rituais, nos pontos de força e até no comportamento do médium, o ar simboliza o início do movimento e o fim da estagnação.
 
 ### 10. Simbologias e Riscos
 
 Iansã possui uma assinatura vibratória muito particular: o movimento espiralado. Essa espiral, desenhada em pontos riscados ou percebida nas incorporações, representa sua forma de envolvimento energético. Quanto mais intensa a espiral, maior o nível de limpeza emocional acontecendo.
+
 A estrela usada nos pontos de força, com nove encontros, reflete seus nove campos emocionais e os nove eguns que fazem parte de seu mistério. É uma estrela de movimento, nunca estática, com traços que se curvam e se entrelaçam, formando uma geometria viva.
+
 Nos trabalhos, essa estrela pode ser traçada com pemba amarela ou vermelha, sempre respeitando as posições explicadas na aula. Seu desenho não é decorativo: é funcional, vibratório e operante.
+
 Outros símbolos, como fitas vermelhas ou amarelas, são utilizados para delimitar, atrair, ajustar ou estabilizar campos de trabalho. O simbolismo nunca é arbitrário: cada detalhe cumpre uma função energética.
 
 ---
@@ -215,7 +239,9 @@ Outros símbolos, como fitas vermelhas ou amarelas, são utilizados para delimit
 ## PARTE IV - RITUALÍSTICA OFICIAL DO CURSO
 
 Esta parte da apostila reúne aquilo que é operacional, concreto, aplicável no dia a dia do terreiro e na vida espiritual dos médiuns. Aqui estão as firmezas, oferendas, fundamentos alimentares, formas de montagem de cama ritual e os procedimentos que fazem parte da linha de trabalho da casa.
+
 A ritualística de Iansã não é suave, nem lenta: é movimentadora. Cada elemento utilizado — vela, erva, pedra, alimento, metal — tem função específica de deslocar, romper, limpar e recolocar a energia no fluxo correto.
+
 Nada é decorativo. Cada detalhe cumpre uma função espiritual precisa.
 
 ### 11. Firmezas
@@ -232,8 +258,11 @@ A firmeza ensinada na aula e registrada no PDF é a seguinte:
 - 3 velas amarelas
 - 3 velas vermelhas
 - 1 incenso no centro (qualquer aroma de fator eólico)
+
 A pemba abre o campo. As velas amarelas movimentam. As velas vermelhas purificam. O incenso espalha o vento, levando embora o que pesa.
+
 Essa firmeza pode ser feita dentro de casa, desde que com respeito, limpeza e propósito claro. Ao firmar, o médium solicita que Iansã alivie excessos emocionais, retire confusões internas e devolva clareza.
+
 É uma firmeza de movimento, não de calmaria. Ela não silencia emoções: ela reorganiza. A paz que vem depois é consequência do movimento que ela promove.
 
 ### 12. Oferendas e Preparos
@@ -246,6 +275,7 @@ Nada é inventado aqui — tudo segue exatamente a aula e os fundamentos transmi
 
 O acarajé é a oferenda principal. Faz-se com farinha de acarajé ou massa de feijão fradinho deixado de molho, descascado e batido até formar um mingau consistente. Depois, frita-se no dendê, em uma panela funda, formando bolinhos.
 O ideal é trabalhar com a massa de forma tradicional. O acarajé precisa ser leve; se estiver pesado, está errado — significa que não descansou o suficiente para incorporar ar, que é o elemento principal de Iansã.
+
 Pode-se servir em cesta, com 9 bolinhos (quantidade sagrada da Mãe).
 
 #### 12.2 Abará
@@ -255,6 +285,7 @@ Abará segue a mesma base do acarajé — massa de feijão fradinho — mas não
 #### 12.3 Olelê / Ekuru
 
 Desmembrado da mesma massa, mas cozido em saquinho ou enrolado em tecido fino. Serve como base para pratos mais doces ou mais leves.
+
 Na aula, a dirigente explica que muitos confundem o ekuru com "cocadinha salgada", mas ele é a massa pura, cozida, sem tempero. Serve como oferenda simples, direta, energética e fácil de manipular.
 
 #### 12.4 Maçãs cozidas com mel
@@ -340,13 +371,19 @@ A dirigente observa se a incorporação é emocional ou vibratória. A vibraçã
 
 ## PARTE V — APOIO AO MÉDIUM
 A atuação de Iansã é intensa, ativa, emocional e transformadora. Por isso, o médium que trabalha sob sua vibração precisa desenvolver consciência, preparo e disciplina. Esta parte reúne orientações práticas para que o filho ou filha de fé consiga caminhar com equilíbrio dentro da gira, fora dela e em sua vida espiritual cotidiana.
-16. Postura, Disciplina e Controle Emocional
+
+#### 16. Postura, Disciplina e Controle Emocional
 A dirigente ensina que o maior desafio para quem tem a energia de Iansã forte na coroa não é “controlar” a emoção — mas não ser dominado por ela. O emocional é vivo, dinâmico, rápido. Ele sobe e desce com a mesma velocidade com que o vento muda de direção. Mas, na Umbanda, o médium precisa aprender a não reagir automaticamente a cada oscilação.
+
 A postura ritual exige três pilares:
-Clareza. O médium precisa saber o que está sentindo e por quê. A confusão interna cria ruído na incorporação e abre brechas energéticas que dificultam o trabalho da corrente.
-Respiração. Filhos de Iansã têm respiração naturalmente acelerada. Aprender a respirar antes de responder, antes de agir, antes de “explodir”, é uma das principais chaves de autocontrole.
-Presença. Estar ali, inteiro, consciente, atento. Não antecipar, não supor, não dramatizar. A gira é o lugar onde tudo se organiza; não é lugar de tempestade interna.
+**Clareza.** O médium precisa saber o que está sentindo e por quê. A confusão interna cria ruído na incorporação e abre brechas energéticas que dificultam o trabalho da corrente.
+
+**Respiração.** Filhos de Iansã têm respiração naturalmente acelerada. Aprender a respirar antes de responder, antes de agir, antes de “explodir”, é uma das principais chaves de autocontrole.
+
+**Presença.** Estar ali, inteiro, consciente, atento. Não antecipar, não supor, não dramatizar. A gira é o lugar onde tudo se organiza; não é lugar de tempestade interna.
+
 A dirigente sempre reforça que o médium de Iansã precisa aprender a distinguir emoção própria de emoção captada. Como sua vibração atrai, recolhe e absorve o desequilíbrio do outro, é comum que carregue sentimentos que não são seus. Reconhecer isso é parte da maturidade espiritual.
+
 A chave está no milésimo de segundo entre sentir e agir. Esse instante é o ponto onde a lei opera dentro do médium. Se ele aprende a respirar nesse intervalo, aprende a direcionar sua energia em vez de ser carregado por ela.
 
 ### 17. Práticas Pessoais
@@ -366,14 +403,18 @@ Algumas práticas são fundamentais:
 **Banhos de ervas quentes.** Ervas de Iansã não acalmam; movimentam. Por isso, não são usadas todos os dias. Mas, quando há peso emocional, são a primeira resposta.
 
 **Reconhecimento dos níveis.** A aula explica que existem níveis emocionais, do mais equilibrado ao mais saturado. Saber em qual nível está evita exageros, impulsos e decisões precipitadas.
+
 No fundo, trabalhar com Iansã é aprender a se observar. E quem sabe se observar sabe se reequilibrar.
 
 ### 18. A Jornada com a Mãe
 
 Por fim, a relação com Iansã não é apenas ritualística. É uma jornada interna, de coragem, de sinceridade e de transformação constante.
+
 Filhos e filhas da Mãe aprendem, cedo ou tarde, que ela não permite máscaras. Você pode mentir para si mesmo, mas ela percebe. Você pode esconder sentimentos, mas ela move. Você pode tentar ficar imóvel, mas ela sopra.
 Com o tempo, o médium se torna mais forte, mais honesto emocionalmente, mais rápido em perceber seus próprios desvios — e, principalmente, mais disposto a mudar.
+
 Iansã não exige perfeição. Exige movimento.
+
 E, quando o movimento é aceito, a vida toma direção. O vento encontra caminho. O coração encontra clareza. A gira ganha força. E o médium se torna instrumento verdadeiro da Lei.
 
 **Eparrei, Mãe!**
@@ -383,6 +424,7 @@ E, quando o movimento é aceito, a vida toma direção. O vento encontra caminho
 ## PARTE VI — ANEXOS
 
 Os anexos não compõem a parte teológica principal. Eles servem como apoio adicional, referência, material complementar e quadro comparativo para estudantes que desejam compreender o panorama mais amplo da figura de Iansã nas tradições afro-diaspóricas.
+
 Todo o conteúdo doutrinário central da apostila está nas partes I a V. Os anexos ampliam, mas não modificam, a base de ensino da casa.
 
 ### ANEXO A - COMPARATIVO AFRODIÁSPORICO
