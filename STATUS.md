@@ -1,3 +1,5 @@
+Hotfix: Revert baseline to 62f4a27 via branch `revert-to-62f4a27` to stabilize production. No functional changes beyond reverting PDF experiments.
+
 # 📊 Status do Projeto Personal Library
 
 **Última Atualização**: 26 de Novembro de 2025  
