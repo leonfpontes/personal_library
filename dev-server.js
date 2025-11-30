@@ -28,7 +28,8 @@ const MIME_TYPES = {
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
   '.ico': 'image/x-icon',
-  '.md': 'text/markdown'
+  '.md': 'text/markdown',
+  '.pdf': 'application/pdf'
 };
 
 process.on('uncaughtException', (err) => {
@@ -41,6 +42,8 @@ process.on('unhandledRejection', (reason) => {
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
   let pathname = parsedUrl.pathname;
+  // Decodifica %xx para resolver arquivos com espaços (ex.: %20)
+  try { pathname = decodeURIComponent(pathname); } catch (_) {}
 
   console.log(`${req.method} ${pathname}`);
 

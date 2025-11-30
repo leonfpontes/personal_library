@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Guia de Ervas — Livro Digital</title>
-    <meta name="description" content="Guia completo de ervas para Umbanda: propriedades espirituais, medicinais, classificação por temperatura (quentes, mornas e frias) e correspondências vibracionais." />
+    <title>Guia de Ervas — Leitor de PDF</title>
+    <meta name="description" content="Leitor protegido do PDF Guia de Ervas: exibição com marca d'água e travas de cópia, com controles de zoom." />
     <meta name="author" content="Terreiro Tia Maria e Cabocla Jupira" />
     <meta name="color-scheme" content="light dark" />
 
@@ -27,7 +27,18 @@
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/theme-ervas.css" />
     <style>
-      html { visibility: hidden; opacity: 0; }
+      html { visibility: hidden; opacity: 0; overflow: hidden; }
+      body { overflow: hidden; height: 100vh; margin: 0; }
+      .pdf-container { position: relative; width: 100%; height: calc(100vh - var(--topbar-height, 80px)); overflow: auto; display: block; }
+      .pdf-wrapper { transform-origin: top left; display: inline-block; min-width: 100%; min-height: 100%; }
+      .toolbar { display: flex; gap: 8px; align-items: center; }
+      .toolbar .zoom-display { color: var(--muted); font-size: 0.9rem; }
+      .no-select { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+      .pdf-loading { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; z-index: 9999; }
+      .pdf-loading-content { text-align: center; color: #fff; }
+      .pdf-loading-spinner { width: 50px; height: 50px; border: 4px solid rgba(255, 255, 255, 0.3); border-top-color: #fff; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .pdf-loading.hidden { display: none; }
     </style>
     <script>
       (function() {
@@ -62,50 +73,44 @@
       })();
     </script>
   </head>
+    <div class="pdf-loading" id="pdfLoading">
+      <div class="pdf-loading-content">
+        <div class="pdf-loading-spinner"></div>
+        <p>Carregando PDF...</p>
+      </div>
+    </div>
     <div class="progress"><div class="bar" id="progressBar"></div></div>
     <header class="topbar">
       <div class="brand">
         <img src="../Source/img/Logo_Terreiro_Black.png" alt="Logo do Terreiro" class="logo black" />
         <img src="../Source/img/Logo_Terreiro_White.png" alt="Logo do Terreiro" class="logo white" />
         <h1>Guia de Ervas</h1>
-        <nav aria-label="Breadcrumb"><a href="../index.html">← Biblioteca</a> <span class="sep">›</span> <span>Livro</span></nav>
+        <nav aria-label="Breadcrumb"><a href="../index.html">← Biblioteca</a> <span class="sep">›</span> <span>PDF</span></nav>
       </div>
       <div class="controls">
         <a href="../index.html" class="btn" aria-label="Voltar à biblioteca">← Voltar</a>
-        <button class="icon-btn" id="fontDecrease" aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
-        <button class="icon-btn" id="fontIncrease" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+        <div class="toolbar" role="group" aria-label="Controles de zoom">
+          <button class="icon-btn" id="zoomOut" aria-label="Diminuir zoom" title="Diminuir zoom">−</button>
+          <button class="icon-btn" id="zoomIn" aria-label="Aumentar zoom" title="Aumentar zoom">+</button>
+          <span class="zoom-display" id="zoomDisplay" aria-live="polite">100%</span>
+        </div>
         <button class="icon-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">◐</button>
       </div>
     </header>
 
-    <section class="hero-cover" aria-label="Capa">
-      <div class="media">
-        <img src="../Source/img/guia_ervas.png" alt="Capa do Guia Completo de Ervas" loading="lazy" />
-        <div class="overlay"></div>
-        <div class="text">
-          <h1>Guia Completo de Ervas</h1>
-          <p>Usos, limpeza e correspondências vibracionais.</p>
+    <main>
+      <article id="content" aria-label="Conteúdo do livro">
+        <div class="pdf-container no-select" id="pdfContainer">
+          <div class="pdf-wrapper" id="pdfWrapper">
+            <iframe id="pdfViewer" title="Leitor de PDF" style="border:none; width:100%; height:100%;" src=""></iframe>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <div class="layout">
-      <aside id="toc">
-        <h2>Sumário</h2>
-        <div class="toc-search"><input id="tocSearch" type="search" placeholder="Filtrar ervas…" aria-label="Filtrar ervas" /></div>
-        <ul id="tocList"></ul>
-      </aside>
-      <main>
-        <article id="content" aria-label="Conteúdo do livro">
-          <p style="color: var(--muted);">Carregando conteúdo…</p>
-        </article>
-      </main>
-    </div>
+      </article>
+    </main>
     <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-      const mdPath = '../Source/vivencia_ervas.md';
+      const pdfPath = '../Source/PDF/Guia%20de%20Ervas%20-%20Terreiro%20Tia%20Maria%20e%20Cabocla%20Jupira.pdf';
 
       // Theme Management (padrão Oyá Logunã)
       const themeToggle = document.getElementById('themeToggle');
@@ -115,107 +120,95 @@
       themeToggle.addEventListener('click', () => { currentThemeIndex = (currentThemeIndex + 1) % themes.length; applyTheme(); });
       applyTheme();
 
-      // Font Size Management (padrão Oyá Logunã)
-      const fontIncrease = document.getElementById('fontIncrease');
-      const fontDecrease = document.getElementById('fontDecrease');
-      let fontSize = parseFloat(localStorage.getItem('font-size') || '16');
-      function applyFontSize() { document.documentElement.style.setProperty('--content-size', `${fontSize}px`); localStorage.setItem('font-size', fontSize); }
-      fontIncrease.addEventListener('click', () => { if (fontSize < 24) { fontSize += 2; applyFontSize(); } });
-      fontDecrease.addEventListener('click', () => { if (fontSize > 12) { fontSize -= 2; applyFontSize(); } });
-      applyFontSize();
+      // Ajusta altura do leitor para ocupar a tela inteira abaixo do header
+      const headerEl = document.querySelector('.topbar');
+      const pdfContainer = document.getElementById('pdfContainer');
+      function resizePdfContainer() {
+        const h = (headerEl?.offsetHeight || 0);
+        document.documentElement.style.setProperty('--topbar-height', h + 'px');
+        const vh = window.innerHeight || document.documentElement.clientHeight || 800;
+        pdfContainer.style.height = Math.max(0, vh - h) + 'px';
+      }
+      window.addEventListener('resize', resizePdfContainer);
+      window.addEventListener('orientationchange', resizePdfContainer);
+
+      // PDF Load + Zoom controls
+      const pdfViewer = document.getElementById('pdfViewer');
+      const pdfWrapper = document.getElementById('pdfWrapper');
+      const zoomInBtn = document.getElementById('zoomIn');
+      const zoomOutBtn = document.getElementById('zoomOut');
+      const zoomDisplay = document.getElementById('zoomDisplay');
+      let zoom = parseFloat(localStorage.getItem('pdf-zoom') || '1.0');
+      const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+      
+      // Carrega o PDF uma única vez sem zoom parameters
+      pdfViewer.src = pdfPath + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
+      
+      const applyZoom = () => {
+        // Aplica scale no wrapper
+        pdfWrapper.style.transform = 'scale(' + zoom + ')';
+        
+        // Calcula dimensões reais do container
+        const containerHeight = pdfContainer.clientHeight;
+        const containerWidth = pdfContainer.clientWidth;
+        
+        // Define largura e altura do wrapper para ocupar o espaço escalado
+        pdfWrapper.style.width = containerWidth + 'px';
+        pdfWrapper.style.height = (containerHeight * zoom) + 'px';
+        
+        zoomDisplay.textContent = Math.round(zoom * 100) + '%';
+        localStorage.setItem('pdf-zoom', String(zoom));
+      };
+      
+      zoomInBtn.addEventListener('click', () => { 
+        zoom = clamp(zoom + 0.1, 0.5, 2.5); 
+        applyZoom(); 
+      });
+      zoomOutBtn.addEventListener('click', () => { 
+        zoom = clamp(zoom - 0.1, 0.5, 2.5); 
+        applyZoom(); 
+      });
+      
+      // Aguarda o PDF carregar e ser renderizado antes de remover loading
+      const pdfLoading = document.getElementById('pdfLoading');
+      let loadTimeout;
+      
+      pdfViewer.addEventListener('load', () => {
+        // Aguarda um tempo maior para garantir que o PDF foi renderizado
+        loadTimeout = setTimeout(() => {
+          applyZoom();
+          pdfLoading.classList.add('hidden');
+        }, 1500);
+      });
+      
+      // Fallback: remove loading após 10 segundos mesmo se não carregar
+      setTimeout(() => {
+        pdfLoading.classList.add('hidden');
+      }, 10000);
+      
+      resizePdfContainer();
+      applyZoom();
 
       const slugify = (str) => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9\s\-_.]/g, '').trim().replace(/\s+/g, '-');
 
-      const buildTOC = () => {
-        const container = document.getElementById('tocList');
-        container.innerHTML = '';
-        const headings = document.querySelectorAll('#content h1, #content h2, #content h3, #content h4');
-        const stack = [container];
-        headings.forEach((h) => {
-          const level = parseInt(h.tagName.substring(1), 10);
-          if (!h.id) h.id = slugify(h.textContent);
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          a.textContent = h.textContent; a.href = `#${h.id}`; a.className = `lvl-${level}`; li.appendChild(a);
-          while (stack.length > level) stack.pop();
-          while (stack.length < level) {
-            const newUl = document.createElement('ul');
-            stack[stack.length - 1].lastElementChild?.appendChild(newUl);
-            stack.push(newUl);
-          }
-          stack[stack.length - 1].appendChild(li);
-        });
-        const links = container.querySelectorAll('a');
-        const map = new Map();
-        links.forEach((a) => { const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) map.set(el, a); });
-        const io = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            const link = map.get(entry.target);
-            if (!link) return;
-            if (entry.isIntersecting) {
-              links.forEach((l) => l.classList.remove('active'));
-              link.classList.add('active');
-              if (getComputedStyle(link).display !== 'none') link.scrollIntoView({ block: 'nearest', inline: 'nearest' });
-            }
-          });
-        }, { rootMargin: '0px 0px -75% 0px', threshold: [0, 1] });
-        map.forEach((_, el) => io.observe(el));
-
-        const search = document.getElementById('tocSearch');
-        if (search) {
-          const allLinks = container.querySelectorAll('a');
-          search.addEventListener('input', () => {
-            const q = search.value.trim().toLowerCase();
-            allLinks.forEach((a) => { const match = a.textContent.toLowerCase().includes(q); a.style.display = match || !q ? '' : 'none'; });
-          });
-        }
-      };
+      // Removido: TOC/ancoragem para PDF
 
       const updateProgress = () => {
         const bar = document.getElementById('progressBar');
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollTop = pdfContainer.scrollTop;
+        const scrollHeight = pdfContainer.scrollHeight - pdfContainer.clientHeight;
         const p = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
         bar.style.width = p + '%';
       };
-      document.addEventListener('scroll', () => { updateProgress(); toggleBackTop(); }, { passive: true });
+      pdfContainer.addEventListener('scroll', () => { updateProgress(); toggleBackTop(); }, { passive: true });
 
       const toggleBackTop = () => {
         const btn = document.getElementById('backToTop');
-        const y = window.scrollY || document.documentElement.scrollTop;
+        const y = pdfContainer.scrollTop;
         if (y > 600) btn.classList.add('visible'); else btn.classList.remove('visible');
       };
 
-      const escapeHtml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-      const renderMarkdown = (md) => {
-        if (window.marked) {
-          marked.setOptions({ gfm: true, breaks: false, smartypants: true });
-          try { return marked.parse(md); } catch (_) {}
-        }
-        return `\n<div style="border:1px solid var(--border); border-radius:12px; padding:12px;">\n  <p style="color:var(--muted); margin-top:0;">Biblioteca de Markdown não carregada. Exibindo conteúdo simples.</p>\n  <pre style="white-space:pre-wrap;">${escapeHtml(md)}</pre>\n</div>`;
-      };
-
-      const contentEl = document.getElementById('content');
-      fetch(mdPath)
-        .then((r) => { if (!r.ok) throw new Error('Falha ao carregar o manuscrito.'); return r.text(); })
-        .then((md) => {
-          const html = renderMarkdown(md);
-          contentEl.innerHTML = html;
-          postProcessHeadings();
-          document.querySelectorAll('#content h1, #content h2, #content h3, #content h4').forEach((h) => { if (!h.id) h.id = slugify(h.textContent); });
-          buildTOC();
-          updateProgress();
-          if (location.hash) {
-            const id = decodeURIComponent(location.hash.slice(1));
-            const target = document.getElementById(id);
-            if (target) window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 12, behavior: 'instant' });
-          }
-        })
-        .catch((err) => {
-          contentEl.innerHTML = `\n<p style=\"color: var(--muted);\">Não foi possível carregar o conteúdo automaticamente. Abra este arquivo via um servidor local (ex.: Live Server / Python http.server).</p>`;
-          console.error(err);
-        });
+      // Conteúdo PDF já carregado via iframe acima
 
       const setFont = (delta) => {
         const style = getComputedStyle(document.documentElement);
@@ -227,29 +220,11 @@
       document.getElementById('incFont').addEventListener('click', () => setFont(0.05));
       document.getElementById('decFont').addEventListener('click', () => setFont(-0.05));
 
-      function postProcessHeadings() {
-        document.querySelectorAll('#content h2').forEach((h) => { const txt = (h.textContent || '').trim(); if (/^cap[ií]tulo\b/i.test(txt)) h.classList.add('chapter'); });
-        document.querySelectorAll('#content h4').forEach((h) => { const txt = (h.textContent || '').trim(); if (/^s[ií]ntese/i.test(txt)) h.classList.add('sintese'); });
-        document.querySelectorAll('#content h1, #content h2, #content h3, #content h4').forEach((h) => {
-          if (!h.id) h.id = slugify(h.textContent);
-          if (!h.querySelector('.anchor-link')) {
-            const a = document.createElement('a');
-            a.href = `#${h.id}`; a.className = 'anchor-link'; a.textContent = '#';
-            h.appendChild(a);
-          }
-        });
-      }
+      // Removido pós-processamento de headings para PDF
 
-      document.getElementById('backToTop').addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      document.getElementById('backToTop').addEventListener('click', () => { pdfContainer.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-      document.getElementById('tocList').addEventListener('click', (e) => {
-        const target = e.target.closest('a');
-        if (!target) return;
-        e.preventDefault();
-        const id = target.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 12, behavior: 'smooth' });
-      });
+      // Sem TOC para PDF
 
       // (Tema já alternado via themeToggle)
     </script>
