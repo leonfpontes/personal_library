@@ -38,11 +38,14 @@ For this personal_library repo, plans MUST satisfy these gates:
 - File placement: Markdown in `Source/`, reader HTML in `livros/`, catalog in `index.html`.
 - Naming: New manuscripts use snake_case and match HTML reader filename.
 - Reader template fidelity: Use `livros/vivencia_pombogira.html` as base; keep TOC, search, anchors, smooth scroll, progress bar, back-to-top, theme and font-size persistence.
+- **UI Standardization** (Amendment 1.2.0): Reader controls MUST use standardized classes (`icon-btn`, `back-to-top`) and IDs (`fontDecrease`, `fontIncrease`, `themeToggle`, `backToTop`).
+- **Adaptive Watermark** (Amendment 1.2.0): Watermark MUST adapt colors to theme (black/light-sepia, white/dark) via MutationObserver.
+- **Institutional Branding** (Amendment 1.2.0): Logo MUST have theme-aware variants with automatic swap (black for light/sepia, white for dark).
 - mdPath: Reader `mdPath` points to the correct `../Source/<file>.md`.
 - Theme/colors: Update all theme variants (light/dark/sepia) and favicon color to match.
 - Catalog card: Add/update card in `index.html` with tags, brief description, and link.
 - Relative paths: Use only relative links; no absolute paths.
-- Rights: Respect manuscript “Direitos Autorais” constraints.
+- Rights: Respect manuscript "Direitos Autorais" constraints.
 
 ## Project Structure
 

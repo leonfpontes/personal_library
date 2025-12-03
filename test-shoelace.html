@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoelace Integration Test</title>
+  
+  <!-- Shoelace CDN -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+  
+  <!-- Base styles (with Shoelace theme tokens) -->
+  <link rel="stylesheet" href="./styles/base.css">
+  
+  <style>
+    body {
+      font-family: var(--sl-font-sans);
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--sl-color-neutral-50);
+    }
+    
+    h1 {
+      color: var(--sl-color-primary-600);
+      font-family: var(--sl-font-serif);
+      margin-bottom: 32px;
+    }
+    
+    .test-section {
+      background: var(--sl-color-neutral-0);
+      border: 1px solid var(--sl-color-neutral-300);
+      border-radius: var(--sl-border-radius-large);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    
+    .test-section h2 {
+      margin-top: 0;
+      color: var(--sl-color-neutral-700);
+      font-size: 1.25rem;
+      border-bottom: 2px solid var(--sl-color-primary-600);
+      padding-bottom: 8px;
+    }
+    
+    .component-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    
+    .theme-switcher {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Shoelace UI Integration Test</h1>
+  
+  <div class="theme-switcher">
+    <sl-button variant="default" id="lightTheme">Light Theme</sl-button>
+    <sl-button variant="default" id="darkTheme">Dark Theme</sl-button>
+    <sl-button variant="default" id="sepiaTheme">Sepia Theme</sl-button>
+  </div>
+  
+  <!-- Button Component Test -->
+  <div class="test-section">
+    <h2>1. Button Component</h2>
+    <div class="component-row">
+      <sl-button variant="default">Default</sl-button>
+      <sl-button variant="primary">Primary</sl-button>
+      <sl-button variant="success">Success</sl-button>
+      <sl-button variant="neutral">Neutral</sl-button>
+      <sl-button variant="warning">Warning</sl-button>
+      <sl-button variant="danger">Danger</sl-button>
+    </div>
+    <div class="component-row">
+      <sl-button size="small">Small</sl-button>
+      <sl-button size="medium">Medium</sl-button>
+      <sl-button size="large">Large</sl-button>
+    </div>
+    <div class="component-row">
+      <sl-button circle>
+        <sl-icon name="gear"></sl-icon>
+      </sl-button>
+      <sl-button loading>Loading</sl-button>
+      <sl-button disabled>Disabled</sl-button>
+    </div>
+  </div>
+  
+  <!-- Card Component Test -->
+  <div class="test-section">
+    <h2>2. Card Component</h2>
+    <div class="component-row" style="flex-wrap: wrap;">
+      <sl-card style="max-width: 300px;">
+        <div slot="header">
+          Card Header
+        </div>
+        This is the card body. It can contain any content you want.
+        <div slot="footer">
+          <sl-button variant="primary" size="small">Action</sl-button>
+        </div>
+      </sl-card>
+      
+      <sl-card style="max-width: 300px;">
+        <div slot="header">
+          Another Card
+        </div>
+        Cards adapt to theme changes automatically.
+        <div slot="footer">
+          <sl-button variant="primary" size="small" outline>Learn More</sl-button>
+        </div>
+      </sl-card>
+    </div>
+  </div>
+  
+  <!-- Form Inputs Test -->
+  <div class="test-section">
+    <h2>3. Form Input Components</h2>
+    <div style="max-width: 500px;">
+      <sl-input label="Text Input" placeholder="Enter your name" help-text="This is help text" style="margin-bottom: 16px;"></sl-input>
+      
+      <sl-input label="Email Input" type="email" placeholder="email@example.com" style="margin-bottom: 16px;"></sl-input>
+      
+      <sl-input label="Password Input" type="password" toggle-password placeholder="Enter password" style="margin-bottom: 16px;"></sl-input>
+      
+      <sl-select label="Select Input" placeholder="Choose an option" style="margin-bottom: 16px;">
+        <sl-option value="1">Option 1</sl-option>
+        <sl-option value="2">Option 2</sl-option>
+        <sl-option value="3">Option 3</sl-option>
+      </sl-select>
+      
+      <sl-checkbox>Checkbox Option</sl-checkbox>
+    </div>
+  </div>
+  
+  <!-- Tag Component Test -->
+  <div class="test-section">
+    <h2>4. Tag Component</h2>
+    <div class="component-row">
+      <sl-tag variant="primary">Primary</sl-tag>
+      <sl-tag variant="success">Success</sl-tag>
+      <sl-tag variant="neutral">Neutral</sl-tag>
+      <sl-tag variant="warning">Warning</sl-tag>
+      <sl-tag variant="danger">Danger</sl-tag>
+    </div>
+    <div class="component-row">
+      <sl-tag size="small">Small</sl-tag>
+      <sl-tag size="medium">Medium</sl-tag>
+      <sl-tag size="large">Large</sl-tag>
+    </div>
+    <div class="component-row">
+      <sl-tag variant="primary" removable>Removable</sl-tag>
+      <sl-tag variant="success" pill>Pill Shape</sl-tag>
+    </div>
+  </div>
+  
+  <!-- Alert Component Test -->
+  <div class="test-section">
+    <h2>5. Alert Component</h2>
+    <sl-alert variant="primary" open style="margin-bottom: 12px;">
+      <sl-icon slot="icon" name="info-circle"></sl-icon>
+      This is a primary alert.
+    </sl-alert>
+    
+    <sl-alert variant="success" open style="margin-bottom: 12px;">
+      <sl-icon slot="icon" name="check-circle-fill"></sl-icon>
+      This is a success alert.
+    </sl-alert>
+    
+    <sl-alert variant="warning" open style="margin-bottom: 12px;">
+      <sl-icon slot="icon" name="exclamation-triangle-fill"></sl-icon>
+      This is a warning alert.
+    </sl-alert>
+    
+    <sl-alert variant="danger" open closable>
+      <sl-icon slot="icon" name="exclamation-octagon-fill"></sl-icon>
+      This is a danger alert with close button.
+    </sl-alert>
+  </div>
+  
+  <!-- Interactive Components Test -->
+  <div class="test-section">
+    <h2>6. Interactive Components (Drawer, Dialog, Tooltip)</h2>
+    <div class="component-row">
+      <sl-button variant="primary" id="openDrawer">Open Drawer</sl-button>
+      <sl-button variant="primary" id="openDialog">Open Dialog</sl-button>
+      <sl-tooltip content="This is a tooltip">
+        <sl-button>Hover for Tooltip</sl-button>
+      </sl-tooltip>
+    </div>
+  </div>
+  
+  <!-- Progress Bar Test -->
+  <div class="test-section">
+    <h2>7. Progress Bar Component</h2>
+    <sl-progress-bar value="25" style="margin-bottom: 16px;"></sl-progress-bar>
+    <sl-progress-bar value="50" style="margin-bottom: 16px;"></sl-progress-bar>
+    <sl-progress-bar value="75" style="margin-bottom: 16px;"></sl-progress-bar>
+    <sl-progress-bar value="100"></sl-progress-bar>
+  </div>
+  
+  <!-- Toast Notification Test -->
+  <div class="test-section">
+    <h2>8. Toast Notifications (from notifications.js)</h2>
+    <div class="component-row">
+      <sl-button variant="success" id="testSuccessToast">Success Toast</sl-button>
+      <sl-button variant="danger" id="testErrorToast">Error Toast</sl-button>
+      <sl-button variant="warning" id="testWarningToast">Warning Toast</sl-button>
+      <sl-button variant="primary" id="testInfoToast">Info Toast</sl-button>
+    </div>
+  </div>
+  
+  <!-- Drawer Component -->
+  <sl-drawer label="Test Drawer" id="testDrawer" placement="end">
+    <p>This is a drawer component. It slides in from the side.</p>
+    <p>Drawers are great for forms, settings, or navigation menus.</p>
+    <sl-button slot="footer" variant="primary">Save</sl-button>
+    <sl-button slot="footer" variant="default">Cancel</sl-button>
+  </sl-drawer>
+  
+  <!-- Dialog Component -->
+  <sl-dialog label="Test Dialog" id="testDialog">
+    <p>This is a dialog (modal) component.</p>
+    <p>Dialogs are useful for confirmations, alerts, or forms that need user attention.</p>
+    <sl-button slot="footer" variant="primary">Confirm</sl-button>
+    <sl-button slot="footer" variant="default">Cancel</sl-button>
+  </sl-dialog>
+  
+  <script type="module">
+    // Import notification utilities
+    import { showSuccessAlert, showErrorAlert, showWarningAlert, showInfoAlert } from './scripts/notifications.js';
+    
+    // Theme switching
+    document.getElementById('lightTheme').addEventListener('click', () => {
+      document.documentElement.removeAttribute('data-theme');
+    });
+    
+    document.getElementById('darkTheme').addEventListener('click', () => {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    });
+    
+    document.getElementById('sepiaTheme').addEventListener('click', () => {
+      document.documentElement.setAttribute('data-theme', 'sepia');
+    });
+    
+    // Drawer
+    const drawer = document.getElementById('testDrawer');
+    document.getElementById('openDrawer').addEventListener('click', () => drawer.show());
+    
+    // Dialog
+    const dialog = document.getElementById('testDialog');
+    document.getElementById('openDialog').addEventListener('click', () => dialog.show());
+    
+    // Toast notifications
+    document.getElementById('testSuccessToast').addEventListener('click', () => {
+      showSuccessAlert('Operação realizada com sucesso!');
+    });
+    
+    document.getElementById('testErrorToast').addEventListener('click', () => {
+      showErrorAlert('Erro ao processar solicitação!');
+    });
+    
+    document.getElementById('testWarningToast').addEventListener('click', () => {
+      showWarningAlert('Atenção: Esta ação não pode ser desfeita!');
+    });
+    
+    document.getElementById('testInfoToast').addEventListener('click', () => {
+      showInfoAlert('Informação: O sistema será atualizado em breve.');
+    });
+  </script>
+</body>
+</html>

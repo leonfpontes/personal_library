@@ -1,0 +1,637 @@
+openapi: 3.0.0
+info:
+  title: Shoelace UI Component Contracts
+  description: Specification of Shoelace Web Components usage for personal_library UI modernization
+  version: 1.0.0
+  contact:
+    name: Feature 003 - AntDesign UI Facelift (Pivot to Shoelace)
+
+components:
+  schemas:
+    # ============================================================================
+    # ADMIN DASHBOARD COMPONENTS
+    # ============================================================================
+    
+    AdminTable:
+      type: object
+      description: Custom HTML table styled with Shoelace design tokens
+      properties:
+        element:
+          type: string
+          example: <table id="usersTable">
+        styling:
+          type: object
+          properties:
+            tokens:
+              type: array
+              items:
+                type: string
+              example:
+                - --sl-color-neutral-0 (background)
+                - --sl-color-neutral-200 (borders)
+                - --sl-spacing-small (padding)
+        features:
+          type: array
+          items:
+            type: string
+          example:
+            - Client-side sorting (click headers)
+            - Client-side filtering (search input)
+            - Pagination (custom JS)
+        columns:
+          type: array
+          items:
+            type: object
+            properties:
+              key:
+                type: string
+              label:
+                type: string
+              sortable:
+                type: boolean
+          example:
+            - { key: "name", label: "Nome", sortable: true }
+            - { key: "email", label: "Email", sortable: true }
+            - { key: "cpf", label: "CPF", sortable: false }
+            - { key: "is_admin", label: "Admin", sortable: false }
+            - { key: "actions", label: "Ações", sortable: false }
+    
+    UserDrawer:
+      type: object
+      description: Shoelace Drawer component for create/edit user forms
+      properties:
+        component:
+          type: string
+          example: <sl-drawer>
+        attributes:
+          type: object
+          properties:
+            label:
+              type: string
+              example: "Novo Usuário" | "Editar Usuário"
+            placement:
+              type: string
+              enum: [start, end, top, bottom]
+              default: end
+            contained:
+              type: boolean
+              default: false
+        methods:
+          type: array
+          items:
+            type: string
+          example:
+            - show() - Open drawer
+            - hide() - Close drawer
+        events:
+          type: array
+          items:
+            type: string
+          example:
+            - sl-show - Fired when drawer opens
+            - sl-hide - Fired when drawer closes
+            - sl-after-hide - Fired after close animation completes
+        slots:
+          type: object
+          properties:
+            default:
+              type: string
+              description: Main content area with form inputs
+            footer:
+              type: string
+              description: Action buttons (Save, Cancel)
+        formFields:
+          type: array
+          items:
+            type: object
+          example:
+            - component: <sl-input>
+              label: "Nome"
+              name: "name"
+              required: true
+            - component: <sl-input>
+              label: "Email"
+              type: "email"
+              name: "email"
+              required: true
+            - component: <sl-input>
+              label: "CPF"
+              type: "text"
+              name: "cpf"
+              pattern: "\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}"
+              required: true
+            - component: <sl-input>
+              label: "Senha"
+              type: "password"
+              name: "password"
+              required: true
+              togglePassword: true
+            - component: <sl-checkbox>
+              label: "Administrador"
+              name: "is_admin"
+    
+    GrantsModal:
+      type: object
+      description: Shoelace Dialog for managing user book permissions
+      properties:
+        component:
+          type: string
+          example: <sl-dialog>
+        attributes:
+          type: object
+          properties:
+            label:
+              type: string
+              example: "Permissões de Acesso"
+            noHeader:
+              type: boolean
+              default: false
+        slots:
+          type: object
+          properties:
+            default:
+              type: string
+              description: Checkbox group for book selection
+            footer:
+              type: string
+              description: Save/Cancel buttons
+        checkboxes:
+          type: array
+          items:
+            type: object
+            properties:
+              component:
+                type: string
+                example: <sl-checkbox>
+              attributes:
+                type: object
+                properties:
+                  value:
+                    type: string
+                    description: book_id
+                  checked:
+                    type: boolean
+                    description: Current grant status
+          example:
+            - value: "vivencia_pombogira"
+              label: "Os Mistérios de Pombogira"
+              checked: true
+            - value: "guia_de_ervas"
+              label: "Guia de Ervas Sagradas"
+              checked: false
+    
+    # ============================================================================
+    # CATALOG (INDEX.HTML) COMPONENTS
+    # ============================================================================
+    
+    BookCard:
+      type: object
+      description: Shoelace Card component for displaying book information
+      properties:
+        component:
+          type: string
+          example: <sl-card>
+        slots:
+          type: object
+          properties:
+            header:
+              type: string
+              description: Book title
+            default:
+              type: string
+              description: Description paragraph + tags
+            footer:
+              type: string
+              description: "Ler manuscrito →" link/button
+        attributes:
+          type: object
+          properties:
+            class:
+              type: string
+              example: "book-card"
+        children:
+          type: array
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/BookTag'
+              - type: object
+                properties:
+                  type:
+                    type: string
+                    example: paragraph
+                  text:
+                    type: string
+    
+    BookTag:
+      type: object
+      description: Shoelace Tag component for book categories
+      properties:
+        component:
+          type: string
+          example: <sl-tag>
+        attributes:
+          type: object
+          properties:
+            variant:
+              type: string
+              enum: [primary, success, neutral, warning, danger]
+              default: primary
+            size:
+              type: string
+              enum: [small, medium, large]
+              default: small
+            pill:
+              type: boolean
+              default: false
+        textContent:
+          type: string
+          example: "Umbanda" | "Pombogira" | "Ervas"
+    
+    FilterSelect:
+      type: object
+      description: Shoelace Select component for tag filtering
+      properties:
+        component:
+          type: string
+          example: <sl-select>
+        attributes:
+          type: object
+          properties:
+            label:
+              type: string
+              example: "Filtrar por categoria"
+            multiple:
+              type: boolean
+              default: true
+            clearable:
+              type: boolean
+              default: true
+            placeholder:
+              type: string
+              example: "Selecione tags..."
+        options:
+          type: array
+          items:
+            type: object
+            properties:
+              component:
+                type: string
+                example: <sl-option>
+              value:
+                type: string
+              label:
+                type: string
+          example:
+            - value: "umbanda"
+              label: "Umbanda"
+            - value: "pombogira"
+              label: "Pombogira"
+            - value: "ervas"
+              label: "Ervas"
+            - value: "iansa"
+              label: "Iansã"
+        events:
+          type: array
+          items:
+            type: string
+          example:
+            - sl-change - Fired when selection changes
+    
+    # ============================================================================
+    # READER PAGES COMPONENTS (CONDITIONAL - Performance-dependent)
+    # ============================================================================
+    
+    ReaderButton:
+      type: object
+      description: Shoelace Button for theme/font controls
+      properties:
+        component:
+          type: string
+          example: <sl-button>
+        attributes:
+          type: object
+          properties:
+            variant:
+              type: string
+              enum: [default, primary, success, neutral, warning, danger, text]
+              default: text
+            size:
+              type: string
+              enum: [small, medium, large]
+              default: small
+            circle:
+              type: boolean
+              description: Icon-only circular button
+              default: true
+        slots:
+          type: object
+          properties:
+            default:
+              type: string
+              description: <sl-icon> for icon buttons
+        examples:
+          type: array
+          items:
+            type: string
+          example:
+            - <sl-button id="fontIncrease" size="small" circle><sl-icon name="plus"></sl-icon></sl-button>
+            - <sl-button id="fontDecrease" size="small" circle><sl-icon name="dash"></sl-icon></sl-button>
+            - <sl-button id="themeToggle" size="small" circle><sl-icon name="sun"></sl-icon></sl-button>
+    
+    ReaderTooltip:
+      type: object
+      description: Shoelace Tooltip for control hints
+      properties:
+        component:
+          type: string
+          example: <sl-tooltip>
+        attributes:
+          type: object
+          properties:
+            content:
+              type: string
+              example: "Aumentar fonte" | "Diminuir fonte" | "Trocar tema"
+            placement:
+              type: string
+              enum: [top, right, bottom, left]
+              default: bottom
+        usage:
+          type: string
+          example: <sl-tooltip content="Aumentar fonte"><sl-button>...</sl-button></sl-tooltip>
+    
+    ProgressBar:
+      type: object
+      description: Shoelace Progress Bar for reading position
+      properties:
+        component:
+          type: string
+          example: <sl-progress-bar>
+        attributes:
+          type: object
+          properties:
+            value:
+              type: number
+              minimum: 0
+              maximum: 100
+              description: Percentage of page scrolled
+            indeterminate:
+              type: boolean
+              default: false
+        positioning:
+          type: string
+          example: "Fixed at top of viewport with z-index above content"
+        updateLogic:
+          type: string
+          example: |
+            window.addEventListener('scroll', () => {
+              const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+              document.getElementById('progressBar').value = scrollPercent;
+            });
+    
+    # ============================================================================
+    # AUTH PAGES COMPONENTS
+    # ============================================================================
+    
+    LoginForm:
+      type: object
+      description: Login form using Shoelace input components
+      properties:
+        formElement:
+          type: string
+          example: <form id="loginForm">
+        fields:
+          type: array
+          items:
+            type: object
+          example:
+            - component: <sl-input>
+              label: "Email"
+              type: "email"
+              name: "email"
+              required: true
+              autocomplete: "username"
+            - component: <sl-input>
+              label: "Senha"
+              type: "password"
+              name: "password"
+              required: true
+              togglePassword: true
+              autocomplete: "current-password"
+        submitButton:
+          type: object
+          properties:
+            component:
+              type: string
+              example: <sl-button>
+            attributes:
+              type: object
+              properties:
+                type:
+                  type: string
+                  example: submit
+                variant:
+                  type: string
+                  example: primary
+                loading:
+                  type: boolean
+                  description: Show spinner during authentication
+        validation:
+          type: string
+          description: Native HTML5 validation via required/type attributes
+        events:
+          type: array
+          items:
+            type: string
+          example:
+            - submit event (prevent default, call API)
+    
+    Notification:
+      type: object
+      description: Shoelace Alert for success/error messages
+      properties:
+        component:
+          type: string
+          example: <sl-alert>
+        attributes:
+          type: object
+          properties:
+            variant:
+              type: string
+              enum: [primary, success, neutral, warning, danger]
+            open:
+              type: boolean
+            closable:
+              type: boolean
+              default: true
+            duration:
+              type: number
+              description: Auto-close duration in ms (0 = no auto-close)
+        usage:
+          type: string
+          example: |
+            const alert = Object.assign(document.createElement('sl-alert'), {
+              variant: 'success',
+              closable: true,
+              duration: 3000,
+              innerHTML: 'Login realizado com sucesso!'
+            });
+            document.body.append(alert);
+            alert.toast();
+
+# ============================================================================
+# INTEGRATION PATTERNS
+# ============================================================================
+
+paths:
+  /admin.html:
+    get:
+      summary: Admin dashboard page structure
+      responses:
+        '200':
+          description: HTML page with Shoelace components
+          content:
+            text/html:
+              schema:
+                type: string
+                example: |
+                  <!DOCTYPE html>
+                  <html lang="pt-BR">
+                  <head>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+                    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+                    <link rel="stylesheet" href="../styles/base.css" />
+                  </head>
+                  <body>
+                    <header>
+                      <h1>Gerenciar Usuários</h1>
+                      <sl-button variant="primary" id="newUserBtn">Novo Usuário</sl-button>
+                    </header>
+                    
+                    <table id="usersTable">
+                      <thead>
+                        <tr>
+                          <th data-sort="name">Nome</th>
+                          <th data-sort="email">Email</th>
+                          <th>CPF</th>
+                          <th>Admin</th>
+                          <th>Ações</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Populated by JavaScript -->
+                      </tbody>
+                    </table>
+                    
+                    <sl-drawer label="Novo Usuário" id="createDrawer" placement="end">
+                      <form id="userForm">
+                        <sl-input label="Nome" name="name" required></sl-input>
+                        <sl-input label="Email" type="email" name="email" required></sl-input>
+                        <sl-input label="CPF" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required></sl-input>
+                        <sl-input label="Senha" type="password" name="password" toggle-password required></sl-input>
+                        <sl-checkbox name="is_admin">Administrador</sl-checkbox>
+                      </form>
+                      <div slot="footer">
+                        <sl-button variant="primary" id="saveUserBtn">Salvar</sl-button>
+                        <sl-button id="cancelBtn">Cancelar</sl-button>
+                      </div>
+                    </sl-drawer>
+                    
+                    <sl-dialog label="Permissões de Acesso" id="grantsModal">
+                      <div id="bookCheckboxes">
+                        <!-- Populated dynamically -->
+                      </div>
+                      <div slot="footer">
+                        <sl-button variant="primary" id="saveGrantsBtn">Salvar</sl-button>
+                        <sl-button id="cancelGrantsBtn">Cancelar</sl-button>
+                      </div>
+                    </sl-dialog>
+                    
+                    <script src="../scripts/admin.js"></script>
+                  </body>
+                  </html>
+
+  /index.html:
+    get:
+      summary: Library catalog page structure
+      responses:
+        '200':
+          description: HTML page with Shoelace card grid
+          content:
+            text/html:
+              schema:
+                type: string
+                example: |
+                  <!DOCTYPE html>
+                  <html lang="pt-BR" data-theme="light">
+                  <head>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+                    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+                    <style>
+                      .catalog-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        gap: var(--sl-spacing-large);
+                      }
+                    </style>
+                  </head>
+                  <body>
+                    <header>
+                      <h1>Biblioteca Digital</h1>
+                      <sl-select label="Filtrar por categoria" multiple clearable id="tagFilter">
+                        <sl-option value="umbanda">Umbanda</sl-option>
+                        <sl-option value="pombogira">Pombogira</sl-option>
+                        <sl-option value="ervas">Ervas</sl-option>
+                      </sl-select>
+                    </header>
+                    
+                    <div class="catalog-grid" id="catalogGrid">
+                      <sl-card class="book-card" data-tags="umbanda,pombogira">
+                        <h2 slot="header">Os Mistérios de Pombogira</h2>
+                        <p>Uma jornada profunda pelos mistérios da senhora dos interiores...</p>
+                        <div class="tags">
+                          <sl-tag size="small" variant="primary">Umbanda</sl-tag>
+                          <sl-tag size="small" variant="primary">Pombogira</sl-tag>
+                        </div>
+                        <a href="livros/vivencia_pombogira.html" slot="footer" class="cta">Ler manuscrito →</a>
+                      </sl-card>
+                      <!-- More cards... -->
+                    </div>
+                    
+                    <script>
+                      const filter = document.getElementById('tagFilter');
+                      const cards = document.querySelectorAll('.book-card');
+                      
+                      filter.addEventListener('sl-change', (e) => {
+                        const selected = e.target.value; // Array of selected tag values
+                        cards.forEach(card => {
+                          const tags = card.dataset.tags.split(',');
+                          const matches = selected.length === 0 || selected.some(t => tags.includes(t));
+                          card.style.display = matches ? '' : 'none';
+                        });
+                      });
+                    </script>
+                  </body>
+                  </html>
+
+# ============================================================================
+# THEME INTEGRATION
+# ============================================================================
+
+externalDocs:
+  description: Shoelace theme customization via CSS variables
+  url: https://shoelace.style/getting-started/themes
+  
+x-theme-tokens:
+  description: Map personal_library themes to Shoelace design tokens
+  light:
+    --sl-color-neutral-0: "#ffffff"
+    --sl-color-neutral-1000: "#000000"
+    --sl-color-primary-600: "#b10e3c"  # Pombogira red
+  dark:
+    --sl-color-neutral-0: "#1a1a1a"
+    --sl-color-neutral-1000: "#ffffff"
+    --sl-color-primary-600: "#e23a6a"  # Lighter red for contrast
+  sepia:
+    --sl-color-neutral-0: "#f4ecd8"
+    --sl-color-neutral-1000: "#3d2817"
+    --sl-color-primary-600: "#c77a00"  # Warm amber

@@ -1,19 +1,19 @@
 <!--
-Sync Impact Report (v1.1.0 → v1.2.0)
-- Version change: 1.1.0 → 1.2.0 (MINOR)
-- Modified principles: None (addition only)
-- Added sections: Amendment 1.2.0 - UI Standardization & Branding, VI. User Experience Consistency
+Sync Impact Report (v1.2.0 → v1.2.1)
+- Version change: 1.2.0 → 1.2.1 (PATCH)
+- Modified principles: None
+- Added sections: None
 - Removed sections: None
 - Templates requiring updates:
-	- .specify/templates/plan-template.md: ✅ no changes required
-	- .specify/templates/spec-template.md: ✅ no changes required
-	- .specify/templates/tasks-template.md: ✅ no changes required
-	- .specify/templates/commands/*.md: ✅ no changes required
+	- .specify/templates/plan-template.md: ✅ updated (added Amendment 1.2.0 requirements to Constitution Check)
+	- .specify/templates/spec-template.md: ✅ no changes required (no constitution-specific checks)
+	- .specify/templates/tasks-template.md: ✅ no changes required (inherits from plan/spec)
+	- .specify/templates/agent-file-template.md: ✅ no changes required
+	- .specify/templates/checklist-template.md: ✅ no changes required
 - Follow-up TODOs: None
-- Rationale: Feature 002-admin-watermark-improvements established patterns for UI consistency (reader
-  controls standardization), adaptive watermarking (theme-aware colors), and institutional branding
-  (logo integration with theme swap). These patterns must be preserved for future reader additions.
+- Rationale: PATCH version bump to document template synchronization. Added UI Standardization, Adaptive Watermark, and Institutional Branding requirements from Amendment 1.2.0 to plan-template.md Constitution Check section, ensuring future features comply with these standards. No semantic changes to constitution itself.
 -->
+
 
 # personal_library Constitution
 
@@ -180,4 +180,4 @@ leitor.
   relativos, `mdPath`, tema/cores/favicon, card no catálogo, controles
   padronizados (IDs e classes), marca d'água adaptativa e logo institucional.
 
-**Version**: 1.2.0 | **Ratified**: 2025-11-25 | **Last Amended**: 2025-11-26
+**Version**: 1.2.1 | **Ratified**: 2025-11-25 | **Last Amended**: 2025-11-26

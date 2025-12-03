@@ -5,6 +5,8 @@ Auto-generated from all feature plans. Last updated: 2025-11-26
 ## Active Technologies
 - JavaScript ES6+ (client-side), Node.js 18+ (Vercel Edge Functions) (2-admin-watermark-improvements)
 - Neon PostgreSQL (serverless, sa-east-1) - table `users` com coluna `status` VARCHAR (2-admin-watermark-improvements)
+- HTML5, CSS3, JavaScript ES6+ (no transpilation) + AntDesign 5.x (CDN via unpkg/jsDelivr UMD build), Shoelace UI (fallback, web components via CDN), Marked.js (existing, Markdown rendering) (003-antdesign-facelift)
+- N/A for frontend (existing PostgreSQL via Vercel Edge Functions unchanged) (003-antdesign-facelift)
 
 **Frontend (Static):**
 - HTML5, CSS3, JavaScript ES6+ (no build/transpilation)
@@ -86,6 +88,7 @@ node scripts/seed-admin.js
 - Comments can be English or Portuguese
 
 ## Recent Changes
+- 003-antdesign-facelift: Added HTML5, CSS3, JavaScript ES6+ (no transpilation) + AntDesign 5.x (CDN via unpkg/jsDelivr UMD build), Shoelace UI (fallback, web components via CDN), Marked.js (existing, Markdown rendering)
 - 2-admin-watermark-improvements: Added JavaScript ES6+ (client-side), Node.js 18+ (Vercel Edge Functions)
 
 - **001-login-access-control** (Phase 1 complete):

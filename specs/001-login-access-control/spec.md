@@ -80,15 +80,10 @@ Administrador revoga a concessão de acesso de um usuário a um livro; o usuári
 
 ## Requirements *(mandatory)*
 
-<!--
-  ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right functional requirements.
--->
-
 ### Functional Requirements
 
 - **FR-001**: Administrador DEVE poder criar usuários com campos obrigatórios: nome completo e CPF; credenciais de login também devem ser definidas.
-- **FR-002**: O sistema DEVE autenticar usuários via email + senha (bcrypt, salt rounds=10) gerando JWT (HttpOnly cookie) associado a sessão registrada em SQLite; SSO não faz parte do escopo.
+- **FR-002**: O sistema DEVE autenticar usuários via email + senha e manter uma sessão segura, não acessível por scripts, com expiração configurável; SSO está fora do escopo desta versão.
 - **FR-003**: O sistema DEVE manter controle de acesso por livro (concessões por usuário e por obra) e verificar autorização a cada carregamento do leitor do livro.
 - **FR-004**: Ao exibir um livro autorizado, o sistema DEVE aplicar marca d’água visível contendo nome completo e CPF do usuário em todas as páginas, com repetição e posicionamentos que dificultem ocultação, sem prejudicar a leitura.
 - **FR-005**: O sistema DEVE bloquear seleção de texto, cópia para área de transferência (atalhos e menu), clique direito, arrastar/soltar texto e salvar página (Ctrl/Cmd+S), exibindo aviso de política.
@@ -99,7 +94,7 @@ Administrador revoga a concessão de acesso de um usuário a um livro; o usuári
 - **FR-010**: O sistema DEVE registrar eventos mínimos de auditoria (autenticação, acesso permitido/negado, tentativas de cópia/impressão), respeitando a privacidade.
 - **FR-011**: O sistema NÃO DEVE quebrar o pipeline de publicação na Vercel; o fluxo de commit na `main` deve continuar publicando normalmente.
 - **FR-012**: O sistema DEVE apresentar interface e mensagens em pt-BR.
-- **FR-013**: O CPF DEVE ser coletado (regex ^\d{11}$), consentimento explícito via checkbox no cadastro (armazenar `consent_at`), exibição mascarada na marca d'água (ex.: 123***01 - primeiros 3 dígitos + *** + últimos 2 dígitos; armazenamento no banco permanece 11 dígitos sem máscara); retenção: remover com exclusão do usuário ou após 12 meses de inatividade se política LGPD exigir.
+- **FR-013**: O CPF DEVE ser coletado (regex ^\d{11}$), consentimento explícito via checkbox no cadastro (armazenar `consent_at`), exibição mascarada na marca d'água (ex.: 123\*\*\*01 — primeiros 3 dígitos + *** + últimos 2 dígitos; armazenamento no banco permanece 11 dígitos sem máscara); retenção: remover com exclusão do usuário ou após 12 meses de inatividade se política LGPD exigir.
 - **FR-014**: O sistema DEVE garantir que dados pessoais (CPF, nome) não apareçam em URLs, títulos de página ou em requisições externas (apenas no render do leitor).
 - **FR-015**: O sistema DEVE manter legibilidade: marca d’água com opacidade e repetição configuradas para não comprometer a leitura (p.ex., opacidade ≤ 10–15%).
 
@@ -115,40 +110,76 @@ Notas importantes sobre proteção de conteúdo: é tecnicamente impossível imp
 
 ## Success Criteria *(mandatory)*
 
-<!--
-  ACTION REQUIRED: Define measurable success criteria.
-  These must be technology-agnostic and measurable.
--->
-
 ### Measurable Outcomes
 
 - **SC-001**: Usuário autorizado consegue abrir o livro e ver a marca d’água personalizada em ≤ 3 segundos após login em rede típica.
 - **SC-002**: 100% dos carregamentos autorizados exibem marca d’água com nome + CPF e 0% a exibem ausente ou incorreta.
-- **SC-003**: Bloqueio de proteção deve interceptar ≥95% das tentativas de copiar/imprimir/salvar em navegadores Chromium/Firefox/Edge recentes. Lista explícita de ações bloqueadas: seleção de texto (mouse drag), Ctrl/Cmd+C (copiar), Ctrl/Cmd+X (cortar), Ctrl/Cmd+V (colar), Ctrl/Cmd+S (salvar página), Ctrl/Cmd+P (imprimir), menu de contexto (botão direito), arrastar/soltar texto. Eventos logados na tabela audit_log com tipo `copy_attempt`. Fallback: apresentar aviso em navegadores não suportados.
+- **SC-003**: Bloqueio de proteção deve interceptar ≥95% das tentativas de copiar/imprimir/salvar em navegadores Chromium/Firefox/Edge recentes (com fallback de aviso em ambientes não suportados).
 - **SC-004**: Usuário sem concessão tem 0% de acesso ao conteúdo do livro (bloqueio consistente) — verificado por tentativa direta via URL do leitor.
 - **SC-005**: Revogação de acesso reflete em ≤ 1 minuto ou no próximo carregamento do leitor (o que ocorrer primeiro), bloqueando o acesso.
 - **SC-006**: Publicações via commit na `main` continuam com taxa de sucesso de 100% no pipeline da Vercel para este projeto.
-- **SC-007**: Detecção de PrintScreen (best-effort) gera log `copy_attempt` em até 500ms quando suportado (Windows key events / focus blur heurística). Onde não suportado, política de limitação documentada.
-- **SC-008**: Tempo de injeção da marca d'água (do DOMContentLoaded à renderização completa) ≤ 300ms em dispositivos baseline (Intel i5 ou equivalente, 8GB RAM, Chrome 120+ ou Firefox 121+, conexão 10Mbps+).
+- **SC-007**: Detecção de PrintScreen (best-effort) gera log `copy_attempt` em até 500ms quando suportado. Onde não suportado, política de limitação documentada.
+- **SC-008**: Tempo de injeção da marca d'água (do DOMContentLoaded à renderização completa) ≤ 300ms em dispositivos baseline.
 
+## Critérios de Aceitação por Requisito
 
+- **FR-001 (Criar usuários)**
+  - Dado admin com dados válidos (nome, CPF, email, senha), quando submeter o cadastro, então o usuário é criado e aparece na listagem.
+  - Dado CPF inválido ou duplicado, quando tentar cadastrar, então recebe erro de validação e nada é criado.
+- **FR-002 (Autenticar e sessão segura)**
+  - Dado credenciais válidas, quando autenticar, então a sessão é criada e persiste entre páginas até expirar.
+  - Dado credenciais inválidas, quando autenticar, então retorna erro e nenhuma sessão é criada.
+- **FR-003 (ACL por livro)**
+  - Dado usuário sem concessão para Livro X, quando acessar `livros/x.html`, então o acesso é bloqueado.
+  - Dado usuário com concessão, quando acessar, então o conteúdo carrega normalmente.
+- **FR-004 (Marca d’água)**
+  - Dado acesso autorizado, quando renderizar a página, então a marca d’água com nome + CPF mascarado aparece em múltiplas posições sem prejudicar a leitura.
+- **FR-005 (Bloqueios de cópia)**
+  - Dado usuário autenticado, quando tentar selecionar/copiar/imprimir/salvar, então a ação é bloqueada e evento é registrado.
+- **FR-006 (Bloqueio de impressão)**
+  - Dado comando de impressão, quando abrir o diálogo, então o conteúdo sensível não é impresso e apenas marca d’água/mensagem aparece.
+- **FR-007 (PrintScreen best‑effort)**
+  - Dado ambiente suportado, quando capturar tela, então um aviso é exibido e evento é registrado.
+- **FR-008 (Offline/sem sessão)**
+  - Dado ausência de sessão/autorização, quando abrir leitor, então o conteúdo não é exibido.
+- **FR-009 (Conceder/revogar)**
+  - Dado admin, quando conceder/revogar acesso, então a mudança reflete no próximo carregamento (ou ≤ 1 minuto).
+- **FR-010 (Auditoria)**
+  - Dado ações de login/acesso/bloqueio, quando ocorrerem, então ficam registradas com timestamp e ator (quando aplicável).
+- **FR-011 (Pipeline intacto)**
+  - Dado commit na `main`, quando a publicação ocorrer, então não há falhas adicionais atribuíveis a esta feature.
+- **FR-012 (pt‑BR)**
+  - Dado qualquer mensagem/label, quando exibida, então está em português do Brasil.
+- **FR-013 (CPF, consentimento, retenção)**
+  - Dado CPF inválido, quando criar/atualizar usuário, então o sistema rejeita com mensagem.
+  - Dado consentimento não marcado, quando cadastrar, então o sistema bloqueia o cadastro (ou sinaliza pendência para coleta posterior, conforme política definida).
+  - Dado usuário inativo por > 12 meses, quando executar rotina de retenção, então o CPF é removido/anonimizado conforme LGPD.
+- **FR-014 (Privacidade em URLs)**
+  - Dado navegação, quando capturar URLs/títulos/requisições, então dados pessoais (nome/CPF) não aparecem.
+- **FR-015 (Legibilidade)**
+  - Dado página com marca d’água, quando leitor percorre o texto, então a leitura permanece confortável (opacidade dentro do limite).
+
+## Não‑Objetivos e Agnosticismo Tecnológico
+
+- Esta especificação é agnóstica de infraestrutura: não determina banco de dados, modelo de implantação ou bibliotecas criptográficas. Essas decisões ficam no plano técnico.
+- O objetivo funcional é garantir autenticação, ACL por livro, proteção best‑effort e marca d’água, independentemente de tecnologia específica.
 
 ## Clarifications
 
 ### Session 2025-11-25
 
-- Q: Qual banco de dados usar, já que Vercel KV/Postgres não são mais suportados? → A: Usar SQLite (Deno KV, Turso, LiteFS) hospedado em edge/serverless.
+- Q: Qual banco de dados usar, já que Vercel KV/Postgres não são mais suportados? → A: Usar solução compatível com a plataforma escolhida; decisão técnica fora do escopo da especificação.
 
 ### Respostas Integradas
 
-1) Backend permitido: Sim, pode usar Edge Middleware/Functions da Vercel, mas o armazenamento será via SQLite (Deno KV, Turso, LiteFS) hospedado em edge/serverless, não mais Vercel KV/Postgres.
-2) Proteção: Aceita proteção best-effort no cliente (bloqueio de seleção/atalhos/print CSS, marca d'água visível). Não há requisito de marcação forense.
-3) CPF: Validar formato (11 dígitos). Exibir máscara na marca d'água (primeiros 3 + últimos 2). Armazenar valor claro apenas em backend protegido; não expor em URLs. Reter por até 12 meses de inatividade ou até solicitação de exclusão (direito ao esquecimento). Consentimento explícito via checkbox obrigatório.
-4) Sessões: duração padrão 24h (`SESSION_TTL_SECONDS`), revogação imediata via `revoked_at`; multi-sessões permitidas.
-5) Pipeline: qualquer mudança no feature não deve exigir build adicional (apenas arquivos estáticos + funções edge) preservando princípio de site estático.
+1) Execução/Backend: É permitido uso de recursos de backend/plataforma para autenticação e ACL, mas esta especificação permanece agnóstica de tecnologia.
+2) Proteção: Proteção best‑effort no cliente (bloqueio de seleção/atalhos/print CSS e similares) e marca d'água visível. Sem requisito de marcação forense.
+3) CPF: Validar formato (11 dígitos). Exibir máscara na marca d'água (primeiros 3 + últimos 2). Não expor CPF em URLs. Reter por até 12 meses de inatividade ou até solicitação de exclusão (direito ao esquecimento). Consentimento explícito obrigatório (fluxo a decidir no plano: no cadastro ou no primeiro login).
+4) Sessões: Duração padrão sugerida 24h, com possibilidade de revogação imediata; múltiplas sessões permitidas.
+5) Pipeline: A feature não deve exigir builds adicionais; publicação contínua deve permanecer funcional.
 
 ---
 
 **Requisitos impactados:**
 
-- FR-001, FR-003, FR-009, FR-010: O armazenamento de usuários, concessões, sessões e auditoria será feito em SQLite (Deno KV, Turso, LiteFS) hospedado em edge/serverless.
+- FR-001, FR-003, FR-009, FR-010: Sem alteração funcional; detalhes de armazenamento e implantação ficam fora do escopo desta especificação e serão definidos no plano técnico.

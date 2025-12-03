@@ -11,6 +11,12 @@
 		<meta property="og:description" content="Explore livros e apostilas e leia online com conforto." />
 		<meta property="og:locale" content="pt_BR" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@5.19.1/dist/reset.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@5.19.1/dist/antd.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
@@ -53,16 +59,34 @@
 
 			.toolbar { margin: 18px 0 8px; display:flex; flex-wrap: wrap; gap: 10px; align-items:center; }
 			.search { flex: 1 1 320px; }
-			.search input { width: 100%; padding: 12px 14px; border-radius: 12px; border:1px solid var(--border); background: var(--card); color: var(--fg); }
+			.search input { width: 100%; height: 40px; padding: 8px 12px; border-radius: 8px; border:1px solid var(--border); background: var(--card); color: var(--fg); box-shadow: none; }
+			/* Shoelace select visual alignment (Ant-like) */
+			#tagFilter { --sl-input-border-color: var(--border); --sl-input-background-color: var(--card); --sl-input-color: var(--fg); --sl-input-border-radius: 8px; --sl-input-font-size: 14px; --sl-input-focus-ring-color: var(--accent); --sl-input-focus-ring-offset: 2px; --sl-input-hover-border-color: var(--accent-2); --sl-input-height-medium: 40px; }
+			#tagFilter::part(tag) { background: color-mix(in oklab, var(--card) 85%, var(--accent)); color: var(--accent); border: 1px solid color-mix(in oklab, var(--border) 80%, var(--accent)); border-radius: 6px; font-weight: 600; }
+			#tagFilter::part(clear-button) { color: var(--muted); }
+			/* Hide floating label space to keep toolbar aligned when label attribute is absent */
+			#tagFilter::part(form-control-label) { display:none; }
+			#tagFilter::part(form-control-help-text) { display:none; }
 			.chips { display:flex; gap:8px; align-items:center; }
-			.chip { padding:8px 10px; border:1px solid var(--border); background: var(--card); color: var(--muted); border-radius: 999px; font: 600 12px var(--content-font); cursor: pointer; }
-			.chip[aria-pressed="true"] { color: var(--accent); border-color: var(--accent-2); background: color-mix(in oklab, var(--card) 85%, var(--accent-2)); }
+			.chip { padding:6px 10px; border:1px solid var(--border); background: var(--card); color: var(--muted); border-radius: 6px; font: 600 12px var(--content-font); cursor: pointer; transition: border-color .15s ease, background .15s ease, color .15s ease; }
+			.chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+			.chip[aria-pressed="true"], .chip[aria-current="true"] { color: var(--accent); border-color: var(--accent-2); background: color-mix(in oklab, var(--card) 88%, var(--accent-2)); }
 			.stat { margin-left: auto; color: var(--muted); font-size: 12px; }
+			/* Swiper pagination contrast */
+			.banner .swiper-pagination-bullet { background: color-mix(in oklab, var(--fg) 30%, transparent); opacity: .6; }
+			.banner .swiper-pagination-bullet-active { background: var(--accent); opacity: 1; }
+			/* Banner caption backdrop for readability */
+			.banner .slide-caption { background: linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.25)); padding: 10px 12px; border-radius: 12px; backdrop-filter: blur(2px); }
+			/* Ensure second line (paragraph) is solid white */
+			.banner .slide-caption p { color:#fff !important; opacity:1 !important; }
 
 			.catalog { padding: 6px 16px 40px; display:flex; justify-content:center; }
-			.grid { width: 100%; max-width: 1200px; padding: 0 8px; display:grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
-			.card { position: relative; border:1px solid var(--border); background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display:flex; flex-direction: column; transition: transform .2s ease, box-shadow .2s ease; }
-			.card:hover { transform: translateY(-4px); box-shadow: 0 16px 42px rgba(0,0,0,.14); }
+			.grid { width: 100%; max-width: 1200px; padding: 0 8px; display:grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: var(--sl-spacing-large, 24px); grid-auto-rows: 1fr; }
+			/* Element wrapper should be transparent; visual styles apply to sl-card's base part */
+			.card { position: relative; border: 0; background: transparent; border-radius: var(--radius); box-shadow: none; overflow: hidden; display:flex; flex-direction: column; transition: transform .2s ease; height: 100%; }
+			sl-card.card::part(base) { border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); background: var(--card); }
+			sl-card.card:hover { transform: translateY(-4px); }
+			sl-card.card:hover::part(base) { box-shadow: 0 16px 42px rgba(0,0,0,.14); }
 			.cover { position: relative; height: 240px; overflow: hidden; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%); }
 			.cover img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 			.cover-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,.3) 0%, transparent 50%); opacity: 0; transition: opacity .2s ease; }
@@ -79,7 +103,15 @@
 			.empty { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 28px 12px; border:1px dashed var(--border); border-radius: var(--radius); background: color-mix(in oklab, var(--card) 90%, transparent); }
 
 			footer { padding: 12px 16px 24px; text-align:center; color: var(--muted); font-size: 12px; }
-			@media (max-width: 768px) { .grid { grid-template-columns: 1fr; gap: 20px; } .cover { height: 200px; } }
+			@media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+			@media (max-width: 768px) { 
+				.grid { grid-template-columns: 1fr; gap: 20px; } 
+				.cover { height: 200px; } 
+				/* Banner mobile tuning */
+				.banner .swiper { height: 220px !important; }
+				.banner .slide-caption h2 { font-size: 20px !important; }
+				.banner .slide-caption p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 85%; line-clamp: 2; }
+			}
 			@media (max-width: 640px) { .hero .panel { padding: 18px 16px; } .hero h2 { font-size: 24px; } .stat { flex: 1 0 100%; order: 3; text-align: right; } .tag-row { gap: 4px; } .tag { font-size: 10px; padding: 3px 8px; } }
 			@media (prefers-reduced-motion: reduce) { .card, .link, .cover-overlay { transition: none; } }
 		</style>
@@ -103,126 +135,181 @@
 
 		<section class="hero">
 			<div class="wrap">
-				<div class="panel" role="region" aria-label="Apresentação">
-					<div class="text">
-						<h2>Sua biblioteca, sem distrações</h2>
-						<p>Pesquise, filtre e leia com conforto — claro, escuro ou sépia.</p>
+				<div class="banner" role="region" aria-label="Destaques" style="margin:24px 0; border-radius:20px; overflow:hidden; box-shadow: var(--shadow); border:1px solid var(--border);">
+					<div class="swiper" style="width:100%;height:320px;background:var(--card);">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="position:relative;">
+								<img src="Source/img/pombogira.png" alt="Os Mistérios de Pombogira" style="width:100%;height:100%;object-fit:cover;display:block;" />
+								<div class="slide-overlay" style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.2) 30%, transparent 60%);"></div>
+								<div class="slide-caption" style="position:absolute;left:24px;bottom:22px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:8px;">
+									<h2 style="margin:0 0 6px;font:800 28px/1.2 var(--heading-font);">Os Mistérios de Pombogira</h2>
+									<p style="margin:0;font:500 14px/1.6 var(--content-font);opacity:.9;">Interior, Emoção e Evolução — leia com conforto.</p>
+									<a href="livros/vivencia_pombogira.html" style="align-self:flex-start;display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font:700 13px var(--content-font);">Ler agora →</a>
+								</div>
+							</div>
+							<div class="swiper-slide" style="position:relative;">
+								<img src="Source/img/guia_ervas.png" alt="Guia Completo de Ervas" style="width:100%;height:100%;object-fit:cover;display:block;" />
+								<div class="slide-overlay" style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.2) 30%, transparent 60%);"></div>
+								<div class="slide-caption" style="position:absolute;left:24px;bottom:22px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:8px;">
+									<h2 style="margin:0 0 6px;font:800 28px/1.2 var(--heading-font);">Guia Completo de Ervas</h2>
+									<p style="margin:0;font:500 14px/1.6 var(--content-font);opacity:.9;">Usos, limpezas e correspondências vibracionais.</p>
+									<a href="livros/guia_de_ervas.html" style="align-self:flex-start;display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font:700 13px var(--content-font);">Ler agora →</a>
+								</div>
+							</div>
+							<div class="swiper-slide" style="position:relative;">
+								<img src="Source/img/Iansa.png" alt="Iansã: A Mãe da Lei" onerror="this.style.display='none'" style="width:100%;height:100%;object-fit:cover;display:block;" />
+								<div class="slide-overlay" style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.2) 30%, transparent 60%);"></div>
+								<div class="slide-caption" style="position:absolute;left:24px;bottom:22px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:8px;">
+									<h2 style="margin:0 0 6px;font:800 28px/1.2 var(--heading-font);">Iansã: A Mãe da Lei</h2>
+									<p style="margin:0;font:500 14px/1.6 var(--content-font);opacity:.9;">Lei, Movimento e Direção na Umbanda.</p>
+									<a href="livros/aula_iansa.html" style="align-self:flex-start;display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font:700 13px var(--content-font);">Ler agora →</a>
+								</div>
+							</div>
+							<div class="swiper-slide" style="position:relative;">
+								<img src="Source/img/Oya_Loguna.png" alt="Oyá Logunã" onerror="this.style.display='none'" style="width:100%;height:100%;object-fit:cover;display:block;" />
+								<div class="slide-overlay" style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.2) 30%, transparent 60%);"></div>
+								<div class="slide-caption" style="position:absolute;left:24px;bottom:22px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:8px;">
+									<h2 style="margin:0 0 6px;font:800 28px/1.2 var(--heading-font);">Oyá Logunã</h2>
+									<p style="margin:0;font:500 14px/1.6 var(--content-font);opacity:.9;">Senhora do Tempo e da Fé — fundamentos e práticas.</p>
+									<a href="livros/aula_oya_loguna.html" style="align-self:flex-start;display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font:700 13px var(--content-font);">Ler agora →</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 
 				<div class="toolbar" aria-label="Ferramentas do catálogo">
 					<div class="search">
-						<input id="q" type="search" placeholder="Buscar por título, tipo ou tema (/)" aria-label="Buscar" />
+						<input id="q" class="ant-input" type="search" placeholder="Buscar por título, tipo ou tema (/)" aria-label="Buscar" />
 					</div>
 					<div class="chips" role="group" aria-label="Filtro por tipo">
 						<button class="chip" data-filter="all" aria-pressed="true">Todos</button>
 						<button class="chip" data-filter="apostila" aria-pressed="false">Apostilas</button>
 						<button class="chip" data-filter="livro" aria-pressed="false">Livros</button>
 					</div>
+					<sl-select placeholder="Filtrar por categoria" multiple clearable id="tagFilter" size="medium" style="min-width:280px;">
+						<sl-option value="Umbanda">Umbanda</sl-option>
+						<sl-option value="Pombogira">Pombogira</sl-option>
+						<sl-option value="Emocional">Emocional</sl-option>
+						<sl-option value="Ervas">Ervas</sl-option>
+						<sl-option value="Natureza">Natureza</sl-option>
+						<sl-option value="Iansã">Iansã</sl-option>
+						<sl-option value="Lei">Lei</sl-option>
+						<sl-option value="Obá">Obá</sl-option>
+						<sl-option value="Conhecimento">Conhecimento</sl-option>
+						<sl-option value="Oyá Logunã">Oyá Logunã</sl-option>
+						<sl-option value="Tempo">Tempo</sl-option>
+					</sl-select>
 					<div id="stat" class="stat" aria-live="polite"></div>
+					<button id="clearFilters" class="btn" style="display:none;" aria-label="Limpar filtros">Limpar filtros</button>
 				</div>
 			</div>
 		</section>
 
 		<section id="catalogo" class="catalog" aria-label="Catálogo">
-			<div class="grid" id="grid">
-				<article class="card" data-title="vivência pombogira" data-type="apostila" data-tags="umbanda pombogira emocional interior verdade amor próprio">
-					<div class="cover">
-						<img src="Source/img/pombogira.png" alt="Capa - Vivência Pombogira" loading="lazy" />
-						<div class="cover-overlay"></div>
-					</div>
-					<div class="body">
-						<div class="tag-row">
-							<span class="tag">Umbanda</span>
-							<span class="tag">Pombogira</span>
-							<span class="tag">Emocional</span>
+				<div class="grid" id="grid">
+					<sl-card class="card" data-title="vivência pombogira" data-type="apostila" data-tags="Umbanda Pombogira Emocional Interior Verdade Amor Próprio">
+						<div class="cover">
+							<img src="Source/img/pombogira.png" alt="Capa - Vivência Pombogira" loading="lazy" />
+							<div class="cover-overlay"></div>
 						</div>
-						<h3 class="title">Os Mistérios de Pombogira</h3>
-						<div class="meta">Apostila completa · Interior, Emoção e Evolução</div>
-						<p class="desc">Uma obra profunda sobre verdade emocional, libertação interna e cura afetiva através do Mistério de Pombogira na Umbanda Sagrada.</p>
-						<div class="actions">
-							<a class="link" href="livros/vivencia_pombogira.html">Ler conteúdo →</a>
+						<div class="body">
+							<div class="tag-row">
+								<sl-tag size="small" variant="primary">Umbanda</sl-tag>
+								<sl-tag size="small" variant="primary">Pombogira</sl-tag>
+								<sl-tag size="small" variant="primary">Emocional</sl-tag>
+							</div>
+							<h3 class="title" slot="header">Os Mistérios de Pombogira</h3>
+							<div class="meta">Apostila completa · Interior, Emoção e Evolução</div>
+							<p class="desc">Uma obra profunda sobre verdade emocional, libertação interna e cura afetiva através do Mistério de Pombogira na Umbanda Sagrada.</p>
+							<div class="actions" slot="footer">
+								<a class="link" href="livros/vivencia_pombogira.html">Ler conteúdo →</a>
+							</div>
 						</div>
-					</div>
-				</article>
-				<article class="card" data-title="guia de ervas" data-type="apostila" data-tags="ervas umbanda guia limpeza harmonização natureza">
-					<div class="cover">
-						<img src="Source/img/guia_ervas.png" alt="Capa - Guia de Ervas" loading="lazy" />
-						<div class="cover-overlay"></div>
-					</div>
-					<div class="body">
-						<div class="tag-row">
-							<span class="tag">Umbanda</span>
-							<span class="tag">Ervas</span>
-							<span class="tag">Natureza</span>
+					</sl-card>
+
+					<sl-card class="card" data-title="guia de ervas" data-type="apostila" data-tags="Ervas Umbanda Guia Limpeza Harmonização Natureza">
+						<div class="cover">
+							<img src="Source/img/guia_ervas.png" alt="Capa - Guia de Ervas" loading="lazy" />
+							<div class="cover-overlay"></div>
 						</div>
-						<h3 class="title">Guia Completo de Ervas</h3>
-						<div class="meta">Apostila prática · Usos e Correspondências</div>
-						<p class="desc">Guia detalhado sobre usos, limpezas e correspondências vibracionais das ervas na prática da Umbanda, com informações precisas e aplicáveis.</p>
-						<div class="actions">
-							<a class="link" href="livros/guia_de_ervas.html">Ler conteúdo →</a>
+						<div class="body">
+							<div class="tag-row">
+								<sl-tag size="small" variant="primary">Umbanda</sl-tag>
+								<sl-tag size="small" variant="primary">Ervas</sl-tag>
+								<sl-tag size="small" variant="primary">Natureza</sl-tag>
+							</div>
+							<h3 class="title" slot="header">Guia Completo de Ervas</h3>
+							<div class="meta">Apostila prática · Usos e Correspondências</div>
+							<p class="desc">Guia detalhado sobre usos, limpezas e correspondências vibracionais das ervas na prática da Umbanda, com informações precisas e aplicáveis.</p>
+							<div class="actions" slot="footer">
+								<a class="link" href="livros/guia_de_ervas.html">Ler conteúdo →</a>
+							</div>
 						</div>
-					</div>
-				</article>
-				<article class="card" data-title="aula iansã" data-type="apostila" data-tags="umbanda iansã lei movimento direção">
-					<div class="cover" style="background: linear-gradient(135deg, #c77a00 0%, #e8b45a 100%);">
-						<img src="Source/img/Iansa.png" alt="Capa - Aula Iansã" loading="lazy" onerror="this.style.display='none'" />
-						<div class="cover-overlay"></div>
-					</div>
-					<div class="body">
-						<div class="tag-row">
-							<span class="tag">Umbanda</span>
-							<span class="tag">Iansã</span>
-							<span class="tag">Lei</span>
+					</sl-card>
+
+					<sl-card class="card" data-title="aula iansã" data-type="apostila" data-tags="Umbanda Iansã Lei Movimento Direção">
+						<div class="cover" style="background: linear-gradient(135deg, #c77a00 0%, #e8b45a 100%);">
+							<img src="Source/img/Iansa.png" alt="Capa - Aula Iansã" loading="lazy" onerror="this.style.display='none'" />
+							<div class="cover-overlay"></div>
 						</div>
-						<h3 class="title">Iansã: A Mãe da Lei</h3>
-						<div class="meta">Apostila completa · Lei, Movimento e Direção</div>
-						<p class="desc">Fundamentos teológicos, ritualística e práticas de Iansã na Umbanda Sagrada. Um guia para o movimento e a ordem interior.</p>
-						<div class="actions">
-							<a class="link" href="livros/aula_iansa.html">Ler conteúdo →</a>
+						<div class="body">
+							<div class="tag-row">
+								<sl-tag size="small" variant="primary">Umbanda</sl-tag>
+								<sl-tag size="small" variant="primary">Iansã</sl-tag>
+								<sl-tag size="small" variant="primary">Lei</sl-tag>
+							</div>
+							<h3 class="title" slot="header">Iansã: A Mãe da Lei</h3>
+							<div class="meta">Apostila completa · Lei, Movimento e Direção</div>
+							<p class="desc">Fundamentos teológicos, ritualística e práticas de Iansã na Umbanda Sagrada. Um guia para o movimento e a ordem interior.</p>
+							<div class="actions" slot="footer">
+								<a class="link" href="livros/aula_iansa.html">Ler conteúdo →</a>
+							</div>
 						</div>
-					</div>
-				</article>
-				<article class="card" data-title="aula obá" data-type="apostila" data-tags="umbanda obá conhecimento concentração mediunidade terra">
-					<div class="cover" style="background: linear-gradient(135deg, #6b4423 0%, #8b5a3c 100%);">
-						<img src="Source/img/Capa_Oba.png" alt="Capa - Aula Obá" loading="lazy" onerror="this.style.display='none'" />
-						<div class="cover-overlay"></div>
-					</div>
-					<div class="body">
-						<div class="tag-row">
-							<span class="tag">Umbanda</span>
-							<span class="tag">Obá</span>
-							<span class="tag">Conhecimento</span>
+					</sl-card>
+
+					<sl-card class="card" data-title="aula obá" data-type="apostila" data-tags="Umbanda Obá Conhecimento Concentração Mediunidade Terra">
+						<div class="cover" style="background: linear-gradient(135deg, #6b4423 0%, #8b5a3c 100%);">
+							<img src="Source/img/Capa_Oba.png" alt="Capa - Aula Obá" loading="lazy" onerror="this.style.display='none'" />
+							<div class="cover-overlay"></div>
 						</div>
-						<h3 class="title">Obá: Concentração e Sabedoria</h3>
-						<div class="meta">Apostila completa · Conhecimento, Terra Fértil e Foco</div>
-						<p class="desc">A Senhora da Concentração, desenvolvimento mediúnico e transformação através da terra fértil. Fundamentos teológicos e práticas para firmeza espiritual.</p>
-						<div class="actions">
-							<a class="link" href="livros/aula_oba.html">Ler conteúdo →</a>
+						<div class="body">
+							<div class="tag-row">
+								<sl-tag size="small" variant="primary">Umbanda</sl-tag>
+								<sl-tag size="small" variant="primary">Obá</sl-tag>
+								<sl-tag size="small" variant="primary">Conhecimento</sl-tag>
+							</div>
+							<h3 class="title" slot="header">Obá: Concentração e Sabedoria</h3>
+							<div class="meta">Apostila completa · Conhecimento, Terra Fértil e Foco</div>
+							<p class="desc">A Senhora da Concentração, desenvolvimento mediúnico e transformação através da terra fértil. Fundamentos teológicos e práticas para firmeza espiritual.</p>
+							<div class="actions" slot="footer">
+								<a class="link" href="livros/aula_oba.html">Ler conteúdo →</a>
+							</div>
 						</div>
-					</div>
-				</article>
-				<article class="card" data-title="oyá logunã" data-type="apostila" data-tags="umbanda oyá logunã tempo fé desenvolvimento mediúnico">
-					<div class="cover" style="background: linear-gradient(135deg, #6b2d8f 0%, #9b60c0 100%);">
-						<img src="Source/img/Oya_Loguna.png" alt="Capa - Oyá Logunã" loading="lazy" onerror="this.style.display='none'" />
-						<div class="cover-overlay"></div>
-					</div>
-					<div class="body">
-						<div class="tag-row">
-							<span class="tag">Umbanda</span>
-							<span class="tag">Oyá Logunã</span>
-							<span class="tag">Tempo</span>
+					</sl-card>
+
+					<sl-card class="card" data-title="oyá logunã" data-type="apostila" data-tags="Umbanda Oyá Logunã Tempo Fé Desenvolvimento Mediúnico">
+						<div class="cover" style="background: linear-gradient(135deg, #6b2d8f 0%, #9b60c0 100%);">
+							<img src="Source/img/Oya_Loguna.png" alt="Capa - Oyá Logunã" loading="lazy" onerror="this.style.display='none'" />
+							<div class="cover-overlay"></div>
 						</div>
-						<h3 class="title">Oyá Logunã: Senhora do Tempo e da Fé</h3>
-						<div class="meta">Apostila completa · Mistério do Tempo e Desenvolvimento Mediúnico</div>
-						<p class="desc">Fundamentos sobre o Mistério do Tempo, fé em equilíbrio e desenvolvimento mediúnico. Preceitos, rituais e práticas para conexão com a força temporal.</p>
-						<div class="actions">
-							<a class="link" href="livros/aula_oya_loguna.html">Ler conteúdo →</a>
+						<div class="body">
+							<div class="tag-row">
+								<sl-tag size="small" variant="primary">Umbanda</sl-tag>
+								<sl-tag size="small" variant="primary">Oyá Logunã</sl-tag>
+								<sl-tag size="small" variant="primary">Tempo</sl-tag>
+							</div>
+							<h3 class="title" slot="header">Oyá Logunã: Senhora do Tempo e da Fé</h3>
+							<div class="meta">Apostila completa · Mistério do Tempo e Desenvolvimento Mediúnico</div>
+							<p class="desc">Fundamentos sobre o Mistério do Tempo, fé em equilíbrio e desenvolvimento mediúnico. Preceitos, rituais e práticas para conexão com a força temporal.</p>
+							<div class="actions" slot="footer">
+								<a class="link" href="livros/aula_oya_loguna.html">Ler conteúdo →</a>
+							</div>
 						</div>
-					</div>
-				</article>
+					</sl-card>
 				<div id="empty" class="empty" style="display:none">Nenhum resultado. Experimente limpar os filtros.</div>
-			</div>
+				</div>
 		</section>
 
 		<footer>© Copyright Terreiro Tia Maria e Cabocla Jupira</footer>
@@ -245,7 +332,8 @@
 			  const mo = new MutationObserver(swap);
 			  mo.observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
 			})();
-			const themeBtn = document.getElementById('themeBtn');
+		const themeBtn = document.getElementById('themeBtn');
+		if (themeBtn) {
 			const cycleTheme = () => {
 				const current = document.documentElement.getAttribute('data-theme') || 'light';
 				const next = current === 'light' ? 'dark' : current === 'dark' ? 'sepia' : 'light';
@@ -253,40 +341,83 @@
 				localStorage.setItem('book-theme', next);
 			};
 			themeBtn.addEventListener('click', cycleTheme);
-
-			// Search, filters, stats, and persistence
+		}			// Search, filters, stats, and persistence
 			const q = document.getElementById('q');
 			const grid = document.getElementById('grid');
 			const empty = document.getElementById('empty');
 			const stat = document.getElementById('stat');
+			const clearBtn = document.getElementById('clearFilters');
 			const chips = Array.from(document.querySelectorAll('.chip'));
 			const cards = () => Array.from(grid.querySelectorAll('.card'));
+			const tagFilter = document.getElementById('tagFilter');
 
 			const applyState = () => {
 				const term = (q.value || '').trim().toLowerCase();
 				const selected = chips.find(c => c.getAttribute('aria-pressed') === 'true')?.dataset.filter || 'all';
+				const selectedTags = (tagFilter?.value ? (Array.isArray(tagFilter.value) ? tagFilter.value : [tagFilter.value]) : []).map(v => String(v).toLowerCase());
 				let visible = 0;
 				cards().forEach(card => {
 					const hay = (card.dataset.title + ' ' + (card.dataset.type||'') + ' ' + (card.dataset.tags||'')).toLowerCase();
 					const typeOk = (selected === 'all') || card.dataset.type === selected;
-					const match = (!term || hay.includes(term)) && typeOk;
+					const tagsOk = selectedTags.length === 0 || selectedTags.every(t => hay.includes(t));
+					const match = (!term || hay.includes(term)) && typeOk && tagsOk;
 					card.style.display = match ? '' : 'none';
 					if (match) visible++;
 				});
 				empty.style.display = visible === 0 ? '' : 'none';
 				stat.textContent = visible === 1 ? '1 resultado' : visible + ' resultados';
+				// Toggle clear filters button when any filter is active
+				const anyFilter = term || selected !== 'all' || selectedTags.length > 0;
+				if (clearBtn) clearBtn.style.display = anyFilter ? 'inline-block' : 'none';
 				localStorage.setItem('lib.query', q.value);
 				localStorage.setItem('lib.filter', selected);
+				localStorage.setItem('lib.tags', JSON.stringify(selectedTags));
 			};
 
-			// Wire search
-			q.addEventListener('input', applyState);
+			// Wire search with debounce
+			(function(){
+				let t;
+				q.addEventListener('input', () => { clearTimeout(t); t = setTimeout(applyState, 200); });
+			})();
 
-			// Wire chips
-			chips.forEach(chip => chip.addEventListener('click', () => {
-				chips.forEach(c => c.setAttribute('aria-pressed', String(c === chip)));
-				applyState();
-			}));
+			// Wire chips + keyboard navigation
+			chips.forEach(chip => {
+				chip.setAttribute('role','button');
+				chip.addEventListener('click', () => {
+					chips.forEach(c => {
+						c.setAttribute('aria-pressed', String(c === chip));
+						c.setAttribute('aria-current', c === chip ? 'true' : 'false');
+					});
+					applyState();
+				});
+				chip.addEventListener('keydown', (e) => {
+					const idx = chips.indexOf(chip);
+					if (e.key === 'ArrowRight') { e.preventDefault(); const n = chips[Math.min(idx+1, chips.length-1)]; n.focus(); }
+					if (e.key === 'ArrowLeft') { e.preventDefault(); const p = chips[Math.max(idx-1, 0)]; p.focus(); }
+					if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); chip.click(); }
+				});
+			});
+
+			// Wire tag filter (Shoelace)
+			if (tagFilter) {
+				tagFilter.addEventListener('sl-change', applyState);
+			}
+
+			// Clear filters control
+			if (clearBtn) {
+				clearBtn.addEventListener('click', () => {
+					q.value = '';
+					chips.forEach(c => {
+						const isAll = c.dataset.filter === 'all';
+						c.setAttribute('aria-pressed', String(isAll));
+						c.setAttribute('aria-current', isAll ? 'true' : 'false');
+					});
+					if (tagFilter) {
+						try { tagFilter.value = []; } catch(e) {}
+					}
+					applyState();
+				});
+			}
 
 			// Keyboard shortcuts: / focus search, Esc clears, t toggles theme
 			window.addEventListener('keydown', (e) => {
@@ -297,12 +428,34 @@
 
 			// Restore persisted UI
 			(function init() {
+				// Load Swiper JS and initialize banner
+				try {
+					const swiperScript = document.createElement('script');
+					swiperScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+					swiperScript.onload = () => {
+						if (window.Swiper) {
+							new Swiper('.swiper', {
+								loop: true,
+								autoplay: { delay: 4000, disableOnInteraction: false },
+								pagination: { el: '.swiper-pagination', clickable: true },
+								effect: 'slide',
+								speed: 600
+							});
+						}
+					};
+					document.head.appendChild(swiperScript);
+				} catch(e) { /* ignore */ }
 				const savedQ = localStorage.getItem('lib.query');
 				const savedF = localStorage.getItem('lib.filter');
+				const savedTags = (() => { try { return JSON.parse(localStorage.getItem('lib.tags')||'[]'); } catch(e){ return []; } })();
 				if (savedQ) q.value = savedQ;
 				if (savedF) {
 					const btn = chips.find(c => c.dataset.filter === savedF);
 					if (btn) chips.forEach(c => c.setAttribute('aria-pressed', String(c === btn)));
+				}
+				if (tagFilter && savedTags.length) {
+					// Shoelace <sl-select> accepts setSelected in v2; fallback: set value directly
+					try { tagFilter.value = savedTags; } catch(e) { /* ignore */ }
 				}
 				applyState();
 			})();

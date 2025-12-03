@@ -60,7 +60,15 @@ module.exports = async (req, res) => {
     // T027: PATCH /api/users/:userId - Update user
     if (req.method === 'PATCH') {
       try {
-        const { nome, cpf, email, password, isAdmin } = req.body || {};
+        const { nome, cpf, email, password, isAdmin, status } = req.body || {};
+        
+        // Allow status-only updates (toggle active/inactive) without requiring other fields
+        const onlyStatusProvided = (status !== undefined) && (nome === undefined && cpf === undefined && email === undefined && password === undefined && isAdmin === undefined);
+        if (onlyStatusProvided) {
+          await updateUser(userId, { status });
+          res.status(200).json({ success: true, user: { id: userId, status } });
+          return;
+        }
         
         // Get current admin user ID from session
         const currentUserId = req.session?.userId;

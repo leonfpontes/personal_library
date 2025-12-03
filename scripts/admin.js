@@ -1,4 +1,63 @@
 (function(){
+  // Toast helper using Shoelace <sl-alert>
+  // Ensure toast container exists at top-right
+  function getToastContainer() {
+    let container = document.getElementById('toast-container');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'toast-container';
+      container.style.cssText = 'position: fixed; top: 16px; right: 16px; z-index: 10000; display: flex; flex-direction: column; gap: 8px; pointer-events: none;';
+      document.body.appendChild(container);
+    }
+    return container;
+  }
+
+  function toast(variant, message, duration = 3000) {
+    const container = getToastContainer();
+    const alert = Object.assign(document.createElement('sl-alert'), {
+      variant,
+      closable: true,
+      duration,
+      innerHTML: message
+    });
+    alert.style.pointerEvents = 'auto';
+    container.appendChild(alert);
+    if (typeof alert.toast === 'function') {
+      alert.toast();
+    } else {
+      alert.setAttribute('open', '');
+    }
+    // Auto-remove from DOM after closing
+    alert.addEventListener('sl-after-hide', () => alert.remove());
+  }
+
+  function markInvalid(el, msg) {
+    if (!el) return;
+    el.setAttribute('invalid', '');
+    if (msg && typeof el.setCustomValidity === 'function') el.setCustomValidity(msg);
+    if (typeof el.focus === 'function') el.focus();
+  }
+
+  function clearInvalid(el) {
+    if (!el) return;
+    el.removeAttribute('invalid');
+    if (typeof el.setCustomValidity === 'function') el.setCustomValidity('');
+  }
+
+  // Fix Shoelace duplicate id="input" warning
+  function fixShoelaceInputIds() {
+    const inputs = document.querySelectorAll('#userForm sl-input');
+    inputs.forEach((slInput, index) => {
+      // Access the internal input element via Shoelace's shadow DOM
+      if (slInput.shadowRoot) {
+        const internalInput = slInput.shadowRoot.querySelector('input');
+        if (internalInput && internalInput.id === 'input') {
+          internalInput.id = `${slInput.id || 'input'}-internal-${index}`;
+        }
+      }
+    });
+  }
+
   const BOOKS = [
     { slug: 'vivencia_pombogira', title: 'Pombogira' },
     { slug: 'guia_de_ervas', title: 'Guia de Ervas' },
@@ -6,6 +65,11 @@
     { slug: 'aula_oba', title: 'Aula Obá' },
     { slug: 'aula_oya_loguna', title: 'Aula Oyá Logunã' },
   ];
+
+  // T012-T013: State for sorting and filtering
+  let allUsers = []; // Store all users for filtering
+  let currentSortColumn = null;
+  let currentSortDirection = 'asc';
 
   // Validate CPF format: strip non-digits and check for exactly 11 digits
   function validateCPF(cpf) {
@@ -36,7 +100,65 @@
     const res = await fetch('/api/users', { headers: { 'X-Admin-Token': token() } });
     if (!res.ok) throw new Error('Falha ao carregar usuários');
     const data = await res.json();
-    return data.users || [];
+    allUsers = data.users || []; // T013: Store for filtering
+    return allUsers;
+  }
+
+  // T012: Sort users by column
+  function sortUsers(column) {
+    if (currentSortColumn === column) {
+      // Toggle direction if same column
+      currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+    } else {
+      currentSortColumn = column;
+      currentSortDirection = 'asc';
+    }
+
+    allUsers.sort((a, b) => {
+      let aVal = a[column] || '';
+      let bVal = b[column] || '';
+      
+      // Handle string comparison
+      if (typeof aVal === 'string') {
+        aVal = aVal.toLowerCase();
+        bVal = bVal.toLowerCase();
+      }
+      
+      if (aVal < bVal) return currentSortDirection === 'asc' ? -1 : 1;
+      if (aVal > bVal) return currentSortDirection === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    renderUsers(allUsers);
+    updateSortIndicators();
+  }
+
+  // T012: Update visual sort indicators on headers
+  function updateSortIndicators() {
+    document.querySelectorAll('th[data-sortable]').forEach(th => {
+      th.classList.remove('sorted-asc', 'sorted-desc');
+      if (th.dataset.sortable === currentSortColumn) {
+        th.classList.add(`sorted-${currentSortDirection}`);
+      }
+    });
+  }
+
+  // T013: Filter users by search term
+  function filterUsers(searchTerm) {
+    const term = searchTerm.toLowerCase().trim();
+    if (!term) {
+      renderUsers(allUsers);
+      return;
+    }
+
+    const filtered = allUsers.filter(u => {
+      const nome = (u.nome || '').toLowerCase();
+      const email = (u.email || '').toLowerCase();
+      const cpf = (u.cpf || '').toLowerCase();
+      return nome.includes(term) || email.includes(term) || cpf.includes(term);
+    });
+
+    renderUsers(filtered);
   }
 
   function renderUsers(users){
@@ -44,72 +166,106 @@
     tbody.innerHTML = '';
     users.forEach(u => {
       const tr = document.createElement('tr');
+      // Nome
       const nameTd = document.createElement('td'); nameTd.textContent = u.nome;
+      // Email
       const emailTd = document.createElement('td'); emailTd.textContent = u.email;
-      const statusTd = document.createElement('td'); statusTd.textContent = u.status;
-      const accessTd = document.createElement('td');
-      const form = document.createElement('div'); form.className = 'tags';
-      BOOKS.forEach(b => {
-        const label = document.createElement('label'); label.className = 'tag';
-        const cb = document.createElement('input'); cb.type = 'checkbox'; cb.dataset.slug = b.slug; cb.style.marginRight = '6px';
-        label.appendChild(cb); label.appendChild(document.createTextNode(b.title));
-        form.appendChild(label);
+      // CPF
+      const cpfTd = document.createElement('td'); cpfTd.textContent = formatCPF(u.cpf);
+      // Status badge Shoelace
+      const statusTd = document.createElement('td');
+      const badge = document.createElement('sl-badge');
+      badge.variant = u.status === 'active' ? 'success' : 'neutral';
+      badge.pill = true;
+      badge.style.cursor = 'pointer';
+      badge.textContent = u.status === 'active' ? 'Ativo' : 'Inativo';
+      badge.title = 'Clique para alternar';
+      badge.addEventListener('click', async () => {
+        // Alternar status
+        const novo = u.status === 'active' ? 'inactive' : 'active';
+        const res = await fetch(`/api/users?userId=${encodeURIComponent(u.id)}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json', 'X-Admin-Token': token() },
+          body: JSON.stringify({ status: novo })
+        });
+        if (res.ok) {
+          u.status = novo;
+          renderUsers(allUsers);
+        } else {
+          toast('danger', 'Erro ao atualizar status');
+        }
       });
-      accessTd.appendChild(form);
+      statusTd.appendChild(badge);
+      // Admin badge
+      const adminTd = document.createElement('td');
+      const adminBadge = document.createElement('sl-badge');
+      adminBadge.variant = u.isAdmin ? 'primary' : 'neutral';
+      adminBadge.pill = true;
+      adminBadge.textContent = u.isAdmin ? 'Admin' : '';
+      adminTd.appendChild(adminBadge);
+      // Ações: ícones Shoelace
       const actionsTd = document.createElement('td');
-      
-      // T023: Add Edit button
-      const btnEdit = document.createElement('button');
-      btnEdit.className = 'btn secondary';
-      btnEdit.textContent = 'Editar';
-      btnEdit.style.marginRight = '8px';
-      btnEdit.addEventListener('click', () => editUser(u));
-      actionsTd.appendChild(btnEdit);
-      
-      // T031: Add Delete button (for US5)
-      const btnDelete = document.createElement('button');
-      btnDelete.className = 'btn';
-      btnDelete.textContent = 'Excluir';
-      btnDelete.style.marginRight = '8px';
-      btnDelete.style.backgroundColor = '#c53030';
-      btnDelete.addEventListener('click', () => deleteUser(u.id, u.nome));
-      actionsTd.appendChild(btnDelete);
-      
-      const btnSync = document.createElement('button');
-      btnSync.className = 'btn secondary';
-      btnSync.textContent = 'Salvar acessos';
-      actionsTd.appendChild(btnSync);
-
+      actionsTd.style.display = 'flex';
+      actionsTd.style.gap = '8px';
+      // Editar (abre drawer) com tooltip
+      const btnEdit = document.createElement('sl-icon-button');
+      btnEdit.setAttribute('name', 'pencil');
+      btnEdit.setAttribute('label', 'Editar');
+      btnEdit.setAttribute('variant', 'primary');
+      btnEdit.addEventListener('click', () => openUserDrawer(u));
+      const tipEdit = document.createElement('sl-tooltip');
+      tipEdit.setAttribute('content', 'Editar usuário');
+      tipEdit.appendChild(btnEdit);
+      actionsTd.appendChild(tipEdit);
+      // Excluir com tooltip
+      const btnDelete = document.createElement('sl-icon-button');
+      btnDelete.setAttribute('name', 'trash');
+      btnDelete.setAttribute('label', 'Excluir');
+      btnDelete.setAttribute('variant', 'danger');
+      btnDelete.addEventListener('click', () => promptDelete(u.id, u.nome));
+      const tipDelete = document.createElement('sl-tooltip');
+      tipDelete.setAttribute('content', 'Excluir usuário');
+      tipDelete.appendChild(btnDelete);
+      actionsTd.appendChild(tipDelete);
       tr.appendChild(nameTd);
       tr.appendChild(emailTd);
+      tr.appendChild(cpfTd);
       tr.appendChild(statusTd);
-      tr.appendChild(accessTd);
+      tr.appendChild(adminTd);
       tr.appendChild(actionsTd);
       tbody.appendChild(tr);
-
-      // Load current grants
-      loadGrants(u.id, form).catch(()=>{});
-      btnSync.addEventListener('click', () => syncGrants(u.id, form).catch(err => alert(err.message)));
     });
   }
 
-  async function loadGrants(userId, container){
-    const res = await fetch(`/api/grants?userId=${encodeURIComponent(userId)}`, { headers: { 'X-Admin-Token': token() } });
-    if (!res.ok) return;
-    const data = await res.json();
-    console.log('[loadGrants] Data received:', data);
-    const active = new Set((data.grants||[]).filter(g => g.status === 'active').map(g => g.bookSlug));
-    console.log('[loadGrants] Active grants:', Array.from(active));
-    container.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-      cb.checked = active.has(cb.dataset.slug);
-      console.log(`[loadGrants] Checkbox ${cb.dataset.slug}: ${cb.checked}`);
+  // Novo: renderizar acessos no drawer
+  async function renderDrawerAccess(userId) {
+    const container = document.getElementById('drawerAccessBooks');
+    container.innerHTML = '';
+    let active = new Set();
+    if (userId) {
+      try {
+        const res = await fetch(`/api/grants?userId=${encodeURIComponent(userId)}`, { headers: { 'X-Admin-Token': token() } });
+        if (res.ok) {
+          const data = await res.json();
+          active = new Set((data.grants || []).filter(g => g.status === 'active').map(g => g.bookSlug));
+        }
+      } catch (e) {
+        // Fallback: no active grants
+      }
+    }
+    BOOKS.forEach(b => {
+      const cb = document.createElement('sl-checkbox');
+      cb.value = b.slug;
+      cb.checked = active.has(b.slug);
+      cb.textContent = b.title;
+      container.appendChild(cb);
     });
   }
 
   async function syncGrants(userId, container){
-    const checks = Array.from(container.querySelectorAll('input[type="checkbox"]').values());
+    const checks = Array.from(container.querySelectorAll('sl-checkbox'));
     for (const cb of checks){
-      const slug = cb.dataset.slug;
+      const slug = cb.value;
       const action = cb.checked ? 'grant' : 'revoke';
       const res = await fetch('/api/grants', {
         method: 'POST',
@@ -118,54 +274,60 @@
       });
       if (!res.ok) throw new Error('Falha ao atualizar concessões');
     }
-    alert('Acessos atualizados.');
+    toast('success', 'Acessos atualizados.');
   }
 
-  // T024: Edit user - fetch data and populate form
-  async function editUser(user){
-    // T029: Block self-edit
-    const currentUser = getCurrentUserId();
-    if (currentUser && user.id === currentUser) {
-      alert('Você não pode editar sua própria conta por segurança.');
-      return;
+  // Drawer único para criar/editar usuário
+  function openUserDrawer(user) {
+    const drawer = document.getElementById('userDrawer');
+    const form = document.getElementById('userForm');
+    // Limpar
+    form.reset();
+    form.dataset.userId = user?.id || '';
+    // Preencher campos se edição
+    if (user) {
+      form.querySelector('[name="name"]').value = user.nome || '';
+      form.querySelector('[name="email"]').value = user.email || '';
+      form.querySelector('[name="cpf"]').value = formatCPF(user.cpf || '');
+      form.querySelector('[name="is_admin"]').checked = !!user.isAdmin;
+      // Senha em branco (não altera)
+      form.querySelector('[name="password"]').value = '';
+      renderDrawerAccess(user.id);
+    } else {
+      // Novo usuário: renderiza opções de livros (todas desmarcadas)
+      renderDrawerAccess(null);
     }
-
-    // Populate form fields
-    document.getElementById('nome').value = user.nome;
-    // Use full CPF (now available in listUsers for admin context)
-    document.getElementById('cpf').value = formatCPF(user.cpf || '');
-    document.getElementById('email').value = user.email;
-    // Show masked password value; treat '********' as keep-current sentinel
-    document.getElementById('password').value = '********';
-    // Check admin status from is_admin field
-    document.getElementById('isAdmin').checked = !!user.isAdmin;
+    drawer.label = user ? 'Editar Usuário' : 'Novo Usuário';
+    drawer.show();
     
-    // T025: Set hidden field to track edit mode
-    document.getElementById('editingUserId').value = user.id;
-    
-    // T028: Show cancel button, change submit button text
-    document.getElementById('createUser').textContent = 'Salvar Alterações';
-    document.getElementById('cancelEdit').style.display = 'inline-block';
-    
-    // Scroll to form
-    document.querySelector('.panel').scrollIntoView({ behavior: 'smooth' });
+    // Fix Shoelace duplicate input IDs after drawer renders
+    drawer.addEventListener('sl-after-show', () => {
+      fixShoelaceInputIds();
+    }, { once: true });
   }
 
   // T032: Delete user with confirmation (for US5)
+  let pendingDelete = null;
+  function promptDelete(userId, userName){
+    pendingDelete = { userId, userName };
+    const dlg = document.getElementById('confirmDeleteDialog');
+    const txt = document.getElementById('confirmDeleteText');
+    if (txt) txt.textContent = `Excluir usuário "${userName}"? Esta ação não pode ser desfeita.`;
+    dlg.show();
+  }
+
   async function deleteUser(userId, userName){
     // T036: Block self-deletion
     const currentUser = getCurrentUserId();
     if (currentUser && userId === currentUser) {
-      alert('Você não pode excluir sua própria conta.');
+      toast('warning', 'Você não pode excluir sua própria conta.');
       return;
     }
 
-    // T033: Confirmation dialog
-    const confirmed = confirm(`Excluir usuário "${userName}"?\n\nEsta ação não pode ser desfeita.`);
-    if (!confirmed) return;
+    // T033: handled by dialog
 
     // T034: Send DELETE request
-    const msg = document.getElementById('createMsg');
+    // Usar alerts para feedback simples (será substituído por Shoelace notifications em T025)
     try {
       const res = await fetch(`/api/users?userId=${encodeURIComponent(userId)}`, {
         method: 'DELETE',
@@ -177,9 +339,9 @@
       }
       // T035: Refresh table after successful deletion
       await refresh();
-      showMsg(msg, 'Usuário excluído com sucesso!', 'success');
+      toast('success', 'Usuário excluído com sucesso!');
     } catch (err) {
-      showMsg(msg, err.message);
+      toast('danger', err.message || 'Erro ao excluir usuário');
     }
   }
 
@@ -198,35 +360,21 @@
     return null;
   }
 
+  // T015/T016: Criar novo usuário via drawer
   async function createUser(){
-    const editingUserId = document.getElementById('editingUserId').value;
-    
-    // T026: Route to update if in edit mode
-    if (editingUserId) {
-      return await updateUser(editingUserId);
-    }
-    
-    // CREATE mode: original logic
-    const nome = document.getElementById('nome').value.trim();
-    const cpfRaw = document.getElementById('cpf').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const password = document.getElementById('password').value;
-    const isAdmin = document.getElementById('isAdmin').checked;
-    const msg = document.getElementById('createMsg');
+    const msg = document.getElementById('createMsg'); // Reuso da área de mensagem existente (pode ficar oculta)
+    const nome = document.getElementById('create-nome').value.trim();
+    const cpfRaw = document.getElementById('create-cpf').value.trim();
+    const email = document.getElementById('create-email').value.trim();
+    const password = document.getElementById('create-password').value;
+    const isAdmin = document.getElementById('create-isAdmin').checked;
 
-    // Validate CPF format
     const cpf = validateCPF(cpfRaw);
-    if (!cpf) {
-      showMsg(msg, 'CPF inválido (deve ter 11 dígitos)');
-      return;
-    }
+    if (!cpf) { toast('warning', 'CPF inválido (11 dígitos).'); return; }
 
-    // Confirm admin creation
     if (isAdmin) {
       const confirmed = confirm('Criar usuário como ADMIN? Terá acesso total.');
-      if (!confirmed) {
-        return;
-      }
+      if (!confirmed) return;
     }
 
     const res = await fetch('/api/users', {
@@ -235,89 +383,170 @@
       body: JSON.stringify({ nome, cpf, email, password, isAdmin })
     });
     const data = await res.json();
-    if (!res.ok){ showMsg(msg, data.error || 'Erro ao cadastrar'); return; }
-    showMsg(msg, 'Usuário cadastrado com sucesso', 'success');
+    if (!res.ok){ toast('danger', data.error || 'Erro ao cadastrar'); return; }
+    toast('success', 'Usuário cadastrado com sucesso');
+    document.getElementById('createDrawer').hide();
     await refresh();
+    document.getElementById('createUserForm').reset();
   }
 
   // T026: Update user (PATCH request)
+  // T019: Salvar alterações de usuário via drawer de edição
   async function updateUser(userId){
-    const nome = document.getElementById('nome').value.trim();
-    const cpfRaw = document.getElementById('cpf').value.trim();
-    const email = document.getElementById('email').value.trim();
-    let password = document.getElementById('password').value; // '********' or empty = keep current
-    const isAdmin = document.getElementById('isAdmin').checked;
-    const msg = document.getElementById('createMsg');
+    const nome = document.getElementById('edit-nome').value.trim();
+    const cpfRaw = document.getElementById('edit-cpf').value.trim();
+    const email = document.getElementById('edit-email').value.trim();
+    let password = document.getElementById('edit-password').value;
+    const isAdmin = document.getElementById('edit-isAdmin').checked;
 
-    // Validate CPF format
     const cpf = validateCPF(cpfRaw);
-    if (!cpf) {
-      showMsg(msg, 'CPF inválido (deve ter 11 dígitos)');
-      return;
-    }
+    if (!cpf) { toast('warning', 'CPF inválido (11 dígitos).'); return; }
 
-    // Build update payload (only include password if provided)
     const payload = { nome, cpf, email, isAdmin };
-    if (password && password !== '********') {
-      payload.password = password;
-    }
+    if (password) payload.password = password; // Em branco mantém atual
 
-    // Use query param to avoid dynamic route 404
     const res = await fetch(`/api/users?userId=${encodeURIComponent(userId)}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json', 'X-Admin-Token': token() },
       body: JSON.stringify(payload)
     });
     const data = await res.json();
-    if (!res.ok){ showMsg(msg, data.error || 'Erro ao atualizar usuário'); return; }
-    showMsg(msg, 'Usuário atualizado com sucesso!', 'success');
-    cancelEditMode(); // T028: Reset form to create mode
+    if (!res.ok){ toast('danger', data.error || 'Erro ao atualizar'); return; }
+    toast('success', 'Usuário atualizado com sucesso!');
+    document.getElementById('editDrawer').hide();
     await refresh();
   }
 
   // T028: Cancel edit mode and reset form
   function cancelEditMode(){
-    document.getElementById('editingUserId').value = '';
-    document.getElementById('nome').value = '';
-    document.getElementById('cpf').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('password').value = '';
-    document.getElementById('isAdmin').checked = false;
-    document.getElementById('createUser').textContent = 'Cadastrar usuário';
-    document.getElementById('cancelEdit').style.display = 'none';
-    document.getElementById('createMsg').style.display = 'none';
+    document.getElementById('editUserForm').reset();
+    document.getElementById('edit-editingUserId').value='';
+    document.getElementById('editDrawer').hide();
   }
 
   async function refresh(){ const users = await fetchUsers(); renderUsers(users); }
 
   function init(){
-    document.getElementById('createUser').addEventListener('click', (e) => { e.preventDefault(); createUser().catch(err => alert(err.message)); });
-    
-    // T028: Cancel edit button
-    document.getElementById('cancelEdit').addEventListener('click', (e) => {
+    // Botão para abrir drawer de criação
+    const newUserBtn = document.getElementById('newUserBtn');
+    if (newUserBtn){ newUserBtn.addEventListener('click', () => openUserDrawer(null)); }
+
+    // Submit drawer único
+    document.getElementById('userForm')?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      cancelEditMode();
-    });
-    
-    // T020: Apply CPF mask on input
-    const cpfField = document.getElementById('cpf');
-    cpfField.addEventListener('input', (e) => {
-      const formatted = formatCPF(e.target.value);
-      e.target.value = formatted;
-    });
-    
-    // T021: Block non-numeric characters in CPF field
-    cpfField.addEventListener('keypress', (e) => {
-      // Allow only numbers (0-9)
-      if (!/[0-9]/.test(e.key) && e.key !== 'Backspace' && e.key !== 'Delete' && e.key !== 'Tab') {
-        e.preventDefault();
+      const form = e.target;
+      const userId = form.dataset.userId;
+      const nomeInput = form.querySelector('sl-input[name="name"]');
+      const emailInput = form.querySelector('sl-input[name="email"]');
+      const cpfInput = form.querySelector('sl-input[name="cpf"]');
+      const passInput = form.querySelector('sl-input[name="password"]');
+      const adminInput = form.querySelector('sl-checkbox[name="is_admin"]');
+
+      [nomeInput, emailInput, cpfInput, passInput].forEach(clearInvalid);
+
+      const nome = (nomeInput?.value || '').trim();
+      const email = (emailInput?.value || '').trim();
+      const cpfRaw = (cpfInput?.value || '').trim();
+      const password = passInput?.value || '';
+      const isAdmin = !!(adminInput?.checked);
+      const cpf = validateCPF(cpfRaw);
+      if (!nome || nome.length < 3) { markInvalid(nomeInput); toast('warning', 'Informe um nome válido (mínimo 3 caracteres).'); return; }
+      const emailOk = /.+@.+\..+/.test(email);
+      if (!emailOk) { markInvalid(emailInput); toast('warning', 'Informe um email válido.'); return; }
+      if (!cpf) { markInvalid(cpfInput); toast('warning', 'CPF inválido (11 dígitos).'); return; }
+      if (!userId && (!password || password.length < 8)) { markInvalid(passInput); toast('warning', 'Senha deve ter no mínimo 8 caracteres.'); return; }
+      if (userId && password && password.length < 8) { markInvalid(passInput); toast('warning', 'Senha deve ter no mínimo 8 caracteres.'); return; }
+      const payload = { nome, email, cpf, isAdmin };
+      if (password) payload.password = password;
+      const saveBtn = document.getElementById('saveUserBtn');
+      if (saveBtn) { saveBtn.loading = true; saveBtn.disabled = true; }
+      try {
+        let res, data;
+        if (userId) {
+          // Editar
+          res = await fetch(`/api/users?userId=${encodeURIComponent(userId)}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json', 'X-Admin-Token': token() },
+            body: JSON.stringify(payload)
+          });
+          data = await res.json().catch(() => ({}));
+          if (!res.ok) throw new Error(data.error || 'Erro ao atualizar');
+          toast('success', 'Usuário atualizado com sucesso!');
+          try {
+            await syncGrants(userId, document.getElementById('drawerAccessBooks'));
+          } catch (e) {
+            toast('warning', 'Usuário salvo, mas falhou ao salvar acessos.');
+          }
+        } else {
+          // Criar
+          res = await fetch('/api/users', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'X-Admin-Token': token() },
+            body: JSON.stringify(payload)
+          });
+          data = await res.json().catch(() => ({}));
+          if (!res.ok) throw new Error(data.error || 'Erro ao cadastrar');
+          toast('success', 'Usuário cadastrado com sucesso');
+          const newId = data?.user?.id;
+          if (newId) {
+            try {
+              await syncGrants(newId, document.getElementById('drawerAccessBooks'));
+            } catch (e) {
+              toast('warning', 'Usuário criado, mas falhou ao salvar acessos.');
+            }
+          }
+        }
+        document.getElementById('userDrawer').hide();
+        await refresh();
+        form.reset();
+      } catch (err) {
+        toast('danger', err.message || 'Erro ao salvar usuário');
+      } finally {
+        if (saveBtn) { saveBtn.loading = false; saveBtn.disabled = false; }
       }
     });
-    
-    // Auto-load users on page load
+
+    // Cancelar drawer
+    document.getElementById('cancelBtn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('userDrawer').hide();
+    });
+
+    // Delete dialog wiring
+    const dlg = document.getElementById('confirmDeleteDialog');
+    document.getElementById('confirmDeleteNo')?.addEventListener('click', () => dlg.hide());
+    document.getElementById('confirmDeleteYes')?.addEventListener('click', async () => {
+      if (!pendingDelete) { dlg.hide(); return; }
+      const { userId, userName } = pendingDelete; pendingDelete = null;
+      dlg.hide();
+      await deleteUser(userId, userName);
+    });
+
+    // Máscara CPF
+    const cpfField = document.querySelector('#userForm [name="cpf"]');
+    if (cpfField) {
+      cpfField.addEventListener('input', (e) => {
+        e.target.value = formatCPF(e.target.value);
+      });
+      cpfField.addEventListener('keypress', (e) => {
+        if (!/[0-9]/.test(e.key) && !['Backspace','Delete','Tab'].includes(e.key)) e.preventDefault();
+      });
+    }
+
+    // Sorting
+    document.querySelectorAll('th[data-sortable]').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => sortUsers(th.dataset.sortable));
+    });
+
+    // Filtering
+    const searchInput = document.getElementById('userSearch');
+    searchInput?.addEventListener('input', e => filterUsers(e.target.value));
+
+    // Carregar usuários
     refresh().catch(err => {
       console.error('Erro ao carregar usuários:', err);
-      alert('Erro ao carregar usuários. Verifique se você está logado como admin.');
+      toast('danger', 'Erro ao carregar usuários. Verifique se você está logado como admin.');
     });
   }
 

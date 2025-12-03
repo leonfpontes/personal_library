@@ -1,9 +1,8 @@
-# Specification Quality Checklist: Login e Controle de Acesso da Biblioteca
+# Specification Quality Checklist: AntDesign UI Facelift
 
-**Purpose**: Validate specification completeness and quality before proceeding to planning
-**Created**: 2025-11-25
-**Feature**: ../spec.md
-
+**Purpose**: Validate specification completeness and quality before proceeding to planning  
+**Created**: 2025-11-26  
+**Feature**: [spec.md](../spec.md)
 
 ## Content Quality
 
@@ -32,4 +31,6 @@
 
 ## Notes
 
-- Clarifications pending (max 3): backend permitido (serverless?), escopo de proteção (melhor esforço), regras de CPF (validação/retensão/consentimento). Atualizar spec após respostas e marcar itens pendentes como concluídos.
+**Resolution**: The CDN vs NPM clarification marker was resolved during the planning phase. Research (research.md) determined that AntDesign requires React runtime, which violates Constitutional Principle I (static-first architecture). The feature pivoted to Shoelace UI (Web Components via CDN), documented in the spec.md Clarifications section.
+
+**Status**: All clarifications complete. Feature ready for implementation.

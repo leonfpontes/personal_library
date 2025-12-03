@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Painel Admin — Biblioteca</title>
-    <meta name="description" content="Gerencie usuários e concessões de acesso por livro." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel Admin — Biblioteca</title>
+  <meta name="description" content="Gerencie usuários e concessões de acesso por livro." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  
+  <!-- Shoelace CDN -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <style>
       :root { --bg:#f7f6f4; --fg:#161514; --card:#fff; --border:#e6e2dc; --accent:#2e5c8f; --accent-2:#689dd9; --muted:#6b665f; }
       body { margin:0; background:var(--bg); color:var(--fg); font: 400 16px/1.6 Roboto, system-ui, sans-serif; }
@@ -63,60 +70,66 @@
       </nav>
     </header>
     <main>
-      <section class="panel">
-        <h2>Cadastrar novo usuário</h2>
-        <div class="row">
-          <div>
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" placeholder="Nome completo" />
-          </div>
-          <div>
-            <label for="cpf">CPF (11 dígitos)</label>
-            <input id="cpf" type="text" placeholder="Somente números" pattern="^\d{11}$" />
-          </div>
-        </div>
-        <div class="row">
-          <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="email@exemplo.com" />
-          </div>
-          <div>
-            <label for="password">Senha</label>
-            <input id="password" type="password" placeholder="mínimo 8 caracteres" />
-          </div>
-        </div>
-        <label style="margin-top: 12px;">
-          <input id="isAdmin" type="checkbox" /> 
-          Usuário Admin (acesso total)
-        </label>
-        <!-- T025: Hidden field to track edit mode -->
-        <input id="editingUserId" type="hidden" value="" />
-        <div style="margin-top:10px;">
-          <button id="createUser" class="btn">Cadastrar usuário</button>
-          <!-- T028: Cancel edit button -->
-          <button id="cancelEdit" class="btn secondary" style="display:none; margin-left:8px;">Cancelar edição</button>
-        </div>
-        <div id="createMsg" class="notice" style="display:none;"></div>
-      </section>
 
-      <section class="panel">
-        <h2>Usuários</h2>
-        <div style="overflow-x: auto;">
-          <table>
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Status</th>
-                <th>Acessos</th>
-                <th>Ações</th>
-              </tr>
-            </thead>
-            <tbody id="usersTbody"></tbody>
-          </table>
-        </div>
+      <section class="panel" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+        <h2 style="margin:0;">Gerenciar usuários</h2>
+        <sl-button id="newUserBtn" variant="primary" size="small">Novo Usuário</sl-button>
       </section>
+      <div style="margin-bottom: 16px;">
+        <sl-input 
+          id="userSearch" 
+          placeholder="Buscar por nome, email ou CPF..." 
+          clearable
+          size="medium"
+        >
+          <sl-icon name="search" slot="prefix"></sl-icon>
+        </sl-input>
+      </div>
+      <div style="overflow-x: auto;">
+        <table class="shoelace-table" id="usersTable">
+          <thead>
+            <tr>
+              <th data-sortable="nome">Nome</th>
+              <th data-sortable="email">Email</th>
+              <th>CPF</th>
+              <th>Status</th>
+              <th>Admin</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="usersTbody">
+            <!-- Populado por JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Drawer único para criar/editar usuário -->
+      <sl-drawer label="Usuário" id="userDrawer" placement="end">
+        <form id="userForm" style="display: flex; flex-direction: column; gap: 16px;">
+          <sl-input id="userName" label="Nome" name="name" required minlength="3" help-text="Mínimo 3 caracteres"></sl-input>
+          <sl-input id="userEmail" label="Email" type="email" name="email" required help-text="Informe um email válido"></sl-input>
+          <sl-input id="userCpf" label="CPF" name="cpf" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required help-text="11 dígitos"></sl-input>
+          <sl-input id="userPassword" label="Senha" type="password" name="password" toggle-password help-text="Mínimo 8 caracteres (obrigatória ao criar)"></sl-input>
+          <sl-checkbox id="userIsAdmin" name="is_admin">Administrador</sl-checkbox>
+          <div>
+            <label style="font-size: 13px; color: var(--sl-color-neutral-600);">Acessos aos livros:</label>
+            <div id="drawerAccessBooks" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px;"></div>
+          </div>
+        </form>
+        <div slot="footer">
+          <sl-button variant="primary" id="saveUserBtn" type="submit" form="userForm">Salvar</sl-button>
+          <sl-button id="cancelBtn" type="button">Cancelar</sl-button>
+        </div>
+      </sl-drawer>
+      <!-- Confirmação de exclusão -->
+      <sl-dialog label="Confirmar exclusão" id="confirmDeleteDialog">
+        <p id="confirmDeleteText">Tem certeza que deseja excluir?</p>
+        <div slot="footer">
+          <sl-button id="confirmDeleteNo" variant="neutral">Cancelar</sl-button>
+          <sl-button id="confirmDeleteYes" variant="danger">Excluir</sl-button>
+        </div>
+      </sl-dialog>
+      <script src="../scripts/admin.js"></script>
     </main>
-    <script src="../scripts/admin.js"></script>
   </body>
 </html>

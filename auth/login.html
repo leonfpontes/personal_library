@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login — Biblioteca</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -39,61 +43,9 @@
       margin: 0 0 24px; 
       line-height: 1.5;
     }
-    label { 
-      display: block; 
-      font-weight: 600; 
-      margin: 16px 0 6px; 
-      font-size: 14px;
-    }
-    input { 
-      width: 100%; 
-      padding: 12px; 
-      border: 1px solid #ddd; 
-      border-radius: 8px; 
-      font-size: 16px;
-      transition: border-color 0.2s;
-    }
-    input:focus {
-      outline: none;
-      border-color: #1f6feb;
-      box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.1);
-    }
-    button { 
-      margin-top: 24px; 
-      width: 100%; 
-      padding: 12px; 
-      border: none; 
-      border-radius: 8px; 
-      font-weight: 700; 
-      font-size: 16px;
-      background: #1f6feb; 
-      color: white; 
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    button:hover:not(:disabled) { 
-      background: #1557c0; 
-    }
-    button:disabled { 
-      opacity: 0.6; 
-      cursor: not-allowed; 
-    }
-    .error { 
-      color: #b10e3c; 
-      margin-top: 12px; 
-      padding: 10px; 
-      background: #fef2f2; 
-      border-radius: 6px;
-      font-size: 14px;
-    }
-    .success { 
-      color: #228b22; 
-      margin-top: 12px; 
-      padding: 10px; 
-      background: #f0fdf4; 
-      border-radius: 6px;
-      font-size: 14px;
-    }
+    /* Shoelace visual tweaks */
+    sl-input::part(base), sl-button::part(base) { font-family: Roboto, system-ui, sans-serif; }
+    sl-button { width: 100%; margin-top: 16px; }
     .links { 
       margin-top: 24px; 
       font-size: 14px; 
@@ -122,16 +74,10 @@
     <h1>Entrar</h1>
     <p class="meta">Use suas credenciais para acessar a biblioteca.</p>
 
-    <form id="loginForm">
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" autocomplete="username" required />
-
-      <label for="password">Senha</label>
-      <input id="password" name="password" type="password" autocomplete="current-password" required />
-
-      <button id="submitBtn" type="submit">Entrar</button>
-      <div id="msg" class="error" style="display:none"></div>
-      <div id="ok" class="success" style="display:none"></div>
+    <form id="loginForm" novalidate>
+      <sl-input id="email" name="email" type="email" label="Email" autocomplete="username" required></sl-input>
+      <sl-input id="password" name="password" type="password" label="Senha" toggle-password autocomplete="current-password" required></sl-input>
+      <sl-button id="submitBtn" type="submit" variant="primary">Entrar</sl-button>
     </form>
 
     <div class="links">
@@ -139,20 +85,25 @@
     </div>
   </div>
 
-  <script>
+  <script type="module">
+    import { showErrorAlert, showSuccessAlert } from '/scripts/notifications.js';
+
     // Clear any previous user session data
     sessionStorage.removeItem('user');
-    
+
     const form = document.getElementById('loginForm');
     const btn = document.getElementById('submitBtn');
-    const msg = document.getElementById('msg');
-    const ok = document.getElementById('ok');
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      msg.style.display = 'none';
-      ok.style.display = 'none';
-      btn.disabled = true;
+
+      // Native HTML5 validation
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      btn.loading = true;
       try {
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value;
@@ -164,30 +115,25 @@
         });
         const data = await resp.json();
         if (!resp.ok || !data.success) {
-          msg.textContent = data.error || 'Falha no login';
-          msg.style.display = 'block';
-          btn.disabled = false;
+          showErrorAlert(data.error || 'Falha no login');
+          btn.loading = false;
           return;
         }
-        ok.textContent = 'Login realizado! Redirecionando...';
-        ok.style.display = 'block';
-        
+
         // Store user info in sessionStorage to show admin link if needed
         if (data.user) {
           sessionStorage.setItem('user', JSON.stringify(data.user));
         }
-        
-        // Cookie HttpOnly é setado pela API. Só redirecionar.
+
+        showSuccessAlert('Login realizado com sucesso!');
         setTimeout(() => {
-          // Se veio com ?next=, retorna para o destino solicitado; senão catálogo
           const params = new URLSearchParams(window.location.search);
           const next = params.get('next');
           window.location.href = next || '/index.html';
         }, 600);
       } catch (err) {
-        msg.textContent = 'Erro de rede. Tente novamente.';
-        msg.style.display = 'block';
-        btn.disabled = false;
+        showErrorAlert('Erro de rede. Tente novamente.');
+        btn.loading = false;
       }
     });
   </script>
