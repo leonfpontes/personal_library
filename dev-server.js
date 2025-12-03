@@ -1,6 +1,10 @@
 /**
  * Servidor de desenvolvimento simples para o projeto
  * Alternativa ao `vercel dev` quando há problemas de configuração
+ *
+ * Melhorias:
+ * - Tratamento de handlers assíncronos (await Promises)
+ * - Captura global de exceções para evitar crash silencioso (gera ERR_CONNECTION_RESET no cliente)
  */
 
 const http = require('http');
@@ -26,6 +30,13 @@ const MIME_TYPES = {
   '.ico': 'image/x-icon',
   '.md': 'text/markdown'
 };
+
+process.on('uncaughtException', (err) => {
+  console.error('[uncaughtException]', err);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('[unhandledRejection]', reason);
+});
 
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
@@ -66,39 +77,66 @@ const server = http.createServer((req, res) => {
         // Clear require cache to avoid stale references
         delete require.cache[require.resolve(apiFile)];
         
-        // Patch res.json
+        // Patch res.json and res.status
         res.json = (obj) => {
           if (!res.headersSent) res.setHeader('Content-Type', 'application/json');
           res.end(JSON.stringify(obj));
+        };
+        res.status = (code) => {
+          res.statusCode = code;
+          return res; // chainable
         };
         // Adiciona req.query
         req.query = parsedUrl.query || {};
         // Adiciona req.body (assíncrono para POST/PUT/PATCH)
         const method = req.method || 'GET';
-        const callHandler = (handler) => {
-          if (typeof handler === 'function') {
-            handler(req, res);
+        
+        const invokeHandler = (handler) => {
+          let fn = null;
+          if (typeof handler === 'function') fn = handler;
+          else if (handler && handler.default && typeof handler.default === 'function') fn = handler.default;
+          if (!fn) return false;
+          try {
+            const ret = fn(req, res);
+            if (ret && typeof ret.then === 'function') {
+              ret.catch(err => {
+                console.error('[handler error]', err);
+                if (!res.headersSent) {
+                  res.statusCode = 500;
+                  res.json({ error: 'Handler failure', detail: err.message });
+                }
+              });
+            }
             return true;
-          } else if (handler && handler.default && typeof handler.default === 'function') {
-            handler.default(req, res);
-            return true;
+          } catch (e) {
+            console.error('[sync handler error]', e);
+            if (!res.headersSent) {
+              res.statusCode = 500;
+              res.json({ error: 'Handler exception', detail: e.message });
+            }
+            return true; // handler existed but failed
           }
-          return false;
         };
 
         if (method === 'POST' || method === 'PUT' || method === 'PATCH') {
           parseBody().then(body => {
             req.body = body;
             const handler = require(apiFile);
-            if (!callHandler(handler)) {
+            if (!invokeHandler(handler)) {
               res.statusCode = 500;
               return res.json({ error: 'Invalid API handler' });
+            }
+          }).catch(e => {
+            console.error('[parse body error]', e);
+            if (!res.headersSent) {
+              res.statusCode = 400;
+              res.json({ error: 'Body parse error', detail: e.message });
             }
           });
         } else {
           req.body = undefined;
           const handler = require(apiFile);
-          if (!callHandler(handler)) {
+          if (!invokeHandler(handler)) {
             res.statusCode = 500;
             return res.json({ error: 'Invalid API handler' });
           }
