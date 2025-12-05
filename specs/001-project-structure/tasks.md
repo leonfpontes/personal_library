@@ -63,9 +63,9 @@
 
 ### Implementação
 
-- [ ] T013 [US3] Criar `docs/structure-guide.md` com princípios, layout final e regras para novos arquivos
-- [ ] T014 [US3] Criar checklist rápido em `docs/structure-checklist.md` (≤15 min) cobrindo docs, specs, leitores, links e rotas
-- [ ] T015 [P] [US3] Adicionar script simples `scripts/structure-check.ps1` para validar existência de caminhos críticos e executar link check via `npx linkinator ./index.html ./livros ./docs/ops --skip http(s)` ou equivalente; falha se houver erros 4xx/5xx
+- [x] T013 [US3] Criar `docs/structure-guide.md` com princípios, layout final e regras para novos arquivos ✅
+- [x] T014 [US3] Criar checklist rápido em `docs/structure-checklist.md` (≤15 min) cobrindo docs, specs, leitores, links e rotas ✅
+- [x] T015 [P] [US3] Adicionar script simples `scripts/structure-check.ps1` para validar existência de caminhos críticos e executar link check via `npx linkinator ./index.html ./livros ./docs/ops --skip http(s)` ou equivalente; falha se houver erros 4xx/5xx ✅
 
 **Checkpoint**: Guardrails publicados
 
@@ -73,9 +73,9 @@
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-- [ ] T016 Atualizar `specs/001-project-structure/tasks.md` com conclusão e notas finais (se surgirem deltas)
-- [ ] T017 Revisar diffs para garantir que middleware/auth/API não foram alterados; ajustar comentários se necessário
-- [ ] T018 Registrar resumo final e próximos passos em `specs/001-project-structure/plan.md`
+- [x] T016 Atualizar `specs/001-project-structure/tasks.md` com conclusão e notas finais (se surgirem deltas) ✅
+- [x] T017 Revisar diffs para garantir que middleware/auth/API não foram alterados; ajustar comentários se necessário ✅
+- [x] T018 Registrar resumo final e próximos passos em `specs/001-project-structure/plan.md` ✅
 
 ---
 

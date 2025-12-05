@@ -4,7 +4,7 @@
 
 - ✅ **Código 100% implementado** (38 tasks concluídas)
 - ✅ **Database: Neon PostgreSQL** (serverless, sa-east-1, tier gratuito)
-- ✅ **Migrations aplicadas** (`migrate-postgres.js`)
+- ✅ **Migrations aplicadas** (`scripts/dev/migrate-postgres.js`)
 - ✅ **Seed executado** (admin criado: admin@library.local)
 - ✅ **Dependências atualizadas** (`@neondatabase/serverless`, `bcryptjs`, `jsonwebtoken`, `uuid`)
 - ✅ **Documentação completa** (README.md + quickstart.md + api-reference.md)
@@ -141,7 +141,7 @@ Deve retornar: `audit_log`, `grants`, `sessions`, `users`
 Com as env vars ainda configuradas na sessão do PowerShell, execute:
 
 ```powershell
-node seed.js
+node scripts/dev/seed.js
 ```
 
 **Resultado esperado**:
