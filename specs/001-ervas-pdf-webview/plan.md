@@ -1,13 +1,13 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Webview PDF da Apostila de Ervas (Google Drive)
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+**Branch**: `001-ervas-pdf-webview` | **Date**: 2025-12-05 | **Spec**: [spec.md](./spec.md)
+**Input**: Feature specification from `/specs/001-ervas-pdf-webview/spec.md`
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+Tornar `livros/guia_de_ervas.html` um webview/iframe do PDF do Google Drive, mantendo cabeçalho/tema/TOC, proteção anti-cópia/print/devtools e watermark. Usar a URL de preview do Drive; aplicar overlay para bloquear toolbar de download/print; exibir fallback de erro se o PDF não carregar. Middleware e grants seguem protegendo a rota.
 
 ## Technical Context
 
@@ -17,15 +17,15 @@
   the iteration process.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: JavaScript (Node 18+), HTML/CSS/JS puro  
+**Primary Dependencies**: Vercel Edge (middleware/api), scripts internos `watermark.js` e `protection.js`, Google Drive preview embed  
+**Storage**: Neon Postgres já existente (não alterado)  
+**Testing**: Playwright/manual: embed happy path, allow/deny middleware/grant, bloqueio copy/print/devtools, fallback de erro  
+**Target Platform**: Web (Vercel; desktop/mobile browsers)  
+**Project Type**: Web app estático com Edge middleware  
+**Performance Goals**: PDF renderizar em até ~5s; manter proteção sem degradação perceptível  
+**Constraints**: Sem bundler/framework; manter rota estática `livros/guia_de_ervas.html` e regex em `vercel.json`; sem novos campos PII; bloquear download/print  
+**Scale/Scope**: Uma página de reader (guia_de_ervas) + scripts existentes
 
 ## Constitution Check
 
@@ -60,43 +60,24 @@ specs/[###-feature]/
 -->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+livros/
+├── guia_de_ervas.html   # reader a ser convertido em webview PDF
+├── vivencia_pombogira.html
+└── aula_*.html
 
-tests/
-├── contract/
-├── integration/
-└── unit/
+scripts/
+├── watermark.js         # overlay com CPF
+├── protection.js        # bloqueio copy/print/devtools
+└── ...
 
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
+styles/
+├── theme-ervas.css      # tema atual do livro
+└── base.css
 
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+api/, middleware.js      # controle de sessão e grants (Edge)
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Projeto web estático com páginas em `livros/` e scripts globais em `scripts/`. Alteração limitada a `livros/guia_de_ervas.html` (+ ajuste opcional em styles/scripts para overlay). Sem novas dependências ou diretórios.
 
 ## Complexity Tracking
 

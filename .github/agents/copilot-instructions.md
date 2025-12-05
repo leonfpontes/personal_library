@@ -5,6 +5,9 @@ Auto-generated from all feature plans. Last updated: 2025-11-26
 ## Active Technologies
 - JavaScript ES6+ (client-side), Node.js 18+ (Vercel Edge Functions) (2-admin-watermark-improvements)
 - Neon PostgreSQL (serverless, sa-east-1) - table `users` com coluna `status` VARCHAR (2-admin-watermark-improvements)
+- JavaScript (Node 18+), HTML/CSS/JS puro + Vercel Edge (middleware/api), scripts internos `watermark.js` e `protection.js`, Google Drive preview embed (001-ervas-pdf-webview)
+- Neon Postgres já existente (não alterado nesta feature) (001-ervas-pdf-webview)
+- Neon Postgres já existente (não alterado) (001-ervas-pdf-webview)
 
 **Frontend (Static):**
 - HTML5, CSS3, JavaScript ES6+ (no build/transpilation)
@@ -86,9 +89,10 @@ node scripts/seed-admin.js
 - Comments can be English or Portuguese
 
 ## Recent Changes
+- 001-ervas-pdf-webview: Added JavaScript (Node 18+), HTML/CSS/JS puro + Vercel Edge (middleware/api), scripts internos `watermark.js` e `protection.js`, Google Drive preview embed
+- 001-ervas-pdf-webview: Added JavaScript (Node 18+), HTML/CSS/JS puro + Vercel Edge (middleware/api), scripts internos `watermark.js` e `protection.js`, Google Drive preview embed
 - 2-admin-watermark-improvements: Added JavaScript ES6+ (client-side), Node.js 18+ (Vercel Edge Functions)
 
-- **001-login-access-control** (Phase 1 complete):
 	- Resolved: Vercel Edge Middleware + Vercel KV for authentication
 	- Resolved: Best-effort content protection (watermark primary, JS blocks secondary)
 	- Resolved: CPF format validation (^\d{11}$), plaintext storage, 12mo retention

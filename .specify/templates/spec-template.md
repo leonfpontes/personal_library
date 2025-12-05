@@ -82,6 +82,8 @@
   Fill them out with the right functional requirements.
 -->
 
+**Constitution alignment**: Document requisitos de autenticação (happy/forbidden), grants por livro/usuário, proteção anti-cópia (watermark/copy/print/devtools) e LGPD (PII, retenção 90 dias, consentimento) sempre que a feature tocar livros, auth ou dados pessoais.
+
 ### Functional Requirements
 
 - **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]

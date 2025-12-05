@@ -1,9 +1,9 @@
 (function(){
   // Theme color mapping for adaptive watermark contrast
   const THEME_COLORS = {
-    light: 'rgba(0, 0, 0, 0.08)',
+    light: 'rgba(0, 0, 0, 0.15)',
     dark: 'rgba(255, 255, 255, 0.12)',
-    sepia: 'rgba(80, 60, 40, 0.10)'
+    sepia: 'rgba(80, 60, 40, 0.15)'
   };
 
   // Get current theme from data-theme attribute or CSS classes
