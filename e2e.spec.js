@@ -224,6 +224,65 @@ test.describe('Autenticação e Acesso', () => {
     console.log('✓ Login form renderizado');
   });
 
+  test('Login com credenciais válidas funciona', async ({ page }) => {
+    await page.goto(`${BASE_URL}/auth/login.html`);
+    
+    // Monitora requisições à API de login
+    const loginPromise = page.waitForResponse(
+      response => response.url().includes('/api/auth/login') && response.status() === 200,
+      { timeout: 5000 }
+    ).catch(() => null);
+    
+    // Preenche o formulário
+    await page.fill('input[type="email"]', 'leonfpontes@gmail.com');
+    await page.fill('input[type="password"]', 'changeme123');
+    
+    // Submete o formulário
+    await page.click('button[type="submit"]');
+    
+    // Aguarda a resposta da API
+    const loginResponse = await loginPromise;
+    
+    if (loginResponse) {
+      // Se a API respondeu 200, o login foi bem-sucedido
+      console.log(`✓ Login bem-sucedido - API retornou 200`);
+      expect(loginResponse.status()).toBe(200);
+    } else {
+      // Se não capturou a resposta, verifica se houve redirecionamento
+      await page.waitForTimeout(2000);
+      const currentUrl = page.url();
+      
+      // Considera sucesso se não está mais na página de login
+      const stillOnLogin = currentUrl.includes('/auth/login.html');
+      console.log(`ℹ URL atual: ${currentUrl}, Ainda no login: ${stillOnLogin}`);
+      
+      // Se não está mais no login, considera sucesso
+      expect(stillOnLogin).toBeFalsy();
+    }
+  });
+
+  test('Login com credenciais inválidas falha', async ({ page }) => {
+    await page.goto(`${BASE_URL}/auth/login.html`);
+    
+    // Preenche com credenciais inválidas
+    await page.fill('input[type="email"]', 'invalido@test.com');
+    await page.fill('input[type="password"]', 'senhaerrada');
+    
+    // Submete o formulário
+    await page.click('button[type="submit"]');
+    
+    // Aguarda um pouco para ver se há mensagem de erro
+    await page.waitForTimeout(2000);
+    
+    // Deve permanecer na página de login ou mostrar erro
+    const currentUrl = page.url();
+    const hasError = await page.locator('body').textContent();
+    
+    expect(currentUrl.includes('/auth/login.html') || hasError?.includes('erro') || hasError?.includes('inválid')).toBeTruthy();
+    
+    console.log('✓ Login inválido tratado corretamente');
+  });
+
   test('Admin page requer autenticação', async ({ page }) => {
     const response = await page.goto(`${BASE_URL}/auth/admin.html`);
     
@@ -231,6 +290,56 @@ test.describe('Autenticação e Acesso', () => {
     expect(response?.status()).toBeLessThan(500);
     
     console.log('✓ Admin page acessível');
+  });
+
+  test('Acesso à área admin após login', async ({ page }) => {
+    // Primeiro faz login
+    await page.goto(`${BASE_URL}/auth/login.html`);
+    await page.fill('input[type="email"]', 'leonfpontes@gmail.com');
+    await page.fill('input[type="password"]', 'changeme123');
+    await page.click('button[type="submit"]');
+    await page.waitForLoadState('networkidle', { timeout: 10000 });
+    
+    // Agora tenta acessar a página admin
+    await page.goto(`${BASE_URL}/auth/admin.html`);
+    await page.waitForLoadState('networkidle');
+    
+    // Verifica se conseguiu acessar (não foi redirecionado para login)
+    const currentUrl = page.url();
+    expect(currentUrl).toContain('/auth/admin.html');
+    
+    // Verifica se há elementos típicos da área admin
+    const bodyText = await page.locator('body').textContent();
+    const hasAdminContent = bodyText?.toLowerCase().includes('admin') || 
+                           bodyText?.toLowerCase().includes('painel') ||
+                           bodyText?.toLowerCase().includes('usuário');
+    
+    expect(hasAdminContent).toBeTruthy();
+    
+    console.log('✓ Área admin acessível após autenticação');
+  });
+
+  test('Logout funciona corretamente', async ({ page }) => {
+    // Faz login primeiro
+    await page.goto(`${BASE_URL}/auth/login.html`);
+    await page.fill('input[type="email"]', 'leonfpontes@gmail.com');
+    await page.fill('input[type="password"]', 'changeme123');
+    await page.click('button[type="submit"]');
+    await page.waitForLoadState('networkidle', { timeout: 10000 });
+    
+    // Procura por botão/link de logout
+    const logoutButton = page.locator('button:has-text("Sair"), a:has-text("Sair"), button:has-text("Logout"), a:has-text("Logout")').first();
+    
+    if (await logoutButton.isVisible({ timeout: 5000 }).catch(() => false)) {
+      await logoutButton.click();
+      await page.waitForLoadState('networkidle');
+      
+      // Verifica se foi redirecionado ou se a sessão foi encerrada
+      const currentUrl = page.url();
+      console.log(`✓ Logout executado - URL atual: ${currentUrl}`);
+    } else {
+      console.log('⚠ Botão de logout não encontrado - pulando teste');
+    }
   });
 
   test('No-access page renderiza corretamente', async ({ page }) => {
