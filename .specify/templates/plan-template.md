@@ -3,7 +3,7 @@
 **Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
-**Note**: This template is filled in by the `/speckit.plan` command.
+**Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
 
 ## Summary
 
@@ -31,18 +31,7 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-For this personal_library repo, plans MUST satisfy these gates:
-
-- Content-first: No build/CI; deliver static files only (HTML/CSS/JS).
-- Editorial integrity (pt-BR): Preserve diacritics and chapter heading rules.
-- File placement: Markdown in `Source/`, reader HTML in `livros/`, catalog in `index.html`.
-- Naming: New manuscripts use snake_case and match HTML reader filename.
-- Reader template fidelity: Use `livros/vivencia_pombogira.html` as base; keep TOC, search, anchors, smooth scroll, progress bar, back-to-top, theme and font-size persistence.
-- mdPath: Reader `mdPath` points to the correct `../Source/<file>.md`.
-- Theme/colors: Update all theme variants (light/dark/sepia) and favicon color to match.
-- Catalog card: Add/update card in `index.html` with tags, brief description, and link.
-- Relative paths: Use only relative links; no absolute paths.
-- Rights: Respect manuscript “Direitos Autorais” constraints.
+[Gates determined based on constitution file]
 
 ## Project Structure
 
