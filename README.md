@@ -293,9 +293,15 @@ rm -rf node_modules && npm install
 ## 📖 Documentação Adicional
 
 - **Especificação completa**: `specs/001-login-access-control/spec.md`
-- **Guia de deploy**: `DEPLOYMENT_READY.md`
+- **Guia de deploy**: `docs/ops/DEPLOY.md`
 - **Auditoria de segurança**: `specs/001-login-access-control/security-audit.md`
 - **Guia rápido**: `specs/001-login-access-control/quickstart.md`
+- **Como rodar localmente**: `docs/ops/COMO_RODAR.md`
+- **Deployment checklist**: `docs/ops/DEPLOYMENT_READY.md`
+- **Status do projeto**: `docs/ops/STATUS.md`
+- **Mobile patches**: `docs/ops/MOBILE_PATCH.md`
+- **Production debug guide**: `docs/ops/PRODUCTION_DEBUG_GUIDE.md`
+- **Resumo executivo**: `docs/ops/RESUMO_EXECUTIVO.md`
 
 ## 🐛 Troubleshooting
 
