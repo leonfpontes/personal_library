@@ -23,8 +23,8 @@
 ### Infraestrutura
 - ✅ Backend em Vercel Edge Functions + Middleware
 - ✅ Database: Neon PostgreSQL (serverless, sa-east-1, tier gratuito)
-- ✅ Migrations automatizadas via script (`migrate-postgres.js`)
-- ✅ Seed para criação de admin inicial (`seed.js`)
+- ✅ Migrations automatizadas via script (`scripts/dev/migrate-postgres.js`)
+- ✅ Seed para criação de admin inicial (`scripts/dev/seed.js`)
 - ✅ **38 tasks técnicas concluídas** (incluindo T037 offline + T038 opacity)
 - ✅ Pipeline Vercel testado e funcional (deploy automático em commits)
 
@@ -59,8 +59,10 @@ personal_library/
 │   ├── protection.js
 │   └── admin.js
 ├── middleware.js             # Edge Middleware (authZ)
-├── migrate-postgres.js       # Script de migrations
-├── seed.js                   # Criação do admin
+├── scripts/
+│   └── dev/
+│       ├── migrate-postgres.js  # Script de migrations
+│       └── seed.js              # Criação do admin
 ├── .env.local                # Env vars (não commitado)
 ├── package.json              # Dependências
 └── vercel.json               # Config rotas

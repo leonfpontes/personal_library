@@ -6,8 +6,11 @@
   "license": "UNLICENSED",
   "type": "commonjs",
   "scripts": {
-    "dev": "node dev-server.js",
-    "seed": "node seed.js"
+    "dev": "node scripts/dev/dev-server.js",
+    "seed": "node scripts/dev/seed.js",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
@@ -16,6 +19,8 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "dotenv": "^17.2.3"
+    "@playwright/test": "^1.57.0",
+    "dotenv": "^17.2.3",
+    "linkinator": "^7.5.1"
   }
 }

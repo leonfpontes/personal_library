@@ -49,8 +49,9 @@ const server = http.createServer((req, res) => {
 
   // Rota para API (com suporte a body e JSON)
   if (pathname.startsWith('/api/')) {
+    const projectRoot = path.resolve(__dirname, '..', '..');
     const apiPath = pathname.replace(/^\/api/, './api');
-    const apiFile = path.join(__dirname, `${apiPath}.js`);
+    const apiFile = path.join(projectRoot, `${apiPath}.js`);
 
     // Utilitário para parse de body
     const parseBody = () => new Promise(resolve => {
@@ -163,8 +164,9 @@ const server = http.createServer((req, res) => {
     pathname = pathname.slice(0, -1);
   }
 
-  // Serve arquivos estáticos
-  let filePath = path.join(__dirname, pathname);
+  // Serve arquivos estáticos (a partir da raiz do projeto, não do diretório do script)
+  const projectRoot = path.resolve(__dirname, '..', '..');
+  let filePath = path.join(projectRoot, pathname);
 
   // Se for diretório, tenta index.html
   if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {

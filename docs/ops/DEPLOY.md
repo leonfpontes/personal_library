@@ -9,8 +9,8 @@ Este repositório está **pronto** e **testado** para publicação na Vercel com
 
 - ✅ Banco Neon PostgreSQL provisionado (sa-east-1)
 - ✅ Variáveis de ambiente configuradas no Vercel
-- ✅ Migrations aplicadas (`node migrate-postgres.js`)
-- ✅ Seed executado (`node seed.js`)
+- ✅ Migrations aplicadas (`node scripts/dev/migrate-postgres.js`)
+- ✅ Seed executado (`node scripts/dev/seed.js`)
 
 ## Passos para deploy
 

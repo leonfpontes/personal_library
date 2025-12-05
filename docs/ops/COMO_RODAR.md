@@ -73,7 +73,7 @@ SESSION_TTL_SECONDS=86400
 ### Passo 4: Aplicar migrations (criar tabelas)
 
 ```bash
-node migrate-postgres.js
+node scripts/dev/migrate-postgres.js
 ```
 
 **Saída esperada:**
@@ -109,7 +109,7 @@ node migrate-postgres.js
 ### Passo 5: Criar usuário administrador
 
 ```bash
-node seed.js
+node scripts/dev/seed.js
 ```
 
 **Saída esperada:**
@@ -299,15 +299,15 @@ git push origin 001-login-access-control
 1. Acesse [console.neon.tech](https://console.neon.tech)
 2. Selecione o projeto
 3. Clique em **SQL Editor**
-4. Copie e cole o conteúdo de `migrations-postgres.sql`
+4. Copie e cole o conteúdo de `docs/database/migrations-postgres.sql`
 5. Clique **Run**
 
 **Via CLI (alternativa):**
 
 ```bash
 # Apontar para banco de produção
-DATABASE_URL="postgresql://..." node migrate-postgres.js
-DATABASE_URL="postgresql://..." node seed.js
+DATABASE_URL="postgresql://..." node scripts/dev/migrate-postgres.js
+DATABASE_URL="postgresql://..." node scripts/dev/seed.js
 ```
 
 ---
@@ -333,8 +333,8 @@ Repita os testes locais:
 npm run dev                   # Vercel dev server
 
 # Database
-node migrate-postgres.js      # Aplicar schema
-node seed.js                  # Criar admin
+node scripts/dev/migrate-postgres.js # Aplicar schema
+node scripts/dev/seed.js             # Criar admin
 
 # Deploy
 vercel                        # Deploy preview
@@ -432,8 +432,8 @@ vercel --prod --force
 **Local:**
 - [ ] `npm install` executado com sucesso
 - [ ] `.env.local` configurado com DATABASE_URL correto
-- [ ] `node migrate-postgres.js` criou 4 tabelas
-- [ ] `node seed.js` criou admin
+- [ ] `node scripts/dev/migrate-postgres.js` criou 4 tabelas
+- [ ] `node scripts/dev/seed.js` criou admin
 - [ ] `npm run dev` rodando em http://localhost:3000
 - [ ] Login admin funcionando
 - [ ] Usuário criado via dashboard
